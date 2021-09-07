@@ -4,7 +4,6 @@ collection: publications
 permalink: /publication/rise-iga-nmes
 date: 2019-04-23
 venue: 'Proceedings of the 6th International Conference on Control, Decision and Information Technologies (CoDIT)'
-paperurl: 'http://hharcolezi.github.io/files/2019_CODIT_control.pdf'
 ---
 
 
