@@ -5,7 +5,7 @@ permalink: /publication/A RISE-based controller fine-tuned by an improved geneti
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2019-04-23
 venue: 'Proceedings of the 6th International Conference on Control, Decision and Information Technologies (CoDIT)'
-paperurl: 'https://ieeexplore.ieee.org/document/8820357'
+paperurl: 'http://hharcolezi.github.io/files/2019_CODIT_control.pdf'
 ---
 
 
