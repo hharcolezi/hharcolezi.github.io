@@ -13,7 +13,7 @@ My master thesis dissertation can be downloaded [here](http://hharcolezi.github.
 
 ## Articles
 
-You can also find a complete list of my articles on my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ).
+Please refer to my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) for a complete list of my publications.
 
 {% include base_path %}
 
