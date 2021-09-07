@@ -19,4 +19,4 @@ Education
 
 Publications
 ======
-You can find an updated list of my articles on [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ).
+You can find an updated list of my articles on my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ).
