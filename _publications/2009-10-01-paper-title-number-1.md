@@ -1,15 +1,15 @@
 ---
-title: "Paper Title Number 1"
+title: "A RISE-based controller fine-tuned by an improved genetic algorithm for human lower limb rehabilitation via neuromuscular electrical stimulation"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
+permalink: /publication/A RISE-based controller fine-tuned by an improved genetic algorithm for human lower limb rehabilitation via neuromuscular electrical stimulation
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
+date: 2019-04-23
+venue: '6th International Conference on Control, Decision and Information Technologies (CoDIT)'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+citation: 'H. H. Arcolezi, W. R. B. M. Nunes, S. L. C. Ñahuis, M. A. A. Sanches, M. C. M. Teixeira and A. A. de Carvalho, "A RISE-based Controller Fine-tuned by an Improved Genetic Algorithm for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation," 2019 6th International Conference on Control, Decision and Information Technologies (CoDIT), 2019, pp. 1197-1202, doi: 10.1109/CoDIT.2019.8820357.'
 ---
 This paper is about the number 1. The number 2 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](http://hharcolezi.github.io/files/2019_CODIT_control.pdf)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: H. H. Arcolezi, W. R. B. M. Nunes, S. L. C. Ñahuis, M. A. A. Sanches, M. C. M. Teixeira and A. A. de Carvalho, "A RISE-based Controller Fine-tuned by an Improved Genetic Algorithm for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation," 2019 6th International Conference on Control, Decision and Information Technologies (CoDIT), 2019, pp. 1197-1202, doi: 10.1109/CoDIT.2019.8820357.
