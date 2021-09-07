@@ -3,7 +3,7 @@ title: "Longitudinal Collection and Analysis of Mobile Phone Data with Local Dif
 collection: publications
 permalink: /publication/longitudinal-mobile-phone-data-ldp
 date: 2021-04-01
-venue: 'Proceedings of the Privacy and Identity 2020'
+venue: 'Proceedings of the Privacy and Identity Management'
 ---
 
 
