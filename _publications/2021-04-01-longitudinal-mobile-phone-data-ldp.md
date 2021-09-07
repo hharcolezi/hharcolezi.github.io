@@ -21,5 +21,5 @@ bibtex: @incollection{Arcolezi2021,
   pages = {40--57},
   author = {H{\'{e}}ber H. Arcolezi and Jean-Fran{\c{c}}ois Couchot and Bechara Al Bouna and Xiaokui Xiao},
   title = {Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy},
-  booktitle = {{IFIP} Advances in Information and Communication Technology}
+  booktitle = {IFIP Advances in Information and Communication Technology}
 }
