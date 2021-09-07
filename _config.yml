@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Héber H. Arcolezi"
 title_separator          : ""
-name                     : &name "Héber H. Arcolezi"
+name                     : &name "Héber Hwang Arcolezi"
 description              : &description "personal description"
 url                      : https://hharcolezi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
