@@ -7,6 +7,8 @@ redirect_from:
   - /resume
 ---
 
+Also available in pdf format.
+
 {% include base_path %}
 
 Education
@@ -17,8 +19,4 @@ Education
 
 Publications
 ======
-You can also find my articles on [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ).
-
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+You can find an updated list of my articles on [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ).
