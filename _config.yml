@@ -86,8 +86,11 @@ author:
   location         : "Belfort, France"
   employer         :
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ"
   email            : "hh.arcolezi@gmail.com"
+  twitter          : "@hharcolezi"
+  github           : "hharcolezi"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ"
+  orcid            : "https://orcid.org/0000-0001-8059-7094"
   researchgate     :  "https://www.researchgate.net/profile/Heber-H-Arcolezi"
   uri              :
   bitbucket        :
@@ -96,20 +99,17 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "hharcolezi"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "https://orcid.org/0000-0001-8059-7094"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "@hharcolezi"
   vine             :
   weibo            :
   xing             :
