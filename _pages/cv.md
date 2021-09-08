@@ -13,7 +13,7 @@ Also available in pdf format.
 
 Education
 ======
-* Ph.D. in Computer Science, University Bourgogne Franche Comte, 2022 (expected)
+* Ph.D. in Computer Science, University Bourgogne Franche-Comté, 2022 (expected)
 * M.Eng. in Electrical Engineering in São Paulo State University, 2019
 * B.Eng. in Electrical Engineering, Mato Grosso State University, 2017
 
