@@ -26,7 +26,7 @@ Research Experience
 Skills
 ======
 * Programming languages: Python, Matlab & Simulink, Labview.
-* Libraries: Keras, TensorFlow, PyTorch, Scikit-learn, Matplotlib, Pandas, Numpy, GEKKO, Scipy, Sympy, Ray, Numba.
+* Libraries: Keras, TensorFlow, PyTorch, Scikit-learn, Matplotlib, Pandas, Numpy, GEKKO, Scipy, Sympy, Ray, Numba, Scikit-fuzzy.
 * Operating Systems: Windows 7/10, Linux (Debian and Ubuntu).
 * Other tools: Sun Grid Engine (SGE), Latex, MS Office, AutoCAD, AltoQI Lumine, Multisim. 
 * Theoretical: 
