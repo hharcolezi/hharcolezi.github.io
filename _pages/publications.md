@@ -17,7 +17,7 @@ Here I list some of my peer-reviewed publications ordered by year, including the
 
 ### 2021
 
-Arcolezi, H., Cerna, S., Guyeux, C., & Couchot, J.-F. (2021). [*Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time*](https://doi.org/10.3390/mca26030056). Mathematical and Computational Applications, 26(3), 56. [Authors pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf)
+Arcolezi, H., Cerna, S., Guyeux, C., & Couchot, J.-F. (2021). [*Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time*](https://doi.org/10.3390/mca26030056). Mathematical and Computational Applications, 26(3), 56. [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf)
 
 Cerna, S., Arcolezi, H. H., Guyeux, C., Royer-Fey, G., & Chevallier, C. (2021). [*Machine learning-based forecasting of firemen ambulances’ turnaround time in hospitals, considering the COVID-19 impact*](https://doi.org/10.1016/j.asoc.2021.107561). Applied Soft Computing, 109, 107561. [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf)
 
