@@ -33,10 +33,10 @@ Skills
 
 Languages
 ======
-* Portuguese: mother tongue.
-* English: advanced - C1.
-* Spanish: intermediate - B2.
-* French: intermediate - B2.
+* Portuguese: Mother tongue.
+* English: Advanced - C1.
+* Spanish: Intermediate - B2.
+* French: Intermediate - B2.
 
 Publications
 ======
