@@ -19,9 +19,9 @@ Education
 
 Research Experience
 ======
-* Graduate Researcher (Ph.D.) - Research on privacy-preserving data analytics.
-* Graduate Researcher (master) - Presented an automatized approach through machine learning techniques for a control-based system that stimulates lower limbs of individuals with spinal cord injury. My master thesis dissertation can be downloaded [here](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf).
-* Undergraduate Research - Researched on linear control theory on studying a benchmarking system, namely, the inverted pendulum during the last year of undergrad (2016-2017). My bachelor final report can be downloaded [here](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
+* Graduate Research (Ph.D.) - Research on privacy-preserving data analytics.
+* Graduate Research (master) - Presented an automatized approach through machine learning techniques for a control-based system that stimulates lower limbs of individuals with spinal cord injury. My master thesis dissertation can be downloaded [here](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf).
+* Undergraduate Research - Researched linear control theory for a benchmarking system "inverted pendulum" during the last year of undergrad (2016-2017). My bachelor final report can be downloaded [here](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
 
 Skills
 ======
