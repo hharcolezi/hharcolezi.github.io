@@ -25,12 +25,18 @@ Research Experience
 
 Skills
 ======
-* Languages: Portuguese (mother tongue), English (advanced - C1), Spanish (intermediate - B2), French (intermediate - B2)
-* Coding: Python, Matlab & Simulink, Labview 
+* Programming languages: Python, Matlab & Simulink, Labview.
 * Theoretical: 
   * Data privacy: Differential privacy, local differential privacy, geo-indistinguishability, k-anonymity and its variants (l-diversity, t-closeness, ...), privacy-preserving machine learning;
   * Machine learning: Classification tasks (binary, multiclass), regression tasks, time series forecasting, clustering, decision tree-based algorithms, deep learning (feedforward and recurrent neural networks);
-  * Others: Linear programming, heuristics, metaheuristics, linear control, nonlinear control, system identification.
+  * Others: Linear programming, heuristics, metaheuristics, linear control, nonlinear control, system identification, evolutionary algorithms, electric circuits, numerical methods.
+
+Languages
+======
+* Portuguese: mother tongue.
+* English: advanced - C1.
+* Spanish: intermediate - B2.
+* French: intermediate - B2.
 
 Publications
 ======
