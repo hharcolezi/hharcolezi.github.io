@@ -7,9 +7,9 @@ author_profile: true
 
 ## Technical reports
 
-My master thesis dissertation can be [downloaded here](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf)
+My master thesis dissertation can be [downloaded here](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf).
 
-My bachelor final report (in Portuguese) can be [downloaded here](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf)
+My bachelor final report (in Portuguese) can be [downloaded here](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
 
 ## Articles
 
