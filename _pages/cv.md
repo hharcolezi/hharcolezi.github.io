@@ -25,14 +25,14 @@ Research Experience
 
 Skills
 ======
-* Programming languages: Python, Matlab & Simulink, Labview.
+* Programming languages: Python, Matlab & Simulink, Visual Basic.
 * Libraries: Keras, TensorFlow, PyTorch, Scikit-learn, Matplotlib, Pandas, Numpy, GEKKO, Scipy, Sympy, Ray, Numba, Scikit-fuzzy.
 * Operating Systems: Windows 7/10, Linux (Debian and Ubuntu).
-* Other tools: Sun Grid Engine (SGE), Latex, MS Office, AutoCAD, AltoQI Lumine, Multisim. 
+* Other tools: Labview, Sun Grid Engine (SGE), Latex, MS Office, AutoCAD, AltoQI Lumine, Multisim. 
 * Theoretical: 
   * Data privacy: Differential privacy, local differential privacy, geo-indistinguishability, k-anonymity and its variants (l-diversity, t-closeness, ...), privacy-preserving machine learning;
   * Machine learning: Classification tasks (binary, multiclass), regression tasks, time series forecasting, clustering, decision tree-based algorithms, deep learning (feedforward and recurrent neural networks);
-  * Others: Linear system optimization, heuristics, metaheuristics, (non)linear control, (non)linear system identification, evolutionary algorithms, electric circuits, numerical methods, fuzzy logic, programmable logic controller.
+  * Others: Linear system optimization, heuristics, metaheuristics, (non)linear control, (non)linear system identification, evolutionary algorithms, electric circuits, numerical methods, fuzzy logic, programmable logic controller, digital circuits.
 
 Languages
 ======
