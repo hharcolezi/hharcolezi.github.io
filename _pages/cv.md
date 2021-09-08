@@ -29,7 +29,7 @@ Skills
 * Theoretical: 
   * Data privacy: Differential privacy, local differential privacy, geo-indistinguishability, k-anonymity and its variants (l-diversity, t-closeness, ...), privacy-preserving machine learning;
   * Machine learning: Classification tasks (binary, multiclass), regression tasks, time series forecasting, clustering, decision tree-based algorithms, deep learning (feedforward and recurrent neural networks);
-  * Others: Linear programming, heuristics, metaheuristics, linear control, nonlinear control, system identification, evolutionary algorithms, electric circuits, numerical methods.
+  * Others: Linear programming, heuristics, metaheuristics, (non)linear control, (non)linear system identification, evolutionary algorithms, electric circuits, numerical methods.
 
 Languages
 ======
