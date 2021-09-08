@@ -13,10 +13,8 @@ My master thesis dissertation can be downloaded [here](http://hharcolezi.github.
 
 ## Articles
 
-Please refer to my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) for a complete list of my publications.
+Here I list some of my selected peer-reviewed publications, including their pdf versions.
 
-{% include base_path %}
+Please refer to my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) for the full list of my publications.
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<script src="https://bibbase.org/service/mendeley/d3148a09-11fc-3977-b94f-dff64aa07f73?jsonp=1"></script>
