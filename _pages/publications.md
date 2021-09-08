@@ -17,23 +17,34 @@ Here I list some of my peer-reviewed publications, including their pdf (or autho
 
 Please refer to my [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) for the full list of my publications.
 
-2021
-=====
+### 2021
 
+Arcolezi, H., Cerna, S., Guyeux, C., & Couchot, J.-F. (2021). *Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time*. Mathematical and Computational Applications, 26(3), 56. https://doi.org/10.3390/mca26030056. [Authors pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf)
 
+Cerna, S., Arcolezi, H. H., Guyeux, C., Royer-Fey, G., & Chevallier, C. (2021). *Machine learning-based forecasting of firemen ambulances’ turnaround time in hospitals, considering the COVID-19 impact*. Applied Soft Computing, 109, 107561. https://doi.org/10.1016/j.asoc.2021.107561. [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf)
 
+Arcolezi, H. H., Nunes, W. R. B. M., de Araujo, R. A., Cerna, S., Sanches, M. A. A., Teixeira, M. C. M., & de Carvalho, A. A. (2021). *RISE controller tuning and system identification through machine learning for human lower limb rehabilitation via neuromuscular electrical stimulation*. Engineering Applications of Artificial Intelligence, 102(April), 104294. https://doi.org/10.1016/j.engappai.2021.104294. [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf)
 
-2020
-=====
+Arcolezi, H. H., Couchot, J.-F., Bouna, B. Al, & Xiao, X. (2021). Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy (M. Friedewald, S. Schiffner, & S. Krenn (eds.); Vol. 619, pp. 40–57). Springer International Publishing. https://doi.org/10.1007/978-3-030-72465-8_3. [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf)
 
+### 2020
 
+Arcolezi, H. H., Nunes, W. R. B. M., Cerna, S., de Araujo, R. A., Sanches, M. A. A., Teixeira, M. C. M., & de Carvalho, A. A. (2020). *Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks*. Research on Biomedical Engineering. https://doi.org/10.1007/s42600-020-00089-1. [pdf Version](https://rdcu.be/b6NV9).
 
-2019
-=====
-S. L. C. Nahuis, C. Guyeux, H. H. Arcolezi, R. Couturier, G. Royer, and A. D. P. Lotufo, [“Long short-term memory for predicting firemen interventions”](https://ieeexplore.ieee.org/abstract/document/8820671), in 2019 6th International Conference on Control, Decision and Information Technologies, CoDIT 2019, 2019, pp. 1132–1137, doi: 10.1109/CoDIT.2019.8820671. [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf)
+Arcolezi, H. H., Couchot, J.-F., Baala, O., Contet, J.-M., Al Bouna, B., & Xiao, X. (2020). *Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy*. 2020 International Wireless Communications and Mobile Computing (IWCMC), June, 1689–1694. https://doi.org/10.1109/IWCMC48107.2020.9148138. [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf)
 
-H. H. Arcolezi, W. R. B. M. Nunes, S. L. C. Nahuis, M. A. A. Sanches, M. C. M. Teixeira, and A. A. De Carvalho, [“A RISE-based controller fine-tuned by an improved genetic algorithm for human lower limb rehabilitation via neuromuscular electrical stimulation”](https://ieeexplore.ieee.org/abstract/document/8820357), in 2019 6th International Conference on Control, Decision and Information Technologies, CoDIT 2019, Apr. 2019, pp. 1197–1202, doi: 10.1109/CoDIT.2019.8820357. [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_control.pdf)
+Arcolezi, H. H., Couchot, J.-F., Cerna, S., Guyeux, C., Royer, G., Bouna, B. Al, & Xiao, X. (2020). *Forecasting the Number of Firefighters Interventions per Region with Local-Differential-Privacy-Based Data*. Computers & Security, 96, 101888. https://doi.org/10.1016/j.cose.2020.101888. [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf)
 
-H. H. Arcolezi et al., [“A Robust and Intelligent RISE-based Control for Human Lower Limb Tracking via Neuromuscular Electrical Stimulation”](http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1683/1152), in XIV Conferência Brasileira de Dinâmica, Controle e Aplicações, 2019. [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_control.pdf).
+Cerna, S., Guyeux, C., Arcolezi, H. H., Couturier, R., & Royer, G. (2020). *A comparison of LSTM and XGBoost for predicting firemen interventions*. In Advances in Intelligent Systems and Computing: Vol. 1160 AISC (pp. 424–434). https://doi.org/10.1007/978-3-030-45691-7_39. [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf)
 
-H. H. Arcolezi et al., [“On the Ability to Identify the Knee Joint Position Under Neuromuscular Electrical Stimulation Using Long Short-Term Memory Neural Networks”](http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153), in XIV Conferência Brasileira de Dinâmica, Controle e Aplicações, 2019. [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
+Cerna, S., Guyeux, C., Arcolezi, H. H., & Royer, G. (2020). *Boosting Methods for Predicting Firemen Interventions*. 2020 11th International Conference on Information and Communication Systems (ICICS), 001–006. https://doi.org/10.1109/ICICS49469.2020.239488. [Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf)
+
+### 2019
+
+Arcolezi, H. H., Nunes, W. R. B. M., Nahuis, S. L. C., Sanches, M. A. A., Teixeira, M. C. M., & De Carvalho, A. A. (2019). *A RISE-based controller fine-tuned by an improved genetic algorithm for human lower limb rehabilitation via neuromuscular electrical stimulation*. 2019 6th International Conference on Control, Decision and Information Technologies, CoDIT 2019, 1197–1202. https://doi.org/10.1109/CoDIT.2019.8820357. [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_control.pdf)
+
+Nahuis, S. L. C., Guyeux, C., Arcolezi, H. H., Couturier, R., Royer, G., & Lotufo, A. D. P. (2019). *Long short-term memory for predicting firemen interventions*. 2019 6th International Conference on Control, Decision and Information Technologies, CoDIT 2019, 1132–1137. https://doi.org/10.1109/CoDIT.2019.8820671. [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf)
+
+Arcolezi, H. H., Nunes, W. R. B. M., Araujo, R. A. De, Cerna, S., Sanches, M. A. A., Teixeira, M. C. M., & de Carvalho, A. A. (2019). *A Robust and Intelligent RISE-based Control for Human Lower Limb Tracking via Neuromuscular Electrical Stimulation*. XIV Conferência Brasileira de Dinâmica, Controle e Aplicações. http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1683/1152. [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_control.pdf).
+
+Arcolezi, H. H., Nunes, W. R. B. M., Araujo, R. A. De, Cerna, S., Sanches, M. A. A., Teixeira, M. C. M., & de Carvalho, A. A. (2019). *On the Ability to Identify the Knee Joint Position Under Neuromuscular Electrical Stimulation Using Long Short-Term Memory Neural Networks*. XIV Conferência Brasileira de Dinâmica, Controle e Aplicações. http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153. [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
