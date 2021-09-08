@@ -13,7 +13,7 @@ My bachelor final report (in Portuguese) can be [downloaded here](http://hharcol
 
 ## Articles
 
-Here I list some of my peer-reviewed publications ordered by year, including their pdf (or authors) versions. Please refer to my [DBLP](https://dblp.uni-trier.de/pid/248/5342.html) or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications.
+Here I list some of my peer-reviewed publications ordered by year, including their pdf (or authors) versions. Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094) or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications.
 
 ### 2021
 
