@@ -17,6 +17,12 @@ Education
 * M.Eng. in Electrical Engineering, São Paulo State University (UNESP), 2019
 * B.Eng. in Electrical Engineering, Mato Grosso State University (UNEMAT), 2017
 
+Additional Training
+======
+* 1st Inria-DFKI European Summer School on AI (IDAI 2021). Paris, France. Jul., 2021 (Virtual).
+* 15th IFIP Summer School on Privacy and Identity Management. Maribor, Slovenia. Sep., 2020 (Virtual).
+
+
 Research Experience
 ======
 * Graduate Research (Ph.D.) - Research on privacy-preserving data analytics.
