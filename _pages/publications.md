@@ -24,7 +24,7 @@ Cerna, S., Arcolezi, H. H., Guyeux, C., Royer-Fey, G., & Chevallier, C. (2021). 
 
 Arcolezi, H. H., Nunes, W. R. B. M., de Araujo, R. A., Cerna, S., Sanches, M. A. A., Teixeira, M. C. M., & de Carvalho, A. A. (2021). [*RISE controller tuning and system identification through machine learning for human lower limb rehabilitation via neuromuscular electrical stimulation*](https://doi.org/10.1016/j.engappai.2021.104294). Engineering Applications of Artificial Intelligence, 102(April), 104294. [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf)
 
-Arcolezi, H. H., Couchot, J.-F., Bouna, B. Al, & Xiao, X. (2021). [Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy](https://doi.org/10.1007/978-3-030-72465-8_3) (M. Friedewald, S. Schiffner, & S. Krenn (eds.); Vol. 619, pp. 40–57). Springer International Publishing. [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf)
+Arcolezi, H. H., Couchot, J.-F., Bouna, B. Al, & Xiao, X. (2021). [*Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy*](https://doi.org/10.1007/978-3-030-72465-8_3). 15th IFIP International Summer School on Privacy and Identity Management, September, 40-57. Springer, Cham. [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf)
 
 ### 2020
 
