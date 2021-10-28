@@ -13,7 +13,8 @@ Currently, I research Differential Privacy (DP) with a focus on optimizing local
 
 ## News
 
+* Our paper "Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities" has been accepted to [IEEE Transactions on Industrial Informatics](http://www.ieee-ies.org/pubs/transactions-on-industrial-informatics).
 * Our paper "Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy" has been accepted to [CIKM 2021](https://www.cikm2021.org/) with a SIGIR Grant for Student Authors.
 * I have been selected to attend the [6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS'21)](https://gdr-securite.irisa.fr/redocs/redocs21/).
 
-Last update: 2021-09-15
+Last update: 2021-10-29
