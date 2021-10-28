@@ -16,6 +16,8 @@ My bachelor final report (in Portuguese) can be [downloaded here](http://hharcol
 Here I list some of my peer-reviewed publications ordered by year, including their pdf (or authors) versions. Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094) or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. Also, I post the codes of DP and LDP implementations at [ldp-protocols-mobility-cdrs](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs).
 
 ### 2021
+\*Arcolezi, H. H., \*Cerna, S., Couchot, J.-F., Guyeux, C., & Makhoul, A. (2021). [Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities](https://doi.org/10.1109/tii.2021.3123588). **IEEE Transactions on Industrial Informatics**, Early Access. [pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf)
+
 Arcolezi, H. H., Couchot, J.-F., Bouna, B. Al, & Xiao, X. (2021). [Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy](https://www.cikm2021.org/accepted-papers/full). In Proceedings of the 30th *ACM International Conference on Information and Knowledge Management* (CIKM), November, Virtual Event, QLD, Australia. [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf)
 
 Arcolezi, H. H., Cerna, S., Guyeux, C., & Couchot, J.-F. (2021). [Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time](https://doi.org/10.3390/mca26030056). **Mathematical and Computational Applications**, 26(3), 56. [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf)
