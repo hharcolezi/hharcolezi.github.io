@@ -15,7 +15,7 @@ My bachelor final report (in Portuguese) can be [downloaded here](http://hharcol
 
 Here I list some of my peer-reviewed publications ordered by year, including their pdf (or authors) versions. Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094) or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. Also, I post the codes of DP and LDP implementations at [ldp-protocols-mobility-cdrs](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs).
 
-The superscript * indicates equal contributions to the paper. 
+The superscript \* indicates equal contributions to the paper. 
 
 ### 2021
 \*Arcolezi, H. H., \*Cerna, S., Couchot, J.-F., Guyeux, C., & Makhoul, A. (2021). [Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities](https://doi.org/10.1109/tii.2021.3123588). **IEEE Transactions on Industrial Informatics**, Early Access. [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf)
