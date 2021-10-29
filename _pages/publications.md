@@ -38,6 +38,8 @@ Arcolezi, H. H., Couchot, J.-F., Baala, O., Contet, J.-M., Al Bouna, B., & Xiao,
 
 Arcolezi, H. H., Couchot, J.-F., Cerna, S., Guyeux, C., Royer, G., Bouna, B. Al, & Xiao, X. (2020). [Forecasting the Number of Firefighters Interventions per Region with Local-Differential-Privacy-Based Data](https://doi.org/10.1016/j.cose.2020.101888). **Computers & Security**, 96, 101888. [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf)
 
+Arcolezi, H. H., Couchot, J.-F., Cerna, S., Guyeux, C., Royer, G., Bouna, B. Al, & Xiao, X. (2020). [Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale](http://pfia2020.fr/wp-content/uploads/2020/08/Actes_CH_PFIA2020_V3.pdf). In Proceedings of the 5th *Conférence Nationale sur les Applications Pratiques de l’Intelligence Artificielle* (APIA), July, 6-13. [pdf Version](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_paper.pdf)
+
 Cerna, S., Guyeux, C., Arcolezi, H. H., Couturier, R., & Royer, G. (2020). [A comparison of LSTM and XGBoost for predicting firemen interventions](https://doi.org/10.1007/978-3-030-45691-7_39). In Proceedings of the 8th *World Conference on Information Systems and Technologies* (WorldCIST), April, 424–434. [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf)
 
 Cerna, S., Guyeux, C., Arcolezi, H. H., & Royer, G. (2020). [Boosting Methods for Predicting Firemen Interventions](https://doi.org/10.1109/ICICS49469.2020.239488). In Proceedings of the 11th *International Conference on Information and Communication Systems* (ICICS), 001–006. [Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf)
