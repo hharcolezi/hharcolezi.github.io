@@ -20,7 +20,7 @@ The superscript \* indicates equal contributions to the paper.
 ### 2021
 \*Arcolezi, H. H., \*Cerna, S., Couchot, J.-F., Guyeux, C., & Makhoul, A. (2021). [Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities](https://doi.org/10.1109/tii.2021.3123588). **IEEE Transactions on Industrial Informatics**, Early Access. [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf)
 
-Arcolezi, H. H., Couchot, J.-F., Bouna, B. Al, & Xiao, X. (2021). [Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy](https://www.cikm2021.org/accepted-papers/full). In Proceedings of the 30th *ACM International Conference on Information and Knowledge Management* (CIKM), November, Virtual Event, QLD, Australia. [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf)
+Arcolezi, H. H., Couchot, J.-F., Bouna, B. Al, & Xiao, X. (2021). [Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy](https://dl.acm.org/doi/10.1145/3459637.3482467). In Proceedings of the 30th *ACM International Conference on Information and Knowledge Management* (CIKM), November, Virtual Event, QLD, Australia. [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf)
 
 Arcolezi, H. H., Cerna, S., Guyeux, C., & Couchot, J.-F. (2021). [Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time](https://doi.org/10.3390/mca26030056). **Mathematical and Computational Applications**, 26(3), 56. [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf)
 
