@@ -17,49 +17,49 @@ Here I list some of my peer-reviewed publications including their pdf (or author
 
 The superscript \* indicates equal contributions to the paper. 
 
-### Journal Articles (6): Classified according to four JCR ([SCImago Journal Rank](https://www.scimagojr.com/)) quartiles (Q1, Q2, Q3, and Q4) and their Impact Factor (IF) according to the year of publication.
+### Journal Articles (6): Classified according to four JCR ([SCImago Journal Rank](https://www.scimagojr.com/)) quartiles (Q1, Q2, Q3, and Q4) and its Impact Factor (IF), retrieved in the year of publication.
 
-**Title:** Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities \
+**Title:** Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. \
 **Authors:** \***Arcolezi, H. H.**; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
-**Journal:** IEEE Transactions on Industrial Informatics, Early Access, Q1, IF: 10.215 \
-**Year:** 2021 \
+**Journal:** IEEE Transactions on Industrial Informatics, Early Access, Q1, IF: 10.215. \
+**Year:** 2021. \
 **Access:** <https://doi.org/10.1109/tii.2021.3123588> \
-**Resources:** [Authors' pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf)
+**Resources:** [Authors' pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
 
-**Title:** Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact \
+**Title:** Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact. \
 **Authors:** Cerna, S.; **Arcolezi, H. H.**; Guyeux, C.; Royer-Fey, G.; Chevallier, C. \
-**Journal:** Applied Soft Computing, vol 109, p.107561, Q1, IF: 6.725 \
-**Year:** 2021 \
+**Journal:** Applied Soft Computing, vol. 109, p.107561, Q1, IF: 6.725. \
+**Year:** 2021. \
 **Access:** <https://doi.org/10.1016/j.asoc.2021.107561> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf)
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf).
 
-**Title:** RISE Controller Tuning and System Identification Through Machine Learning for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation \
+**Title:** RISE Controller Tuning and System Identification Through Machine Learning for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
 **Authors:** **Arcolezi, H. H.**; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
-**Journal:** Engineering Applications of Artificial Intelligence, vol 102, p.104294, Q1, IF: 6.212 \
-**Year:** 2021 \
+**Journal:** Engineering Applications of Artificial Intelligence, vol. 102, p.104294, Q1, IF: 6.212. \
+**Year:** 2021. \
 **Access:** <https://doi.org/10.1016/j.engappai.2021.104294> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf)
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf).
 
-**Title:** Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time \
+**Title:** Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time. \
 **Authors:** **Arcolezi, H. H.**; Cerna, S.; Guyeux, C.; Couchot, J.-F. \ 
-**Journal:** Mathematical and Computational Applications, vol 26(3), p.56 \
-**Year:** 2021 \
+**Journal:** Mathematical and Computational Applications, vol. 26(3), p.56. \
+**Year:** 2021. \
 **Access:** <https://doi.org/10.3390/mca26030056> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf)
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf).
 
-**Title:** Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data \
+**Title:** Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data. \
 **Authors:** **Arcolezi, H. H.**; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. \
-**Journal:** Computers & Security, vol 96, p.101888, Q1, IF: 3.579 \
-**Year:** 2020 \
+**Journal:** Computers & Security, vol. 96, p.101888, Q1, IF: 3.579. \
+**Year:** 2020. \
 **Access:** <https://doi.org/10.1016/j.cose.2020.101888> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf)
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf).
 
-**Title:** Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks \
+**Title:** Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks. \
 **Authors:** **Arcolezi, H. H.**; Nunes, W. R. B. M.; Cerna, S.; de Araujo, R. A.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
-**Journal:** Research on Biomedical Engineering, vol 36(4), p.511-526, Q4 \
-**Year:** 2020 \
+**Journal:** Research on Biomedical Engineering, vol. 36(4), p.511-526, Q4. \
+**Year:** 2020. \
 **Access:** <https://doi.org/10.1007/s42600-020-00089-1> \
-**Resources:** [pdf Version](https://rdcu.be/b6NV9)
+**Resources:** [pdf Version](https://rdcu.be/b6NV9).
 
 
 ### International Peer-reviewed Conference Proceedings (7): Classified according to four CORE ([Computing Research and Education](http://portal.core.edu.au/conf-ranks/)) rankings (A*, A, B, and C).
