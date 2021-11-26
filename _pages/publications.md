@@ -69,7 +69,7 @@ The superscript \* indicates equal contributions to the paper.
 **Conference:** International Conference on Information and Knowledge Management. CORE: A (Acceptance rate: 21.7%). \
 **Year:** 2021. \
 **Access:** <https://doi.org/10.1145/3459637.3482467> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Code](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
 
 **Title:** Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Baala, O.; Contet, J.-M.; Al Bouna, B.; Xiao, X. \
@@ -90,7 +90,7 @@ The superscript \* indicates equal contributions to the paper.
 **Conference:** IFIP International Summer School on Privacy and Identity Management. \
 **Year:** 2020. \
 **Access:** <https://doi.org/10.1007/978-3-030-72465-8_3> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf), [Code](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D).
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D).
 
 **Title:** Boosting Methods for Predicting Firemen Interventions. \
 **Authors:** Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. \
