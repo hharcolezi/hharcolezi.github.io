@@ -17,22 +17,19 @@ Education
 * M.Eng. in Electrical Engineering, São Paulo State University (UNESP), 2019.
 * B.Eng. in Electrical Engineering, Mato Grosso State University (UNEMAT), 2017.
 
-Research Experience
+Additional Training
 ======
-* Research Internship, Université du Québec à Montréal (UQAM), November 2021.
+* Research Internship, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov.-Dec. (one month), 2021.
+* 6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS’21). Marseille, France. Oct., 2021.
+* Data Anonymisation and Reidentification Competition (DARC) at the 11th Atelier sur la Protection de la Vie Privée (APVP'21). Online. Jun., 2021 (Virtual).
+* 1st Inria-DFKI European Summer School on AI (IDAI 2021). Paris, France. Jul., 2021 (Virtual).
+* 15th IFIP Summer School on Privacy and Identity Management. Maribor, Slovenia. Sep., 2020 (Virtual).
 
 Grants
 ======
 * EIPHI Graduate School Ph.D. Student Mobility Grant (2021).
 * SIGIR Grant for Student Authors (2021).
 * UNEMAT Undergrad Grants (2013-2016).
-
-Additional Training
-======
-* 6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS’21). Marseille, France. Oct., 2021.
-* Data Anonymisation and Reidentification Competition (DARC) at the 11th Atelier sur la Protection de la Vie Privée (APVP'21). 
-* 1st Inria-DFKI European Summer School on AI (IDAI 2021). Paris, France. Jul., 2021 (Virtual).
-* 15th IFIP Summer School on Privacy and Identity Management. Maribor, Slovenia. Sep., 2020 (Virtual).
 
 Skills
 ======
