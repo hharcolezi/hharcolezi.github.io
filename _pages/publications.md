@@ -66,7 +66,7 @@ The superscript \* indicates equal contributions to the paper.
 
 **Title:** Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
-**Conference:** ACM International Conference on Information and Knowledge Management. CORE: A (Acceptance rate: 21.7%). \
+**Conference:** International Conference on Information and Knowledge Management. CORE: A (Acceptance rate: 21.7%). \
 **Year:** 2021. \
 **Access:** <https://doi.org/10.1145/3459637.3482467> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Code](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
