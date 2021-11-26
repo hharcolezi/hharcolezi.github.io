@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-Here I list some of my peer-reviewed publications including their pdf (or authors' version) and their resources when applicable (e.g., presentation, video presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
+Here I list some of my peer-reviewed publications including their pdf (or authors' version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
 
 ## Technical reports
 
@@ -64,13 +64,64 @@ The superscript \* indicates equal contributions to the paper.
 
 ### International Conference Proceedings (7): Classified according to four CORE ([Computing Research and Education](http://portal.core.edu.au/conf-ranks/)) rankings (A*, A, B, and C).
 
-Arcolezi, H. H., Couchot, J.-F., Bouna, B. Al, & Xiao, X. (2021). [Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy](https://dl.acm.org/doi/10.1145/3459637.3482467). In Proceedings of the 30th *ACM International Conference on Information and Knowledge Management* (CIKM), November, Virtual Event, QLD, Australia. [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf)
+**Title:** Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. \
+**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
+**Conference:** ACM International Conference on Information and Knowledge Management. CORE: A (Acceptance rate: 21.7%). \
+**Year:** 2021. \
+**Access:** <https://doi.org/10.1145/3459637.3482467> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Code](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
 
-Arcolezi, H. H., Couchot, J.-F., Baala, O., Contet, J.-M., Al Bouna, B., & Xiao, X. (2020). [Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy](https://doi.org/10.1109/IWCMC48107.2020.9148138). In Proceedings of the 16th *International Wireless Communications and Mobile Computing* (IWCMC), June, 1689–1694. [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf)
 
-Arcolezi, H. H., Couchot, J.-F., Bouna, B. Al, & Xiao, X. (2021). [Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy](https://doi.org/10.1007/978-3-030-72465-8_3). In Proceedings of the 15th *IFIP International Summer School on Privacy and Identity Management*, September, 40-57. Springer, Cham. [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf)
+**Title:** Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy. \
+**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Baala, O.; Contet, J.-M.; Al Bouna, B.; Xiao, X. \
+**Conference:** International Wireless Communications and Mobile Computing. CORE: B (Acceptance rate: 38%). \
+**Year:** 2020. \
+**Access:** <https://doi.org/10.1109/iwcmc48107.2020.9148138> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf), [Presentation](http://hharcolezi.github.io/files/2020_IWCMC_Presentation), [Dataset](https://github.com/hharcolezi/OpenMSFIMU).
 
-Cerna, S., Guyeux, C., Arcolezi, H. H., Couturier, R., & Royer, G. (2020). [A comparison of LSTM and XGBoost for predicting firemen interventions](https://doi.org/10.1007/978-3-030-45691-7_39). In Proceedings of the 8th *World Conference on Information Systems and Technologies* (WorldCIST), April, 424–434. [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf)
+**Title:** A Comparison of LSTM and XGBoost for Predicting Firemen Interventions. \
+**Authors:** Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. \
+**Conference:** World Conference on Information Systems and Technologies. CORE: C. \
+**Year:** 2020. \
+**Access:** <https://doi.org/10.1007/978-3-030-45691-7_39> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf).
+
+
+**Title:** Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy. \
+**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
+**Conference:** IFIP International Summer School on Privacy and Identity Management. \
+**Year:** 2020. \
+**Access:** <https://doi.org/10.1007/978-3-030-72465-8_3> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf), [Code](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D).
+
+**Title:** . \
+**Authors:** . \
+**Conference:** . \
+**Year:** . \
+**Access:** <> \
+**Resources:** .
+
+
+**Title:** . \
+**Authors:** . \
+**Conference:** . \
+**Year:** . \
+**Access:** <> \
+**Resources:** .
+
+
+**Title:** . \
+**Authors:** . \
+**Conference:** . \
+**Year:** . \
+**Access:** <> \
+**Resources:** .
+
+
+
+
+
+
 
 Cerna, S., Guyeux, C., Arcolezi, H. H., & Royer, G. (2020). [Boosting Methods for Predicting Firemen Interventions](https://doi.org/10.1109/ICICS49469.2020.239488). In Proceedings of the 11th *International Conference on Information and Communication Systems* (ICICS), 001–006. [Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf)
 
