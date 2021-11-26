@@ -7,9 +7,9 @@ author_profile: true
 
 ## Technical reports
 
-My master thesis dissertation "" can be [downloaded here](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf).
+My master thesis dissertation "A Novel Robust and Intelligent Control Based Approach for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation" can be [downloaded here](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf).
 
-My bachelor final report "" (in Portuguese) can be [downloaded here](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
+My bachelor final report "Um Estudo Complementar ao Projeto de Controle PID no Caso do Pêndulo Invertido" (in Portuguese) can be [downloaded here](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
 
 ## Peer-Reviewed Publications
 
