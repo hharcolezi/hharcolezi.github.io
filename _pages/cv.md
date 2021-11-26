@@ -26,6 +26,7 @@ Research Experience
 
 Additional Training
 ======
+* 6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS’21). Marseille, France. Oct., 2021.
 * Data Anonymisation and Reidentification Competition (DARC) at the 11th Atelier sur la Protection de la Vie Privée (APVP'21). 
 * 1st Inria-DFKI European Summer School on AI (IDAI 2021). Paris, France. Jul., 2021 (Virtual).
 * 15th IFIP Summer School on Privacy and Identity Management. Maribor, Slovenia. Sep., 2020 (Virtual).
