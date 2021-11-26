@@ -11,18 +11,18 @@ My master thesis dissertation can be [downloaded here](http://hharcolezi.github.
 
 My bachelor final report (in Portuguese) can be [downloaded here](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
 
-## Articles
+## Peer-Reviewed Publications
 
 Here I list some of my peer-reviewed publications including their pdf (or authors' version) and resources when applicable (e.g., presentation, video presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094) or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
 
 The superscript \* indicates equal contributions to the paper. 
 
-### Journal: 
-**Classified according to four JCR ([SCImago Journal Rank](https://www.scimagojr.com/)) quartiles (Q1, Q2, Q3, and Q4) and their Impact Factor (IF) according to the year of publication.**
+### Journal Articles (6): Classified according to four JCR ([SCImago Journal Rank](https://www.scimagojr.com/)) quartiles (Q1, Q2, Q3, and Q4) and their Impact Factor (IF) according to the year of publication.
 
-Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities \
-\*Arcolezi, H. H.; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
-IEEE Transactions on Industrial Informatics, Early Access, **Q1**, **IF 10.215**. \
+Title: Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities \
+Authors: \*Arcolezi, H. H.; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
+Journal: IEEE Transactions on Industrial Informatics, Early Access, **Q1**, **IF 10.215**. \
+Year: 2021
 Access: https://doi.org/10.1109/tii.2021.3123588 \
 Resources: [Authors' pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
 
