@@ -18,6 +18,6 @@ Currently, I research Differential Privacy (DP) with a focus on optimizing local
 * I received a Ph.D. mobility grant to visit the [Université du Québec à Montréal](https://uqam.ca/) and work with Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/) in November 2021.
 * Our paper "Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities" has been accepted to [IEEE Transactions on Industrial Informatics](http://www.ieee-ies.org/pubs/transactions-on-industrial-informatics).
 * Our paper "Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy" has been accepted to [CIKM 2021](https://www.cikm2021.org/) with a SIGIR Grant for Student Authors.
-* I have been selected to attend the [6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS'21)](https://gdr-securite.irisa.fr/redocs/redocs21/).
+* I have been selected to attend the [6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS'21)](https://gdr-securite.irisa.fr/redocs/redocs21/) in October 2021.
 
 Last update: 2021-11-26
