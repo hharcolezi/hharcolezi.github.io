@@ -21,27 +21,31 @@ The superscript \* indicates equal contributions to the paper.
 
 **Title:** Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities \
 **Authors:** \***Arcolezi, H. H.**; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
-**Journal:** IEEE Transactions on Industrial Informatics, Early Access, Q1, IF: 10.215. \
+**Journal:** IEEE Transactions on Industrial Informatics, Early Access, Q1, IF: 10.215 \
 **Year:** 2021
 **Access:** <https://doi.org/10.1109/tii.2021.3123588> \
-**Resources:** [Authors' pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
+**Resources:** [Authors' pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf)
 
 **Title:** Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact \
 **Authors:** Cerna, S.; **Arcolezi, H. H.**; Guyeux, C.; Royer-Fey, G.; Chevallier, C. \
-**Journal:** Applied Soft Computing, vol 109, p.107561, Q1, IF: 6.725.
-**Year:** 2021
-**Access:** <https://doi.org/10.1016/j.asoc.2021.107561>
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf).
+**Journal:** Applied Soft Computing, vol 109, p.107561, Q1, IF: 6.725 \
+**Year:** 2021 \
+**Access:** <https://doi.org/10.1016/j.asoc.2021.107561> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf)
 
 
 
 
-**Title:**
-**Authors:**
-**Journal:**
-**Year:**
-**Access:**
-**Resources:**
+
+
+
+**Title:** 
+RISE Controller Tuning and System Identification Through Machine Learning for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation \
+**Authors:** **Arcolezi, H. H.**; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
+**Journal:** Engineering Applications of Artificial Intelligence, vol 102, p.104294, Q1, IF: 6.212
+**Year:** 2021 \
+**Access:** <https://doi.org/10.1016/j.engappai.2021.104294> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf)
 
 **Title:**
 **Authors:**
@@ -63,9 +67,6 @@ Arcolezi, H. H., Cerna, S., Guyeux, C., & Couchot, J.-F. (2021). [Preserving Geo
 Arcolezi, H. H., Nunes, W. R. B. M., Cerna, S., Araujo, R. A. de, Sanches, M. A. A., Teixeira, M. C. M., & de Carvalho, A. A. (2020). [Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks](https://doi.org/10.1007/s42600-020-00089-1). **Research on Biomedical Engineering**. [pdf Version](https://rdcu.be/b6NV9).
 
 
-Cerna, S., Arcolezi, H. H., Guyeux, C., Royer-Fey, G., & Chevallier, C. (2021). [Machine learning-based forecasting of firemen ambulances’ turnaround time in hospitals, considering the COVID-19 impact](https://doi.org/10.1016/j.asoc.2021.107561). **Applied Soft Computing**, 109, 107561. 
-
-Arcolezi, H. H., Nunes, W. R. B. M., Araujo, R. A. de, Cerna, S., Sanches, M. A. A., Teixeira, M. C. M., & de Carvalho, A. A. (2021). [RISE controller tuning and system identification through machine learning for human lower limb rehabilitation via neuromuscular electrical stimulation](https://doi.org/10.1016/j.engappai.2021.104294). **Engineering Applications of Artificial Intelligence**, 102(April), 104294. [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf)
 
 Arcolezi, H. H., Couchot, J.-F., Cerna, S., Guyeux, C., Royer, G., Bouna, B. Al, & Xiao, X. (2020). [Forecasting the Number of Firefighters Interventions per Region with Local-Differential-Privacy-Based Data](https://doi.org/10.1016/j.cose.2020.101888). **Computers & Security**, 96, 101888. [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf)
 
