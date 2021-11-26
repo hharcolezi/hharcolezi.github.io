@@ -62,7 +62,7 @@ The superscript \* indicates equal contributions to the paper.
 **Resources:** [pdf Version](https://rdcu.be/b6NV9).
 
 
-### International Peer-reviewed Conference Proceedings (7): Classified according to four CORE ([Computing Research and Education](http://portal.core.edu.au/conf-ranks/)) rankings (A*, A, B, and C).
+### International Conference Proceedings (7): Classified according to four CORE ([Computing Research and Education](http://portal.core.edu.au/conf-ranks/)) rankings (A*, A, B, and C).
 
 Arcolezi, H. H., Couchot, J.-F., Bouna, B. Al, & Xiao, X. (2021). [Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy](https://dl.acm.org/doi/10.1145/3459637.3482467). In Proceedings of the 30th *ACM International Conference on Information and Knowledge Management* (CIKM), November, Virtual Event, QLD, Australia. [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf)
 
@@ -79,7 +79,7 @@ Arcolezi, H. H., Nunes, W. R. B. M., Nahuis, S. L. C., Sanches, M. A. A., Teixei
 Nahuis, S. L. C., Guyeux, C., Arcolezi, H. H., Couturier, R., Royer, G., & Lotufo, A. D. P. (2019). [Long short-term memory for predicting firemen interventions](https://doi.org/10.1109/CoDIT.2019.8820671). In Proceedings of the 6th *International Conference on Control, Decision and Information Technologies* (CoDIT), 1132–1137. [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf)
 
 
-### National Peer-reviewed Conference Proceedings (3).
+### National Conference Proceedings (3).
 
 Arcolezi, H. H., Couchot, J.-F., Cerna, S., Guyeux, C., Royer, G., Bouna, B. Al, & Xiao, X. (2020). [Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale](http://pfia2020.fr/wp-content/uploads/2020/08/Actes_CH_PFIA2020_V3.pdf). In Proceedings of the 5th *Conférence Nationale sur les Applications Pratiques de l’Intelligence Artificielle* (APIA), July, 6-13. [pdf Version](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_paper.pdf)
 
