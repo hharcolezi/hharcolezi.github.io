@@ -71,13 +71,12 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <https://doi.org/10.1145/3459637.3482467> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Code](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
 
-
 **Title:** Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Baala, O.; Contet, J.-M.; Al Bouna, B.; Xiao, X. \
 **Conference:** International Wireless Communications and Mobile Computing. CORE: B (Acceptance rate: 38%). \
 **Year:** 2020. \
 **Access:** <https://doi.org/10.1109/iwcmc48107.2020.9148138> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf), [Presentation](http://hharcolezi.github.io/files/2020_IWCMC_Presentation), [Dataset](https://github.com/hharcolezi/OpenMSFIMU).
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf), [Presentation](http://hharcolezi.github.io/files/2020_IWCMC_Presentation.pdf), [Dataset](https://github.com/hharcolezi/OpenMSFIMU).
 
 **Title:** A Comparison of LSTM and XGBoost for Predicting Firemen Interventions. \
 **Authors:** Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. \
@@ -86,7 +85,6 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <https://doi.org/10.1007/978-3-030-45691-7_39> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf).
 
-
 **Title:** Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
 **Conference:** IFIP International Summer School on Privacy and Identity Management. \
@@ -94,46 +92,46 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <https://doi.org/10.1007/978-3-030-72465-8_3> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf), [Code](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D).
 
-**Title:** . \
-**Authors:** . \
-**Conference:** . \
-**Year:** . \
-**Access:** <> \
-**Resources:** .
+**Title:** Boosting Methods for Predicting Firemen Interventions. \
+**Authors:** Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. \
+**Conference:** International Conference on Information and Communication Systems. \
+**Year:** 2020. \
+**Access:** <https://doi.org/10.1109/icics49469.2020.239488> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf).
+ 
+**Title:** A RISE-based Controller Fine-tuned by an Improved Genetic Algorithm for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
+**Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; Nahuis, S. L. C.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
+**Conference:** International Conference on Control, Decision and Information Technologies. CORE: C. \
+**Year:** 2019. \
+**Access:** <https://doi.org/10.1109/codit.2019.8820357> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_control.pdf).
 
-
-**Title:** . \
-**Authors:** . \
-**Conference:** . \
-**Year:** . \
-**Access:** <> \
-**Resources:** .
-
-
-**Title:** . \
-**Authors:** . \
-**Conference:** . \
-**Year:** . \
-**Access:** <> \
-**Resources:** .
-
-
-
-
-
-
-
-Cerna, S., Guyeux, C., Arcolezi, H. H., & Royer, G. (2020). [Boosting Methods for Predicting Firemen Interventions](https://doi.org/10.1109/ICICS49469.2020.239488). In Proceedings of the 11th *International Conference on Information and Communication Systems* (ICICS), 001–006. [Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf)
-
-Arcolezi, H. H., Nunes, W. R. B. M., Nahuis, S. L. C., Sanches, M. A. A., Teixeira, M. C. M., & de Carvalho, A. A. (2019). [A RISE-based controller fine-tuned by an improved genetic algorithm for human lower limb rehabilitation via neuromuscular electrical stimulation](https://doi.org/10.1109/CoDIT.2019.8820357). In Proceedings of the 6th *International Conference on Control, Decision and Information Technologies* (CoDIT), 1197–1202. [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_control.pdf)
-
-Nahuis, S. L. C., Guyeux, C., Arcolezi, H. H., Couturier, R., Royer, G., & Lotufo, A. D. P. (2019). [Long short-term memory for predicting firemen interventions](https://doi.org/10.1109/CoDIT.2019.8820671). In Proceedings of the 6th *International Conference on Control, Decision and Information Technologies* (CoDIT), 1132–1137. [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf)
-
+**Title:** Long Short-Term Memory for Predicting Firemen Interventions. \
+**Authors:** Ñahuis, S. L. C.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G.; Lotufo, A. D. P. \
+**Conference:** International Conference on Control, Decision and Information Technologies. CORE: C. \
+**Year:** 2019. \
+**Access:** <https://doi.org/10.1109/codit.2019.8820671> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf).
 
 ### National Conference Proceedings (3).
 
-Arcolezi, H. H., Couchot, J.-F., Cerna, S., Guyeux, C., Royer, G., Bouna, B. Al, & Xiao, X. (2020). [Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale](http://pfia2020.fr/wp-content/uploads/2020/08/Actes_CH_PFIA2020_V3.pdf). In Proceedings of the 5th *Conférence Nationale sur les Applications Pratiques de l’Intelligence Artificielle* (APIA), July, 6-13. [pdf Version](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_paper.pdf)
+**Title:** Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale. \
+**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. \
+**Conference:** Conférence Nationale sur les Applications Pratiques de l’Intelligence Artificielle. \
+**Year:** 2020. \
+**Access:** <http://pfia2020.fr/wp-content/uploads/2020/08/Actes_CH_PFIA2020_V3.pdf> \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_paper.pdf).
 
-Arcolezi, H. H., Nunes, W. R. B. M., Araujo, R. A. de, Cerna, S., Sanches, M. A. A., Teixeira, M. C. M., & de Carvalho, A. A. (2019). [A Robust and Intelligent RISE-based Control for Human Lower Limb Tracking via Neuromuscular Electrical Stimulation](http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1683/1152). In Proceedings of the XIV *Conferência Brasileira de Dinâmica, Controle e Aplicações*. [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_control.pdf).
+**Title:** A Robust and Intelligent RISE-based Control for Human Lower Limb Tracking via Neuromuscular Electrical Stimulation. \
+**Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
+**Conference:** Conferência Brasileira de Dinâmica, Controle e Aplicações. \
+**Year:** 2019. \
+**Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1683/1152> \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_control.pdf).
 
-Arcolezi, H. H., Nunes, W. R. B. M., Araujo, R. A. de, Cerna, S., Sanches, M. A. A., Teixeira, M. C. M., & de Carvalho, A. A. (2019). [On the Ability to Identify the Knee Joint Position Under Neuromuscular Electrical Stimulation Using Long Short-Term Memory Neural Networks](http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153). In Proceedings of the XIV *Conferência Brasileira de Dinâmica, Controle e Aplicações*. [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
+**Title:** On the Ability to Identify the Knee Joint Position Under Neuromuscular Electrical Stimulation Using Long Short-Term Memory Neural Networks. \
+**Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
+**Conference:** Conferência Brasileira de Dinâmica, Controle e Aplicações. \
+**Year:** 2019. \
+**Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153> \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
