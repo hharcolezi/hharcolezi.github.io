@@ -13,12 +13,18 @@ My bachelor final report (in Portuguese) can be [downloaded here](http://hharcol
 
 ## Articles
 
-Here I list some of my peer-reviewed publications ordered by year, including their pdf (or authors) versions. Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094) or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. Also, I post the codes of DP and LDP implementations at [ldp-protocols-mobility-cdrs](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs).
+Here I list some of my peer-reviewed publications including their pdf (or authors' version) and resources when applicable (e.g., presentation, video presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094) or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
 
 The superscript \* indicates equal contributions to the paper. 
 
-### 2021
-\*Arcolezi, H. H., \*Cerna, S., Couchot, J.-F., Guyeux, C., & Makhoul, A. (2021). [Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities](https://doi.org/10.1109/tii.2021.3123588). **IEEE Transactions on Industrial Informatics**, Early Access. [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf)
+### Journal: 
+**Classified according to four JCR ([SCImago Journal Rank](https://www.scimagojr.com/)) quartiles (Q1, Q2, Q3, and Q4) and their Impact Factor (IF) according to the year of publication.**
+
+Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities 
+\*Arcolezi, H. H.; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. 
+IEEE Transactions on Industrial Informatics, Early Access, **Q1**, **IF 10.215** .
+Access: https://doi.org/10.1109/tii.2021.3123588
+Resources: [Authors' pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
 
 Arcolezi, H. H., Couchot, J.-F., Bouna, B. Al, & Xiao, X. (2021). [Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy](https://dl.acm.org/doi/10.1145/3459637.3482467). In Proceedings of the 30th *ACM International Conference on Information and Knowledge Management* (CIKM), November, Virtual Event, QLD, Australia. [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf)
 
