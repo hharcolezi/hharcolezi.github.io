@@ -5,6 +5,8 @@ permalink: /publications/
 author_profile: true
 ---
 
+Here I list some of my peer-reviewed publications including their pdf (or authors' version) and their resources when applicable (e.g., presentation, video presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
+
 ## Technical reports
 
 My master thesis dissertation "A Novel Robust and Intelligent Control Based Approach for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation" can be [downloaded here](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf).
@@ -12,8 +14,6 @@ My master thesis dissertation "A Novel Robust and Intelligent Control Based Appr
 My bachelor final report "Um Estudo Complementar ao Projeto de Controle PID no Caso do Pêndulo Invertido" (in Portuguese) can be [downloaded here](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
 
 ## Peer-Reviewed Publications
-
-Here I list some of my peer-reviewed publications including their pdf (or authors' version) and their resources when applicable (e.g., presentation, video presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094) or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
 
 The superscript \* indicates equal contributions to the paper. 
 
