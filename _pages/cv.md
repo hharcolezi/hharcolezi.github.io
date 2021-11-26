@@ -13,15 +13,13 @@ Also available in [pdf format](http://hharcolezi.github.io/files/Complete_CV_HHA
 
 Education
 ======
-* Ph.D. in Computer Science, University Bourgogne Franche-Comté (UBFC), 2022 (expected)
-* M.Eng. in Electrical Engineering, São Paulo State University (UNESP), 2019
-* B.Eng. in Electrical Engineering, Mato Grosso State University (UNEMAT), 2017
+* Ph.D. in Computer Science, University Bourgogne Franche-Comté (UBFC), 2022 (expected).
+* M.Eng. in Electrical Engineering, São Paulo State University (UNESP), 2019.
+* B.Eng. in Electrical Engineering, Mato Grosso State University (UNEMAT), 2017.
 
 Research Experience
 ======
-* Graduate Research (Ph.D.) - Research on privacy-preserving data analytics.
-* Graduate Research (master) - Presented an automatized approach through machine learning techniques for a control-based system that stimulates lower limbs of individuals with spinal cord injury. My master thesis dissertation can be [downloaded here](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf).
-* Undergraduate Research - Researched linear control theory for a benchmarking system "inverted pendulum" during the last year of undergrad (2016-2017). My bachelor final report (in Portuguese) can be [downloaded here](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
+* Research Internship, Université du Québec à Montréal (UQAM), November 2021.
 
 Grants
 ======
