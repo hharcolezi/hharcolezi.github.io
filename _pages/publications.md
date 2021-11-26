@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-Here I list some of my peer-reviewed publications including their pdf (or authors' version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
+Here I list some of my peer-reviewed publications including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
 
 ## Technical reports
 
@@ -24,7 +24,7 @@ The superscript \* indicates equal contributions to the paper.
 **Journal:** IEEE Transactions on Industrial Informatics, Early Access. JCR: Q1, IF: 10.215. \
 **Year:** 2021. \
 **Access:** <https://doi.org/10.1109/tii.2021.3123588> \
-**Resources:** [Authors' pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
 
 **Title:** Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact. \
 **Authors:** Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C. \
