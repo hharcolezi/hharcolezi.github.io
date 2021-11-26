@@ -41,7 +41,7 @@ The superscript \* indicates equal contributions to the paper.
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf).
 
 **Title:** Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time. \
-**Authors:** *Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F. \ 
+**Authors:** *Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F. \
 **Journal:** Mathematical and Computational Applications, vol. 26(3), p.56. \
 **Year:** 2021. \
 **Access:** <https://doi.org/10.3390/mca26030056> \
