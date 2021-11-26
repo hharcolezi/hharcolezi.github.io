@@ -20,9 +20,9 @@ Education
 Additional Training
 ======
 * Research Internship, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov.-Dec. (one month), 2021.
-* 6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS’21). Marseille, France. Oct., 2021.
+* 6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS'21). Marseille, France. Oct., 2021.
 * Data Anonymisation and Reidentification Competition (DARC) at the 11th Atelier sur la Protection de la Vie Privée (APVP'21). Online. Jun., 2021 (Virtual).
-* 1st Inria-DFKI European Summer School on AI (IDAI 2021). Paris, France. Jul., 2021 (Virtual).
+* 1st Inria-DFKI European Summer School on AI (IDAI'21). Paris, France. Jul., 2021 (Virtual).
 * 15th IFIP Summer School on Privacy and Identity Management. Maribor, Slovenia. Sep., 2020 (Virtual).
 
 Grants
