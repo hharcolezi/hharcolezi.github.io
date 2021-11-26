@@ -15,7 +15,7 @@ Currently, I research Differential Privacy (DP) with a focus on optimizing local
 
 * I’m joining the [Comète research team](https://team.inria.fr/Comete/) in February 2022 as a Post-Doc fellow to work with Prof. [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/).
 * Our new preprint "Improving the Utility of Locally Differentially Private Protocols for Longitudinal and Multidimensional Frequency Estimates" can be acessed on <https://arxiv.org/abs/2111.04636>. 
-* I received a Ph.D. mobility grant to visit the [Université du Québec à Montréal](https://uqam.ca/) and work with [Sébastien Gambs](https://sebastiengambs.openum.ca/) in November 2021.
+* I received a Ph.D. mobility grant to visit the [Université du Québec à Montréal](https://uqam.ca/) and work with Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/) in November 2021.
 * Our paper "Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities" has been accepted to [IEEE Transactions on Industrial Informatics](http://www.ieee-ies.org/pubs/transactions-on-industrial-informatics).
 * Our paper "Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy" has been accepted to [CIKM 2021](https://www.cikm2021.org/) with a SIGIR Grant for Student Authors.
 * I have been selected to attend the [6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS'21)](https://gdr-securite.irisa.fr/redocs/redocs21/).
