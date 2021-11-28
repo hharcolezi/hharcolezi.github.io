@@ -17,25 +17,25 @@ My bachelor final report "Um Estudo Complementar ao Projeto de Controle PID no C
 
 The superscript \* indicates equal contributions to the paper. 
 
-### Journal Articles (6): Classified according to four JCR ([SCImago Journal Rank](https://www.scimagojr.com/)) quartiles (Q1, Q2, Q3, and Q4) and its Impact Factor (IF), retrieved in the year of publication.
+### Journal Articles (6).
 
 **Title:** Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. \
 **Authors:** \**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
-**Journal:** IEEE Transactions on Industrial Informatics, Early Access. JCR: Q1, IF: 10.215. \
+**Journal:** IEEE Transactions on Industrial Informatics, Early Access. \
 **Year:** 2021. \
 **Access:** <https://doi.org/10.1109/tii.2021.3123588> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
 
 **Title:** Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact. \
 **Authors:** Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C. \
-**Journal:** Applied Soft Computing, vol. 109, p.107561. JCR: Q1, IF: 6.725. \
+**Journal:** Applied Soft Computing, vol. 109, p.107561. \
 **Year:** 2021. \
 **Access:** <https://doi.org/10.1016/j.asoc.2021.107561> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf).
 
 **Title:** RISE Controller Tuning and System Identification Through Machine Learning for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
 **Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
-**Journal:** Engineering Applications of Artificial Intelligence, vol. 102, p.104294. JCR: Q1, IF: 6.212. \
+**Journal:** Engineering Applications of Artificial Intelligence, vol. 102, p.104294. \
 **Year:** 2021. \
 **Access:** <https://doi.org/10.1016/j.engappai.2021.104294> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf).
@@ -49,38 +49,38 @@ The superscript \* indicates equal contributions to the paper.
 
 **Title:** Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. \
-**Journal:** Computers & Security, vol. 96, p.101888. JCR: Q1, IF: 3.579. \
+**Journal:** Computers & Security, vol. 96, p.101888. \
 **Year:** 2020. \
 **Access:** <https://doi.org/10.1016/j.cose.2020.101888> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf).
 
 **Title:** Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks. \
 **Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; Cerna, S.; de Araujo, R. A.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
-**Journal:** Research on Biomedical Engineering, vol. 36(4), p.511-526. JCR: Q4. \
+**Journal:** Research on Biomedical Engineering, vol. 36(4), p.511-526. \
 **Year:** 2020. \
 **Access:** <https://doi.org/10.1007/s42600-020-00089-1> \
 **Resources:** [pdf Version](https://rdcu.be/b6NV9).
 
 
-### International Conference Proceedings (7): Classified according to four CORE ([Computing Research and Education](http://portal.core.edu.au/conf-ranks/)) rankings (A*, A, B, and C).
+### International Conference Proceedings (7).
 
 **Title:** Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
-**Conference:** International Conference on Information and Knowledge Management. CORE: A (Acceptance rate: 21.7%). \
+**Conference:** International Conference on Information and Knowledge Management (Acceptance rate: 21.7%). \
 **Year:** 2021. \
 **Access:** <https://doi.org/10.1145/3459637.3482467> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
 
 **Title:** Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Baala, O.; Contet, J.-M.; Al Bouna, B.; Xiao, X. \
-**Conference:** International Wireless Communications and Mobile Computing. CORE: B (Acceptance rate: 38%). \
+**Conference:** International Wireless Communications and Mobile Computing (Acceptance rate: 38%). \
 **Year:** 2020. \
 **Access:** <https://doi.org/10.1109/iwcmc48107.2020.9148138> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf), [Presentation](http://hharcolezi.github.io/files/2020_IWCMC_Presentation.pdf), [Dataset](https://github.com/hharcolezi/OpenMSFIMU).
 
 **Title:** A Comparison of LSTM and XGBoost for Predicting Firemen Interventions. \
 **Authors:** Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. \
-**Conference:** World Conference on Information Systems and Technologies. CORE: C. \
+**Conference:** World Conference on Information Systems and Technologies. \
 **Year:** 2020. \
 **Access:** <https://doi.org/10.1007/978-3-030-45691-7_39> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf).
@@ -101,14 +101,14 @@ The superscript \* indicates equal contributions to the paper.
  
 **Title:** A RISE-based Controller Fine-tuned by an Improved Genetic Algorithm for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
 **Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; Nahuis, S. L. C.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
-**Conference:** International Conference on Control, Decision and Information Technologies. CORE: C. \
+**Conference:** International Conference on Control, Decision and Information Technologies. \
 **Year:** 2019. \
 **Access:** <https://doi.org/10.1109/codit.2019.8820357> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_control.pdf).
 
 **Title:** Long Short-Term Memory for Predicting Firemen Interventions. \
 **Authors:** Ñahuis, S. L. C.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G.; Lotufo, A. D. P. \
-**Conference:** International Conference on Control, Decision and Information Technologies. CORE: C. \
+**Conference:** International Conference on Control, Decision and Information Technologies. \
 **Year:** 2019. \
 **Access:** <https://doi.org/10.1109/codit.2019.8820671> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf).
