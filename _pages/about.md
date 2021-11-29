@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -13,7 +13,7 @@ Currently, I research Differential Privacy (DP) with a focus on optimizing local
 
 ## News
 
-* I'm excited to join the [Comète research team](https://team.inria.fr/Comete/) at [Ècole Polytechnique](https://www.polytechnique.edu/en) in February 2022 as a Post-Doc fellow to work with Prof. [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/).
+* I'm excited to join the [Comète research team](https://team.inria.fr/Comete/) at [Inria](https://www.inria.fr/en) -- [LIX](https://www.lix.polytechnique.fr/), [Ècole Polytechnique](https://www.polytechnique.edu/en) -- in February 2022 as a Post-Doc fellow to work with Prof. [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/).
 * Our new preprint "Improving the Utility of Locally Differentially Private Protocols for Longitudinal and Multidimensional Frequency Estimates" can be acessed on <https://arxiv.org/abs/2111.04636>. 
 * I'm grateful for receiving a Ph.D. mobility grant to visit the [Université du Québec à Montréal](https://uqam.ca/) and work with Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/) in November 2021.
 * Our paper "Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities" has been accepted to [IEEE Transactions on Industrial Informatics](http://www.ieee-ies.org/pubs/transactions-on-industrial-informatics).
