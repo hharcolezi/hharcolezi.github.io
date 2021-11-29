@@ -7,22 +7,6 @@ author_profile: true
 
 Here I list some of my peer-reviewed publications including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
 
-## Technical Reports (2).
-
-**Type:** Master Thesis Dissertation. \
-**Institution:** São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)).\
-**Title:** A Novel Robust and Intelligent Control Based Approach for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
-**Supervisor:** [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). \
-**Year.** 2019. \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf).
-
-**Type:** Bachelor Final Report (a.k.a. "Trabalho de Conclusão de Curso"). \
-**Institution:** Mato Grosso State University ([UNEMAT](https://unemat.br/)).\
-**Title:** Um Estudo Complementar ao Projeto de Controle PID no Caso do Pêndulo Invertido (in Portuguese). \
-**Supervisor:** [Rogério B. Quirino](http://lattes.cnpq.br/9429587919161205). \
-**Year.** 2017. \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
-
 ## Peer-Reviewed Publications
 
 The superscript \* indicates equal contributions to the paper. 
@@ -145,3 +129,19 @@ The superscript \* indicates equal contributions to the paper.
 **Year:** 2019. \
 **Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
+
+## Technical Reports (2).
+
+**Type:** Master Thesis Dissertation. \
+**Institution:** São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)).\
+**Title:** A Novel Robust and Intelligent Control Based Approach for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
+**Supervisor:** [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). \
+**Year.** 2019. \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf).
+
+**Type:** Bachelor Final Report (a.k.a. "Trabalho de Conclusão de Curso"). \
+**Institution:** Mato Grosso State University ([UNEMAT](https://unemat.br/)).\
+**Title:** Um Estudo Complementar ao Projeto de Controle PID no Caso do Pêndulo Invertido (in Portuguese). \
+**Supervisor:** [Rogério B. Quirino](http://lattes.cnpq.br/9429587919161205). \
+**Year.** 2017. \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
