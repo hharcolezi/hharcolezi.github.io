@@ -13,13 +13,21 @@ Also available in [pdf format](http://hharcolezi.github.io/files/Complete_CV_HHA
 
 Education
 ======
-* Ph.D. in Computer Science, University Bourgogne Franche-Comté (UBFC), 2022 (expected).
+* Ph.D. in Computer Science, University Bourgogne Franche-Comté (UBFC), 2022.
 * M.Eng. in Electrical Engineering, São Paulo State University (UNESP), 2019.
 * B.Eng. in Electrical Engineering, Mato Grosso State University (UNEMAT), 2017.
 
+Research Experience
+======
+
+* Visiting Researcher, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan.-Fev (one month), 2022.
+  ** Hosted by Prof. [Ligia de Loiola Cisneros](https://scholar.google.com.br/citations?user=nr-Ty6wAAAAJ&hl=pt-BR).
+* Visiting Researcher, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov.-Dec. (one month), 2021. 
+   ** Hosted by Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/).
+
+
 Additional Training
 ======
-* Research Internship, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov.-Dec. (one month), 2021.
 * 6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS'21). Marseille, France. Oct., 2021.
 * Data Anonymisation and Reidentification Competition (DARC) at the 11th Atelier sur la Protection de la Vie Privée (APVP'21). Online. Jun., 2021 (Virtual).
 * 1st Inria-DFKI European Summer School on AI (IDAI'21). Paris, France. Jul., 2021 (Virtual).
