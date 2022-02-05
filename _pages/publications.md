@@ -5,13 +5,11 @@ permalink: /publications/
 author_profile: true
 ---
 
-Here I list some of my peer-reviewed publications including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
+Here I list some of my peer-reviewed publications ordered by year including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
 
-## Peer-Reviewed Publications
+## International Peer-Reviewed Publications
 
 The superscript \* indicates equal contributions to the paper. 
-
-### Journal Articles (6).
 
 **Title:** Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. \
 **Authors:** \**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
@@ -19,6 +17,20 @@ The superscript \* indicates equal contributions to the paper.
 **Year:** 2021. \
 **Access:** <https://doi.org/10.1109/tii.2021.3123588> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
+
+**Title:** Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. \
+**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
+**Conference:** International Conference on Information and Knowledge Management (Acceptance rate: 21.7%). \
+**Year:** 2021. \
+**Access:** <https://doi.org/10.1145/3459637.3482467> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
+
+**Title:** Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time. \
+**Authors:** *Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F. \
+**Journal:** Mathematical and Computational Applications, vol. 26(3), p.56. \
+**Year:** 2021. \
+**Access:** <https://doi.org/10.3390/mca26030056> \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf).
 
 **Title:** Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact. \
 **Authors:** Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C. \
@@ -34,20 +46,6 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <https://doi.org/10.1016/j.engappai.2021.104294> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf).
 
-**Title:** Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time. \
-**Authors:** *Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F. \
-**Journal:** Mathematical and Computational Applications, vol. 26(3), p.56. \
-**Year:** 2021. \
-**Access:** <https://doi.org/10.3390/mca26030056> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf).
-
-**Title:** Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data. \
-**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. \
-**Journal:** Computers & Security, vol. 96, p.101888. \
-**Year:** 2020. \
-**Access:** <https://doi.org/10.1016/j.cose.2020.101888> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf).
-
 **Title:** Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks. \
 **Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; Cerna, S.; de Araujo, R. A.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
 **Journal:** Research on Biomedical Engineering, vol. 36(4), p.511-526. \
@@ -55,15 +53,12 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <https://doi.org/10.1007/s42600-020-00089-1> \
 **Resources:** [pdf Version](https://rdcu.be/b6NV9).
 
-
-### International Conference Proceedings (7).
-
-**Title:** Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. \
+**Title:** Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
-**Conference:** International Conference on Information and Knowledge Management (Acceptance rate: 21.7%). \
-**Year:** 2021. \
-**Access:** <https://doi.org/10.1145/3459637.3482467> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
+**Conference:** IFIP International Summer School on Privacy and Identity Management. \
+**Year:** 2020. \
+**Access:** <https://doi.org/10.1007/978-3-030-72465-8_3> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D).
 
 **Title:** Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Baala, O.; Contet, J.-M.; Al Bouna, B.; Xiao, X. \
@@ -72,19 +67,19 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <https://doi.org/10.1109/iwcmc48107.2020.9148138> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf), [Presentation](http://hharcolezi.github.io/files/2020_IWCMC_Presentation.pdf), [Dataset](https://github.com/hharcolezi/OpenMSFIMU).
 
+**Title:** Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data. \
+**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. \
+**Journal:** Computers & Security, vol. 96, p.101888. \
+**Year:** 2020. \
+**Access:** <https://doi.org/10.1016/j.cose.2020.101888> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf).
+
 **Title:** A Comparison of LSTM and XGBoost for Predicting Firemen Interventions. \
 **Authors:** Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. \
 **Conference:** World Conference on Information Systems and Technologies. \
 **Year:** 2020. \
 **Access:** <https://doi.org/10.1007/978-3-030-45691-7_39> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf).
-
-**Title:** Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy. \
-**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
-**Conference:** IFIP International Summer School on Privacy and Identity Management. \
-**Year:** 2020. \
-**Access:** <https://doi.org/10.1007/978-3-030-72465-8_3> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D).
 
 **Title:** Boosting Methods for Predicting Firemen Interventions. \
 **Authors:** Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. \
@@ -107,7 +102,7 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <https://doi.org/10.1109/codit.2019.8820671> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf).
 
-### National Conference Proceedings (3).
+## National Conference Proceedings
 
 **Title:** Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. \
@@ -130,7 +125,7 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
 
-## Technical Reports (2).
+## Technical Reports
 
 **Type:** Master Thesis Dissertation. \
 **Institution:** São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)).\
