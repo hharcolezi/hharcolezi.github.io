@@ -21,9 +21,9 @@ Research Experience
 ======
 
 * Visiting Researcher, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan.-Fev (one month), 2022.
-  ** Hosted by Prof. [Ligia de Loiola Cisneros](https://scholar.google.com.br/citations?user=nr-Ty6wAAAAJ&hl=pt-BR).
+  * Hosted by Prof. [Ligia de Loiola Cisneros](https://scholar.google.com.br/citations?user=nr-Ty6wAAAAJ&hl=pt-BR).
 * Visiting Researcher, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov.-Dec. (one month), 2021. 
-   ** Hosted by Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/).
+  * Hosted by Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/).
 
 
 Additional Training
