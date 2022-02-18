@@ -141,12 +141,6 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <https://editorarealize.com.br/artigo/visualizar/28867> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_CONAPESC_Control_PID.pdf).
 
-**Title:** Análise da Inserção do Ganho Proporcional no Método de Controle por Servossistema do Tipo 1 no Sistema do Pêndulo Invertido. \
-**Authors:** *Arcolezi, H. H.*; Bassi, B.; Roanes, H. T. F.; Andrade, T. G.; Quirino, R. B. \
-**Conference:** Congresso das Engenharias do Estado de Mato Grosso. \
-**Year:** 2017. \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_COENG_Control_PI.pdf).
-
 ## Technical Reports
 
 **Type:** Master Thesis Dissertation. \
