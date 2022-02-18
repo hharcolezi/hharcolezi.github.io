@@ -131,7 +131,7 @@ The superscript \* indicates equal contributions to the paper.
 **Authors:** *Arcolezi, H. H.*; Quirino, R. B. \
 **Conference:** Congresso Brasileiro de Educação em Engenharia. \
 **Year:** 2017. \
-**Access:** <http://www.abenge.org.br/sis_submetidos.php?acao=abrir&evento=COBENGE17&codigo=COBENGE17_00002_00000509.pdf> \
+**Access:** <http://www.abenge.org.br/sis_artigos.php> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_COBENGE_Control_PID.pdf).
 
 **Title:** Um Estudo Complementar ao Projeto de Controle PID do Pêndulo Invertido. \
@@ -145,7 +145,6 @@ The superscript \* indicates equal contributions to the paper.
 **Authors:** *Arcolezi, H. H.*; Bassi, B.; Roanes, H. T. F.; Andrade, T. G.; Quirino, R. B. \
 **Conference:** Congresso das Engenharias do Estado de Mato Grosso. \
 **Year:** 2017. \
-**Access:** <https://www.researchgate.net/publication/333869141_ANALISE_DA_INSERCAO_DO_GANHO_PROPORCIONAL_NO_METODO_DE_CONTROLE_POR_SERVOSSISTEMA_DO_TIPO_1_NO_SISTEMA_DO_PENDULO_INVERTIDO> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_COENG_Control_PI.pdf).
 
 ## Technical Reports
