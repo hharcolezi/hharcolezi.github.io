@@ -7,9 +7,11 @@ author_profile: true
 
 Here I list some of my peer-reviewed publications ordered by year including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
 
-## International Peer-Reviewed Publications
+The author order indicates the magnitude of contribution, with the first author adding the most value.
 
 The superscript \* indicates equal contributions to the paper. 
+
+## International Peer-Reviewed Publications
 
 **Title:** Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. \
 **Authors:** \**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
@@ -124,6 +126,34 @@ The superscript \* indicates equal contributions to the paper.
 **Year:** 2019. \
 **Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
+
+**Title:** On the Ability to Identify the Knee Joint Position Under Neuromuscular Electrical Stimulation Using Long Short-Term Memory Neural Networks. \
+**Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
+**Conference:** Conferência Brasileira de Dinâmica, Controle e Aplicações. \
+**Year:** 2019. \
+**Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153> \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
+
+**Title:**  Um Estudo Complementar do Controle PID Servo e Regulador Aplicado ao Sistema Pêndulo Invertido. \
+**Authors:** *Arcolezi, H. H.*; Quirino, R. B. \
+**Conference:** Congresso Brasileiro de Educação em Engenharia. \
+**Year:** 2017. \
+**Access:** <http://www.abenge.org.br/sis_submetidos.php?acao=abrir&evento=COBENGE17&codigo=COBENGE17_00002_00000509.pdf> \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_COBENGE_Control_PID.pdf).
+
+**Title:** Um Estudo Complementar ao Projeto de Controle PID do Pêndulo Invertido. \
+**Authors:** *Arcolezi, H. H.*; Quirino, R. B. \
+**Conference:** Congresso Nacional de Pesquisa e Ensino em Ciências. \
+**Year:** 2017. \
+**Access:** <https://editorarealize.com.br/artigo/visualizar/28867> \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_CONAPESC_Control_PID.pdf).
+
+**Title:** Análise da Inserção do Ganho Proporcional no Método de Controle por Servossistema do Tipo 1 no Sistema do Pêndulo Invertido. \
+**Authors:** *Arcolezi, H. H.*; Bassi, B.; Roanes, H. T. F.; Andrade, T. G.; Quirino, R. B. \
+**Conference:** Congresso das Engenharias do Estado de Mato Grosso. \
+**Year:** 2017. \
+**Access:** <https://www.researchgate.net/publication/333869141_ANALISE_DA_INSERCAO_DO_GANHO_PROPORCIONAL_NO_METODO_DE_CONTROLE_POR_SERVOSSISTEMA_DO_TIPO_1_NO_SISTEMA_DO_PENDULO_INVERTIDO> \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_COENG_Control_PI.pdf).
 
 ## Technical Reports
 
