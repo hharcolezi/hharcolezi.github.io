@@ -20,7 +20,7 @@ Education
 Research Experience
 ======
 
-* Visiting Researcher, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan.-Fev (one month), 2022.
+* Visiting Researcher, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan.-Fev (three weeks), 2022.
   * Hosted by Prof. [Ligia de Loiola Cisneros](https://scholar.google.com.br/citations?user=nr-Ty6wAAAAJ&hl=pt-BR).
 * Visiting Researcher, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov.-Dec. (one month), 2021. 
   * Hosted by Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/).
@@ -38,17 +38,6 @@ Grants
 * EIPHI Graduate School Ph.D. Student Mobility Grant (2021).
 * SIGIR Grant for Student Authors (2021).
 * UNEMAT Undergrad Grants (2013-2016).
-
-Skills
-======
-* Programming languages: Python, Matlab & Simulink, Visual Basic.
-* Libraries: Keras, TensorFlow, PyTorch, Scikit-learn, Matplotlib, Pandas, Numpy, GEKKO, Scipy, Sympy, Ray, Numba, Scikit-fuzzy.
-* Operating Systems: Windows 7/10, Linux (Debian and Ubuntu).
-* Other tools: Labview, Sun Grid Engine (SGE), Latex, MS Office, AutoCAD, AltoQI Lumine, Multisim. 
-* Theoretical: 
-  * Data privacy: Differential privacy, local differential privacy, geo-indistinguishability, k-anonymity and its variants (l-diversity, t-closeness, ...), privacy-preserving machine learning;
-  * Machine learning: Classification tasks (binary, multiclass), regression tasks, time series forecasting, clustering, decision tree-based algorithms, deep learning (feedforward and recurrent neural networks);
-  * Others: Linear system optimization, heuristics, metaheuristics, (non)linear control, (non)linear system identification, evolutionary algorithms, electric circuits, numerical methods, fuzzy logic, programmable logic controller, digital circuits.
 
 Languages
 ======
