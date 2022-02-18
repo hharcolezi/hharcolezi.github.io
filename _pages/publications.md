@@ -127,13 +127,6 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
 
-**Title:** On the Ability to Identify the Knee Joint Position Under Neuromuscular Electrical Stimulation Using Long Short-Term Memory Neural Networks. \
-**Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
-**Conference:** Conferência Brasileira de Dinâmica, Controle e Aplicações. \
-**Year:** 2019. \
-**Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
-
 **Title:**  Um Estudo Complementar do Controle PID Servo e Regulador Aplicado ao Sistema Pêndulo Invertido. \
 **Authors:** *Arcolezi, H. H.*; Quirino, R. B. \
 **Conference:** Congresso Brasileiro de Educação em Engenharia. \
