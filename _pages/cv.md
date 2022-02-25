@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-Also available in [pdf format](http://hharcolezi.github.io/files/Complete_CV_HHA_Sep_2021.pdf).
+[Complete CV](http://hharcolezi.github.io/files/Complete_CV_HHA.pdf) / [Short CV](http://hharcolezi.github.io/files/Short_CV_HHA.pdf).
 
 {% include base_path %}
 
