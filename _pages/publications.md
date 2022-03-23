@@ -13,6 +13,8 @@ The superscript \* indicates equal contributions to the paper.
 
 ## International Peer-Reviewed Publications
 
+### 2021
+
 **Title:** Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. \
 **Authors:** \**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
 **Journal:** IEEE Transactions on Industrial Informatics, Early Access. \
@@ -47,6 +49,8 @@ The superscript \* indicates equal contributions to the paper.
 **Year:** 2021. \
 **Access:** <https://doi.org/10.1016/j.engappai.2021.104294> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf).
+
+### 2020
 
 **Title:** Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks. \
 **Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; Cerna, S.; de Araujo, R. A.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
@@ -89,7 +93,9 @@ The superscript \* indicates equal contributions to the paper.
 **Year:** 2020. \
 **Access:** <https://doi.org/10.1109/icics49469.2020.239488> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf).
- 
+
+### 2019
+
 **Title:** A RISE-based Controller Fine-tuned by an Improved Genetic Algorithm for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
 **Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; Nahuis, S. L. C.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
 **Conference:** International Conference on Control, Decision and Information Technologies. \
@@ -106,6 +112,7 @@ The superscript \* indicates equal contributions to the paper.
 
 ## National Conference Proceedings
 
+### 2020
 **Title:** Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. \
 **Conference:** Conférence Nationale sur les Applications Pratiques de l’Intelligence Artificielle. \
@@ -113,6 +120,7 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <http://pfia2020.fr/wp-content/uploads/2020/08/Actes_CH_PFIA2020_V3.pdf> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_paper.pdf).
 
+### 2019
 **Title:** A Robust and Intelligent RISE-based Control for Human Lower Limb Tracking via Neuromuscular Electrical Stimulation. \
 **Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
 **Conference:** Conferência Brasileira de Dinâmica, Controle e Aplicações. \
@@ -127,6 +135,7 @@ The superscript \* indicates equal contributions to the paper.
 **Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
 
+### 2017
 **Title:**  Um Estudo Complementar do Controle PID Servo e Regulador Aplicado ao Sistema Pêndulo Invertido. \
 **Authors:** *Arcolezi, H. H.*; Quirino, R. B. \
 **Conference:** Congresso Brasileiro de Educação em Engenharia. \
