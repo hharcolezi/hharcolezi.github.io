@@ -7,9 +7,9 @@ author_profile: true
 
 Here I list some of my peer-reviewed publications ordered by year including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
 
-The author order indicates the magnitude of contribution, with the first author adding the most value.
+I maintain a list of DP and LDP implementations/tutorials at [ldp-protocols-mobility-cdrs](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs).
 
-The superscript \* indicates equal contributions to the paper. 
+The author order indicates the magnitude of contribution, with the first author adding the most value. The superscript \* indicates equal contributions to the paper. 
 
 ## International Peer-Reviewed Publications
 
@@ -31,7 +31,7 @@ The superscript \* indicates equal contributions to the paper.
 **Authors:** *Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F. \
 **Journal:** Mathematical and Computational Applications, vol. 26(3), p.56. \
 **Access:** <https://doi.org/10.3390/mca26030056> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf).
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D).
 
 **Title:** Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact. \
 **Authors:** Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C. \
