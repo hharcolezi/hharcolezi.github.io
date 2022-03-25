@@ -7,7 +7,7 @@ author_profile: true
 
 Here I list some of my peer-reviewed publications ordered by year including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
 
-I maintain a list of DP and LDP implementations/tutorials at [ldp-protocols-mobility-cdrs](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs).
+I maintain a list of DP and LDP experiments at [ldp-protocols-mobility-cdrs](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs).
 
 The author order indicates the magnitude of contribution, with the first author adding the most value. The superscript \* indicates equal contributions to the paper. 
 
