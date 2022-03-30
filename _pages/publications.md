@@ -104,7 +104,7 @@ The author order indicates the magnitude of contribution, with the first author 
 **Authors:** Cisneros, L. L.; *Arcolezi, H. H.*; Cerna, S.; Brandão, J.L.; Santos, G.C.; Navarro, T.P.; Carvalho, A.A. \
 **Conference:** XXIII Congresso da Sociedade Brasileira de Diabetes. \
 **Access:** <https://www.aem-sbem.com/wp-content/uploads/2022/03/25298_Supl.-65_04_ABEM_SBD_2021.pdf> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_CSBD_Abstract_ML_Diabetic_Foot.pdf), [Poster]((http://hharcolezi.github.io/files/2021_CSBD_Poster_ML_Diabetic_Foot.pdf).
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_CSBD_Abstract_ML_Diabetic_Foot.pdf), [Poster](http://hharcolezi.github.io/files/2021_CSBD_Poster_ML_Diabetic_Foot.pdf).
 
 ### 2020
 **Title:** Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale. \
