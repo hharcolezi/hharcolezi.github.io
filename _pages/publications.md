@@ -111,7 +111,7 @@ The author order indicates the magnitude of contribution, with the first author 
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. \
 **Conference:** Conférence Nationale sur les Applications Pratiques de l’Intelligence Artificielle. \
 **Access:** <http://pfia2020.fr/wp-content/uploads/2020/08/Actes_CH_PFIA2020_V3.pdf> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_paper.pdf).
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_paper.pdf), [Presentation](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_Presentation.pdf).
 
 ### 2019
 **Title:** A Robust and Intelligent RISE-based Control for Human Lower Limb Tracking via Neuromuscular Electrical Stimulation. \
