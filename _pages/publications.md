@@ -104,7 +104,7 @@ The author order indicates the magnitude of contribution, with the first author 
 **Authors:** Cisneros, L. L.; *Arcolezi, H. H.*; Cerna, S.; Brandão, J.L.; Santos, G.C.; Navarro, T.P.; Carvalho, A.A. \
 **Conference:** Congresso da Sociedade Brasileira de Diabetes. \
 **Access:** <https://www.aem-sbem.com/wp-content/uploads/2022/03/25298_Supl.-65_04_ABEM_SBD_2021.pdf> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_CSBD_Abstract_ML_Diabetic_Foot.pdf), [Poster](http://hharcolezi.github.io/files/2021_CSBD_Poster_ML_Diabetic_Foot.pdf).
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_CSBD_Abstract_ML_Diabetic_Foot.pdf), [Poster Presentation](http://hharcolezi.github.io/files/2021_CSBD_Poster_ML_Diabetic_Foot.pdf).
 
 ### 2020
 **Title:** Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale. \
@@ -124,7 +124,7 @@ The author order indicates the magnitude of contribution, with the first author 
 **Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
 **Conference:** Conferência Brasileira de Dinâmica, Controle e Aplicações. \
 **Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf).
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf), [Poster Presentation](http://hharcolezi.github.io/files/2019_DINCON_ident_poster.pdf).
 
 ### 2017
 **Title:**  Um Estudo Complementar do Controle PID Servo e Regulador Aplicado ao Sistema Pêndulo Invertido. \
