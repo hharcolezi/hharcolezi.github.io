@@ -103,7 +103,7 @@ The author order indicates the magnitude of contribution, with the first author 
 **Title:** Machine Learning Algorithms to Predict In-Hospital Mortality in Patients with Diabetic Foot Ulceration. \
 **Authors:** Cisneros, L. L.; *Arcolezi, H. H.*; Cerna, S.; Brandão, J.L.; Santos, G.C.; Navarro, T.P.; Carvalho, A.A. \
 **Conference:** XXIII Congresso da Sociedade Brasileira de Diabetes. \
-**Access:** <https://ediabetes2021.com.br/25298_Supl_65_04_ABEM_SBD_2021.pdf> \
+**Access:** <https://www.aem-sbem.com/wp-content/uploads/2022/03/25298_Supl.-65_04_ABEM_SBD_2021.pdf> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_CSBD_Abstract_ML_Diabetic_Foot.pdf), [Poster]((http://hharcolezi.github.io/files/2021_CSBD_Poster_ML_Diabetic_Foot.pdf).
 
 ### 2020
