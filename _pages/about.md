@@ -22,6 +22,7 @@ I am always happy to discuss the possibility of new collaborations.
 
 ## News
 
+* [Apr-22] I’m serving in the PC of the ***European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases*** ([ECML PKDD 2022](https://2022.ecmlpkdd.org/)).
 * [Nov-21] Our new preprint "Improving the Utility of Locally Differentially Private Protocols for Longitudinal and Multidimensional Frequency Estimates" can be acessed on <https://arxiv.org/abs/2111.04636>. 
 * [Nov-21] I'm grateful for receiving a Ph.D. mobility grant to visit the [Université du Québec à Montréal](https://uqam.ca/) and work with Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/) in November 2021.
 * [Oct-21] Our paper "Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities" has been accepted to [IEEE Transactions on Industrial Informatics](http://www.ieee-ies.org/pubs/transactions-on-industrial-informatics).
