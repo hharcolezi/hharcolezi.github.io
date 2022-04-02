@@ -141,7 +141,15 @@ The author order indicates the magnitude of contribution, with the first author 
 
 ## Technical Reports
 
-**Type:** Master Thesis Dissertation. \
+**Type:** Ph.D. Thesis. \
+**Institution:** University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/)).\
+**Title:** Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning. \
+**Supervisor:** [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en). \
+**Co-Supervisors:** [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb) and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/). \
+**Year.** 2022. \
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC.pdf).
+
+**Type:** Master Thesis. \
 **Institution:** São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)).\
 **Title:** A Novel Robust and Intelligent Control Based Approach for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
 **Supervisor:** [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). \
