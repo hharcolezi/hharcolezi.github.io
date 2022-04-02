@@ -147,7 +147,7 @@ The author order indicates the magnitude of contribution, with the first author 
 **Supervisor:** [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en). \
 **Co-Supervisors:** [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb) and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/). \
 **Year.** 2022. \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC.pdf).
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC.pdf), [Presentation](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/c3fnIPVqTTc).
 
 **Type:** Master Thesis. \
 **Institution:** São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)).\
