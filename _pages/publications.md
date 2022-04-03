@@ -154,7 +154,7 @@ The author order indicates the magnitude of contribution, with the first author 
 **Title:** A Novel Robust and Intelligent Control Based Approach for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
 **Supervisor:** [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). \
 **Year.** 2019. \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf).
+**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf), [Presentation](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_Presentation.pdf).
 
 **Type:** Bachelor Final Report (a.k.a. "Trabalho de Conclusão de Curso"). \
 **Institution:** Mato Grosso State University ([UNEMAT](https://unemat.br/)).\
