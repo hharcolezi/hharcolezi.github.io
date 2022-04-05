@@ -13,21 +13,21 @@ I received my Ph.D. in Computer Science from University Bourgogne Franche-Comté
 
 Currently, my research interests are differential privacy and machine learning privacy and fairness. 
 
+## News
+
+* [Apr-22] The final version of my thesis "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning" can be accessed on <https://arxiv.org/abs/2204.00850>.
+* [Apr-22] I’m serving in the PC of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML PKDD 2022](https://2022.ecmlpkdd.org/)).
+* [Jan-22] I succesfully defended my Ph.D. thesis "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning". Here are the [Presentation](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC_Presentation.pdf) and the [Video-Presentation](https://screencast-o-matic.com/watch/c3fnIPVqTTc). I would also like to thank Professors [Benjamin Nguyen](https://www.benjamin-nguyen.fr/home/index.php?title=Accueil), [Mathieu Cunche](https://perso.citi-lab.fr/mcunche/), [Stéphane Chrétien](https://sites.google.com/site/stephanegchretien/home), and [Mário S. Alvim](https://homepages.dcc.ufmg.br/~msalvim/), who kindly accepted to be part of my dissertation jury and for their valuable suggestions on research perspectives. 
+* [Nov-21] Our new preprint "Improving the Utility of Locally Differentially Private Protocols for Longitudinal and Multidimensional Frequency Estimates" can be acessed on <https://arxiv.org/abs/2111.04636>. 
+* [Nov-21] I'm grateful for receiving a Ph.D. mobility grant to visit the [Université du Québec à Montréal](https://uqam.ca/) and work with Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/) in November 2021.
+* [Oct-21] Our paper "Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities" has been accepted to [IEEE Transactions on Industrial Informatics](http://www.ieee-ies.org/pubs/transactions-on-industrial-informatics).
+* [Aug-21] Our paper "Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy" has been accepted to [CIKM 2021](https://www.cikm2021.org/) with a SIGIR Grant for Student Authors.
+
 ## Contact
 
 I am always happy to discuss the possibility of new collaborations.
 
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 1 Rue Honoré d'Estienne d'Orves, 91120, Palaiseau, France.
-
-## News
-
-* [Apr-22] The final version of my thesis "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning" can be accessed on <https://arxiv.org/abs/2204.00850>.
-* [Apr-22] I’m serving in the PC of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML PKDD 2022](https://2022.ecmlpkdd.org/)).
-* [Nov-21] Our new preprint "Improving the Utility of Locally Differentially Private Protocols for Longitudinal and Multidimensional Frequency Estimates" can be acessed on <https://arxiv.org/abs/2111.04636>. 
-* [Nov-21] I'm grateful for receiving a Ph.D. mobility grant to visit the [Université du Québec à Montréal](https://uqam.ca/) and work with Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/) in November 2021.
-* [Oct-21] Our paper "Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities" has been accepted to [IEEE Transactions on Industrial Informatics](http://www.ieee-ies.org/pubs/transactions-on-industrial-informatics).
-* [Aug-21] Our paper "Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy" has been accepted to [CIKM 2021](https://www.cikm2021.org/) with a SIGIR Grant for Student Authors.
-
 
 Last update: 2022-04-05
