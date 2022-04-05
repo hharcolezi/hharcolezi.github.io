@@ -22,6 +22,7 @@ I am always happy to discuss the possibility of new collaborations.
 
 ## News
 
+* [Apr-22] The final version of my thesis "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning" can be accessed on <https://arxiv.org/abs/2204.00850>.
 * [Apr-22] I’m serving in the PC of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML PKDD 2022](https://2022.ecmlpkdd.org/)).
 * [Nov-21] Our new preprint "Improving the Utility of Locally Differentially Private Protocols for Longitudinal and Multidimensional Frequency Estimates" can be acessed on <https://arxiv.org/abs/2111.04636>. 
 * [Nov-21] I'm grateful for receiving a Ph.D. mobility grant to visit the [Université du Québec à Montréal](https://uqam.ca/) and work with Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/) in November 2021.
@@ -29,4 +30,4 @@ I am always happy to discuss the possibility of new collaborations.
 * [Aug-21] Our paper "Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy" has been accepted to [CIKM 2021](https://www.cikm2021.org/) with a SIGIR Grant for Student Authors.
 
 
-Last update: 2022-03-25
+Last update: 2022-04-05
