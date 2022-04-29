@@ -14,7 +14,8 @@ I received my Ph.D. in Computer Science from University Bourgogne Franche-Comté
 Currently, my research interests are differential privacy and machine learning privacy and fairness. 
 
 ## News
-* [Apr-22] I'm a teaching assistant for Introduction to Computer Science with Java at [Ècole Polytechnique](https://www.polytechnique.edu/en) this semester.
+* [Apr-22] I’m serving in the Technical PC of the *International Conference on Software Engineering Advances* ([ICSEA 2022](https://www.iaria.org/conferences2022/ICSEA22.html)).
+* [Apr-22] I'm a teaching assistant for Introduction to Computer Science with Java ([INF361](https://synapses.polytechnique.fr/catalogue/2020-2021/ue/138/INF361-introduction-a-l-informatique?from=D1)) at [Ècole Polytechnique](https://www.polytechnique.edu/en) this semester.
 * [Apr-22] The final version of my thesis "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning" can be accessed on <https://arxiv.org/abs/2204.00850>.
 * [Apr-22] I’m serving in the PC of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML PKDD 2022](https://2022.ecmlpkdd.org/)).
 * [Jan-22] I succesfully defended my Ph.D. "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning". Here are the [Presentation](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC_Presentation.pdf) and the [Video-Presentation](https://screencast-o-matic.com/watch/c3fnIPVqTTc). I thank my dissertation jury Profs. [Benjamin Nguyen](https://www.benjamin-nguyen.fr/home/index.php?title=Accueil), [Mathieu Cunche](https://perso.citi-lab.fr/mcunche/), [Stéphane Chrétien](https://sites.google.com/site/stephanegchretien/home), and [Mário S. Alvim](https://homepages.dcc.ufmg.br/~msalvim/). 
