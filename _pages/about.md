@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I'm a Posdoctoral Researcher on the [Comète research team](https://team.inria.fr/Comete/) led by [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/) at [Inria](https://www.inria.fr/en) -- [LIX](https://www.lix.polytechnique.fr/), [Ècole Polytechnique](https://www.polytechnique.edu/en). 
+Welcome! I'm a Posdoctoral Researcher on the [Comète research team](https://team.inria.fr/Comete/) led by [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/) at [Inria](https://www.inria.fr/en) -- [LIX](https://www.lix.polytechnique.fr/), [École Polytechnique](https://www.polytechnique.edu/en). 
 
 I received my Ph.D. in Computer Science from University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) in 2022, working with Profs. [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en), [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb), and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/). Before that, I received my M.Eng. in Electrical Engineering from São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)) in 2019, under the supervision of Prof. [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). 
 
@@ -15,7 +15,7 @@ Currently, my research interests are differential privacy and machine learning p
 
 ## News
 * [Apr-22] I’m serving in the Technical PC of the *International Conference on Software Engineering Advances* ([ICSEA 2022](https://www.iaria.org/conferences2022/ICSEA22.html)).
-* [Apr-22] I'm a teaching assistant for Introduction to Computer Science with Java ([INF361](https://synapses.polytechnique.fr/catalogue/2020-2021/ue/138/INF361-introduction-a-l-informatique?from=D1)) at [Ècole Polytechnique](https://www.polytechnique.edu/en) this semester.
+* [Apr-22] I'm a teaching assistant for Introduction to Computer Science with Java ([INF361](https://synapses.polytechnique.fr/catalogue/2020-2021/ue/138/INF361-introduction-a-l-informatique?from=D1)) at [École Polytechnique](https://www.polytechnique.edu/en) this semester.
 * [Apr-22] The final version of my thesis "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning" can be accessed on <https://arxiv.org/abs/2204.00850>.
 * [Apr-22] I’m serving in the PC of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML PKDD 2022](https://2022.ecmlpkdd.org/)).
 * [Jan-22] I succesfully defended my Ph.D. "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning". Here are the [Presentation](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC_Presentation.pdf) and the [Video-Presentation](https://screencast-o-matic.com/watch/c3fnIPVqTTc). I thank my dissertation jury Profs. [Benjamin Nguyen](https://www.benjamin-nguyen.fr/home/index.php?title=Accueil), [Mathieu Cunche](https://perso.citi-lab.fr/mcunche/), [Stéphane Chrétien](https://sites.google.com/site/stephanegchretien/home), and [Mário S. Alvim](https://homepages.dcc.ufmg.br/~msalvim/). 
