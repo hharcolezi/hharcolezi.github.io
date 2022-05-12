@@ -19,19 +19,12 @@ Education
 
 Research Experience
 ======
-
-* Visiting Researcher, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan.-Fev (three weeks), 2022.
+* Postdoctoral Researcher, Inria Saclay Île-de-France. Palaiseau, France. Fev. to Present, 2022.
+  * Hosted by DR1. [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/).
+* Visiting Researcher, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan. (three weeks), 2022.
   * Hosted by Prof. [Ligia de Loiola Cisneros](https://scholar.google.com.br/citations?user=nr-Ty6wAAAAJ&hl=pt-BR).
-* Visiting Researcher, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov.-Dec. (one month), 2021. 
+* Visiting Researcher, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov. to Dec. (one month), 2021. 
   * Hosted by Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/).
-
-
-Additional Training
-======
-* 6th Rencontre Entreprises DOCtorants en Sécurité (REDOCS'21). Marseille, France. Oct., 2021.
-* Data Anonymisation and Reidentification Competition (DARC) at the 11th Atelier sur la Protection de la Vie Privée (APVP'21). Online. Jun., 2021 (Virtual).
-* 1st Inria-DFKI European Summer School on AI (IDAI'21). Paris, France. Jul., 2021 (Virtual).
-* 15th IFIP Summer School on Privacy and Identity Management. Maribor, Slovenia. Sep., 2020 (Virtual).
 
 Grants
 ======
