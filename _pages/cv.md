@@ -11,14 +11,12 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+### Education
 * Ph.D. in Computer Science, University Bourgogne Franche-Comté (UBFC), 2022.
 * M.Eng. in Electrical Engineering, São Paulo State University (UNESP), 2019.
 * B.Eng. in Electrical Engineering, Mato Grosso State University (UNEMAT), 2017.
 
-Research Experience
-======
+### Research Experience
 * Postdoctoral Researcher, Inria Saclay Île-de-France. Palaiseau, France. Fev. to Present, 2022.
   * Hosted by DR1. [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/).
 * Visiting Researcher, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan. (three weeks), 2022.
@@ -26,14 +24,12 @@ Research Experience
 * Visiting Researcher, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov. to Dec. (one month), 2021. 
   * Hosted by Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/).
 
-Grants
-======
+### Grants
 * EIPHI Graduate School Ph.D. Student Mobility Grant (2021).
 * SIGIR Grant for Student Authors (2021).
 * UNEMAT Undergrad Grants (2013-2016).
 
-Languages
-======
+### Languages
 * Portuguese: Mother tongue.
 * English: Advanced - C1.
 * Spanish: Intermediate - B2.
