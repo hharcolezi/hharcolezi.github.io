@@ -17,7 +17,7 @@ The author order indicates the magnitude of contribution, with the first author 
 
 **Title:** Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. \
 **Authors:** \**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
-**Journal:** IEEE Transactions on Industrial Informatics, Early Access. \
+**Journal:** IEEE Transactions on Industrial Informatics, vol. 18(8), p.5592-5599. \
 **Access:** <https://doi.org/10.1109/tii.2021.3123588> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
 
