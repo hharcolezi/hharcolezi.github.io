@@ -13,13 +13,20 @@ The author order indicates the magnitude of contribution, with the first author 
 
 ## International Peer-Reviewed Publications
 
-### 2021
+### 2022
+**Title:** Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?. \
+**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Renaud, D.; Al Bouna, B.; Xiao, X. \
+**Journal:** Neural Computing and Applications, Early Access. \
+**Access:** <https://doi.org/10.1007/s00521-022-07393-0> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2022_DPDL_Time_Series_Input_VS_Gradient.pdf).
 
 **Title:** Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. \
 **Authors:** \**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
 **Journal:** IEEE Transactions on Industrial Informatics, vol. 18(8), p.5592-5599. \
 **Access:** <https://doi.org/10.1109/tii.2021.3123588> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
+
+### 2021
 
 **Title:** Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
