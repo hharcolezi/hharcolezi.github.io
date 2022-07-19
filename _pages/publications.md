@@ -14,6 +14,12 @@ The author order indicates the magnitude of contribution, with the first author 
 ## International Peer-Reviewed Publications
 
 ### 2022
+**Title:** Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates. \
+**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
+**Journal:** Digital Communications and Networks, Early Access. \
+**Access:** <https://doi.org/10.1016/j.dcan.2022.07.003> \
+**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2022_LDP_ALLOMFREE.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D).
+
 **Title:** Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Renaud, D.; Al Bouna, B.; Xiao, X. \
 **Journal:** Neural Computing and Applications, Early Access. \
