@@ -22,7 +22,7 @@ The author order indicates the magnitude of contribution, with the first author 
 
 **Title:** Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?. \
 **Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Renaud, D.; Al Bouna, B.; Xiao, X. \
-**Journal:** Neural Computing and Applications, Early Access. \
+**Journal:** Neural Computing and Applications, vol. 34(16), 13355–13369. \
 **Access:** <https://doi.org/10.1007/s00521-022-07393-0> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2022_DPDL_Time_Series_Input_VS_Gradient.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B3%5D), [Dataset](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv).
 
