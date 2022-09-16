@@ -19,9 +19,9 @@ redirect_from:
 ### Research Experience
 * Postdoctoral Researcher, Inria Saclay Île-de-France. Palaiseau, France. Fev. to Present, 2022.
   * Hosted by DR1. [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/).
-* Visiting Researcher, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan. (three weeks), 2022.
+* Visiting Ph.D. Student, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan. (three weeks), 2022.
   * Hosted by Prof. [Ligia de Loiola Cisneros](https://scholar.google.com.br/citations?user=nr-Ty6wAAAAJ&hl=pt-BR).
-* Visiting Researcher, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov. to Dec. (one month), 2021. 
+* Visiting Ph.D. Student, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov. to Dec. (one month), 2021. 
   * Hosted by Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/).
 
 ### Grants
