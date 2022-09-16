@@ -6,9 +6,9 @@ author_profile: true
 ---
 
 Here I list my publications ordered by year including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). \
-You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ), or [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages. \
 The author order indicates the magnitude of contribution, with the first author adding the most value. \
-The superscript \* indicates equal contributions to the paper. 
+The superscript \* indicates equal contributions to the paper. \
+You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ), or [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
 ## International Peer-Reviewed Publications
 
@@ -31,61 +31,42 @@ Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C. Machine 
 
 ### 2020
 
-*Arcolezi, H. H.*; Nunes, W. R. B. M.; Cerna, S.; de Araujo, R. A.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks. Research on Biomedical Engineering, vol. 36(4), p.511-526. <https://doi.org/10.1007/s42600-020-00089-1>. **Resources:** [pdf Version](https://rdcu.be/b6NV9).
+*Arcolezi, H. H.*; Nunes, W. R. B. M.; Cerna, S.; de Araujo, R. A.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks. **Research on Biomedical Engineering**, vol. 36(4), p.511-526. <https://doi.org/10.1007/s42600-020-00089-1>. Resources: [pdf Version](https://rdcu.be/b6NV9).
 
-*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy. IFIP International Summer School on Privacy and Identity Management. <https://doi.org/10.1007/978-3-030-72465-8_3>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D).
+*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy. **IFIP International Summer School on Privacy and Identity Management**. <https://doi.org/10.1007/978-3-030-72465-8_3>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D).
 
-*Arcolezi, H. H.*; Couchot, J.-F.; Baala, O.; Contet, J.-M.; Al Bouna, B.; Xiao, X. Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy. International Wireless Communications and Mobile Computing (Acceptance rate: 38%). <https://doi.org/10.1109/iwcmc48107.2020.9148138>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf), [Presentation](http://hharcolezi.github.io/files/2020_IWCMC_Presentation.pdf), [Dataset](https://github.com/hharcolezi/OpenMSFIMU).
+*Arcolezi, H. H.*; Couchot, J.-F.; Baala, O.; Contet, J.-M.; Al Bouna, B.; Xiao, X. Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy. **International Wireless Communications and Mobile Computing** (Acceptance rate: 38%). <https://doi.org/10.1109/iwcmc48107.2020.9148138>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf), [Presentation](http://hharcolezi.github.io/files/2020_IWCMC_Presentation.pdf), [Dataset](https://github.com/hharcolezi/OpenMSFIMU).
 
-*Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data. Computers & Security, vol. 96, p.101888. <https://doi.org/10.1016/j.cose.2020.101888>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf).
+*Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data. **Computers & Security**, vol. 96, p.101888. <https://doi.org/10.1016/j.cose.2020.101888>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf).
 
-Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. A Comparison of LSTM and XGBoost for Predicting Firemen Interventions. World Conference on Information Systems and Technologies. <https://doi.org/10.1007/978-3-030-45691-7_39>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf).
+Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. A Comparison of LSTM and XGBoost for Predicting Firemen Interventions. **World Conference on Information Systems and Technologies**. <https://doi.org/10.1007/978-3-030-45691-7_39>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf).
 
-Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. Boosting Methods for Predicting Firemen Interventions. International Conference on Information and Communication Systems. <https://doi.org/10.1109/icics49469.2020.239488>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf).
+Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. Boosting Methods for Predicting Firemen Interventions. **International Conference on Information and Communication Systems**. <https://doi.org/10.1109/icics49469.2020.239488>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf).
 
 ### 2019
 
-*Arcolezi, H. H.*; Nunes, W. R. B. M.; Nahuis, S. L. C.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. A RISE-based Controller Fine-tuned by an Improved Genetic Algorithm for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. International Conference on Control, Decision and Information Technologies. <https://doi.org/10.1109/codit.2019.8820357>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_control.pdf).
+*Arcolezi, H. H.*; Nunes, W. R. B. M.; Nahuis, S. L. C.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. A RISE-based Controller Fine-tuned by an Improved Genetic Algorithm for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. **International Conference on Control, Decision and Information Technologies**. <https://doi.org/10.1109/codit.2019.8820357>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_control.pdf).
 
-Ñahuis, S. L. C.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G.; Lotufo, A. D. P. Long Short-Term Memory for Predicting Firemen Interventions. International Conference on Control, Decision and Information Technologies. <https://doi.org/10.1109/codit.2019.8820671>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf).
+Ñahuis, S. L. C.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G.; Lotufo, A. D. P. Long Short-Term Memory for Predicting Firemen Interventions. **International Conference on Control, Decision and Information Technologies**. <https://doi.org/10.1109/codit.2019.8820671>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf).
 
 ## National Conference Proceedings
 
 ### 2021
-Machine Learning Algorithms to Predict In-Hospital Mortality in Patients with Diabetic Foot Ulceration. Cisneros, L. L.; *Arcolezi, H. H.*; Cerna, S.; Brandão, J.L.; Santos, G.C.; Navarro, T.P.; Carvalho, A.A. Congresso da Sociedade Brasileira de Diabetes. <https://www.aem-sbem.com/wp-content/uploads/2022/03/25298_Supl.-65_04_ABEM_SBD_2021.pdf> **Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_CSBD_Abstract_ML_Diabetic_Foot.pdf), [Poster Presentation](http://hharcolezi.github.io/files/2021_CSBD_Poster_ML_Diabetic_Foot.pdf).
+Machine Learning Algorithms to Predict In-Hospital Mortality in Patients with Diabetic Foot Ulceration. Cisneros, L. L.; *Arcolezi, H. H.*; Cerna, S.; Brandão, J.L.; Santos, G.C.; Navarro, T.P.; Carvalho, A.A. **Congresso da Sociedade Brasileira de Diabetes**. <https://www.aem-sbem.com/wp-content/uploads/2022/03/25298_Supl.-65_04_ABEM_SBD_2021.pdf> Resources: [pdf Version](http://hharcolezi.github.io/files/2021_CSBD_Abstract_ML_Diabetic_Foot.pdf), [Poster Presentation](http://hharcolezi.github.io/files/2021_CSBD_Poster_ML_Diabetic_Foot.pdf).
 
 ### 2020
-**Title:** Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale. \
-**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. \
-**Conference:** Conférence Nationale sur les Applications Pratiques de l’Intelligence Artificielle. \
-**Access:** <http://pfia2020.fr/wp-content/uploads/2020/08/Actes_CH_PFIA2020_V3.pdf> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_paper.pdf), [Presentation](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_Presentation.pdf).
+*Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale. **Conférence Nationale sur les Applications Pratiques de l’Intelligence Artificielle.** <http://pfia2020.fr/wp-content/uploads/2020/08/Actes_CH_PFIA2020_V3.pdf>. Resources: [pdf Version](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_paper.pdf), [Presentation](http://hharcolezi.github.io/files/2020_APIA_CDL_POMPIERS_Presentation.pdf).
 
 ### 2019
-**Title:** A Robust and Intelligent RISE-based Control for Human Lower Limb Tracking via Neuromuscular Electrical Stimulation. \
-**Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
-**Conference:** Conferência Brasileira de Dinâmica, Controle e Aplicações. \
-**Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1683/1152> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_control.pdf).
+*Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. A Robust and Intelligent RISE-based Control for Human Lower Limb Tracking via Neuromuscular Electrical Stimulation. **Conferência Brasileira de Dinâmica, Controle e Aplicações**. <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1683/1152>. Resources: [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_control.pdf).
 
-**Title:** On the Ability to Identify the Knee Joint Position Under Neuromuscular Electrical Stimulation Using Long Short-Term Memory Neural Networks. \
-**Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
-**Conference:** Conferência Brasileira de Dinâmica, Controle e Aplicações. \
-**Access:** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf), [Poster Presentation](http://hharcolezi.github.io/files/2019_DINCON_ident_poster.pdf).
+*Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. On the Ability to Identify the Knee Joint Position Under Neuromuscular Electrical Stimulation Using Long Short-Term Memory Neural Networks. **Conferência Brasileira de Dinâmica, Controle e Aplicações.** <http://soac.eesc.usp.br/index.php/dincon/xivdincon/paper/view/1685/1153>. Resources: [pdf Version](http://hharcolezi.github.io/files/2019_DINCON_ident.pdf), [Poster Presentation](http://hharcolezi.github.io/files/2019_DINCON_ident_poster.pdf).
 
 ### 2017
-**Title:**  Um Estudo Complementar do Controle PID Servo e Regulador Aplicado ao Sistema Pêndulo Invertido. \
-**Authors:** *Arcolezi, H. H.*; Quirino, R. B. \
-**Conference:** Congresso Brasileiro de Educação em Engenharia. \
-**Access:** <http://www.abenge.org.br/sis_artigos.php> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_COBENGE_Control_PID.pdf).
+*Arcolezi, H. H.*; Quirino, R. B. Um Estudo Complementar do Controle PID Servo e Regulador Aplicado ao Sistema Pêndulo Invertido. **Congresso Brasileiro de Educação em Engenharia**. <http://www.abenge.org.br/sis_artigos.php>. Resources: [pdf Version](http://hharcolezi.github.io/files/2017_COBENGE_Control_PID.pdf).
 
-**Title:** Um Estudo Complementar ao Projeto de Controle PID do Pêndulo Invertido. \
-**Authors:** *Arcolezi, H. H.*; Quirino, R. B. \
-**Conference:** Congresso Nacional de Pesquisa e Ensino em Ciências. \
-**Access:** <https://editorarealize.com.br/artigo/visualizar/28867> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_CONAPESC_Control_PID.pdf).
+*Arcolezi, H. H.*; Quirino, R. B. Um Estudo Complementar ao Projeto de Controle PID do Pêndulo Invertido. **Congresso Nacional de Pesquisa e Ensino em Ciências**. 
+<https://editorarealize.com.br/artigo/visualizar/28867>. Resources: [pdf Version](http://hharcolezi.github.io/files/2017_CONAPESC_Control_PID.pdf).
 
 ## Technical Reports
 
