@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-Here I list some of my peer-reviewed publications ordered by year including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). Please refer to my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), or [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ) pages for the full list of my publications. 
+Here I list my publications ordered by year including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ), or [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages. 
 
 I maintain a list of DP and LDP experiments at [ldp-protocols-mobility-cdrs](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs).
 
@@ -14,42 +14,24 @@ The author order indicates the magnitude of contribution, with the first author 
 ## International Peer-Reviewed Publications
 
 ### 2022
-**Title:** Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates. \
-**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
-**Journal:** Digital Communications and Networks, Early Access. \
-**Access:** <https://doi.org/10.1016/j.dcan.2022.07.003> \
+*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates. Digital Communications and Networks, Early Access. <https://doi.org/10.1016/j.dcan.2022.07.003> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2022_LDP_ALLOMFREE.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D).
 
-**Title:** Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?. \
-**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Renaud, D.; Al Bouna, B.; Xiao, X. \
-**Journal:** Neural Computing and Applications, vol. 34(16), 13355–13369. \
-**Access:** <https://doi.org/10.1007/s00521-022-07393-0> \
+*Arcolezi, H. H.*; Couchot, J.-F.; Renaud, D.; Al Bouna, B.; Xiao, X. Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?. Neural Computing and Applications, vol. 34(16), 13355–13369. <https://doi.org/10.1007/s00521-022-07393-0> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2022_DPDL_Time_Series_Input_VS_Gradient.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B3%5D), [Dataset](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv).
 
-**Title:** Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. \
-**Authors:** \**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. \
-**Journal:** IEEE Transactions on Industrial Informatics, vol. 18(8), p.5592-5599. \
-**Access:** <https://doi.org/10.1109/tii.2021.3123588> \
+\**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. IEEE Transactions on Industrial Informatics, vol. 18(8), p.5592-5599. <https://doi.org/10.1109/tii.2021.3123588> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
 
 ### 2021
 
-**Title:** Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. \
-**Authors:** *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. \
-**Conference:** International Conference on Information and Knowledge Management (Acceptance rate: 21.7%). \
-**Access:** <https://doi.org/10.1145/3459637.3482467> \
+*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. International Conference on Information and Knowledge Management (Acceptance rate: 21.7%). <https://doi.org/10.1145/3459637.3482467> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
 
-**Title:** Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time. \
-**Authors:** *Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F. \
-**Journal:** Mathematical and Computational Applications, vol. 26(3), p.56. \
-**Access:** <https://doi.org/10.3390/mca26030056> \
+*Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F. Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time. Mathematical and Computational Applications, vol. 26(3), p.56. <https://doi.org/10.3390/mca26030056> \
 **Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D).
 
-**Title:** Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact. \
-**Authors:** Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C. \
-**Journal:** Applied Soft Computing, vol. 109, p.107561. \
-**Access:** <https://doi.org/10.1016/j.asoc.2021.107561> \
+Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C. Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact. Applied Soft Computing, vol. 109, p.107561. <https://doi.org/10.1016/j.asoc.2021.107561> \
 **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf).
 
 **Title:** RISE Controller Tuning and System Identification Through Machine Learning for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
