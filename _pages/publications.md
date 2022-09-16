@@ -7,75 +7,52 @@ author_profile: true
 
 Here I list my publications ordered by year including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). \
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ), or [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages. \
-The author order indicates the magnitude of contribution, with the first author adding the most value. The superscript \* indicates equal contributions to the paper. 
+The author order indicates the magnitude of contribution, with the first author adding the most value. \
+The superscript \* indicates equal contributions to the paper. 
 
 ## International Peer-Reviewed Publications
 
 ### 2022
-*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates. Digital Communications and Networks, Early Access. <https://doi.org/10.1016/j.dcan.2022.07.003>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2022_LDP_ALLOMFREE.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D).
+*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates. **Digital Communications and Networks**, Early Access. <https://doi.org/10.1016/j.dcan.2022.07.003>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2022_LDP_ALLOMFREE.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D).
 
-*Arcolezi, H. H.*; Couchot, J.-F.; Renaud, D.; Al Bouna, B.; Xiao, X. Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?. Neural Computing and Applications, vol. 34(16), 13355–13369. <https://doi.org/10.1007/s00521-022-07393-0> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2022_DPDL_Time_Series_Input_VS_Gradient.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B3%5D), [Dataset](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv).
+*Arcolezi, H. H.*; Couchot, J.-F.; Renaud, D.; Al Bouna, B.; Xiao, X. Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?. **Neural Computing and Applications**, vol. 34(16), 13355–13369. <https://doi.org/10.1007/s00521-022-07393-0>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2022_DPDL_Time_Series_Input_VS_Gradient.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B3%5D), [Dataset](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv).
 
-\**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. IEEE Transactions on Industrial Informatics, vol. 18(8), p.5592-5599. <https://doi.org/10.1109/tii.2021.3123588> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
+\**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. **IEEE Transactions on Industrial Informatics**, vol. 18(8), p.5592-5599. <https://doi.org/10.1109/tii.2021.3123588>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf).
 
 ### 2021
 
-*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. International Conference on Information and Knowledge Management (Acceptance rate: 21.7%). <https://doi.org/10.1145/3459637.3482467> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
+*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. **International Conference on Information and Knowledge Management** (Acceptance rate: 21.7%). <https://doi.org/10.1145/3459637.3482467> . Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D).
 
-*Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F. Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time. Mathematical and Computational Applications, vol. 26(3), p.56. <https://doi.org/10.3390/mca26030056> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D).
+*Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F. Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time. **Mathematical and Computational Applications**, vol. 26(3), p.56. <https://doi.org/10.3390/mca26030056>. Resources: [pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D).
 
-Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C. Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact. Applied Soft Computing, vol. 109, p.107561. <https://doi.org/10.1016/j.asoc.2021.107561> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf).
+Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C. Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact. **Applied Soft Computing**, vol. 109, p.107561. <https://doi.org/10.1016/j.asoc.2021.107561>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf).
 
-*Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. RISE Controller Tuning and System Identification Through Machine Learning for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. Engineering Applications of Artificial Intelligence, vol. 102, p.104294. <https://doi.org/10.1016/j.engappai.2021.104294> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf).
+*Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. RISE Controller Tuning and System Identification Through Machine Learning for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. **Engineering Applications of Artificial Intelligence**, vol. 102, p.104294. <https://doi.org/10.1016/j.engappai.2021.104294>. Resources: [Authors pdf Version](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf).
 
 ### 2020
 
-*Arcolezi, H. H.*; Nunes, W. R. B. M.; Cerna, S.; de Araujo, R. A.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks. Research on Biomedical Engineering, vol. 36(4), p.511-526. <https://doi.org/10.1007/s42600-020-00089-1> \
-**Resources:** [pdf Version](https://rdcu.be/b6NV9).
+*Arcolezi, H. H.*; Nunes, W. R. B. M.; Cerna, S.; de Araujo, R. A.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks. Research on Biomedical Engineering, vol. 36(4), p.511-526. <https://doi.org/10.1007/s42600-020-00089-1>. **Resources:** [pdf Version](https://rdcu.be/b6NV9).
 
-*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy. IFIP International Summer School on Privacy and Identity Management. <https://doi.org/10.1007/978-3-030-72465-8_3> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D).
+*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy. IFIP International Summer School on Privacy and Identity Management. <https://doi.org/10.1007/978-3-030-72465-8_3>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D).
 
-*Arcolezi, H. H.*; Couchot, J.-F.; Baala, O.; Contet, J.-M.; Al Bouna, B.; Xiao, X. Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy. International Wireless Communications and Mobile Computing (Acceptance rate: 38%). <https://doi.org/10.1109/iwcmc48107.2020.9148138> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf), [Presentation](http://hharcolezi.github.io/files/2020_IWCMC_Presentation.pdf), [Dataset](https://github.com/hharcolezi/OpenMSFIMU).
+*Arcolezi, H. H.*; Couchot, J.-F.; Baala, O.; Contet, J.-M.; Al Bouna, B.; Xiao, X. Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy. International Wireless Communications and Mobile Computing (Acceptance rate: 38%). <https://doi.org/10.1109/iwcmc48107.2020.9148138>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf), [Presentation](http://hharcolezi.github.io/files/2020_IWCMC_Presentation.pdf), [Dataset](https://github.com/hharcolezi/OpenMSFIMU).
 
-*Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data. Computers & Security, vol. 96, p.101888. <https://doi.org/10.1016/j.cose.2020.101888> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf).
+*Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X. Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data. Computers & Security, vol. 96, p.101888. <https://doi.org/10.1016/j.cose.2020.101888>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf).
 
-Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. A Comparison of LSTM and XGBoost for Predicting Firemen Interventions. World Conference on Information Systems and Technologies. <https://doi.org/10.1007/978-3-030-45691-7_39> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf).
+Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. A Comparison of LSTM and XGBoost for Predicting Firemen Interventions. World Conference on Information Systems and Technologies. <https://doi.org/10.1007/978-3-030-45691-7_39>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf).
 
-Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. Boosting Methods for Predicting Firemen Interventions. International Conference on Information and Communication Systems. <https://doi.org/10.1109/icics49469.2020.239488> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf).
+Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G. Boosting Methods for Predicting Firemen Interventions. International Conference on Information and Communication Systems. <https://doi.org/10.1109/icics49469.2020.239488>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf).
 
 ### 2019
 
-**Title:** A RISE-based Controller Fine-tuned by an Improved Genetic Algorithm for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
-**Authors:** *Arcolezi, H. H.*; Nunes, W. R. B. M.; Nahuis, S. L. C.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. \
-**Conference:** International Conference on Control, Decision and Information Technologies. \
-**Access:** <https://doi.org/10.1109/codit.2019.8820357> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_control.pdf).
+*Arcolezi, H. H.*; Nunes, W. R. B. M.; Nahuis, S. L. C.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A. A RISE-based Controller Fine-tuned by an Improved Genetic Algorithm for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. International Conference on Control, Decision and Information Technologies. <https://doi.org/10.1109/codit.2019.8820357>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_control.pdf).
 
-**Title:** Long Short-Term Memory for Predicting Firemen Interventions. \
-**Authors:** Ñahuis, S. L. C.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G.; Lotufo, A. D. P. \
-**Conference:** International Conference on Control, Decision and Information Technologies. \
-**Access:** <https://doi.org/10.1109/codit.2019.8820671> \
-**Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf).
+Ñahuis, S. L. C.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G.; Lotufo, A. D. P. Long Short-Term Memory for Predicting Firemen Interventions. International Conference on Control, Decision and Information Technologies. <https://doi.org/10.1109/codit.2019.8820671>. **Resources:** [Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf).
 
 ## National Conference Proceedings
 
 ### 2021
-**Title:** Machine Learning Algorithms to Predict In-Hospital Mortality in Patients with Diabetic Foot Ulceration. \
-**Authors:** Cisneros, L. L.; *Arcolezi, H. H.*; Cerna, S.; Brandão, J.L.; Santos, G.C.; Navarro, T.P.; Carvalho, A.A. \
-**Conference:** Congresso da Sociedade Brasileira de Diabetes. \
-**Access:** <https://www.aem-sbem.com/wp-content/uploads/2022/03/25298_Supl.-65_04_ABEM_SBD_2021.pdf> \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_CSBD_Abstract_ML_Diabetic_Foot.pdf), [Poster Presentation](http://hharcolezi.github.io/files/2021_CSBD_Poster_ML_Diabetic_Foot.pdf).
+Machine Learning Algorithms to Predict In-Hospital Mortality in Patients with Diabetic Foot Ulceration. Cisneros, L. L.; *Arcolezi, H. H.*; Cerna, S.; Brandão, J.L.; Santos, G.C.; Navarro, T.P.; Carvalho, A.A. Congresso da Sociedade Brasileira de Diabetes. <https://www.aem-sbem.com/wp-content/uploads/2022/03/25298_Supl.-65_04_ABEM_SBD_2021.pdf> **Resources:** [pdf Version](http://hharcolezi.github.io/files/2021_CSBD_Abstract_ML_Diabetic_Foot.pdf), [Poster Presentation](http://hharcolezi.github.io/files/2021_CSBD_Poster_ML_Diabetic_Foot.pdf).
 
 ### 2020
 **Title:** Prévisions geographiques du nombre d’interventions des pompiers respectant la confidentialité différentielle locale. \
