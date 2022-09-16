@@ -9,11 +9,13 @@ redirect_from:
 
 Welcome! I'm a Posdoctoral Researcher on the [Comète research team](https://team.inria.fr/Comete/) led by [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/) at [Inria](https://www.inria.fr/en) -- [LIX](https://www.lix.polytechnique.fr/), [École Polytechnique](https://www.polytechnique.edu/en). 
 
-I received my Ph.D. in Computer Science from University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) in 2022, working with Profs. [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en), [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb), and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/). Before that, I received my M.Eng. in Electrical Engineering from São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)) in 2019, under the supervision of Prof. [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). 
+I received my Ph.D. in Computer Science from University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) in 2022, working with Profs. [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en), [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb), and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/).\
+Before that, I received my M.Eng. in Electrical Engineering from São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)) in 2019, under the supervision of Prof. [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). 
 
-Currently, my research interests are differential privacy and machine learning privacy and fairness. 
+Currently, my research interests are differential privacy and machine learning privacy/fairness. 
 
 ## News
+* [Sep-22] Our demonstration paper "Multi-Freq-LDPy: Multiple Frequency Estimation Under Local Differential Privacy in Python" about [multi-freq-ldpy](https://github.com/hharcolezi/multi-freq-ldpy) has been accepted to [ESORICS 2022](https://esorics2022.compute.dtu.dk/index.html#intro) as a poster presentation. 
 * [Jul-22] Our paper "Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates" has been accepted to [Digital Communications and Networks](https://www.keaipublishing.com/en/journals/digital-communications-and-networks/) journal and can be accessed on <https://doi.org/10.1016/j.dcan.2022.07.003>.
 * [May-22] We've realeased a Python package [multi-freq-ldpy](https://github.com/hharcolezi/multi-freq-ldpy) for multiple frequency estimation under local differential privacy. Please check out the introductory [Video_Presentation](https://screencast-o-matic.com/watch/c3hhQYVYNDi), [Slide_Presentation](http://hharcolezi.github.io/files/2022_Multi_Freq_LDPy_Presentation.pdf), and [arXived Demonstration Paper](https://arxiv.org/abs/2205.02648) of our package.
 * [May-22] Our paper "Differentially Private Multivariate Time Series Forecasting of Aggregated Human Mobility With Deep Learning: Input or Gradient Perturbation?" has been accepted to [Neural Computing and Applications](https://doi.org/10.1007/s00521-022-07393-0) and can be accessed on <https://arxiv.org/abs/2205.00436>.
@@ -29,4 +31,4 @@ I am always happy to discuss the possibility of new collaborations.
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 1 Rue Honoré d'Estienne d'Orves, 91120, Palaiseau, France.
 
-Last update: 2022-05-10
+Last update: 2022-09-16
