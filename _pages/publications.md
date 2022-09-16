@@ -17,7 +17,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 [Authors pdf Version](http://hharcolezi.github.io/files/2022_LDP_ALLOMFREE.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D), <https://doi.org/10.1016/j.dcan.2022.07.003>.
 
 *Arcolezi, H. H.*; Couchot, J.-F.; Renaud, D.; Al Bouna, B.; Xiao, X. Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?. **Neural Computing and Applications**, vol. 34(16), 13355–13369.\
-[Authors pdf Version](http://hharcolezi.github.io/files/2022_DPDL_Time_Series_Input_VS_Gradient.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B3%5D), [Dataset](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv),<https://doi.org/10.1007/s00521-022-07393-0>.
+[Authors pdf Version](http://hharcolezi.github.io/files/2022_DPDL_Time_Series_Input_VS_Gradient.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B3%5D), [Dataset](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv), <https://doi.org/10.1007/s00521-022-07393-0>.
 
 \**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A. Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities. **IEEE Transactions on Industrial Informatics**, vol. 18(8), p.5592-5599.\
 [Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf), <https://doi.org/10.1109/tii.2021.3123588>.
@@ -25,10 +25,10 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 ### 2021
 
 *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy. **International Conference on Information and Knowledge Management** (Acceptance rate: 21.7%).\
-[Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D),<https://doi.org/10.1145/3459637.3482467>.
+[Authors pdf Version](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf), [Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D), <https://doi.org/10.1145/3459637.3482467>.
 
 *Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F. Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time. **Mathematical and Computational Applications**, vol. 26(3), p.56.\
-[pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D),<https://doi.org/10.3390/mca26030056>.
+[pdf Version](http://hharcolezi.github.io/files/2021_MCA_ART_GI.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D), <https://doi.org/10.3390/mca26030056>.
 
 Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C. Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact. **Applied Soft Computing**, vol. 109, p.107561.\
 [Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf), <https://doi.org/10.1016/j.asoc.2021.107561>.
