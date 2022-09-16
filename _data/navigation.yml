@@ -6,8 +6,11 @@ main:
 #   - title: "Talks"
 #     url: /talks/    
 
-#   - title: "Teaching"
-#     url: /teaching/    
+   - title: "Teaching"
+     url: /teaching/  
+     
+   - title: "Software & Datasets"
+     url: /software/
     
 #   - title: "Portfolio"
 #     url: /portfolio/
@@ -19,4 +22,4 @@ main:
     url: /cv/
     
 #  - title: "Misc"
-#    url: /markdown/
+#    url: /misc/
