@@ -26,7 +26,7 @@ author_profile: true
 
 - **Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time**\
 *Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F.\
-[[Mathematical and Computational Applications]](https://doi.org/10.3390/mca26030056>) [[Codes]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D)
+[[Mathematical and Computational Applications]](https://doi.org/10.3390/mca26030056) [[Codes]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D)
 
 - **Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact**\
 Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C.\
