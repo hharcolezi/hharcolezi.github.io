@@ -19,8 +19,7 @@ An open, longitudinal (7 days), multidimensional (7 attributes), and synthetic d
 This dataset can be used for classification tasks and for evaluating (locally) differentially private mechanisms on multidimensional data.
 
 - Multivariate-Mobility-Paris [[GitHub]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv) [[Paper]](https://link.springer.com/article/10.1007/s00521-022-07393-0)\
-The original dataset was provided by Orange telecom in France, which contains anonymized and aggregated human mobility data. The Multivariate-Mobility-Paris dataset comprises information from 2020-08-24 to 2020-11-04 (72 days during the COVID-19 pandemic), with time granularity of 30 minutes and spatial granularity of 6 coarse regions in Paris, France. In other words, it represents a multivariate time series dataset.\
-This dataset can be used for several time-series tasks such as univariate/multivariate forecasting/classification with classic, machine learning, and privacy-preserving machine learning techniques.
+The original dataset was provided by Orange telecom in France, which contains anonymized and aggregated human mobility data. The Multivariate-Mobility-Paris dataset comprises information from 2020-08-24 to 2020-11-04 (72 days during the COVID-19 pandemic), with time granularity of 30 minutes and spatial granularity of 6 coarse regions in Paris, France. In other words, it represents a multivariate time series dataset. This dataset can be used for several time-series tasks such as univariate/multivariate forecasting/classification with classic, machine learning, and privacy-preserving machine learning techniques.
 
 
 ### Selected Open-Source Code from Papers
