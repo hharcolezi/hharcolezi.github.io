@@ -50,14 +50,14 @@ Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C.\
 [[Research on Biomedical Engineering]](https://rdcu.be/b6NV9)
 
 - **Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy**\
-*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X.
+*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X.\
 [[IFIP International Summer School on Privacy and Identity Management]](https://doi.org/10.1007/978-3-030-72465-8_3) [[Authors pdf Version]](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf) [[Codes]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D)
 
 - **Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy**\
 *Arcolezi, H. H.*; Couchot, J.-F.; Baala, O.; Contet, J.-M.; Al Bouna, B.; Xiao, X.\
 [[IWCMC 2020]](https://doi.org/10.1109/iwcmc48107.2020.9148138) [[Authors pdf Version]](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf) [[Presentation]](http://hharcolezi.github.io/files/2020_IWCMC_Presentation.pdf) [[Dataset]](https://github.com/hharcolezi/OpenMSFIMU)
 
-- **Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data**
+- **Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data**\
 *Arcolezi, H. H.*; Couchot, J.-F.; Cerna, S.; Guyeux, C.; Royer, G.; Al Bouna, B.; Xiao, X.\
 [[Computers & Security]](https://doi.org/10.1016/j.cose.2020.101888) [[Authors pdf Version]](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf)
 
