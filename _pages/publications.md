@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-Here I list my publications ordered by year including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). \
+Here I list my peer-reviewed publications ordered by year including their pdf (or authors pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). \
 The author order indicates the magnitude of contribution, with the first author adding the most value. \
 The superscript \* indicates equal contributions to the paper. \
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
@@ -13,8 +13,9 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 ## International Peer-Reviewed Publications
 
 ### 2022
-*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X. Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates. **Digital Communications and Networks**, Early Access.\
-[Authors pdf Version](http://hharcolezi.github.io/files/2022_LDP_ALLOMFREE.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D), <https://doi.org/10.1016/j.dcan.2022.07.003>.
+- **Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates**\
+*Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X.\
+[[Digital Communications and Networks]](https://doi.org/10.1016/j.dcan.2022.07.003) [[Authors pdf Version]](http://hharcolezi.github.io/files/2022_LDP_ALLOMFREE.pdf) [[Codes]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D).
 
 *Arcolezi, H. H.*; Couchot, J.-F.; Renaud, D.; Al Bouna, B.; Xiao, X. Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?. **Neural Computing and Applications**, vol. 34(16), 13355–13369.\
 [Authors pdf Version](http://hharcolezi.github.io/files/2022_DPDL_Time_Series_Input_VS_Gradient.pdf), [Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B3%5D), [Dataset](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv), <https://doi.org/10.1007/s00521-022-07393-0>.
