@@ -24,6 +24,10 @@ redirect_from:
 * Visiting Ph.D. Student, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov to Dec (one month), 2021. 
   * Hosted by Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/).
 
+### Service
+* 2022: PoPETs, ECML PKDD, Expert Systems With Applications.
+* 2020: Security and Communication Networks.
+
 ### Grants
 * EIPHI Graduate School Ph.D. Student Mobility Grant (2021).
 * SIGIR Grant for Student Authors (2021).
