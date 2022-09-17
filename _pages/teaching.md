@@ -15,7 +15,7 @@ objects, sorting, recursivity, linked list, trees, graphs and network.
 Master Internet of Things, Université Bourgogne Franche-Comté ([UBFC](https://www.ubfc.fr/)).\
 data privacy, k-anonymity, l-diversity, t-closeness, differential privacy, local differential privacy.
 
-###
+### 2020
 **Workshop on Privacy for IoT**, Fall 2020, 20h.\
 Master Internet of Things, Université Bourgogne Franche-Comté ([UBFC](https://www.ubfc.fr/)).\
 data privacy, k-anonymity, l-diversity, t-closeness, differential privacy, local differential privacy.
