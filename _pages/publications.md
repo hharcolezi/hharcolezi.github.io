@@ -8,15 +8,15 @@ author_profile: true
 ### 2022
 - **Multi-Freq-LDPy: Multiple Frequency Estimation Under Local Differential Privacy in Python**\
 Arcolezi, H. H.; Couchot, J.F.; Gambs, S.; Palamidessi, C.; Zolfaghari, M.\
-[[ESORICS 2022]](https://doi.org/10.1007/978-3-031-17143-7_40) [[Authors pdf Version]](https://arxiv.org/abs/2205.02648) [[Codes]](https://github.com/hharcolezi/multi-freq-ldpy)
+[[ESORICS 2022]](https://doi.org/10.1007/978-3-031-17143-7_40) [[arXiv]](https://arxiv.org/abs/2205.02648) [[Poster]](http://hharcolezi.github.io/files/2022_Multi_Freq_LDPy_Poster.pdf) [[Codes]](https://github.com/hharcolezi/multi-freq-ldpy)
 
 - **Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates**\
 *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X.\
-[[DCAN Journal]](https://doi.org/10.1016/j.dcan.2022.07.003) [[Codes]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D)
+[[DCAN Journal]](https://doi.org/10.1016/j.dcan.2022.07.003) [[arXiv]](https://arxiv.org/abs/2111.04636) [[Codes]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D)
 
 - **Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?** \
 *Arcolezi, H. H.*; Couchot, J.-F.; Renaud, D.; Al Bouna, B.; Xiao, X.\
-[[NCAA Journal]](https://doi.org/10.1007/s00521-022-07393-0) [[Authors pdf Version]](http://hharcolezi.github.io/files/2022_DPDL_Time_Series_Input_VS_Gradient.pdf) [[Codes]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B3%5D) [[Dataset]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv)
+[[NCAA Journal]](https://doi.org/10.1007/s00521-022-07393-0) [[arXiv]](https://arxiv.org/abs/2205.00436) [[Codes]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B3%5D) [[Dataset]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv)
 
 - **Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities**\
 \**Arcolezi, H. H.*; \*Cerna, S.; Couchot, J.-F.; Guyeux, C.; Makhoul, A.\
@@ -26,7 +26,7 @@ Arcolezi, H. H.; Couchot, J.F.; Gambs, S.; Palamidessi, C.; Zolfaghari, M.\
 
 - **Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy**\
 *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X.\
-[[CIKM 2021]](https://doi.org/10.1145/3459637.3482467) [[Authors pdf Version]](http://hharcolezi.github.io/files/2021_LDP_RS_FD_arxived.pdf) [[Presentation]](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf) [[Video-Presentation]](https://screencast-o-matic.com/watch/crQtokV6CIl) [[Codes]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D)
+[[CIKM 2021]](https://doi.org/10.1145/3459637.3482467) [[arXiv]](https://arxiv.org/abs/2109.07269) [[Presentation]](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf) [[Video-Presentation]](https://screencast-o-matic.com/watch/crQtokV6CIl) [[Codes]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D)
 
 - **Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time**\
 *Arcolezi, H. H.*; Cerna, S.; Guyeux, C.; Couchot, J.-F.\
@@ -38,7 +38,7 @@ Cerna, S.; *Arcolezi, H. H.*; Guyeux, C.; Royer-Fey, G.; Chevallier, C.\
 
 - **RISE Controller Tuning and System Identification Through Machine Learning for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation**\
 *Arcolezi, H. H.*; Nunes, W. R. B. M.; de Araujo, R. A.; Cerna, S.; Sanches, M. A. A.; Teixeira, M. C. M.; de Carvalho, A. A.\
-[[EAAI Journal]](https://doi.org/10.1016/j.engappai.2021.104294) [[Authors pdf Version]](http://hharcolezi.github.io/files/2021_EAAI_rise_ml.pdf)
+[[EAAI Journal]](https://doi.org/10.1016/j.engappai.2021.104294) [[arXiv]](https://arxiv.org/abs/2006.15605)
 
 ### 2020
 
@@ -84,7 +84,7 @@ Cerna, S.; Guyeux, C.; *Arcolezi, H. H.*; Couturier, R.; Royer, G.\
 **Supervisor:** [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en). \
 **Co-Supervisors:** [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb) and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/). \
 **Year.** 2022. \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC.pdf), [Presentation](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/c3fnIPVqTTc).
+**Resources:** [arXiv](https://arxiv.org/abs/2204.00850), [Presentation](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/c3fnIPVqTTc).
 
 **Type:** Master Thesis. \
 **Institution:** São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)).\
