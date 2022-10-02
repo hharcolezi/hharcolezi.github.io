@@ -33,7 +33,7 @@ Python implementation of re-identification and attribute inference attacks to LD
 Python implementation of our Random Sampling Plus Fake Data (RS+FD) algorithms for frequency estimation of multiple attributes under LDP.
 
 - Longidutinal LDP [[GitHub]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D) [[DCAN Journal]](https://doi.org/10.1016/j.dcan.2022.07.003) [[arXiv]](https://arxiv.org/abs/2111.04636)\
-Python implementation of our longitudinal LDP protocols (L-GRR and L-UE) for frequency estimation multiple times (i.e., throughout time).
+Python implementation of our longitudinal LDP protocols (L-GRR and L-UE) for frequency estimation a single time (i.e., with ϵ1-LDP).
 
 - Geo-Indistinguishability [[GitHub]](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D) [[MCA Journal]](https://doi.org/10.3390/mca26030056)\
 Python implementation of the planar Laplace mechanism that satisfy [Geo-Indistinguishability](https://doi.org/10.1145/2508859.2516735).
