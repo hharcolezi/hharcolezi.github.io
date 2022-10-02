@@ -15,7 +15,7 @@ Before that, I received my M.Eng. in Electrical Engineering from São Paulo Stat
 Currently, my research interests are differential privacy and machine learning privacy/fairness. 
 
 ## News
-* [Oct-22] I'll be visiting the [SYSTOPIA lab](https://systopia.cs.ubc.ca/) at [The University of British Columbia](https://www.ubc.ca/) in Vancouver for two months (until the middle of December 2022). 
+* [Oct-22] I'll be visiting the [SYSTOPIA lab](https://systopia.cs.ubc.ca/) at [The University of British Columbia](https://www.ubc.ca/) in Vancouver for two months (until mid-December 2022). 
 * [Sep-22] Our demonstration paper "Multi-Freq-LDPy: Multiple Frequency Estimation Under Local Differential Privacy in Python" has been accepted to [ESORICS 2022](https://doi.org/10.1007/978-3-031-17143-7_40) ([poster presentation](http://hharcolezi.github.io/files/2022_Multi_Freq_LDPy_Poster.pdf)) and can be accessed at <https://arxiv.org/abs/2205.02648>. 
 * [Sep-22] We are organizing a [Workshop on issues in Ethical Machine Learning](https://www.lix.polytechnique.fr/ethicalai/Home.html) with special focus on Privacy and Fairness on the 30th of September. The topics will range from Fairness to Privacy, you can register [here](https://docs.google.com/forms/d/e/1FAIpQLSchIdGKZC3ARCG13oz-DXwugw8x_cj3r2DXaeZ4fm-Q4UPR5Q/viewform).
 * [Jul-22] Our paper "Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates" has been accepted to [Digital Communications and Networks](https://www.keaipublishing.com/en/journals/digital-communications-and-networks/) journal and can be accessed on <https://doi.org/10.1016/j.dcan.2022.07.003>.
