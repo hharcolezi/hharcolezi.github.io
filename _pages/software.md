@@ -9,7 +9,7 @@ I maintain a list of DP and LDP experiments at [ldp-protocols-mobility-cdrs](htt
 
 ### Open-Source Libraries
 
-- **multi-freq-ldpy** [[GitHub]](https://github.com/hharcolezi/multi-freq-ldpy) [[PyPI]](https://pypi.org/project/multi-freq-ldpy/) [[ESORICS 2022]](https://doi.org/10.1007/978-3-031-17143-7_40) [[arXiv]](https://arxiv.org/abs/2205.02648)\
+- **multi-freq-ldpy** [[GitHub](https://github.com/hharcolezi/multi-freq-ldpy)] [[PyPI](https://pypi.org/project/multi-freq-ldpy/)] [[ESORICS 2022](https://doi.org/10.1007/978-3-031-17143-7_40)] [[arXiv](https://arxiv.org/abs/2205.02648)]\
 Multi-Freq-LDPy is a Python library for performing multiple frequency estimation tasks (multidimensional, longitudinal, and both) under local differential privacy (LDP) guarantees. Multi-Freq-LDPy features various state-of-the-art LDP algorithms such as k-RR, SS, OUE, OLH, RS+FD, Google's RAPPOR, and Microsoft's dBitFlipPM. The package is distributed under MIT license.
 
 ### Datasets
