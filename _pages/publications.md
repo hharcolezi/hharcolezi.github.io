@@ -6,11 +6,11 @@ author_profile: true
 ---
 
 ### 2022
-[16] **Multi-Freq-LDPy: Multiple Frequency Estimation Under Local Differential Privacy in Python**\
+- 16. **Multi-Freq-LDPy: Multiple Frequency Estimation Under Local Differential Privacy in Python**\
 Arcolezi, H. H.; Couchot, J.F.; Gambs, S.; Palamidessi, C.; Zolfaghari, M.\
 [[ESORICS 2022](https://doi.org/10.1007/978-3-031-17143-7_40)] [[arXiv](https://arxiv.org/abs/2205.02648)] [[Poster](http://hharcolezi.github.io/files/2022_Multi_Freq_LDPy_Poster.pdf)] [[Codes](https://github.com/hharcolezi/multi-freq-ldpy)]
 
-[15] **Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates**\
+- 15. **Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates**\
 *Arcolezi, H. H.*; Couchot, J.-F.; Al Bouna, B.; Xiao, X.\
 [[DCAN Journal](https://doi.org/10.1016/j.dcan.2022.07.003)] [[arXiv](https://arxiv.org/abs/2111.04636)] [[Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D)]
 
