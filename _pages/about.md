@@ -37,4 +37,4 @@ I am always happy to discuss the possibility of new collaborations.
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 1 Rue Honoré d'Estienne d'Orves, 91120, Palaiseau, France.
 
-Last update: 22th December 2022.
+Last update: 22nd December 2022.
