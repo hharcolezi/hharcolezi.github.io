@@ -20,7 +20,7 @@ redirect_from:
 * Postdoctoral Researcher, Inria Saclay Île-de-France. Palaiseau, France. Feb 2022 to Present.
   * Hosted by DR1. [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/).
 * Visiting Researcher at The University of British Columbia (UBC). Vancouver, Canada. Oct to Dec (two months), 2022.
-  * Hosted by Profs. [Mathias Lecuyer](http://mathias.lecuyer.me/) and [Sébastien Gambs](https://sebastiengambs.openum.ca/).
+  * Hosted by Profs. [Mathias Lécuyer](http://mathias.lecuyer.me/) and [Sébastien Gambs](https://sebastiengambs.openum.ca/).
 * Visiting Ph.D. Student, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan (three weeks), 2022.
   * Hosted by Prof. [Ligia de Loiola Cisneros](https://scholar.google.com.br/citations?user=nr-Ty6wAAAAJ&hl=pt-BR).
 * Visiting Ph.D. Student, Université du Québec à Montréal (UQAM). Montreal, Canada. Nov to Dec (one month), 2021. 
