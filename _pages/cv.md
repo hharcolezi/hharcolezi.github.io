@@ -19,7 +19,7 @@ redirect_from:
 ### Research Experience
 * Postdoctoral Researcher, Inria Saclay Île-de-France. Palaiseau, France. Feb 2022 to Present.
   * Hosted by DR1. [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/).
-* Visiting Researcher at The University of British Columbia (UBC). Vancouver, Canada. Oct to Dec (two months), 2022.
+* Visiting Postdoc at The University of British Columbia (UBC). Vancouver, Canada. Oct to Dec (two months), 2022.
   * Hosted by Profs. [Mathias Lécuyer](http://mathias.lecuyer.me/) and [Sébastien Gambs](https://sebastiengambs.openum.ca/).
 * Visiting Ph.D. Student, Universidade Federal de Minas Gerais (UFMG). Belo Horizonte, Brazil. Jan (three weeks), 2022.
   * Hosted by Prof. [Ligia de Loiola Cisneros](https://scholar.google.com.br/citations?user=nr-Ty6wAAAAJ&hl=pt-BR).
@@ -27,8 +27,8 @@ redirect_from:
   * Hosted by Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/).
 
 ### Service
-* PC: Swiss Conference on Data Science (2023), ECML PKDD (2022), International Conference on Software Engineering Advances (2022).
-* Reviewer: PoPETs (2022, 2023), PPAI Workshop (2023), IEEE Transactions on Information Forensics and Security (2022), Information Sciences (2022), MDPI Modelling (2022), IEEE Access (2022), Expert Systems With Applications (2022), Security and Communication Networks (2020).
+* PC: ACM Conference on Fairness, Accountability, and Transparency (2023), Swiss Conference on Data Science (2023), ECML PKDD (2022), International Conference on Software Engineering Advances (2022).
+* Reviewer: PoPETs (2023, 2022), PPAI Workshop (2023), Information Sciences (2023, 2022), Applied Soft Computing (2023), IEEE Transactions on Information Forensics and Security (2022), MDPI Modelling (2022), IEEE Access (2022), Expert Systems With Applications (2022), Security and Communication Networks (2020).
 
 ### Grants
 * EIPHI Graduate School Ph.D. Student Mobility Grant (2021).
