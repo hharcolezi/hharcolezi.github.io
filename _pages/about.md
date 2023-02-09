@@ -18,6 +18,7 @@ Currently, my research interests are differential privacy and machine learning p
 * [Jan-23] I’m serving in the PC of the *6th ACM Conference on Fairness, Accountability, and Transparency* ([FAccT 2023](https://facctconference.org/2023/index.html)).
 * [Dec-22] Our paper "On the Risks of Collecting Multidimensional Data Under Local Differential Privacy" has been accepted to [VLDB 2023](https://vldb.org/2023/) and can be accessed on <https://arxiv.org/abs/2209.01684>.
 * [Dec-22] Our paper "Frequency Estimation of Evolving Data Under Local Differential Privacy" has been accepted to [EDBT 2023](http://edbticdt2023.cs.uoi.gr/?contents=main.html) and can be accessed on <https://arxiv.org/abs/2210.00262>.
+* [Nov-22] I’m serving in the PC of the *4th AAAI Workshop on Privacy-Preserving Artificial Intelligence* ([PPAI 2023](https://aaai-ppai23.github.io/#pc)).
 * [Nov-22] I’m serving in the PC of the *10th IEEE Swiss Conference on Data Science* ([SDS 2023](https://sds2023.ch/)).
 * [Oct-22] I gave a seminar talk at the [GT-PVP](https://www.univ-orleans.fr/lifo/evenements/GT-PVP/?page_id=45) entitled "Locally differentially private protocols for frequency estimation of longitudinal data".
 * [Oct-22] I've visited the [SYSTOPIA lab](https://systopia.cs.ubc.ca/) at [The University of British Columbia](https://www.ubc.ca/) in Vancouver for two months (mid October to mid December 2022). 
