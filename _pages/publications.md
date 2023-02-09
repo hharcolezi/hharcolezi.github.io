@@ -5,9 +5,18 @@ permalink: /publications/
 author_profile: true
 ---
 
+### 2023
+**18\. On the Risks of Collecting Multidimensional Data Under Local Differential Privacy**\
+*Arcolezi, H. H.*; Gambs, S.; Couchot, J.F.; Palamidessi, C.\
+[[VLDB 2023](https://www.vldb.org/pvldb/vol16/p1126-arcolezi.pdf)] [[arXiv](https://arxiv.org/abs/2209.01684)] [[Codes](https://github.com/hharcolezi/risks-ldp)]
+
+**17\. Frequency Estimation of Evolving Data Under Local Differential Privacy**\
+\**Arcolezi, H. H.*; \*Pinzón, C.; Palamidessi, C.; Gambs, S.\
+[[EDBT 2023](http://edbticdt2023.cs.uoi.gr/?contents=accepted-papers-research-track.html)] [[arXiv](https://arxiv.org/abs/2210.00262)] [[Codes](https://github.com/hharcolezi/LOLOHA)]
+
 ### 2022
 **16\. Multi-Freq-LDPy: Multiple Frequency Estimation Under Local Differential Privacy in Python**\
-Arcolezi, H. H.; Couchot, J.F.; Gambs, S.; Palamidessi, C.; Zolfaghari, M.\
+*Arcolezi, H. H.*; Couchot, J.F.; Gambs, S.; Palamidessi, C.; Zolfaghari, M.\
 [[ESORICS 2022](https://doi.org/10.1007/978-3-031-17143-7_40)] [[arXiv](https://arxiv.org/abs/2205.02648)] [[Poster](http://hharcolezi.github.io/files/2022_Multi_Freq_LDPy_Poster.pdf)] [[Codes](https://github.com/hharcolezi/multi-freq-ldpy)]
 
 **15\. Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates**\
