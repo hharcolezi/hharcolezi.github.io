@@ -27,8 +27,8 @@ redirect_from:
   * Hosted by Prof. [Sébastien Gambs](https://sebastiengambs.openum.ca/).
 
 ### Service
-* PC: ACM Conference on Fairness, Accountability, and Transparency (2023), Swiss Conference on Data Science (2023), ECML PKDD (2022), International Conference on Software Engineering Advances (2022).
-* Reviewer: PoPETs (2023, 2022), PPAI Workshop (2023), Information Sciences (2023, 2022), Applied Soft Computing (2023), IEEE Transactions on Information Forensics and Security (2022), MDPI Modelling (2022), IEEE Access (2022), Expert Systems With Applications (2022), Security and Communication Networks (2020).
+* PC: FAccT (2023), PPAI Workshop (2023), Swiss Conference on Data Science (2023), ECML PKDD (2022), International Conference on Software Engineering Advances (2022).
+* Reviewer: PoPETs (2023, 2022), Information Sciences (2023, 2022), IEEE Transactions on Dependable and Secure Computing(2023), Applied Soft Computing (2023), IEEE Transactions on Information Forensics and Security (2022), MDPI Modelling (2022), IEEE Access (2022), Expert Systems With Applications (2022), Security and Communication Networks (2020).
 
 ### Grants
 * EIPHI Graduate School Ph.D. Student Mobility Grant (2021).
