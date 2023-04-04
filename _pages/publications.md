@@ -16,7 +16,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 
 **17\. Frequency Estimation of Evolving Data Under Local Differential Privacy**\
 \**Arcolezi, H. H.*; \*Pinzón, C.; Palamidessi, C.; Gambs, S.\
-[[EDBT 2023](http://edbticdt2023.cs.uoi.gr/?contents=accepted-papers-research-track.html)] [[arXiv](https://arxiv.org/abs/2210.00262)] [[Codes](https://github.com/hharcolezi/LOLOHA)]
+[[EDBT 2023](http://dx.doi.org/10.48786/edbt.2023.44)] [[arXiv](https://arxiv.org/abs/2210.00262)] [[Codes](https://github.com/hharcolezi/LOLOHA)]
 
 ### 2022
 **16\. Multi-Freq-LDPy: Multiple Frequency Estimation Under Local Differential Privacy in Python**\
