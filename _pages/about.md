@@ -15,9 +15,10 @@ Before that, I received my M.Eng. in Electrical Engineering from São Paulo Stat
 Currently, my research interests are differential privacy and machine learning privacy/fairness. 
 
 ## News
+* [Apr-23] I’ll be serving as a Reviewer for the 37th Conference on Neural Information Processing Systems ([NeurIPS 2023](https://neurips.cc/));
 * [Mar-23] I’ll be serving in the PC and Editorial Board of the *24th Privacy Enhancing Technologies Symposium* ([PETS 2024](https://petsymposium.org/)).
 * [Mar-23] I’ll be serving in the PC (Research Track) of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML/PKDD 2023](https://2023.ecmlpkdd.org/)).
-* [Feb-23] I’m serving in the PC (Tiny Paper Track) of the *11th International Conference on Learning Representations* ([ICLR 2023](https://iclr.cc/)).
+* [Feb-23] I’m serving as a Reviewer and Area Chair (Tiny Paper Track) for the *11th International Conference on Learning Representations* ([ICLR 2023](https://iclr.cc/)).
 * [Jan-23] I’m serving in the PC of the *6th ACM Conference on Fairness, Accountability, and Transparency* ([FAccT 2023](https://facctconference.org/2023/index.html)).
 * [Dec-22] Our paper "On the Risks of Collecting Multidimensional Data Under Local Differential Privacy" has been accepted to [VLDB 2023](https://vldb.org/2023/) and can be accessed on <https://arxiv.org/abs/2209.01684>.
 * [Dec-22] Our paper "Frequency Estimation of Evolving Data Under Local Differential Privacy" has been accepted to [EDBT 2023](http://edbticdt2023.cs.uoi.gr/?contents=main.html) and can be accessed on <https://arxiv.org/abs/2210.00262>.
@@ -42,4 +43,4 @@ I am always happy to discuss the possibility of new collaborations.
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 1 Rue Honoré d'Estienne d'Orves, 91120, Palaiseau, France.
 
-Last update: 22nd March 2023.
+Last update: 25th April 2023.
