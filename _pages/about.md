@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I'm a Posdoctoral Researcher on the [Comète research team](https://team.inria.fr/Comete/) led by [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/) at [Inria](https://www.inria.fr/en) -- [LIX](https://www.lix.polytechnique.fr/), [École Polytechnique](https://www.polytechnique.edu/en). 
+Welcome! I'm a Postdoctoral Researcher on the [Comète research team](https://team.inria.fr/Comete/) led by [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/) at [Inria](https://www.inria.fr/en) -- [LIX](https://www.lix.polytechnique.fr/), [École Polytechnique](https://www.polytechnique.edu/en). 
 
 I received my Ph.D. in Computer Science from University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) in 2022, working with Profs. [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en), [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb), and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/).\
 Before that, I received my M.Eng. in Electrical Engineering from São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)) in 2019, under the supervision of Prof. [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). 
@@ -15,8 +15,10 @@ Before that, I received my M.Eng. in Electrical Engineering from São Paulo Stat
 Currently, my research interests are differential privacy and machine learning privacy/fairness. 
 
 ## News
-* [Apr-23] I’ll be serving as a Reviewer for the 37th Conference on Neural Information Processing Systems ([NeurIPS 2023](https://neurips.cc/));
-* [Mar-23] I’ll be serving in the PC and Editorial Board of the *24th Privacy Enhancing Technologies Symposium* ([PETS 2024](https://petsymposium.org/)).
+* [May-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has been accepted to [DBSec 2023](http://www.dbsec2023.unimol.it/) and can be accessed on <https://doi.org/10.1007/978-3-031-37586-6_1>.
+* [May-23] Our paper "On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms" has been accepted to [DBSec 2023](http://www.dbsec2023.unimol.it/) and can be accessed on <https://doi.org/10.1007/978-3-031-37586-6_11>.;
+* [Apr-23] I’ll be serving as a Reviewer for the 37th Conference on Neural Information Processing Systems ([NeurIPS 2023](https://neurips.cc/)).
+* [Mar-23] I’ll be serving on the PC and Editorial Board of the *24th Privacy Enhancing Technologies Symposium* ([PETS 2024](https://petsymposium.org/)).
 * [Mar-23] I’ll be serving in the PC (Research Track) of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML/PKDD 2023](https://2023.ecmlpkdd.org/)).
 * [Feb-23] I’m serving as a Reviewer and Area Chair (Tiny Paper Track) for the *11th International Conference on Learning Representations* ([ICLR 2023](https://iclr.cc/)).
 * [Jan-23] I’m serving in the PC of the *6th ACM Conference on Fairness, Accountability, and Transparency* ([FAccT 2023](https://facctconference.org/2023/index.html)).
@@ -43,4 +45,4 @@ I am always happy to discuss the possibility of new collaborations.
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 1 Rue Honoré d'Estienne d'Orves, 91120, Palaiseau, France.
 
-Last update: 25th April 2023.
+Last update: 17th July 2023.
