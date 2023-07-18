@@ -10,6 +10,14 @@ The superscript \* indicates equal contributions to the paper. \
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
 ### 2023
+**20\. (Local) Differential Privacy has NO Disparate Impact on Fairness**\
+*Arcolezi, H. H.*; Makhlouf, K.; Palamidessi, C.\
+[[DBSec 2023](https://doi.org/10.1007/978-3-031-37586-6_1)] [[arXiv](https://arxiv.org/abs/2304.12845)] [[Codes](https://github.com/hharcolezi/ldp-fairness-impact)]
+
+**19\. On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms**\
+*Arcolezi, H. H.*; Cerna, S.; Palamidessi, C.\
+[[DBSec 2023](https://doi.org/10.1007/978-3-031-37586-6_11)] [[arXiv](https://arxiv.org/abs/2307.07744)] [[Codes](https://github.com/hharcolezi/multi-freq-ldpy)]
+
 **18\. On the Risks of Collecting Multidimensional Data Under Local Differential Privacy**\
 *Arcolezi, H. H.*; Gambs, S.; Couchot, J.F.; Palamidessi, C.\
 [[VLDB 2023](https://www.vldb.org/pvldb/vol16/p1126-arcolezi.pdf)] [[arXiv](https://arxiv.org/abs/2209.01684)] [[Codes](https://github.com/hharcolezi/risks-ldp)]
