@@ -17,8 +17,9 @@ Currently, my research interests are differential privacy and ethical aspects of
 ## News
 * [Jul-23] Our project "DIFPRIPOS: Rendre PosgreSQL différentiellement privé pour une IA transparente" has been accepted for funding by [ANR AAPG 2023](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/).
 * [Jul-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has received the <span style="color: red; font-weight: normal;">&#42;Best Paper Award&#42;</span> at [DBSec 2023](http://www.dbsec2023.unimol.it/)!
-* [May-23] Our paper "On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms" has been accepted to [DBSec 2023](http://www.dbsec2023.unimol.it/) and can be accessed on <https://doi.org/10.1007/978-3-031-37586-6_11>.
-* * [May-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has been accepted to [DBSec 2023](http://www.dbsec2023.unimol.it/) and can be accessed on <https://doi.org/10.1007/978-3-031-37586-6_1>.
+* [May-23] We have two papers accepted at [DBSec 2023](http://www.dbsec2023.unimol.it/):
+* * [On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms](https://doi.org/10.1007/978-3-031-37586-6_11).
+* * [(Local) Differential Privacy has NO Disparate Impact on Fairness](https://doi.org/10.1007/978-3-031-37586-6_1).
 * [Apr-23] I’ll be serving as a Reviewer for the 37th Conference on Neural Information Processing Systems ([NeurIPS 2023](https://neurips.cc/)).
 * [Mar-23] I’ll be serving on the PC and Editorial Board of the *24th Privacy Enhancing Technologies Symposium* ([PETS 2024](https://petsymposium.org/)).
 * [Mar-23] I’ll be serving in the PC (Research Track) of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML/PKDD 2023](https://2023.ecmlpkdd.org/)).
