@@ -12,6 +12,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 ### 2023
 **20\. (Local) Differential Privacy has NO Disparate Impact on Fairness**\
 *Arcolezi, H. H.*; Makhlouf, K.; Palamidessi, C.\
+<span style="color: red; font-weight: normal;">&#42;Best Paper Award&#42;</span>\
 [[DBSec 2023](https://doi.org/10.1007/978-3-031-37586-6_1)] [[arXiv](https://arxiv.org/abs/2304.12845)] [[Codes](https://github.com/hharcolezi/ldp-fairness-impact)]
 
 **19\. On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms**\
