@@ -15,7 +15,7 @@ Before that, I received my M.Eng. in Electrical Engineering from São Paulo Stat
 Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
 
 ## News
-* [Jul-23] Our project "DIFPRIPOS: Rendre PosgreSQL différentiellement privé pour une IA transparente" has been accepted for funding by [ANR AAPG 2023](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/).
+* [Jul-23] Our project "DIFPRIPOS: Making PostgreSQL Differentially Private for Transparent AI" has been accepted for funding by [ANR AAPG 2023](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/).
 * [Jul-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has received the <span style="color: red; font-weight: normal;">&#42;Best Paper Award&#42;</span> at [DBSec 2023](http://www.dbsec2023.unimol.it/)!
 * [May-23] We have two papers accepted at [DBSec 2023](http://www.dbsec2023.unimol.it/):
 * * [On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms](https://doi.org/10.1007/978-3-031-37586-6_11).
