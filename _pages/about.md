@@ -12,11 +12,13 @@ Welcome! I'm a Postdoctoral Researcher on the [Comète research team](https://te
 I received my Ph.D. in Computer Science from University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) in 2022, working with Profs. [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en), [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb), and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/).\
 Before that, I received my M.Eng. in Electrical Engineering from São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)) in 2019, under the supervision of Prof. [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). 
 
-Currently, my research interests are differential privacy and machine learning privacy/fairness. 
+Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
 
 ## News
-* [May-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has been accepted to [DBSec 2023](http://www.dbsec2023.unimol.it/) and can be accessed on <https://doi.org/10.1007/978-3-031-37586-6_1>.
-* [May-23] Our paper "On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms" has been accepted to [DBSec 2023](http://www.dbsec2023.unimol.it/) and can be accessed on <https://doi.org/10.1007/978-3-031-37586-6_11>.;
+* [Jul-23] Our project "DIFPRIPOS: Rendre PosgreSQL différentiellement privé pour une IA transparente" has been accepted for funding by [ANR AAPG 2023](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/).
+* [Jul-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has received the <span style="color: red; font-weight: normal;">&#42;Best Paper Award&#42;</span> at [DBSec 2023](http://www.dbsec2023.unimol.it/)!
+* [May-23] Our paper "On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms" has been accepted to [DBSec 2023](http://www.dbsec2023.unimol.it/) and can be accessed on <https://doi.org/10.1007/978-3-031-37586-6_11>.
+* * [May-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has been accepted to [DBSec 2023](http://www.dbsec2023.unimol.it/) and can be accessed on <https://doi.org/10.1007/978-3-031-37586-6_1>.
 * [Apr-23] I’ll be serving as a Reviewer for the 37th Conference on Neural Information Processing Systems ([NeurIPS 2023](https://neurips.cc/)).
 * [Mar-23] I’ll be serving on the PC and Editorial Board of the *24th Privacy Enhancing Technologies Symposium* ([PETS 2024](https://petsymposium.org/)).
 * [Mar-23] I’ll be serving in the PC (Research Track) of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML/PKDD 2023](https://2023.ecmlpkdd.org/)).
@@ -34,9 +36,9 @@ Currently, my research interests are differential privacy and machine learning p
 * [May-22] We've realeased a Python package [multi-freq-ldpy](https://github.com/hharcolezi/multi-freq-ldpy) for multiple frequency estimation under local differential privacy. Please check out the introductory [Video_Presentation](https://screencast-o-matic.com/watch/c3hhQYVYNDi), [Slide_Presentation](http://hharcolezi.github.io/files/2022_Multi_Freq_LDPy_Presentation.pdf), and [arXived Demonstration Paper](https://arxiv.org/abs/2205.02648) of our package.
 * [May-22] Our paper "Differentially Private Multivariate Time Series Forecasting of Aggregated Human Mobility With Deep Learning: Input or Gradient Perturbation?" has been accepted to [Neural Computing and Applications](https://doi.org/10.1007/s00521-022-07393-0) and can be accessed on <https://arxiv.org/abs/2205.00436>.
 * [Apr-22] I'm a teaching assistant for Introduction to Computer Science with Java ([INF361](https://synapses.polytechnique.fr/catalogue/2020-2021/ue/138/INF361-introduction-a-l-informatique?from=D1)) at [École Polytechnique](https://www.polytechnique.edu/en) this semester.
-* [Apr-22] The final version of my thesis "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning" can be accessed on <https://arxiv.org/abs/2204.00850>.
+* [Apr-22] The final version of my thesis "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning" can be accessed at <https://arxiv.org/abs/2204.00850>.
 * [Apr-22] I’m serving in the PC of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML PKDD 2022](https://2022.ecmlpkdd.org/)).
-* [Jan-22] I succesfully defended my Ph.D. "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning". Here are the [Presentation](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC_Presentation.pdf) and the [Video-Presentation](https://screencast-o-matic.com/watch/c3fnIPVqTTc). I thank my dissertation jury Profs. [Benjamin Nguyen](https://www.benjamin-nguyen.fr/home/index.php?title=Accueil), [Mathieu Cunche](https://perso.citi-lab.fr/mcunche/), [Stéphane Chrétien](https://sites.google.com/site/stephanegchretien/home), and [Mário S. Alvim](https://homepages.dcc.ufmg.br/~msalvim/). 
+* [Jan-22] I successfully defended my Ph.D. "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning". Here are the [Presentation](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC_Presentation.pdf) and the [Video-Presentation](https://screencast-o-matic.com/watch/c3fnIPVqTTc). I thank my dissertation jury Profs. [Benjamin Nguyen](https://www.benjamin-nguyen.fr/home/index.php?title=Accueil), [Mathieu Cunche](https://perso.citi-lab.fr/mcunche/), [Stéphane Chrétien](https://sites.google.com/site/stephanegchretien/home), and [Mário S. Alvim](https://homepages.dcc.ufmg.br/~msalvim/). 
 
 ## Contact
 
@@ -45,4 +47,4 @@ I am always happy to discuss the possibility of new collaborations.
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 1 Rue Honoré d'Estienne d'Orves, 91120, Palaiseau, France.
 
-Last update: 17th July 2023.
+Last update: 01st August 2023.
