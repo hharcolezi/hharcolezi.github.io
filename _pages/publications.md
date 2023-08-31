@@ -21,7 +21,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 
 **18\. On the Risks of Collecting Multidimensional Data Under Local Differential Privacy**\
 *Arcolezi, H. H.*; Gambs, S.; Couchot, J.F.; Palamidessi, C.\
-[[VLDB 2023](https://www.vldb.org/pvldb/vol16/p1126-arcolezi.pdf)] [[arXiv](https://arxiv.org/abs/2209.01684)] [[Codes](https://github.com/hharcolezi/risks-ldp)]
+[[VLDB 2023](https://www.vldb.org/pvldb/vol16/p1126-arcolezi.pdf)] [[arXiv](https://arxiv.org/abs/2209.01684)] [[Presentation](http://hharcolezi.github.io/files/2023_VLDB_LDP_Attacks.pdf)] [[Codes](https://github.com/hharcolezi/risks-ldp)]
 
 **17\. Frequency Estimation of Evolving Data Under Local Differential Privacy**\
 \**Arcolezi, H. H.*; \*Pinzón, C.; Palamidessi, C.; Gambs, S.\
