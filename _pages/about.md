@@ -7,14 +7,17 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I'm a Postdoctoral Researcher on the [Comète research team](https://team.inria.fr/Comete/) led by [Catuscia Palamidessi](http://www.lix.polytechnique.fr/Labo/Catuscia.Palamidessi/) at [Inria](https://www.inria.fr/en) -- [LIX](https://www.lix.polytechnique.fr/), [École Polytechnique](https://www.polytechnique.edu/en). 
+Welcome! I'm a Research Scientist in the [PRIVATICS team](https://team.inria.fr/privatics/) at [Inria Grenoble - Rhône-Alpes](https://www.inria.fr/en/inria-centre-university-grenoble-alpes). 
+Previously, I was a Postdoctoral Researcher in the [Comète team](https://team.inria.fr/Comete/) at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre) -- [LIX](https://www.lix.polytechnique.fr/), [École Polytechnique](https://www.polytechnique.edu/en). 
 
-I received my Ph.D. in Computer Science from University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) in 2022, working with Profs. [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en), [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb), and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/).\
+I received my Ph.D. in Computer Science from the University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) in 2022, working with Profs. [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en), [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb), and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/).\
 Before that, I received my M.Eng. in Electrical Engineering from São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)) in 2019, under the supervision of Prof. [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). 
 
 Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
 
 ## News
+* [Oct-23] I started my new position as a research scientist in the [PRIVATICS team](https://team.inria.fr/privatics/) at [Inria Grenoble - Rhône-Alpes](https://www.inria.fr/en/inria-centre-university-grenoble-alpes).
+* [Sep-23] Our paper "Revealing the True Cost of Local Privacy: An Auditing Perspective" has been accepted to [TPDP 2023](https://tpdp.journalprivacyconfidentiality.org/2023/) and can be accessed on <https://arxiv.org/abs/2309.01597>.
 * [Jul-23] Our project "DIFPRIPOS: Making PostgreSQL Differentially Private for Transparent AI" has been accepted for funding by [ANR AAPG 2023](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/).
 * [Jul-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has received the <span style="color: red; font-weight: normal;">&#42;Best Paper Award&#42;</span> at [DBSec 2023](http://www.dbsec2023.unimol.it/)!
 * [May-23] We have two papers accepted at [DBSec 2023](http://www.dbsec2023.unimol.it/):
@@ -46,6 +49,6 @@ Currently, my research interests are differential privacy and ethical aspects of
 I am always happy to discuss the possibility of new collaborations.
 
 * Email: heber.hwang-arcolezi@inria.fr
-* Postal Address: 1 Rue Honoré d'Estienne d'Orves, 91120, Palaiseau, France.
+* Postal Address: 655 Av. de l'Europe, 38330 Montbonnot-Saint-Martin, France.
 
-Last update: 01st August 2023.
+Last update: 2nd October 2023.
