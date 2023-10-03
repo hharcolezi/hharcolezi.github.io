@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Héber H. Arcolezi"
   avatar           : "profile.png"
-  bio              : ""
-  location         : "Montbonnot St Martin, France"
+  bio              : "Research Scientist @ Inria Grenoble - Rhône-Alpes\\ Research focus:\\Differential Privacy & Ethics of AI."
+  location         : "Grenoble, France"
   employer         :
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   email            : "heber.hwang-arcolezi@inria.fr"
