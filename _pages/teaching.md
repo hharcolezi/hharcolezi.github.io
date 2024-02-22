@@ -7,7 +7,7 @@ author_profile: true
 
 ### 2024
 - **Database Management Systems, 27h, Teaching Assistant**.\
-Professional Bachelor in Networks and Telecommunication, [Universit´e Grenoble Alpes](https://www.univ-grenoble-alpes.fr/english/).\
+Professional Bachelor in Networks and Telecommunication, Université Grenoble Alpes ([UGA](https://www.univ-grenoble-alpes.fr/english/)).\
 Database design, Entity-Relationship model, Relational Model, SQL, Web Programming.
 
 ### 2023, 2022
