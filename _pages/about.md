@@ -15,10 +15,10 @@ Currently, my research interests are differential privacy and ethical aspects of
 
 ## News
 * [Jan-24] Our paper "Causal Discovery Under Local Privacy" has been accepted at [CLeaR 2024](https://www.cclear.cc/2024) and can be accessed on <https://arxiv.org/abs/2311.04037>.
-* [Jan-24] I’ll be serving in the (Privacy and Anonymity Track) PC of the *31st ACM Conference on Computer and Communications Security* ([CCS 2024](https://www.sigsac.org/ccs/CCS2024/)).
 * [Jan-24] I’ll be serving in the PC of the *33rd International Joint Conference on Artificial Intelligence* ([IJCAI 2024](https://ijcai24.org/)).
 * [Jan-24] I’ll be serving in the PC of the *7th ACM Conference on Fairness, Accountability, and Transparency* ([FAccT 2024](https://facctconference.org/2024/index.html)).
 * [Jan-24] I’ll be serving in the PC of the *31st Selected Areas in Cryptography Conference* ([SAC 2024](https://sacworkshop.org/SAC24/)).
+* [Dec-23] I’ll be serving in the (Privacy and Anonymity Track) PC of the *31st ACM Conference on Computer and Communications Security* ([CCS 2024](https://www.sigsac.org/ccs/CCS2024/)).
 * [Oct-23] I started my new position as a research scientist in the [PRIVATICS team](https://team.inria.fr/privatics/) at [Inria Grenoble - Rhône-Alpes](https://www.inria.fr/en/inria-centre-university-grenoble-alpes).
 * [Sep-23] Our paper "Revealing the True Cost of Local Privacy: An Auditing Perspective" has been accepted to [TPDP 2023](https://tpdp.journalprivacyconfidentiality.org/2023/) and can be accessed on <https://arxiv.org/abs/2309.01597>.
 * [Jul-23] Our project "[DIFPRIPOS](https://projects.femto-st.fr/difpripos/en): Making PostgreSQL Differentially Private for Transparent AI" has been accepted for funding by [ANR AAPG 2023](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/).
