@@ -7,42 +7,28 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I'm a Research Scientist in the [PRIVATICS team](https://team.inria.fr/privatics/) at [Inria Grenoble - Rhône-Alpes](https://www.inria.fr/en/inria-centre-university-grenoble-alpes). 
+Welcome! I'm a tenured research scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working in the [PRIVATICS team](https://team.inria.fr/privatics/). 
 Previously, I was a Postdoctoral Researcher in the [Comète team](https://team.inria.fr/Comete/) at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre) -- [LIX](https://www.lix.polytechnique.fr/), [École Polytechnique](https://www.polytechnique.edu/en). 
 
-I received my Ph.D. in Computer Science from the University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) in 2022, working with Profs. [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en), [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb), and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/).\
-Before that, I received my M.Eng. in Electrical Engineering from São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)) in 2019, under the supervision of Prof. [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). 
+I received my Ph.D. in Computer Science from the University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) and my M.Sc. in Electrical Engineering from the São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)). 
 
 Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
 
 ## News
+* [Jan-24] Our paper "Causal Discovery Under Local Privacy" has been accepted at [CLeaR 2024](https://www.cclear.cc/2024) and can be accessed on <https://arxiv.org/abs/2311.04037>.
+* [Jan-24] I’ll be serving in the (Privacy and Anonymity Track) PC of the *31st ACM Conference on Computer and Communications Security* ([CCS 2024](https://www.sigsac.org/ccs/CCS2024/)).
+* [Jan-24] I’ll be serving in the PC of the *33rd International Joint Conference on Artificial Intelligence* ([IJCAI 2024](https://ijcai24.org/)).
+* [Jan-24] I’ll be serving in the PC of the *7th ACM Conference on Fairness, Accountability, and Transparency* ([FAccT 2024](https://facctconference.org/2024/index.html)).
+* [Jan-24] I’ll be serving in the PC of the *31st Selected Areas in Cryptography Conference* ([SAC 2024](https://sacworkshop.org/SAC24/)).
 * [Oct-23] I started my new position as a research scientist in the [PRIVATICS team](https://team.inria.fr/privatics/) at [Inria Grenoble - Rhône-Alpes](https://www.inria.fr/en/inria-centre-university-grenoble-alpes).
 * [Sep-23] Our paper "Revealing the True Cost of Local Privacy: An Auditing Perspective" has been accepted to [TPDP 2023](https://tpdp.journalprivacyconfidentiality.org/2023/) and can be accessed on <https://arxiv.org/abs/2309.01597>.
-* [Jul-23] Our project "DIFPRIPOS: Making PostgreSQL Differentially Private for Transparent AI" has been accepted for funding by [ANR AAPG 2023](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/).
+* [Jul-23] Our project "[DIFPRIPOS](https://projects.femto-st.fr/difpripos/en): Making PostgreSQL Differentially Private for Transparent AI" has been accepted for funding by [ANR AAPG 2023](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/).
 * [Jul-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has received the <span style="color: red; font-weight: normal;">&#42;Best Paper Award&#42;</span> at [DBSec 2023](http://www.dbsec2023.unimol.it/)!
 * [May-23] We have two papers accepted at [DBSec 2023](http://www.dbsec2023.unimol.it/):
 * * [On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms](https://doi.org/10.1007/978-3-031-37586-6_11).
 * * [(Local) Differential Privacy has NO Disparate Impact on Fairness](https://doi.org/10.1007/978-3-031-37586-6_1).
 * [Apr-23] I’ll be serving as a Reviewer for the 37th Conference on Neural Information Processing Systems ([NeurIPS 2023](https://neurips.cc/)).
 * [Mar-23] I’ll be serving on the PC and Editorial Board of the *24th Privacy Enhancing Technologies Symposium* ([PETS 2024](https://petsymposium.org/)).
-* [Mar-23] I’ll be serving in the PC (Research Track) of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML/PKDD 2023](https://2023.ecmlpkdd.org/)).
-* [Feb-23] I’m serving as a Reviewer and Area Chair (Tiny Paper Track) for the *11th International Conference on Learning Representations* ([ICLR 2023](https://iclr.cc/)).
-* [Jan-23] I’m serving in the PC of the *6th ACM Conference on Fairness, Accountability, and Transparency* ([FAccT 2023](https://facctconference.org/2023/index.html)).
-* [Dec-22] Our paper "On the Risks of Collecting Multidimensional Data Under Local Differential Privacy" has been accepted to [VLDB 2023](https://vldb.org/2023/) and can be accessed on <https://arxiv.org/abs/2209.01684>.
-* [Dec-22] Our paper "Frequency Estimation of Evolving Data Under Local Differential Privacy" has been accepted to [EDBT 2023](http://edbticdt2023.cs.uoi.gr/?contents=main.html) and can be accessed on <https://arxiv.org/abs/2210.00262>.
-* [Nov-22] I’m serving in the PC of the *4th AAAI Workshop on Privacy-Preserving Artificial Intelligence* ([PPAI 2023](https://aaai-ppai23.github.io/)).
-* [Nov-22] I’m serving in the PC of the *10th IEEE Swiss Conference on Data Science* ([SDS 2023](https://sds2023.ch/)).
-* [Oct-22] I gave a seminar talk at the [GT-PVP](https://www.univ-orleans.fr/lifo/evenements/GT-PVP/?page_id=45) entitled "Locally differentially private protocols for frequency estimation of longitudinal data".
-* [Oct-22] I've visited the [SYSTOPIA lab](https://systopia.cs.ubc.ca/) at [The University of British Columbia](https://www.ubc.ca/) in Vancouver for two months (mid October to mid December 2022). 
-* [Sep-22] Our demonstration paper "Multi-Freq-LDPy: Multiple Frequency Estimation Under Local Differential Privacy in Python" has been accepted to [ESORICS 2022](https://doi.org/10.1007/978-3-031-17143-7_40) ([poster presentation](http://hharcolezi.github.io/files/2022_Multi_Freq_LDPy_Poster.pdf)) and can be accessed at <https://arxiv.org/abs/2205.02648>. 
-* [Sep-22] We are organizing a [Workshop on issues in Ethical Machine Learning](https://www.lix.polytechnique.fr/ethicalai/Home.html) with special focus on Privacy and Fairness on the 30th of September. The topics will range from Fairness to Privacy, you can register [here](https://docs.google.com/forms/d/e/1FAIpQLSchIdGKZC3ARCG13oz-DXwugw8x_cj3r2DXaeZ4fm-Q4UPR5Q/viewform).
-* [Jul-22] Our paper "Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates" has been accepted to [Digital Communications and Networks](https://www.keaipublishing.com/en/journals/digital-communications-and-networks/) journal and can be accessed on <https://doi.org/10.1016/j.dcan.2022.07.003>.
-* [May-22] We've realeased a Python package [multi-freq-ldpy](https://github.com/hharcolezi/multi-freq-ldpy) for multiple frequency estimation under local differential privacy. Please check out the introductory [Video_Presentation](https://screencast-o-matic.com/watch/c3hhQYVYNDi), [Slide_Presentation](http://hharcolezi.github.io/files/2022_Multi_Freq_LDPy_Presentation.pdf), and [arXived Demonstration Paper](https://arxiv.org/abs/2205.02648) of our package.
-* [May-22] Our paper "Differentially Private Multivariate Time Series Forecasting of Aggregated Human Mobility With Deep Learning: Input or Gradient Perturbation?" has been accepted to [Neural Computing and Applications](https://doi.org/10.1007/s00521-022-07393-0) and can be accessed on <https://arxiv.org/abs/2205.00436>.
-* [Apr-22] I'm a teaching assistant for Introduction to Computer Science with Java ([INF361](https://synapses.polytechnique.fr/catalogue/2020-2021/ue/138/INF361-introduction-a-l-informatique?from=D1)) at [École Polytechnique](https://www.polytechnique.edu/en) this semester.
-* [Apr-22] The final version of my thesis "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning" can be accessed at <https://arxiv.org/abs/2204.00850>.
-* [Apr-22] I’m serving in the PC of the *European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases* ([ECML PKDD 2022](https://2022.ecmlpkdd.org/)).
-* [Jan-22] I successfully defended my Ph.D. "Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning". Here are the [Presentation](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC_Presentation.pdf) and the [Video-Presentation](https://screencast-o-matic.com/watch/c3fnIPVqTTc). I thank my dissertation jury Profs. [Benjamin Nguyen](https://www.benjamin-nguyen.fr/home/index.php?title=Accueil), [Mathieu Cunche](https://perso.citi-lab.fr/mcunche/), [Stéphane Chrétien](https://sites.google.com/site/stephanegchretien/home), and [Mário S. Alvim](https://homepages.dcc.ufmg.br/~msalvim/). 
 
 ## Contact
 
@@ -51,4 +37,4 @@ I am always happy to discuss the possibility of new collaborations.
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 655 Av. de l'Europe, 38330 Montbonnot-Saint-Martin, France.
 
-Last update: 2nd October 2023.
+Last update: 22nd February 2024.
