@@ -7,9 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I'm a tenured research scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working in the [PRIVATICS team](https://team.inria.fr/privatics/). 
-Previously, I was a Postdoctoral Researcher in the [Comète team](https://team.inria.fr/Comete/) at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre) -- [LIX](https://www.lix.polytechnique.fr/), [École Polytechnique](https://www.polytechnique.edu/en). 
-
+Welcome! I'm a tenured research scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working with the [PRIVATICS](https://team.inria.fr/privatics/) team. 
+Previously, I was a postdoctoral researcher in the [Comète team](https://team.inria.fr/Comete/) at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre). 
 I received my Ph.D. in Computer Science from the University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) and my M.Sc. in Electrical Engineering from the São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)). 
 
 Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
