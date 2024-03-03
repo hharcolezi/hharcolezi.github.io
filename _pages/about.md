@@ -14,7 +14,7 @@ I received my Ph.D. in Computer Science from the University Bourgogne Franche-Co
 Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
 
 ## News
-* [Feb-24] Our associated team [AUDIT-PAIR](https://team.inria.fr/auditpair/) proposal with the UQAM has been approved, which will focus on advancing AI system auditing for privacy and fairness.
+* [Feb-24] Our associated team [AUDIT-PAIR](https://team.inria.fr/auditpair/) proposal with the UQAM has been approved and launched, focusing on advancing AI system auditing for privacy and fairness.
 * [Jan-24] Our paper "Causal Discovery Under Local Privacy" has been accepted at [CLeaR 2024](https://www.cclear.cc/2024) and can be accessed on <https://arxiv.org/abs/2311.04037>.
 * [Jan-24] I’ll be serving in the PC of the *33rd International Joint Conference on Artificial Intelligence* ([IJCAI 2024](https://ijcai24.org/)).
 * [Jan-24] I’ll be serving in the PC of the *7th ACM Conference on Fairness, Accountability, and Transparency* ([FAccT 2024](https://facctconference.org/2024/index.html)).
