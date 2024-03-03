@@ -8,12 +8,13 @@ redirect_from:
 ---
 
 Welcome! I'm a tenured research scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working with the [PRIVATICS](https://team.inria.fr/privatics/) team. 
-Previously, I was a postdoctoral researcher in the [Comète team](https://team.inria.fr/Comete/) at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre). 
+Previously, I was a postdoctoral researcher in the [Comète](https://team.inria.fr/Comete/) team at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre). 
 I received my Ph.D. in Computer Science from the University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) and my M.Sc. in Electrical Engineering from the São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)). 
 
 Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
 
 ## News
+* [Feb-24] Our associated team [AUDIT-PAIR](https://team.inria.fr/auditpair/) proposal with the UQAM has been approved, which will focus on advancing AI system auditing for privacy and fairness.
 * [Jan-24] Our paper "Causal Discovery Under Local Privacy" has been accepted at [CLeaR 2024](https://www.cclear.cc/2024) and can be accessed on <https://arxiv.org/abs/2311.04037>.
 * [Jan-24] I’ll be serving in the PC of the *33rd International Joint Conference on Artificial Intelligence* ([IJCAI 2024](https://ijcai24.org/)).
 * [Jan-24] I’ll be serving in the PC of the *7th ACM Conference on Fairness, Accountability, and Transparency* ([FAccT 2024](https://facctconference.org/2024/index.html)).
@@ -35,4 +36,4 @@ I am always happy to discuss the possibility of new collaborations.
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 655 Av. de l'Europe, 38330 Montbonnot-Saint-Martin, France.
 
-Last update: 22nd February 2024.
+Last update: March 3rd, 2024.
