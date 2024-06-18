@@ -14,6 +14,7 @@ I received my Ph.D. in Computer Science from the University Bourgogne Franche-Co
 Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
 
 ## News
+* [May-24] Our paper "Revealing the True Cost of Locally Differentially Private Protocols: An Auditing Perspective" has been accepted at [PETS 2024](https://petsymposium.org/2024/) and can be accessed at <https://arxiv.org/abs/2309.01597>.
 * [Apr-24] Our paper "A Systematic and Formal Study of the Impact of Local Differential Privacy on Fairness: Preliminary Results" has been accepted at [CSF 2024](https://csf2024.ieee-security.org/) and can be accessed at <https://arxiv.org/abs/2405.14725>.
 * [Apr-24] Our paper "On the impact of multi-dimensional local differential privacy on fairness" has been accepted at [ECML PKDD 2024 (Journal Track)](https://ecmlpkdd.org/2024/) and can be accessed at <https://arxiv.org/abs/2312.04404>.
 * [Feb-24] Our associated team [AUDIT-PAIR](https://team.inria.fr/auditpair/) proposal with the UQAM has been approved and launched, focusing on advancing AI system auditing for privacy and fairness.
@@ -27,9 +28,6 @@ Currently, my research interests are differential privacy and ethical aspects of
 * [Sep-23] Our paper "Revealing the True Cost of Local Privacy: An Auditing Perspective" has been accepted to [TPDP 2023](https://tpdp.journalprivacyconfidentiality.org/2023/) and can be accessed on <https://arxiv.org/abs/2309.01597>.
 * [Jul-23] Our project "[DIFPRIPOS](https://projects.femto-st.fr/difpripos/en): Making PostgreSQL Differentially Private for Transparent AI" has been accepted for funding by the [ANR AAPG 2023](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/).
 * [Jul-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has received the <span style="color: red; font-weight: normal;">&#42;Best Paper Award&#42;</span> at [DBSec 2023](http://www.dbsec2023.unimol.it/)!
-* [May-23] We have two papers accepted at [DBSec 2023](http://www.dbsec2023.unimol.it/):
-* * [On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms](https://doi.org/10.1007/978-3-031-37586-6_11).
-* * [(Local) Differential Privacy has NO Disparate Impact on Fairness](https://doi.org/10.1007/978-3-031-37586-6_1).
 
 ## Contact
 
