@@ -16,7 +16,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 
 **On the impact of multi-dimensional local differential privacy on fairness**\
 Makhlouf, K., *Arcolezi, H. H.*, Zhioua, S., Ben Brahim, G., Palamidessi, C.\
-[[ECML PKDD (Journal Track)](https://doi.org/10.1007/s10618-024-01031-0)] [[arXiv](https://arxiv.org/abs/2312.04404)] [[Codes](https://github.com/karimamakhlouf/impact_of_ldp_on_fairness)]
+[[ECML PKDD 2024 (Journal Track)](https://doi.org/10.1007/s10618-024-01031-0)] [[arXiv](https://arxiv.org/abs/2312.04404)] [[Codes](https://github.com/karimamakhlouf/impact_of_ldp_on_fairness)]
 
 **Causal Discovery Under Local Privacy**\
 Binkyte, R., Pinzón, C.A., Lestyán, S., Jung, K., *Arcolezi, H.H.*, Palamidessi, C.\
