@@ -10,6 +10,14 @@ The superscript \* indicates equal contributions to the paper. \
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
 ### 2024
+**Revealing the True Cost of Locally Differentially Private Protocols: An Auditing Perspective**\
+*Arcolezi, H.H.*, Gambs, S.\
+[[PETS 2024](https://petsymposium.org/popets/2024/popets-2024-0110.php)] [[arXiv](https://arxiv.org/abs/2309.01597)] [[Codes](https://github.com/hharcolezi/ldp-audit)]
+
+**On the impact of multi-dimensional local differential privacy on fairness**\
+Makhlouf, K., *Arcolezi, H. H.*, Zhioua, S., Ben Brahim, G., Palamidessi, C.\
+[[ECML PKDD (Journal Track)](https://doi.org/10.1007/s10618-024-01031-0)] [[arXiv](https://arxiv.org/abs/2312.04404)] [[Codes](https://github.com/karimamakhlouf/impact_of_ldp_on_fairness)]
+
 **Causal Discovery Under Local Privacy**\
 Binkyte, R., Pinzón, C.A., Lestyán, S., Jung, K., *Arcolezi, H.H.*, Palamidessi, C.\
 [[CLeaR 2024](https://proceedings.mlr.press/v236/binkyte24a.html)] [[arXiv](https://arxiv.org/abs/2311.04037)]
