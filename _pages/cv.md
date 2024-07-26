@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-[Complete CV](http://hharcolezi.github.io/files/HHA_Complete_CV.pdf) / [Short CV](http://hharcolezi.github.io/files/HHA_Short_CV.pdf).
+[CV](http://hharcolezi.github.io/files/HHA_Short_CV.pdf) (Last update Jul 2024)
 
 {% include base_path %}
 
