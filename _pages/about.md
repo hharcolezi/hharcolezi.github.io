@@ -14,9 +14,13 @@ I received my Ph.D. in Computer Science from the University Bourgogne Franche-Co
 Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
 
 ## News
+* [Aug-24] I’ll give a tutorial on "Securing Data with Local Differential Privacy: Concepts, Protocols, and Practical Applications" at the *SAC Summer School* ([SAC 2024](https://sacworkshop.org/SAC24/summer-school.html)).
+* [Aug-24] I’ll be serving in the PC of the *13th International Conference on Learning Representations* ([ICLR 2025](https://iclr.cc/Conferences/2025)).
+* [Aug-24] I’ll be serving in the PC of the *34th USENIX Security Symposium* ([USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25)).
 * [May-24] Our paper "Revealing the True Cost of Locally Differentially Private Protocols: An Auditing Perspective" has been accepted at [PETS 2024](https://petsymposium.org/2024/) and can be accessed at <https://arxiv.org/abs/2309.01597>.
 * [Apr-24] Our paper "A Systematic and Formal Study of the Impact of Local Differential Privacy on Fairness: Preliminary Results" has been accepted at [CSF 2024](https://csf2024.ieee-security.org/) and can be accessed at <https://arxiv.org/abs/2405.14725>.
 * [Apr-24] Our paper "On the impact of multi-dimensional local differential privacy on fairness" has been accepted at [ECML PKDD 2024 (Journal Track)](https://ecmlpkdd.org/2024/) and can be accessed at <https://arxiv.org/abs/2312.04404>.
+* [Feb-24] I’ll be serving in the PC of the *25th Privacy Enhancing Technologies Symposium* ([PETS 2025](https://petsymposium.org/cfp25.php)).
 * [Feb-24] Our associated team [AUDIT-PAIR](https://team.inria.fr/auditpair/) proposal with the UQAM has been approved and launched, focusing on advancing AI system auditing for privacy and fairness.
 * [Jan-24] Our paper "Causal Discovery Under Local Privacy" has been accepted at [CLeaR 2024](https://www.cclear.cc/2024) and can be accessed at <https://arxiv.org/abs/2311.04037>. 
 * [Jan-24] I’ll be serving in the PC of the *33rd International Joint Conference on Artificial Intelligence* ([IJCAI 2024](https://ijcai24.org/)).
