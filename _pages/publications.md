@@ -10,6 +10,10 @@ The superscript \* indicates equal contributions to the paper. \
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
 ### 2024
+**A Systematic and Formal Study of the Impact of Local Differential Privacy on Fairness: Preliminary Results**\
+Makhlouf, K., Stefanović, T., *Arcolezi, H. H.*, Palamidessi, C.\
+[[CSF 2024](https://doi.org/10.1109/CSF61375.2024.00039)] [[arXiv](https://arxiv.org/abs/2405.14725)]
+
 **Revealing the True Cost of Locally Differentially Private Protocols: An Auditing Perspective**\
 *Arcolezi, H.H.*, Gambs, S.\
 [[PETS 2024](https://petsymposium.org/popets/2024/popets-2024-0110.php)] [[arXiv](https://arxiv.org/abs/2309.01597)] [[Codes](https://github.com/hharcolezi/ldp-audit)]
