@@ -14,6 +14,8 @@ I received my Ph.D. in Computer Science from the University Bourgogne Franche-Co
 Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
 
 ## News
+* [Oct-24] My project "AI-PULSE: Aligning Privacy, UtiLity, and FairnesS for ResponsiblE AI", accepted for funding by the [ANR AAPG (JCJC - Young researchers) call](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2024/), is officially started.
+* [Sep-24] Our paper "Nob-MIAs: Non-biased Membership Inference Attacks Assessment on Large Language Models with Ex-Post Dataset Construction" has been accepted at [WISE 2024](https://wise2024-qatar.com/) and can be accessed at <https://arxiv.org/abs/2408.05968>.
 * [Aug-24] I’ll give a tutorial on "Securing Data with Local Differential Privacy: Concepts, Protocols, and Practical Applications" at the *SAC Summer School* ([SAC 2024](https://sacworkshop.org/SAC24/summer-school.html)).
 * [Aug-24] I’ll be serving in the PC of the *13th International Conference on Learning Representations* ([ICLR 2025](https://iclr.cc/Conferences/2025)).
 * [Aug-24] I’ll be serving in the PC of the *34th USENIX Security Symposium* ([USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25)).
@@ -40,4 +42,4 @@ I am always happy to discuss the possibility of new collaborations.
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 655 Av. de l'Europe, 38330 Montbonnot-Saint-Martin, France.
 
-Last update: August 26th, 2024.
+Last update: October 1st, 2024.
