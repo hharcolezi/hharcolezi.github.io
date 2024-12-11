@@ -10,6 +10,10 @@ The superscript \* indicates equal contributions to the paper. \
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
 ### 2024
+**Nob-MIAs: Non-biased Membership Inference Attacks Assessment on Large Language Models with Ex-Post Dataset Construction**\
+Eichler, C., Champeil, N., Anciaux, N., Bensamoun, A., *Arcolezi, H. H.*, & De Fuentes, J. M.\
+[[WISE 2024](https://doi.org/10.1007/978-981-96-0570-5_32)] [[arXiv](https://arxiv.org/abs/2408.05968)] [[Codes](https://github.com/ceichler/MIA-bias-removal)]
+
 **A Systematic and Formal Study of the Impact of Local Differential Privacy on Fairness: Preliminary Results**\
 Makhlouf, K., Stefanović, T., *Arcolezi, H. H.*, Palamidessi, C.\
 [[CSF 2024](https://doi.org/10.1109/CSF61375.2024.00039)] [[arXiv](https://arxiv.org/abs/2405.14725)]
