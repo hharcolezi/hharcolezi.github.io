@@ -13,7 +13,8 @@ I received my Ph.D. in Computer Science from the University Bourgogne Franche-Co
 
 Currently, my research interests are differential privacy and ethical aspects of machine learning (e.g., privacy and fairness issues). 
 
-## News
+## Recent News
+* [Feb-25] I’ll give a Keynote talk on "Intersections of Fairness and Privacy: A Local Differential Privacy Perspective" at the ([*9th GDR RSD/ASF Winter School on Distributed Systems \& Networks 2025*](https://sites.google.com/site/rsdwinterschool/home?authuser=0)).
 * [Oct-24] My project "[AI-PULSE](https://project.inria.fr/aipulse/): Aligning Privacy, UtiLity, and FairnesS for ResponsiblE AI", accepted for funding by the [ANR AAPG (JCJC - Young researchers) call](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2024/), is officially started.
 * [Sep-24] Our paper "Nob-MIAs: Non-biased Membership Inference Attacks Assessment on Large Language Models with Ex-Post Dataset Construction" has been accepted at [WISE 2024](https://wise2024-qatar.com/) and can be accessed at <https://arxiv.org/abs/2408.05968>.
 * [Aug-24] I’ll give a tutorial on "Securing Data with Local Differential Privacy: Concepts, Protocols, and Practical Applications" at the *SAC Summer School* ([SAC 2024](https://sacworkshop.org/SAC24/summer-school.html)).
@@ -30,10 +31,6 @@ Currently, my research interests are differential privacy and ethical aspects of
 * [Jan-24] I’ll be serving in the PC of the *31st Selected Areas in Cryptography Conference* ([SAC 2024](https://sacworkshop.org/SAC24/)).
 * [Dec-24] My project "Exploring the Interplay of Differential Privacy and Fairness in ML" has been accepted for funding by the [MIAI Open Call](https://miai.univ-grenoble-alpes.fr/research/projects-for-the-development-and-promotion-of-ai/).
 * [Dec-23] I’ll be serving in the (Privacy and Anonymity Track) PC of the *31st ACM Conference on Computer and Communications Security* ([CCS 2024](https://www.sigsac.org/ccs/CCS2024/)).
-* [Oct-23] I started my new position as a research scientist in the [PRIVATICS team](https://team.inria.fr/privatics/) at [Inria Grenoble - Rhône-Alpes](https://www.inria.fr/en/inria-centre-university-grenoble-alpes).
-* [Sep-23] Our paper "Revealing the True Cost of Local Privacy: An Auditing Perspective" has been accepted to [TPDP 2023](https://tpdp.journalprivacyconfidentiality.org/2023/) and can be accessed on <https://arxiv.org/abs/2309.01597>.
-* [Jul-23] Our project "[DIFPRIPOS](https://projects.femto-st.fr/difpripos/en): Making PostgreSQL Differentially Private for Transparent AI" has been accepted for funding by the [ANR AAPG 2023](https://anr.fr/fr/detail/call/aapg-appel-a-projets-generique-2023/).
-* [Jul-23] Our paper "(Local) Differential Privacy has NO Disparate Impact on Fairness" has received the <span style="color: red; font-weight: normal;">&#42;Best Paper Award&#42;</span> at [DBSec 2023](http://www.dbsec2023.unimol.it/)!
 
 ## Contact
 
@@ -42,4 +39,4 @@ I am always happy to discuss the possibility of new collaborations.
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 655 Av. de l'Europe, 38330 Montbonnot-Saint-Martin, France.
 
-Last update: October 23rd, 2024.
+Last update: February 21st, 2025.
