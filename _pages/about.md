@@ -14,6 +14,7 @@ I received my Ph.D. in Computer Science from the University Bourgogne Franche-Co
 Currently, my research interests are differential privacy and responsible AI (e.g., privacy, fairness, and explainability). 
 
 ## Recent News
+* [Sep-25] I’ll be serving in the PC of the *The 14th International Conference on Learning Representations* ([ICLR 2026](https://iclr.cc/Conferences/2026)).
 * [Aug-25] I’ll be serving in the PC of the *The 40th Annual AAAI Conference on Artificial Intelligence* ([AAAI 2026](https://aaai.org/conference/aaai/aaai-26/)).
 * [Jul-25] Our paper "Fair Play for Individuals, Foul Play for Groups? Auditing Anonymization's Impact on ML Fairness" has been accepted at [ECAI 2025](https://ecai2025.org/) and can be accessed at <https://arxiv.org/abs/2505.07985>.
 * [Jun-25] Our new pre-print paper "Breaking Anonymity at Scale: Re-identifying the Trajectories of 100K Real Users in Japan" can be accessed at <https://arxiv.org/abs/2506.05611>.
