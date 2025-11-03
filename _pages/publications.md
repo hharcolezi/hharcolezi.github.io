@@ -12,7 +12,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 ### 2025
 **Fair Play for Individuals, Foul Play for Groups? Auditing Anonymization's Impact on ML Fairness**\
 *Arcolezi, H.H.*, Alishahi, M., Bendoukha, A.A., Kaaniche, N.\
-[[ECAI 2025](https://ebooks.iospress.nl/doi/10.3233/FAIA250909)] [[arXiv](https://arxiv.org/abs/2505.07985)] [[Codes](https://github.com/hharcolezi/anonymity-impact-fairness)]
+[[ECAI 2025](https://ebooks.iospress.nl/doi/10.3233/FAIA250909)] [[arXiv](https://arxiv.org/abs/2505.07985)] [[Codes](https://github.com/hharcolezi/anonymity-impact-fairness)] [[Spotlight Presentation](http://hharcolezi.github.io/files/2025_10_ECAI_Anonymity_Fairness.pdf)] [[Poster](http://hharcolezi.github.io/files/2025_10_ECAI_Anonymity_Fairness_Poster.pdf)]
 
 **FADE: Federated Aggregation with Discrimination Elimination**\
 Bendoukha, A.A., *Arcolezi, H.H.*, Kaaniche, N., Boudguiga, A., Sirdey, R., Clet, P.E.\
