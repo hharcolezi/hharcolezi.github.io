@@ -14,8 +14,8 @@ I received my Ph.D. in Computer Science from the University Bourgogne Franche-Co
 Currently, my research interests are differential privacy and responsible AI (e.g., privacy, fairness, and explainability). 
 
 ## Recent News
-* [Sep-25] I’ll be serving in the PC of the *The 14th International Conference on Learning Representations* ([ICLR 2026](https://iclr.cc/Conferences/2026)).
-* [Aug-25] I’ll be serving in the PC of the *The 40th Annual AAAI Conference on Artificial Intelligence* ([AAAI 2026](https://aaai.org/conference/aaai/aaai-26/)).
+* [Sep-25] I’ll be serving in the PC of the *14th International Conference on Learning Representations* ([ICLR 2026](https://iclr.cc/Conferences/2026)).
+* [Aug-25] I’ll be serving in the PC of the *40th Annual AAAI Conference on Artificial Intelligence* ([AAAI 2026](https://aaai.org/conference/aaai/aaai-26/)).
 * [Jul-25] Our paper "Fair Play for Individuals, Foul Play for Groups? Auditing Anonymization's Impact on ML Fairness" has been accepted at [ECAI 2025](https://ecai2025.org/) and can be accessed at <https://arxiv.org/abs/2505.07985>.
 * [Jun-25] Our new pre-print paper "Breaking Anonymity at Scale: Re-identifying the Trajectories of 100K Real Users in Japan" can be accessed at <https://arxiv.org/abs/2506.05611>.
 * [Jun-25] Our paper "FADE: Federated Aggregation with Discrimination Elimination" has been accepted at [FAccT 2025](https://facctconference.org/2025/) and can be accessed at <https://hal.science/hal-05105146/>. 
@@ -35,4 +35,4 @@ I am always happy to discuss the possibility of new collaborations.
 * Email: heber.hwang-arcolezi@inria.fr
 * Postal Address: 655 Av. de l'Europe, 38330 Montbonnot-Saint-Martin, France.
 
-Last update: Aug 7th, 2025.
+Last update: {{ site.time | date: "%b %-d, %Y" }}.
