@@ -24,7 +24,7 @@ The original dataset was provided by Orange telecom in France, which contains an
 
 
 ### Selected Open-Source Code from Papers
-- **LDP-Auditor** [[GitHub](https://github.com/hharcolezi/ldp-audit)] [PETS 2024](https://petsymposium.org/popets/2024/popets-2024-0110.php) [[arXiv](https://arxiv.org/abs/2210.00262)]\
+- **LDP-Auditor** [[GitHub](https://github.com/hharcolezi/ldp-audit)] [PETS 2024](https://petsymposium.org/popets/2024/popets-2024-0110.php) [[arXiv](https://arxiv.org/abs/2309.01597)]\
 Python implementation of LDP-Auditor for empirically estimating ε-LDP guarantees.
 
 - **LOLOHA** [[GitHub](https://github.com/hharcolezi/LOLOHA)] [EDBT 2023](http://dx.doi.org/10.48786/edbt.2023.44) [[arXiv](https://arxiv.org/abs/2210.00262)]\
