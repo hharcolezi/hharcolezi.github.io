@@ -11,11 +11,11 @@ redirect_from:
 <html>
 <head>
   <script type="text/javascript">
-    window.location.href = "http://hharcolezi.github.io/files/HHA_CV_Complete.pdf";
+    window.location.href = "http://hharcolezi.github.io/files/HHA_CV.pdf";
   </script>
-  <link rel="canonical" href="http://hharcolezi.github.io/files/HHA_CV_Complete.pdf" />
+  <link rel="canonical" href="http://hharcolezi.github.io/files/HHA_CV.pdf" />
 </head>
 <body>
-  <p>If you are not redirected automatically, follow this <a href="http://hharcolezi.github.io/files/HHA_CV_Complete.pdf">link to the CV</a>.</p>
+  <p>If you are not redirected automatically, follow this <a href="http://hharcolezi.github.io/files/HHA_CV.pdf">link to the CV</a>.</p>
 </body>
 </html>
