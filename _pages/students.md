@@ -10,15 +10,15 @@ redirect_from:
 {% include base_path %}
 
 ## PhD Students
-- **[Marwa El Kamil]()** (**2025 – present**): INSA de Lyon & ÉTS Montréal  
+- **Marwa El Kamil** (**2025 – present**): INSA de Lyon & ÉTS Montréal  
   *Topic:* Being exposed only to the risks I am willing to take  
   *Co-supervised with* [Ulrich Aïvodji](https://aivodji.github.io/), [Antoine Boutet](https://sites.google.com/site/antoineboutet/)
 
-- **[Zhan Xu]()** (**2025 – present**): University Grenoble Alpes (UGA) & ÉTS Montréal  
+- **Zhan Xu** (**2025 – present**): University Grenoble Alpes (UGA) & ÉTS Montréal  
   *Topic:* Private and Fair Machine Learning  
   *Co-supervised with* [Ulrich Aïvodji](https://aivodji.github.io/), [Antoine Boutet](https://sites.google.com/site/antoineboutet/)
 
-- **[Imen Bajar]()** (**2025 – present**): INSA de Lyon & ÉTS Montréal  
+- **Imen Bajar** (**2025 – present**): INSA de Lyon & ÉTS Montréal  
   *Topic:* Assessment and reduction of re-identification risk from internal brain tissues of brain MRIs  
   *Co-supervised with* [Mohamed Maouche](https://mmaouche.github.io/), [Ulrich Aïvodji](https://aivodji.github.io/), [Carole Frindel](https://sites.google.com/view/carole-frindel/), [Antoine Boutet](https://sites.google.com/site/antoineboutet/)
 
