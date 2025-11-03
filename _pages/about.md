@@ -15,6 +15,7 @@ Currently, my research interests are differential privacy and responsible AI (e.
 
 ## Recent News
 * [Nov-25] I’ll be serving in the (Privacy and Anonymity Track) PC of the *ACM Conference on Computer and Communications Security* ([CCS 2026](https://www.sigsac.org/ccs/CCS2026/)).
+* [Oct-25] I've received a *Notable Reviewer Award* at [USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25).
 * [Sep-25] I’ll be serving in the PC of the *14th International Conference on Learning Representations* ([ICLR 2026](https://iclr.cc/Conferences/2026)).
 * [Aug-25] I’ll be serving in the PC of the *40th Annual AAAI Conference on Artificial Intelligence* ([AAAI 2026](https://aaai.org/conference/aaai/aaai-26/)).
 * [Jul-25] Our paper "Fair Play for Individuals, Foul Play for Groups? Auditing Anonymization's Impact on ML Fairness" has been accepted at [ECAI 2025](https://ecai2025.org/) and can be accessed at <https://arxiv.org/abs/2505.07985>.
