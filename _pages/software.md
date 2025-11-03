@@ -24,13 +24,13 @@ The original dataset was provided by Orange telecom in France, which contains an
 
 
 ### Selected Open-Source Code from Papers
-- **LDP-Auditor** [[GitHub](https://github.com/hharcolezi/ldp-audit)] [PETS 2024](https://petsymposium.org/popets/2024/popets-2024-0110.php) [[arXiv](https://arxiv.org/abs/2309.01597)]\
+- **LDP-Auditor** [[GitHub](https://github.com/hharcolezi/ldp-audit)] [[PETS 2024](https://petsymposium.org/popets/2024/popets-2024-0110.php)] [[arXiv](https://arxiv.org/abs/2309.01597)]\
 Python implementation of LDP-Auditor for empirically estimating ε-LDP guarantees.
 
-- **LOLOHA** [[GitHub](https://github.com/hharcolezi/LOLOHA)] [EDBT 2023](http://dx.doi.org/10.48786/edbt.2023.44) [[arXiv](https://arxiv.org/abs/2210.00262)]\
+- **LOLOHA** [[GitHub](https://github.com/hharcolezi/LOLOHA)] [[EDBT 2023](http://dx.doi.org/10.48786/edbt.2023.44)] [[arXiv](https://arxiv.org/abs/2210.00262)]\
 Python implementation of longitudinal LDP protocols (RAPPOR, dBitFlipPM) and our local hashing-based protocols for frequency estimation longitudinally (i.e., throughout time).
 
-- **Risks LDP** [[GitHub](https://github.com/hharcolezi/risks-ldp)] [VLDB 2023](https://doi.org/10.14778/3579075.3579086) [[arXiv](https://arxiv.org/abs/2209.01684)]\
+- **Risks LDP** [[GitHub](https://github.com/hharcolezi/risks-ldp)] [[VLDB 2023](https://doi.org/10.14778/3579075.3579086)] [[arXiv](https://arxiv.org/abs/2209.01684)]\
 Python implementation of re-identification and attribute inference attacks to LDP protocols for multidimensional data.
 
 - **RS+FD** [[GitHub](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D)] [[CIKM 2021](https://doi.org/10.1145/3459637.3482467)] [[arXiv](https://arxiv.org/abs/2109.07269)]\
