@@ -5,9 +5,10 @@ permalink: /software/
 author_profile: true
 ---
 
-I maintain a list of DP and LDP experiments at [ldp-protocols-mobility-cdrs](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs) for some of the works I carried out during my Ph.D. thesis.
-
 ### Open-Source Libraries
+
+- **ldp-toolbox** [[GitHub](https://github.com/hharcolezi/ldp-toolbox)] [[PyPI](https://pypi.org/project/ldp-toolbox)] [[CCS 2025]()] [[arXiv]()]\
+LDP-Toolbox is an interactive Python-based benchmarking and visualization platform for exploring the trade-offs between privacy loss (ε), utility, and attackability in local differential privacy (LDP). It provides analytical and empirical evaluations of standard LDP protocols, supports real-world datasets, and features dashboards for protocol comparison, parameter tuning, and reconstruction attack analysis. 
 
 - **multi-freq-ldpy** [[GitHub](https://github.com/hharcolezi/multi-freq-ldpy)] [[PyPI](https://pypi.org/project/multi-freq-ldpy/)] [[ESORICS 2022](https://doi.org/10.1007/978-3-031-17143-7_40)] [[arXiv](https://arxiv.org/abs/2205.02648)]\
 Multi-Freq-LDPy is a Python library for performing multiple frequency estimation tasks (multidimensional, longitudinal, and both) under local differential privacy (LDP) guarantees. Multi-Freq-LDPy features various state-of-the-art LDP algorithms such as k-RR, SS, OUE, OLH, RS+FD, Google's RAPPOR, and Microsoft's dBitFlipPM. The package is distributed under MIT license.
@@ -23,17 +24,20 @@ The original dataset was provided by Orange telecom in France, which contains an
 
 
 ### Selected Open-Source Code from Papers
-- **LOLOHA** [[GitHub](https://github.com/hharcolezi/LOLOHA)] [[arXiv](https://arxiv.org/abs/2210.00262)]\
+- **LDP-Auditor** [[GitHub](https://github.com/hharcolezi/ldp-audit)] [PETS 2024](https://petsymposium.org/popets/2024/popets-2024-0110.php) [[arXiv](https://arxiv.org/abs/2210.00262)]\
+Python implementation of LDP-Auditor for empirically estimating ε-LDP guarantees.
+
+- **LOLOHA** [[GitHub](https://github.com/hharcolezi/LOLOHA)] [EDBT 2023](http://dx.doi.org/10.48786/edbt.2023.44) [[arXiv](https://arxiv.org/abs/2210.00262)]\
 Python implementation of longitudinal LDP protocols (RAPPOR, dBitFlipPM) and our local hashing-based protocols for frequency estimation longitudinally (i.e., throughout time).
 
-- **Risks LDP** [[GitHub](https://github.com/hharcolezi/risks-ldp)] [[arXiv](https://arxiv.org/abs/2209.01684)]\
+- **Risks LDP** [[GitHub](https://github.com/hharcolezi/risks-ldp)] [VLDB 2023](https://doi.org/10.14778/3579075.3579086) [[arXiv](https://arxiv.org/abs/2209.01684)]\
 Python implementation of re-identification and attribute inference attacks to LDP protocols for multidimensional data.
 
 - **RS+FD** [[GitHub](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D)] [[CIKM 2021](https://doi.org/10.1145/3459637.3482467)] [[arXiv](https://arxiv.org/abs/2109.07269)]\
 Python implementation of our Random Sampling Plus Fake Data (RS+FD) algorithms for frequency estimation of multiple attributes under LDP.
 
-- **Longidutinal LDP** [[GitHub](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D)] [[DCAN Journal](https://doi.org/10.1016/j.dcan.2022.07.003)] [[arXiv](https://arxiv.org/abs/2111.04636)]\
-Python implementation of our longitudinal LDP protocols (L-GRR and L-UE) for frequency estimation a single time (i.e., with ϵ1-LDP).
+- **Longitudinal LDP** [[GitHub](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D)] [[DCAN Journal](https://doi.org/10.1016/j.dcan.2022.07.003)] [[arXiv](https://arxiv.org/abs/2111.04636)]\
+Python implementation of our longitudinal LDP protocols (L-GRR and L-UE) for frequency estimation a single time (i.e., with ε1-LDP).
 
 - **Geo-Indistinguishability** [[GitHub](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D)] [[MCA Journal](https://doi.org/10.3390/mca26030056)]\
 Python implementation of the planar Laplace mechanism that satisfy [Geo-Indistinguishability](https://doi.org/10.1145/2508859.2516735).
