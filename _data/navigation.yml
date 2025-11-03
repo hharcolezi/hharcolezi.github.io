@@ -1,13 +1,17 @@
 # main links links
 main:
+  
   - title: "Publications"
     url: /publications/
-
-  - title: "Teaching"
-    url: /teaching/    
+    
+  - title: "Projects"
+    url: /projects/
 
   - title: "Students"
     url: /students/
+  
+  - title: "Teaching"
+    url: /teaching/    
     
   - title: "Software & Datasets"
     url: /software/
