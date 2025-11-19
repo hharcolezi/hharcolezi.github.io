@@ -7,15 +7,20 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I'm a tenured research scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working with the [Privatics](https://team.inria.fr/privatics/) team. 
+👋 **Welcome!**   
+I'm a tenured research scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working with the [Privatics](https://team.inria.fr/privatics/) team. 
 Previously, I was a postdoctoral researcher in the [Comète](https://team.inria.fr/Comete/) team at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre). 
 I received my Ph.D. in Computer Science from the University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) and my M.Sc. in Electrical Engineering from the São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)). 
 
-Currently, my research interests are differential privacy and responsible AI (e.g., privacy, fairness, and explainability). 
+🔬 **Research Interests:**  
+Differential Privacy • Responsible AI • Fairness • Explainability 🛡️🤖⚖️
 
 ## Recent News
+* [Nov-25] Two papers accepted at [AAAI 2026](https://aaai.org/conference/aaai/aaai-26)!
+    * *Private Frequency Estimation Via Residue Number Systems* - <https://www.arxiv.org/abs/2511.11569>.
+    * *Estimating the True Distribution of Data Collected with Randomized Response*.
 * [Nov-25] I’ll be serving in the (Privacy and Anonymity Track) PC of the *ACM Conference on Computer and Communications Security* ([CCS 2026](https://www.sigsac.org/ccs/CCS2026/)).
-* [Oct-25] I've received a *Notable Reviewer Award* at [USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25).
+* [Oct-25] 🏆 I've received a *Notable Reviewer Award* at [USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25).
 * [Sep-25] I’ll be serving in the PC of the *14th International Conference on Learning Representations* ([ICLR 2026](https://iclr.cc/Conferences/2026)).
 * [Aug-25] I’ll be serving in the PC of the *40th Annual AAAI Conference on Artificial Intelligence* ([AAAI 2026](https://aaai.org/conference/aaai/aaai-26/)).
 * [Jul-25] Our paper "Fair Play for Individuals, Foul Play for Groups? Auditing Anonymization's Impact on ML Fairness" has been accepted at [ECAI 2025](https://ecai2025.org/) and can be accessed at <https://arxiv.org/abs/2505.07985>.
