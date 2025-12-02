@@ -10,6 +10,10 @@ The superscript \* indicates equal contributions to the paper. \
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
 ### 2025
+**Demo: Exploring Utility and Attackability Trade-offs in Local Differential Privacy**\
+\*Zhang, Haoying., \*Mishra K.A., *Arcolezi, H.H.*\
+[[CCS 2025](https://doi.org/10.1145/3719027.3760706)] [[arXiv](https://inria.hal.science/hal-05386311/)] [[Codes](https://github.com/hharcolezi/ldp-toolbox)] [[Poster](http://hharcolezi.github.io/files/2025_10_CCS_2025_Poster.pdf)]
+
 **Fair Play for Individuals, Foul Play for Groups? Auditing Anonymization's Impact on ML Fairness**\
 *Arcolezi, H.H.*, Alishahi, M., Bendoukha, A.A., Kaaniche, N.\
 [[ECAI 2025](https://ebooks.iospress.nl/doi/10.3233/FAIA250909)] [[arXiv](https://arxiv.org/abs/2505.07985)] [[Codes](https://github.com/hharcolezi/anonymity-impact-fairness)] [[Spotlight Presentation](http://hharcolezi.github.io/files/2025_10_ECAI_Anonymity_Fairness.pdf)] [[Poster](http://hharcolezi.github.io/files/2025_10_ECAI_Anonymity_Fairness_Poster.pdf)]
