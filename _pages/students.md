@@ -16,7 +16,7 @@ redirect_from:
 
 - **Zhan Xu** (**2025 – present**): University Grenoble Alpes (UGA) & ÉTS Montréal  
   *Topic:* Private and Fair Machine Learning  
-  *Co-supervised with* [Ulrich Aïvodji](https://aivodji.github.io/), [Antoine Boutet](https://sites.google.com/site/antoineboutet/)
+  *Co-supervised with* [Ulrich Aïvodji](https://aivodji.github.io/), [Claude Castelluccia](https://team.inria.fr/privatics/claude-castelluccia/)
 
 - **Imen Bajar** (**2025 – present**): INSA de Lyon & ÉTS Montréal  
   *Topic:* Assessment and reduction of re-identification risk from internal brain tissues of brain MRIs  
