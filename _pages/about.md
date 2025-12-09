@@ -15,6 +15,9 @@ I received my Ph.D. in Computer Science from the University Bourgogne Franche-Co
 🔬 **Research Interests:**  
 Differential Privacy • Responsible AI • Fairness • Explainability 🛡️🤖⚖️
 
+📢 In **February 2026**, I will join **ÉTS Montréal** as an **Assistant Professor**.  
+**I will be recruiting a PhD student for Fall 2026**, focusing on differential privacy and responsible AI.
+
 ## Recent News
 * [Nov-25] Two papers accepted at [AAAI 2026](https://aaai.org/conference/aaai/aaai-26)!
     * *Private Frequency Estimation Via Residue Number Systems* - <https://www.arxiv.org/abs/2511.11569>.
