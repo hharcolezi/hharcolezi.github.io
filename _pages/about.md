@@ -8,9 +8,8 @@ redirect_from:
 ---
 
 👋 **Welcome!**   
-I'm an Assistant Professor in the Software and Information Technology Engineering Department at [ÉTS Montréal](https://www.etsmtl.ca/).
-
-Previously, I was a tenured research scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working with the [Privatics](https://team.inria.fr/privatics/) team, and a postdoctoral researcher in the [Comète](https://team.inria.fr/Comete/) team at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre).
+I'm an Assistant Professor in the Software and Information Technology Engineering Department at [ÉTS Montréal](https://www.etsmtl.ca/).    
+Previously, I was a tenured research scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working with the [Privatics](https://team.inria.fr/privatics/) team, and a postdoctoral researcher in the [Comète](https://team.inria.fr/Comete/) team at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre).    
 I received my Ph.D. in Computer Science from the University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) and my M.Sc. in Electrical Engineering from the São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)). 
 
 🔬 **Research Interests:**  
