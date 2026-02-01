@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Héber H. Arcolezi"
   avatar           : "HHA_profile.png"
-  bio              : "Research Scientist @ Inria Grenoble - Rhône-Alpes Research focus: Differential Privacy & Ethics of AI."
-  location         : "Grenoble, France"
+  bio              : "Assistant Professor @ ÉTS Montréal Research focus: Differential Privacy & Responsible AI."
+  location         : "Montréal, Canada"
   employer         :
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  email            : "heber.hwang-arcolezi@inria.fr"
+  email            : "heber.hwang-arcolezi@etsmtl.ca"
   twitter          : "@hharcolezi"
   github           : "hharcolezi"
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate"
