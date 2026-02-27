@@ -9,6 +9,23 @@ The author order indicates the magnitude of contribution, with the first author 
 The superscript \* indicates equal contributions to the paper. \
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
+### 2026
+**Understanding Disclosure Risk in Differential Privacy with Applications to Noise Calibration and Auditing**\
+Guerra-Balboa, P., Sauer, A., *Arcolezi, H.H.*, Strufe, T.\
+[[VLDB 2026]()] [[arXiv]()] [[Codes](https://github.com/PatriciaBalboaKIT/Understanding-Disclosure-Risk-in-Differential-Privacy)]
+
+**Revisiting Locally Differentially Private Protocols: Towards Better Trade-offs in Privacy, Utility, and Attack Resistance**\
+*Arcolezi, H.H.*, Gambs, S.\
+[[ICDE 2026]()] [[arXiv](https://arxiv.org/abs/2503.01482)] [[Codes](https://github.com/hharcolezi/LDP_protocols_refined)]
+
+**Private Frequency Estimation Via Residue Number Systems**\
+*Arcolezi, H.H.*\
+[[AAAI 2026]()] [[arXiv](https://arxiv.org/abs/2511.11569)] [[Codes](https://github.com/hharcolezi/private-frequency-oracle-rns)] [[Poster](http://hharcolezi.github.io/files/2026_01_AAAI_Poster_RNS_LDP.pdf)]
+
+**Estimating the True Distribution of Data Collected with Randomized Response**\
+Pinzón, C. A., ElSalamouny, E., Massot, L., Miller, A., *Arcolezi, H.H.*, & Palamidessi, C.\
+[[AAAI 2026]()] [[arXiv](https://arxiv.org/abs/2601.08603)] [[Codes](https://github.com/caph1993/mle-of-randomized-response)] [[Poster](http://hharcolezi.github.io/files/2026_01_AAAI_Poster_MLE_RR.pdf)]
+
 ### 2025
 **Demo: Exploring Utility and Attackability Trade-offs in Local Differential Privacy**\
 \*Zhang, Haoying., \*Mishra K.A., *Arcolezi, H.H.*\
@@ -50,7 +67,7 @@ Binkyte, R., Pinzón, C.A., Lestyán, S., Jung, K., *Arcolezi, H.H.*, Palamidess
 ### 2023
 **(Local) Differential Privacy has NO Disparate Impact on Fairness**\
 *Arcolezi, H.H.*, Makhlouf, K., Palamidessi, C.\
-<span style="color: red; font-weight: normal;">&#42;2023 DBSec Best Paper Award&#42;</span>\
+🏆<span style="color: red; font-weight: normal;">&#42;2023 DBSec Best Paper Award&#42;</span>\
 [[DBSec 2023](https://doi.org/10.1007/978-3-031-37586-6_1)] [[arXiv](https://arxiv.org/abs/2304.12845)] [[Presentation](http://hharcolezi.github.io/files/2023_DBSec_LDP_Fairness.pdf)] [[Codes](https://github.com/hharcolezi/ldp-fairness-impact)]
 
 **On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms**\
