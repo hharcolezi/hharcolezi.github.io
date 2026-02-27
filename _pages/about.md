@@ -8,14 +8,17 @@ redirect_from:
 ---
 
 👋 **Welcome!**   
-I'm an Assistant Professor in the Software and Information Technology Engineering Department at [ÉTS Montréal](https://www.etsmtl.ca/).    
-Previously, I was a tenured research scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working with the [Privatics](https://team.inria.fr/privatics/) team, and a postdoctoral researcher in the [Comète](https://team.inria.fr/Comete/) team at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre).    
+I'm a Tenure-Track Assistant Professor in the Software and Information Technology Engineering Department at [ÉTS Montréal](https://www.etsmtl.ca/).    
+Previously, I was a Tenured Research Scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working with the [Privatics](https://team.inria.fr/privatics/) team, and a Postdoctoral Researcher in the [Comète](https://team.inria.fr/Comete/) team at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre).    
 I received my Ph.D. in Computer Science from the University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) and my M.Sc. in Electrical Engineering from the São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)). 
 
 🔬 **Research Interests:**  
-Differential Privacy • Responsible AI • Fairness • Explainability 🛡️🤖⚖️
+Differential Privacy • Responsible AI • Trustworthy AI 🛡️🤖⚖️
 
 ## Recent News
+* [Feb-26] Our paper "Revisiting Locally Differentially Private Protocols: Towards Better Trade-offs in Privacy, Utility, and Attack Resistance
+" has been accepted at [ICDE 2026](https://icde2026.github.io/) and can be accessed at <https://arxiv.org/abs/2503.01482>!
+* [Feb-26] Our paper "Understanding Disclosure Risk in Differential Privacy with Applications to Noise Calibration and Auditing" has been accepted at [VLDB 2026](https://vldb.org/2026/)! Pre-print will be available soon!
 * [Feb-26] I have officially joined ÉTS Montréal as an Assistant Professor!
 * [Nov-25] Two papers accepted at [AAAI 2026](https://aaai.org/conference/aaai/aaai-26)!
     * *Private Frequency Estimation Via Residue Number Systems* - <https://www.arxiv.org/abs/2511.11569>.
