@@ -16,8 +16,9 @@ I received my Ph.D. in Computer Science from the University Bourgogne Franche-Co
 Differential Privacy • Responsible AI • Trustworthy AI 🛡️🤖⚖️
 
 ## Recent News
+* [Mar-26] Our paper "How Tough Is Location Anonymization? Re-identifying 100K Real-User Trajectories in Japan" has been accepted at [AsiaCCS 2026](https://asiaccs2026.cse.iitkgp.ac.in/home/) and can be accessed at <https://arxiv.org/abs/2506.05611>!
 * [Feb-26] Our paper "Revisiting Locally Differentially Private Protocols: Towards Better Trade-offs in Privacy, Utility, and Attack Resistance" has been accepted at [ICDE 2026](https://icde2026.github.io/) and can be accessed at <https://arxiv.org/abs/2503.01482>!
-* [Feb-26] Our paper "Understanding Disclosure Risk in Differential Privacy with Applications to Noise Calibration and Auditing" has been accepted at [VLDB 2026](https://vldb.org/2026/)! Pre-print will be available soon!
+* [Feb-26] Our paper "Understanding Disclosure Risk in Differential Privacy with Applications to Noise Calibration and Auditing" has been accepted at [VLDB 2026](https://vldb.org/2026/) and can be accessed at <https://arxiv.org/abs/2603.12142>!
 * [Feb-26] 🏆 Congratulations to my Master's alumni, Annika Sauer, on winning the [UFA/DFH Prix d’Excellence](https://www.dfh-ufa.org/fr/vous-etes/entreprises/prix-dexcellence/laureats-depuis-2005#AnnikaSauer)!
 * [Feb-26] I have officially joined ÉTS Montréal as an Assistant Professor!
 * [Nov-25] Two papers accepted at [AAAI 2026](https://aaai.org/conference/aaai/aaai-26)!
