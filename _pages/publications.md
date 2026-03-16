@@ -10,7 +10,7 @@ The superscript \* indicates equal contributions to the paper. \
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
 ### 2026
-****\
+**How Tough Is Location Anonymization? Re-identifying 100K Real-User Trajectories in Japan**\
 Mishra, A.K., Cunche, M., *Arcolezi, H.H.*\
 [[AsiaCCS 2026]()] [[arXiv](https://arxiv.org/abs/2506.05611)] [[Codes]()]
 
