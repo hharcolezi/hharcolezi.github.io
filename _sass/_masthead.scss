@@ -4,8 +4,7 @@
 
 .masthead {
   position: relative;
-  background: var(--theme-bg);
-  border-bottom: 1px solid var(--theme-border);
+  border-bottom: 1px solid $border-color;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -28,7 +27,6 @@
 
     a {
       text-decoration: none;
-      color: var(--theme-muted);
     }
   }
 }
