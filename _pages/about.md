@@ -24,7 +24,7 @@ redirect_from:
         <i class="fas fa-envelope" aria-hidden="true"></i>
         <span>Email</span>
       </a>
-      <a href="https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+      <a href="https://scholar.google.com/citations?user=lt28fGUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
         <i class="ai ai-google-scholar" aria-hidden="true"></i>
         <span>Google Scholar</span>
       </a>
@@ -111,14 +111,6 @@ redirect_from:
     --profile-accent: #1f4aa2;
   }
 
-  html[data-theme="dark"] {
-    --profile-bg: #0f131a;
-    --profile-text: #e5ecf5;
-    --profile-muted: #a8b4c4;
-    --profile-line: #2a3544;
-    --profile-accent: #7aa2ff;
-  }
-
   body,
   .masthead {
     background: var(--profile-bg);
@@ -145,7 +137,7 @@ redirect_from:
     align-items: center;
     padding: clamp(1rem, 2vw, 1.5rem);
     border: 1px solid var(--profile-line);
-    background: color-mix(in srgb, var(--profile-bg) 15%, #ffffff);
+    background: #ffffff;
     border-radius: 18px;
   }
 
@@ -169,7 +161,7 @@ redirect_from:
     margin: 0.95rem 0 0;
     max-width: 38ch;
     font-size: clamp(1rem, 1.8vw, 1.25rem);
-    color: var(--profile-text);
+    color: #1f2634;
   }
 
   .profile-hero__keywords {
@@ -181,11 +173,11 @@ redirect_from:
 
   .profile-hero__keywords span {
     font-size: 0.8rem;
-    border: 1px solid var(--profile-line);
+    border: 1px solid #c9d3e6;
     border-radius: 999px;
     padding: 0.3rem 0.7rem;
-    color: var(--profile-text);
-    background: color-mix(in srgb, var(--profile-bg) 55%, #dce7ff);
+    color: #23406f;
+    background: #f5f8ff;
   }
 
   .profile-hero__links {
@@ -202,7 +194,7 @@ redirect_from:
     padding: 0.42rem 0.7rem;
     border: 1px solid var(--profile-line);
     border-radius: 999px;
-    color: var(--profile-text);
+    color: #1a2233;
     text-decoration: none;
     font-size: 0.77rem;
     letter-spacing: 0.05em;
@@ -212,7 +204,7 @@ redirect_from:
 
   .profile-hero__links a:hover {
     border-color: var(--profile-accent);
-    background: color-mix(in srgb, var(--profile-bg) 60%, #dbe8ff);
+    background: #f2f6ff;
   }
 
   .profile-hero__links i,
