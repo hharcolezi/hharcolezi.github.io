@@ -198,6 +198,52 @@ Differential Privacy • Responsible AI • Trustworthy AI 🛡️🤖⚖️
     return `${monthNames[dateObj.month - 1]} ${dateObj.year}`;
   };
 
+  const escapeHTML = (value) => String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
+  const safeUrl = (value) => {
+    const trimmed = String(value || '').trim();
+    if (!trimmed) return '';
+
+    try {
+      const parsed = new URL(trimmed);
+      if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+        return parsed.toString();
+      }
+    } catch (_error) {
+      return '';
+    }
+
+    return '';
+  };
+
+  const toRichText = (content, isHtml) => {
+    if (!content) return '';
+    if (isHtml) return content;
+
+    let result = escapeHTML(content);
+
+    result = result.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_match, label, url) => {
+      const safe = safeUrl(url);
+      if (!safe) return `${label} (${url})`;
+      return `<a href="${escapeHTML(safe)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    });
+
+    result = result.replace(/&lt;(https?:\/\/[^\s<]+)&gt;/g, (_match, url) => {
+      const safe = safeUrl(url);
+      if (!safe) return escapeHTML(url);
+      return `<a href="${escapeHTML(safe)}" target="_blank" rel="noopener noreferrer">${escapeHTML(safe)}</a>`;
+    });
+
+    result = result.replace(/\n/g, '<br>');
+
+    return result;
+  };
+
   const renderNews = (items) => {
     listNode.innerHTML = items.map((item) => `
       <article class="news-item">
@@ -230,7 +276,9 @@ Differential Privacy • Responsible AI • Trustworthy AI 🛡️🤖⚖️
         const htmlKey = findKey(item, ['news_html', 'html', 'content_html']);
 
         const parsedDate = parseDate(item[dateKey]);
-        const content = item[htmlKey] || item[textKey] || '';
+        const rawHtml = item[htmlKey] || '';
+        const rawText = item[textKey] || '';
+        const content = toRichText(rawHtml || rawText, Boolean(rawHtml));
 
         return {
           content,
