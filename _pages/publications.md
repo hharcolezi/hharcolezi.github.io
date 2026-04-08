@@ -158,6 +158,11 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     background: #fff;
   }
 
+  .pub-links a span,
+  .pub-venue a span {
+    margin-right: 0.3rem;
+  }
+
   .pub-links a:hover {
     border-color: #60a5fa;
     color: #1d4ed8;
@@ -273,6 +278,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
         pdf: item.pdf || '',
         slides: item.slides || '',
         poster: item.poster || '',
+        dataset: item.dataset || '',
         video: item.video || '',
         awards: item.awards || '',
         bibtex: item.bibtex || '',
@@ -288,21 +294,26 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     });
   };
 
-  const createLink = (label, href) => {
+  const createLink = (label, href, icon = '') => {
     if (!href) return '';
-    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    const prefix = icon ? `<span aria-hidden="true">${icon}</span>` : '';
+    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${prefix}${label}</a>`;
   };
 
   const renderCard = (entry) => {
     const links = [
-      createLink('Venue', entry.urlPub),
-      createLink('Code', entry.code),
-      createLink('PDF', entry.pdf),
-      createLink('Slides', entry.slides),
-      createLink('Poster', entry.poster),
+      createLink('Code', entry.code, '💻'),
+      createLink('ArXiv', entry.pdf, '📄'),
+      createLink('Slides', entry.slides, '🖼️'),
+      createLink('Poster', entry.poster, '🧾'),
+      createLink('Dataset', entry.dataset, '🗂️'),
       createLink('Video', entry.video),
       createLink('BibTeX', entry.bibtex),
     ].filter(Boolean).join('');
+
+    const venueLabel = entry.urlPub
+      ? createLink(entry.venue, entry.urlPub, '🏛️')
+      : (entry.venue || '');
 
     return `
       <article class="pubs-card pub-card">
@@ -312,7 +323,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
         </div>
         <h3 class="pub-title">${entry.title}</h3>
         ${entry.authors ? `<div class="pub-authors">${entry.authors}</div>` : ''}
-        ${entry.venue ? `<div class="pub-venue">${entry.venue}</div>` : ''}
+        ${entry.venue ? `<div class="pub-venue">${venueLabel}</div>` : ''}
         ${entry.awards ? `<div class="pub-award">🏆 ${entry.awards}</div>` : ''}
         ${links ? `<div class="pub-links">${links}</div>` : ''}
       </article>
