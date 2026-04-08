@@ -26,10 +26,17 @@ redirect_from:
       <a href="https://scholar.google.com/citations?user=lt28fGUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
       <a href="https://github.com/hharcolezi" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
+
+    <ul class="about-hero__details" aria-label="Contact and profile details">
+      <li>📍 Montréal, Canada</li>
+      <li><a href="mailto:heber.hwang-arcolezi@etsmtl.ca">✉️ heber.hwang-arcolezi@etsmtl.ca</a></li>
+      <li><a href="https://scholar.google.com/citations?user=lt28fGUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">🎓 Google Scholar</a></li>
+      <li><a href="https://github.com/hharcolezi" target="_blank" rel="noopener noreferrer">💻 GitHub</a></li>
+      <li><a href="https://x.com/hharcolezi" target="_blank" rel="noopener noreferrer">🐦 Twitter/X</a></li>
+    </ul>
   </div>
 
   <aside class="about-hero__card">
-    <img src="/images/HHA_profile.png" alt="Portrait of Heber Hwang Arcolezi" loading="lazy" />
     <h2>About me</h2>
     <p>
       I am an Assistant Professor in the Department of Software and Information Technology Engineering at
@@ -136,12 +143,28 @@ redirect_from:
     padding: 1rem;
   }
 
-  .about-hero__card img {
-    width: 100%;
-    max-height: 320px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 0.9rem;
+  .about-hero__details {
+    list-style: none;
+    margin: 1.1rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+    font-size: 0.93rem;
+  }
+
+  .about-hero__details li {
+    color: #1f2937;
+  }
+
+  .about-hero__details a {
+    color: #1f2937;
+    text-decoration: none;
+    border-bottom: 1px dashed #93c5fd;
+  }
+
+  .about-hero__details a:hover {
+    color: #1d4ed8;
+    border-bottom-color: #1d4ed8;
   }
 
   .about-hero__card h2,
