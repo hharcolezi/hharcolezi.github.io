@@ -7,11 +7,28 @@ html {
   min-height: 100%;
 }
 
+:root {
+  --theme-bg: #f7f8fb;
+  --theme-surface: #ffffff;
+  --theme-text: #30363b;
+  --theme-muted: #7a8288;
+  --theme-border: #dbe2ea;
+}
+
+html[data-theme="dark"] {
+  --theme-bg: #0f131a;
+  --theme-surface: #161d27;
+  --theme-text: #e5ecf5;
+  --theme-muted: #a8b4c4;
+  --theme-border: #2a3544;
+}
+
 body {
   margin: 0;
   padding: 0;
   padding-bottom: 9em;
-  color: $text-color;
+  color: var(--theme-text);
+  background: var(--theme-bg);
   font-family: $global-font-family;
   line-height: 1.5;
 

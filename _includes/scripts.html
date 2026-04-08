@@ -1,4 +1,36 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+  (function() {
+    var storedTheme = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var currentTheme = storedTheme || (prefersDark ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", currentTheme);
+
+    function updateThemeToggleButton(theme) {
+      var button = document.getElementById("theme-toggle");
+      if (!button) return;
+
+      var darkModeActive = theme === "dark";
+      button.setAttribute("aria-label", darkModeActive ? "Switch to light mode" : "Switch to dark mode");
+      button.setAttribute("title", darkModeActive ? "Switch to light mode" : "Switch to dark mode");
+      button.innerHTML = darkModeActive ? '<span aria-hidden="true">☀️</span>' : '<span aria-hidden="true">🌙</span>';
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      updateThemeToggleButton(currentTheme);
+      var button = document.getElementById("theme-toggle");
+      if (!button) return;
+
+      button.addEventListener("click", function() {
+        var nextTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", nextTheme);
+        localStorage.setItem("theme", nextTheme);
+        updateThemeToggleButton(nextTheme);
+      });
+    });
+  })();
+</script>
+
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
