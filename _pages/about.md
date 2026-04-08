@@ -16,25 +16,247 @@ I received my Ph.D. in Computer Science from the University Bourgogne Franche-Co
 Differential Privacy • Responsible AI • Trustworthy AI 🛡️🤖⚖️
 
 ## Recent News
-* [Mar-26] Our paper "How Tough Is Location Anonymization? Re-identifying 100K Real-User Trajectories in Japan" has been accepted at [AsiaCCS 2026](https://asiaccs2026.cse.iitkgp.ac.in/home/) and can be accessed at <https://arxiv.org/abs/2506.05611>!
-* [Feb-26] Our paper "Revisiting Locally Differentially Private Protocols: Towards Better Trade-offs in Privacy, Utility, and Attack Resistance" has been accepted at [ICDE 2026](https://icde2026.github.io/) and can be accessed at <https://arxiv.org/abs/2503.01482>!
-* [Feb-26] Our paper "Understanding Disclosure Risk in Differential Privacy with Applications to Noise Calibration and Auditing" has been accepted at [VLDB 2026](https://vldb.org/2026/) and can be accessed at <https://arxiv.org/abs/2603.12142>!
-* [Feb-26] 🏆 Congratulations to my Master's alumni, Annika Sauer, on winning the [UFA/DFH Prix d’Excellence](https://www.dfh-ufa.org/fr/vous-etes/entreprises/prix-dexcellence/laureats-depuis-2005#AnnikaSauer)!
-* [Feb-26] I have officially joined ÉTS Montréal as an Assistant Professor!
-* [Nov-25] Two papers accepted at [AAAI 2026](https://aaai.org/conference/aaai/aaai-26)!
-    * *Private Frequency Estimation Via Residue Number Systems* - <https://www.arxiv.org/abs/2511.11569>.
-    * *Estimating the True Distribution of Data Collected with Randomized Response* - <https://arxiv.org/abs/2601.08603>.
-* [Nov-25] I’ll be serving in the (Privacy and Anonymity Track) PC of the *ACM Conference on Computer and Communications Security* ([CCS 2026](https://www.sigsac.org/ccs/CCS2026/)).
-* [Oct-25] 🏆 I've received a *Notable Reviewer Award* at [USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25).
-* [Aug-25] I’ll be serving in the PC of the *40th Annual AAAI Conference on Artificial Intelligence* ([AAAI 2026](https://aaai.org/conference/aaai/aaai-26/)).
-* [Jul-25] Our paper "Fair Play for Individuals, Foul Play for Groups? Auditing Anonymization's Impact on ML Fairness" has been accepted at [ECAI 2025](https://ecai2025.org/) and can be accessed at <https://arxiv.org/abs/2505.07985>.
-* [Jun-25] Our new pre-print paper "Breaking Anonymity at Scale: Re-identifying the Trajectories of 100K Real Users in Japan" can be accessed at <https://arxiv.org/abs/2506.05611>.
-* [Jun-25] Our paper "FADE: Federated Aggregation with Discrimination Elimination" has been accepted at [FAccT 2025](https://facctconference.org/2025/) and can be accessed at <https://hal.science/hal-05105146/>. 
-* [May-25] Our paper "Group fairness under obfuscated sensitive information" has been accepted at the [Journal of Computer Security](https://journals.sagepub.com/doi/abs/10.1177/0926227X251330212) and can be accessed at <https://inria.hal.science/hal-05070800/>.
-* [Apr-25] Our Chair project "Responsible AI: Design, Regulation, and Conformity (RAIDAC+)", along with [Théodore Christakis](https://cesice.univ-grenoble-alpes.fr/centre/membres/theodore-christakis), has been accepted for funding by the [MIAI Cluster Chair Call](https://miai-cluster.univ-grenoble-alpes.fr/en/miai-cluster-finalizes-chair-selections-for-the-2024-2025-call-1585256.kjsp?RH=6071747120764306).
-* [Mar-25] Our new pre-print paper "Revisiting Locally Differentially Private Protocols: Towards Better Trade-offs in Privacy, Utility, and Attack Resistance" can be accessed at <https://arxiv.org/abs/2503.01482>.
-* [Mar-25] I’ll give a Keynote talk on "An Introduction to Privacy-Preserving Data Analytics" at the [5th Inria-DFKI European Summer School on AI (IDESSAI 2025)](https://idessai.eu/track-a-responsible-ai-and-machine-ethics/).
-* [Feb-25] I’ll give a Keynote talk on "Intersections of Fairness and Privacy: A Local Differential Privacy Perspective" at the [*9th GDR RSD/ASF Winter School on Distributed Systems & Networks 2025*](https://sites.google.com/site/rsdwinterschool/home?authuser=0).
+
+<div class="news-app" id="news-app">
+  <div id="news-state" class="news-state">Loading news…</div>
+  <div id="news-list" class="news-list"></div>
+</div>
+
+<style>
+  .news-app {
+    margin-top: 0.75rem;
+  }
+
+  .news-state {
+    margin: 0.35rem 0 0;
+    color: #6b7280;
+    font-style: italic;
+  }
+
+  .news-list {
+    display: grid;
+    gap: 0.8rem;
+    margin-top: 0.35rem;
+  }
+
+  .news-item {
+    display: grid;
+    grid-template-columns: 7.2rem 1fr;
+    gap: 0.8rem;
+    align-items: start;
+    background: linear-gradient(180deg, #ffffff 0%, #fafcff 100%);
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 0.75rem 0.85rem;
+    box-shadow: 0 6px 16px rgba(17, 24, 39, 0.05);
+  }
+
+  .news-date {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 999px;
+    border: 1px solid #bfdbfe;
+    background: #eff6ff;
+    color: #1d4ed8;
+    font-weight: 600;
+    font-size: 0.82rem;
+    padding: 0.2rem 0.55rem;
+    white-space: nowrap;
+  }
+
+  .news-content {
+    color: #374151;
+    line-height: 1.55;
+  }
+
+  .news-content p {
+    margin: 0;
+  }
+
+  .news-content a {
+    text-underline-offset: 2px;
+  }
+
+  @media (max-width: 640px) {
+    .news-item {
+      grid-template-columns: 1fr;
+      gap: 0.45rem;
+    }
+
+    .news-date {
+      justify-self: start;
+    }
+  }
+</style>
+
+<script>
+(() => {
+  const SHEET_ID = '12bFYV-4WC1PhxKrnSVh5s3SPfe63fY3qd_qXybD43qw';
+  const SHEET_GID = '1326369063';
+  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`;
+
+  const stateNode = document.getElementById('news-state');
+  const listNode = document.getElementById('news-list');
+
+  if (!stateNode || !listNode) return;
+
+  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  const setState = (text) => {
+    stateNode.textContent = text;
+    stateNode.style.display = text ? 'block' : 'none';
+  };
+
+  const parseCSV = (text) => {
+    const rows = [];
+    let row = [];
+    let field = '';
+    let inQuotes = false;
+
+    for (let i = 0; i < text.length; i += 1) {
+      const c = text[i];
+      const next = text[i + 1];
+
+      if (c === '"') {
+        if (inQuotes && next === '"') {
+          field += '"';
+          i += 1;
+        } else {
+          inQuotes = !inQuotes;
+        }
+      } else if (c === ',' && !inQuotes) {
+        row.push(field);
+        field = '';
+      } else if ((c === '\n' || c === '\r') && !inQuotes) {
+        if (c === '\r' && next === '\n') i += 1;
+        row.push(field);
+        if (row.some((value) => value.trim() !== '')) rows.push(row);
+        row = [];
+        field = '';
+      } else {
+        field += c;
+      }
+    }
+
+    if (field.length || row.length) {
+      row.push(field);
+      rows.push(row);
+    }
+
+    return rows;
+  };
+
+  const normalizeKey = (value) => (value || '')
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
+
+  const findKey = (source, candidates) => {
+    const keys = Object.keys(source);
+    for (const candidate of candidates) {
+      const normalized = normalizeKey(candidate);
+      const exact = keys.find((key) => key === normalized);
+      if (exact) return exact;
+      const partial = keys.find((key) => key.includes(normalized) || normalized.includes(key));
+      if (partial) return partial;
+    }
+    return '';
+  };
+
+  const parseDate = (value) => {
+    const raw = String(value || '').trim();
+    if (!raw) return null;
+
+    const isoMatch = raw.match(/^(\d{4})[-/](\d{1,2})(?:[-/](\d{1,2}))?/);
+    if (isoMatch) {
+      const year = Number(isoMatch[1]);
+      const month = Number(isoMatch[2]);
+      if (month >= 1 && month <= 12) return { year, month };
+    }
+
+    const native = new Date(raw);
+    if (!Number.isNaN(native.getTime())) {
+      return { year: native.getUTCFullYear(), month: native.getUTCMonth() + 1 };
+    }
+
+    const compact = raw.match(/^(\w{3,9})[-\s](\d{2,4})$/i);
+    if (compact) {
+      const monthToken = compact[1].slice(0, 3).toLowerCase();
+      const month = monthNames.findIndex((m) => m.toLowerCase() === monthToken) + 1;
+      const yearNum = Number(compact[2].length === 2 ? `20${compact[2]}` : compact[2]);
+      if (month > 0 && yearNum) return { year: yearNum, month };
+    }
+
+    return null;
+  };
+
+  const formatMonthYear = (dateObj) => {
+    if (!dateObj) return 'Date unavailable';
+    return `${monthNames[dateObj.month - 1]} ${dateObj.year}`;
+  };
+
+  const renderNews = (items) => {
+    listNode.innerHTML = items.map((item) => `
+      <article class="news-item">
+        <div class="news-date">${item.dateLabel}</div>
+        <div class="news-content">${item.content}</div>
+      </article>
+    `).join('');
+  };
+
+  const run = async () => {
+    try {
+      const response = await fetch(CSV_URL);
+      if (!response.ok) throw new Error(`Could not load spreadsheet (${response.status})`);
+
+      const rows = parseCSV(await response.text());
+      if (!rows.length) {
+        setState('No news found in the spreadsheet.');
+        return;
+      }
+
+      const headers = rows[0].map(normalizeKey);
+      const entries = rows.slice(1).map((columns) => {
+        const item = {};
+        headers.forEach((header, index) => {
+          item[header] = String(columns[index] || '').trim();
+        });
+
+        const dateKey = findKey(item, ['date', 'news_date', 'month', 'year_month']);
+        const textKey = findKey(item, ['news', 'content', 'description', 'text', 'item']);
+        const htmlKey = findKey(item, ['news_html', 'html', 'content_html']);
+
+        const parsedDate = parseDate(item[dateKey]);
+        const content = item[htmlKey] || item[textKey] || '';
+
+        return {
+          content,
+          parsedDate,
+          dateLabel: formatMonthYear(parsedDate),
+          sortKey: parsedDate ? `${parsedDate.year}${String(parsedDate.month).padStart(2, '0')}` : '000000',
+        };
+      }).filter((entry) => entry.content);
+
+      entries.sort((a, b) => b.sortKey.localeCompare(a.sortKey));
+
+      if (!entries.length) {
+        setState('No visible news entries were found in the spreadsheet.');
+        return;
+      }
+
+      setState('');
+      renderNews(entries);
+    } catch (error) {
+      setState(`Unable to load recent news from Google Sheets. ${error.message}`);
+    }
+  };
+
+  run();
+})();
+</script>
 
 ## Contact
 
