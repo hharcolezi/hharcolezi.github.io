@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "About Me"
 author_profile: false
 redirect_from: 
   - /about/
@@ -9,9 +8,9 @@ redirect_from:
 
 <section class="profile-hero" aria-labelledby="home-title">
   <div class="profile-hero__content">
-    <p class="profile-hero__eyebrow">Assistant Professor · ÉTS Montréal</p>
     <h1 id="home-title" class="profile-hero__title">Héber H. Arcolezi</h1>
-    <p class="profile-hero__lead">Building Differential Privacy methods for Responsible and Trustworthy AI.</p>
+    <p class="profile-hero__lead">Advancing Responsible and Trustworthy AI through Differential Privacy.</p>
+    <p class="profile-hero__eyebrow">Assistant Professor · ETS Montreal.</p>
 
     <div class="profile-hero__keywords" aria-label="Research keywords">
       <span>Differential Privacy</span>
@@ -121,6 +120,12 @@ redirect_from:
     border-bottom: 1px solid var(--profile-line);
   }
 
+  .masthead .greedy-nav,
+  .masthead .greedy-nav .visible-links,
+  .masthead .greedy-nav .visible-links a {
+    background: transparent;
+  }
+
   .page {
     padding-inline: clamp(1.1rem, 3vw, 2.2rem);
   }
@@ -152,7 +157,7 @@ redirect_from:
   }
 
   .profile-hero__eyebrow {
-    margin: 0;
+    margin: 0.95rem 0 0;
     text-transform: uppercase;
     letter-spacing: 0.11em;
     font-size: 0.76rem;
