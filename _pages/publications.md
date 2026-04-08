@@ -4,179 +4,394 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-Here I list my peer-reviewed publications ordered by year, including their pdf (or author's pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes). \
-The author order indicates the magnitude of contribution, with the first author adding the most value. \
-The superscript \* indicates equal contributions to the paper. \
+
+Here I list my peer-reviewed publications ordered by year, including their pdf (or author's pdf version) and their resources when applicable (e.g., presentation, video-presentation, dataset, codes).  
+The author order indicates the magnitude of contribution, with the first author adding the most value.  
+The superscript \* indicates equal contributions to the paper.  
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
-### 2026
-**How Tough Is Location Anonymization? Re-identifying 100K Real-User Trajectories in Japan**\
-Mishra, A.K., Cunche, M., *Arcolezi, H.H.*\
-[[AsiaCCS 2026]()] [[arXiv](https://arxiv.org/abs/2506.05611)] [[Codes]()]
+<div class="pubs-app" id="publications-app">
+  <div class="pubs-card pubs-controls">
+    <div class="pubs-control-grid">
+      <label class="pubs-control">
+        <span>Type</span>
+        <select id="pubs-type-filter" aria-label="Filter publications by type">
+          <option value="all">All</option>
+        </select>
+      </label>
 
-**Understanding Disclosure Risk in Differential Privacy with Applications to Noise Calibration and Auditing**\
-Guerra-Balboa, P., Sauer, A., *Arcolezi, H.H.*, Strufe, T.\
-[[VLDB 2026]()] [[arXiv](https://arxiv.org/abs/2603.12142)] [[Codes](https://github.com/PatriciaBalboaKIT/Understanding-Disclosure-Risk-in-Differential-Privacy)]
+      <label class="pubs-control">
+        <span>Year</span>
+        <select id="pubs-year-filter" aria-label="Filter publications by year">
+          <option value="all">All</option>
+        </select>
+      </label>
+    </div>
 
-**Revisiting Locally Differentially Private Protocols: Towards Better Trade-offs in Privacy, Utility, and Attack Resistance**\
-*Arcolezi, H.H.*, Gambs, S.\
-[[ICDE 2026]()] [[arXiv](https://arxiv.org/abs/2503.01482)] [[Codes](https://github.com/hharcolezi/LDP_protocols_refined)]
+    <div class="pubs-controls-footer">
+      <button type="button" id="pubs-clear-filters" class="btn btn--small">Clear</button>
+      <span id="pubs-results-count" class="pubs-count" aria-live="polite">0/0</span>
+    </div>
+  </div>
 
-**Private Frequency Estimation Via Residue Number Systems**\
-*Arcolezi, H.H.*\
-[[AAAI 2026]()] [[arXiv](https://arxiv.org/abs/2511.11569)] [[Codes](https://github.com/hharcolezi/private-frequency-oracle-rns)] [[Poster](http://hharcolezi.github.io/files/2026_01_AAAI_Poster_RNS_LDP.pdf)]
+  <div id="pubs-state" class="pubs-state">Loading publications…</div>
+  <div id="pubs-list" class="pubs-list"></div>
+</div>
 
-**Estimating the True Distribution of Data Collected with Randomized Response**\
-Pinzón, C. A., ElSalamouny, E., Massot, L., Miller, A., *Arcolezi, H.H.*, & Palamidessi, C.\
-[[AAAI 2026]()] [[arXiv](https://arxiv.org/abs/2601.08603)] [[Codes](https://github.com/caph1993/mle-of-randomized-response)] [[Poster](http://hharcolezi.github.io/files/2026_01_AAAI_Poster_MLE_RR.pdf)]
+<style>
+  .pubs-app {
+    margin-top: 1.5rem;
+  }
 
-### 2025
-**Demo: Exploring Utility and Attackability Trade-offs in Local Differential Privacy**\
-\*Zhang, Haoying., \*Mishra K.A., *Arcolezi, H.H.*\
-[[CCS 2025](https://doi.org/10.1145/3719027.3760706)] [[arXiv](https://inria.hal.science/hal-05386311/)] [[Codes](https://github.com/hharcolezi/ldp-toolbox)] [[Poster](http://hharcolezi.github.io/files/2025_10_CCS_2025_Poster.pdf)]
+  .pubs-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+  }
 
-**Fair Play for Individuals, Foul Play for Groups? Auditing Anonymization's Impact on ML Fairness**\
-*Arcolezi, H.H.*, Alishahi, M., Bendoukha, A.A., Kaaniche, N.\
-[[ECAI 2025](https://ebooks.iospress.nl/doi/10.3233/FAIA250909)] [[arXiv](https://arxiv.org/abs/2505.07985)] [[Codes](https://github.com/hharcolezi/anonymity-impact-fairness)] [[Spotlight Presentation](http://hharcolezi.github.io/files/2025_10_ECAI_Anonymity_Fairness.pdf)] [[Poster](http://hharcolezi.github.io/files/2025_10_ECAI_Anonymity_Fairness_Poster.pdf)]
+  .pubs-controls {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
 
-**FADE: Federated Aggregation with Discrimination Elimination**\
-Bendoukha, A.A., *Arcolezi, H.H.*, Kaaniche, N., Boudguiga, A., Sirdey, R., Clet, P.E.\
-[[FAccT 2025](https://doi.org/10.1145/3715275.3732203)] [[arXiv](https://hal.science/hal-05105146/)] [[Codes](https://github.com/Akram275/Fairness-FL)]
+  .pubs-control-grid {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
 
-**Group fairness under obfuscated sensitive information**\
-*Arcolezi, H.H.*, Makhlouf, K., Palamidessi, C.\
-[[Journal of Computer Security](https://doi.org/10.1177/0926227X251330212)] [[arXiv](https://inria.hal.science/hal-05070800/)] [[Codes](https://github.com/hharcolezi/ldp-fairness-impact)]
+  .pubs-control span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
 
-### 2024
-**Nob-MIAs: Non-biased Membership Inference Attacks Assessment on Large Language Models with Ex-Post Dataset Construction**\
-Eichler, C., Champeil, N., Anciaux, N., Bensamoun, A., *Arcolezi, H.H.*, De Fuentes, J.M.\
-[[WISE 2024](https://doi.org/10.1007/978-981-96-0570-5_32)] [[arXiv](https://arxiv.org/abs/2408.05968)] [[Codes](https://github.com/ceichler/MIA-bias-removal)]
+  .pubs-control select {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 0.55rem 0.7rem;
+    background: #fff;
+  }
 
-**A Systematic and Formal Study of the Impact of Local Differential Privacy on Fairness: Preliminary Results**\
-Makhlouf, K., Stefanović, T., *Arcolezi, H.H.*, Palamidessi, C.\
-[[CSF 2024](https://doi.org/10.1109/CSF61375.2024.00039)] [[arXiv](https://arxiv.org/abs/2405.14725)]
+  .pubs-controls-footer {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-**Revealing the True Cost of Locally Differentially Private Protocols: An Auditing Perspective**\
-*Arcolezi, H.H.*, Gambs, S.\
-[[PETS 2024](https://petsymposium.org/popets/2024/popets-2024-0110.php)] [[arXiv](https://arxiv.org/abs/2309.01597)] [[Codes](https://github.com/hharcolezi/ldp-audit)]
+  .pubs-count {
+    color: #6b7280;
+    font-size: 0.95rem;
+  }
 
-**On the impact of multi-dimensional local differential privacy on fairness**\
-Makhlouf, K., *Arcolezi, H.H.*, Zhioua, S., Ben Brahim, G., Palamidessi, C.\
-[[ECML PKDD 2024 (Journal Track)](https://doi.org/10.1007/s10618-024-01031-0)] [[arXiv](https://arxiv.org/abs/2312.04404)] [[Codes](https://github.com/karimamakhlouf/impact_of_ldp_on_fairness)]
+  .pubs-state {
+    padding: 0.8rem 0;
+    color: #6b7280;
+    font-style: italic;
+  }
 
-**Causal Discovery Under Local Privacy**\
-Binkyte, R., Pinzón, C.A., Lestyán, S., Jung, K., *Arcolezi, H.H.*, Palamidessi, C.\
-[[CLeaR 2024](https://proceedings.mlr.press/v236/binkyte24a.html)] [[arXiv](https://arxiv.org/abs/2311.04037)]
+  .pubs-list {
+    display: grid;
+    gap: 1rem;
+  }
 
-### 2023
-**(Local) Differential Privacy has NO Disparate Impact on Fairness**\
-*Arcolezi, H.H.*, Makhlouf, K., Palamidessi, C.\
-🏆<span style="color: red; font-weight: normal;">&#42;2023 DBSec Best Paper Award&#42;</span>\
-[[DBSec 2023](https://doi.org/10.1007/978-3-031-37586-6_1)] [[arXiv](https://arxiv.org/abs/2304.12845)] [[Presentation](http://hharcolezi.github.io/files/2023_DBSec_LDP_Fairness.pdf)] [[Codes](https://github.com/hharcolezi/ldp-fairness-impact)]
+  .pub-card {
+    padding: 0.95rem 1rem;
+  }
 
-**On the Utility Gain of Iterative Bayesian Update for Locally Differentially Private Mechanisms**\
-*Arcolezi, H.H.*, Cerna, S., Palamidessi, C.\
-[[DBSec 2023](https://doi.org/10.1007/978-3-031-37586-6_11)] [[arXiv](https://arxiv.org/abs/2307.07744)] [[Presentation](http://hharcolezi.github.io/files/2023_DBSec_IBU_Utility_Gain.pdf)] [[Codes](https://github.com/hharcolezi/multi-freq-ldpy)]
+  .pub-card-top {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.55rem;
+  }
 
-**On the Risks of Collecting Multidimensional Data Under Local Differential Privacy**\
-*Arcolezi, H.H.*, Gambs, S., Couchot, J.F., Palamidessi, C.\
-[[VLDB 2023](https://www.vldb.org/pvldb/vol16/p1126-arcolezi.pdf)] [[arXiv](https://arxiv.org/abs/2209.01684)] [[Presentation](http://hharcolezi.github.io/files/2023_VLDB_LDP_Attacks.pdf)] [[Codes](https://github.com/hharcolezi/risks-ldp)]
+  .pub-chip {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    padding: 0.12rem 0.55rem;
+    border: 1px solid #d1d5db;
+    background: #f9fafb;
+  }
 
-**Frequency Estimation of Evolving Data Under Local Differential Privacy**\
-\**Arcolezi, H.H.*, \*Pinzón, C., Palamidessi, C., Gambs, S.\
-[[EDBT 2023](http://dx.doi.org/10.48786/edbt.2023.44)] [[arXiv](https://arxiv.org/abs/2210.00262)] [[Codes](https://github.com/hharcolezi/LOLOHA)]
+  .pub-chip--type {
+    border-color: #93c5fd;
+    background: #eff6ff;
+    color: #1d4ed8;
+    text-transform: lowercase;
+    font-weight: 600;
+  }
 
-### 2022
-**Multi-Freq-LDPy: Multiple Frequency Estimation Under Local Differential Privacy in Python**\
-*Arcolezi, H.H.*, Couchot, J.F., Gambs, S., Palamidessi, C., Zolfaghari, M.\
-[[ESORICS 2022](https://doi.org/10.1007/978-3-031-17143-7_40)] [[arXiv](https://arxiv.org/abs/2205.02648)] [[Poster](http://hharcolezi.github.io/files/2022_Multi_Freq_LDPy_Poster.pdf)] [[Codes](https://github.com/hharcolezi/multi-freq-ldpy)]
+  .pub-title {
+    margin: 0;
+    font-size: 1.23rem;
+    line-height: 1.35;
+  }
 
-**Improving the utility of locally differentially private protocols for longitudinal and multidimensional frequency estimates**\
-*Arcolezi, H.H.*, Couchot, J.F., Al Bouna, B., Xiao, X.\
-[[DCAN Journal](https://doi.org/10.1016/j.dcan.2022.07.003)] [[arXiv](https://arxiv.org/abs/2111.04636)] [[Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B4%5D)]
+  .pub-authors,
+  .pub-venue {
+    margin-top: 0.45rem;
+    color: #4b5563;
+  }
 
-**Differentially private multivariate time series forecasting of aggregated human mobility with deep learning: Input or gradient perturbation?** \
-*Arcolezi, H.H.*, Couchot, J.F., Renaud, D., Al Bouna, B., Xiao, X.\
-[[NCAA Journal](https://doi.org/10.1007/s00521-022-07393-0)] [[arXiv](https://arxiv.org/abs/2205.00436)] [[Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B3%5D)] [[Dataset](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/blob/main/papers/%5B3%5D/ML_final_df_real.csv)]
+  .pub-links {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
 
-**Privacy-Preserving Prediction of Victim's Mortality and Their Need for Transportation to Health Facilities**\
-\**Arcolezi, H.H.*, \*Cerna, S., Couchot, J.F., Guyeux, C., Makhoul, A.\
-[[IEEE TII Journal](https://doi.org/10.1109/tii.2021.3123588)] [[Authors pdf Version](http://hharcolezi.github.io/files/2021_TII_VIC_MORTRANSP.pdf)]
+  .pub-links a {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 999px;
+    padding: 0.2rem 0.62rem;
+    font-size: 0.82rem;
+    text-decoration: none;
+    color: #374151;
+    background: #fff;
+  }
 
-### 2021
+  .pub-links a:hover {
+    border-color: #60a5fa;
+    color: #1d4ed8;
+  }
 
-**Random Sampling Plus Fake Data: Multidimensional Frequency Estimates With Local Differential Privacy**\
-*Arcolezi, H.H.*, Couchot, J.F., Al Bouna, B., Xiao, X.\
-[[CIKM 2021](https://doi.org/10.1145/3459637.3482467)] [[arXiv](https://arxiv.org/abs/2109.07269)] [[Presentation](http://hharcolezi.github.io/files/2021_CIKM_Presentation.pdf)] [[Video-Presentation](https://screencast-o-matic.com/watch/crQtokV6CIl)] [[Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B2%5D)]
+  .pub-award {
+    margin-top: 0.55rem;
+    color: #b45309;
+    font-weight: 600;
+  }
+</style>
 
-**Preserving Geo-Indistinguishability of the Emergency Scene to Predict Ambulance Response Time**\
-*Arcolezi, H.H.*, Cerna, S., Guyeux, C., Couchot, J.F.\
-[[MCA Journal](https://doi.org/10.3390/mca26030056)] [[Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B5%5D)]
+<script>
+(() => {
+  const SHEET_ID = '12bFYV-4WC1PhxKrnSVh5s3SPfe63fY3qd_qXybD43qw';
+  const SHEET_GID = '1565301812';
+  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`;
 
-**Machine learning-based forecasting of firemen ambulances' turnaround time in hospitals, considering the COVID-19 impact**\
-Cerna, S., *Arcolezi, H.H.*, Guyeux, C., Royer-Fey, G., Chevallier, C.\
-[[ASOC Journal](https://doi.org/10.1016/j.asoc.2021.107561)] [[Authors pdf Version](http://hharcolezi.github.io/files/2021_ASOC_att.pdf)]
+  const typeFilter = document.getElementById('pubs-type-filter');
+  const yearFilter = document.getElementById('pubs-year-filter');
+  const clearButton = document.getElementById('pubs-clear-filters');
+  const countNode = document.getElementById('pubs-results-count');
+  const listNode = document.getElementById('pubs-list');
+  const stateNode = document.getElementById('pubs-state');
 
-**RISE Controller Tuning and System Identification Through Machine Learning for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation**\
-*Arcolezi, H.H.*, Nunes, W.R.B.M., de Araujo, R.A., Cerna, S., Sanches, M.A.A., Teixeira, M.C.M., de Carvalho, A.A.\
-[[EAAI Journal](https://doi.org/10.1016/j.engappai.2021.104294)] [[arXiv](https://arxiv.org/abs/2006.15605)]
+  if (!typeFilter || !yearFilter || !clearButton || !countNode || !listNode || !stateNode) {
+    return;
+  }
 
-### 2020
+  const parseCSV = (text) => {
+    const rows = [];
+    let row = [];
+    let field = '';
+    let inQuotes = false;
 
-**Identifying the knee joint angular position under neuromuscular electrical stimulation via long short-term memory neural networks**\
-*Arcolezi, H.H.*, Nunes, W.R.B.M., Cerna, S., de Araujo, R.A., Sanches, M.A.A., Teixeira, M.C.M., de Carvalho, A.A.\
-[[RBE Journal](https://rdcu.be/b6NV9)]
+    for (let i = 0; i < text.length; i += 1) {
+      const c = text[i];
+      const next = text[i + 1];
 
-**Longitudinal Collection and Analysis of Mobile Phone Data with Local Differential Privacy**\
-*Arcolezi, H.H.*, Couchot, J.F., Al Bouna, B., Xiao, X.\
-[[IFIP SS Priv. & Iden. Manag.](https://doi.org/10.1007/978-3-030-72465-8_3)] [[Authors pdf Version](http://hharcolezi.github.io/files/2020_IFIP_SS_Mobile_data_LDP.pdf)] [[Codes](https://github.com/hharcolezi/ldp-protocols-mobility-cdrs/tree/main/papers/%5B1%5D)]
+      if (c === '"') {
+        if (inQuotes && next === '"') {
+          field += '"';
+          i += 1;
+        } else {
+          inQuotes = !inQuotes;
+        }
+      } else if (c === ',' && !inQuotes) {
+        row.push(field);
+        field = '';
+      } else if ((c === '\n' || c === '\r') && !inQuotes) {
+        if (c === '\r' && next === '\n') {
+          i += 1;
+        }
+        row.push(field);
+        if (row.some((value) => value.trim() !== '')) {
+          rows.push(row);
+        }
+        row = [];
+        field = '';
+      } else {
+        field += c;
+      }
+    }
 
-**Mobility modeling through mobile data: generating an optimized and open dataset respecting privacy**\
-*Arcolezi, H.H.*, Couchot, J.F., Baala, O., Contet, J.M., Al Bouna, B., Xiao, X.\
-[[IWCMC 2020](https://doi.org/10.1109/iwcmc48107.2020.9148138)] [[Authors pdf Version](http://hharcolezi.github.io/files/2020_IWCMC_MS_FIMU.pdf)] [[Presentation](http://hharcolezi.github.io/files/2020_IWCMC_Presentation.pdf)] [[Dataset](https://github.com/hharcolezi/OpenMSFIMU)]
+    if (field.length > 0 || row.length > 0) {
+      row.push(field);
+      rows.push(row);
+    }
 
-**Forecasting the Number of Firefighter Interventions per Region with Local-Differential-Privacy-Based Data**\
-*Arcolezi, H.H.*, Couchot, J.F., Cerna, S., Guyeux, C., Royer, G., Al Bouna, B., Xiao, X.\
-[[Computers & Security Journal](https://doi.org/10.1016/j.cose.2020.101888)] [[Authors pdf Version](http://hharcolezi.github.io/files/2020_COSE_ldp_firemen.pdf)]
+    return rows;
+  };
 
-**A Comparison of LSTM and XGBoost for Predicting Firemen Interventions**\
-Cerna, S., Guyeux, C., *Arcolezi, H.H.*, Couturier, R., Royer, G.\
-[[WorldCIST'20](https://doi.org/10.1007/978-3-030-45691-7_39)] [[Authors pdf Version](http://hharcolezi.github.io/files/2019_WCIST_LSTM_vs_XGBoost.pdf)]
+  const normalizeKey = (value) => (value || '')
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
 
-**Boosting Methods for Predicting Firemen Interventions**\
-Cerna, S., Guyeux, C., *Arcolezi, H.H.*, Couturier, R., Royer, G.\
-[[ICICS 2020](https://doi.org/10.1109/icics49469.2020.239488)] [[Authors pdf Version](http://hharcolezi.github.io/files/2020_ICICS_boosting.pdf)]
+  const truthy = (value) => {
+    const normalized = String(value || '').toLowerCase().trim();
+    return ['true', 'yes', 'y', '1'].includes(normalized);
+  };
 
-### 2019
+  const prettyType = (value) => {
+    const raw = String(value || '').toLowerCase().trim();
+    if (!raw) return 'publication';
+    if (raw === 'journal') return 'journal';
+    if (raw === 'conference') return 'conference';
+    if (raw === 'workshop') return 'workshop';
+    return raw;
+  };
 
-**A RISE-based Controller Fine-tuned by an Improved Genetic Algorithm for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation**\
-*Arcolezi, H.H.*, Nunes, W.R.B.M., Nahuis, S.L.C., Sanches, M.A.A., Teixeira, M.C.M., de Carvalho, A.A.\
-[[CoDIT 2019](https://doi.org/10.1109/codit.2019.8820357)] [[Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_control.pdf)]
+  const toEntries = (rows) => {
+    if (!rows.length) return [];
 
-**Long Short-Term Memory for Predicting Firemen Interventions**\
-Ñahuis, S.L.C., Guyeux, C., *Arcolezi, H.H.*, Couturier, R., Royer, G., Lotufo, A.D.P.\
-[[CoDIT 2019](https://doi.org/10.1109/codit.2019.8820671)] [[Authors pdf Version](http://hharcolezi.github.io/files/2019_CODIT_lstm.pdf)]
+    const headers = rows[0].map(normalizeKey);
+    const entries = rows.slice(1).map((columns) => {
+      const item = {};
+      headers.forEach((header, index) => {
+        item[header] = (columns[index] || '').trim();
+      });
 
-## Technical Reports
+      const year = item.year || (item.pub_date || '').slice(0, 4);
+      return {
+        type: prettyType(item.category || item.type),
+        pubDate: item.pub_date || '',
+        year,
+        authors: item.authors || '',
+        title: item.title || '',
+        venue: item.venue || '',
+        urlPub: item.url_pub || item.url || '',
+        code: item.code || '',
+        pdf: item.pdf || '',
+        slides: item.slides || '',
+        poster: item.poster || '',
+        video: item.video || '',
+        awards: item.awards || '',
+        bibtex: item.bibtex || '',
+        hidden: truthy(item.not_on_website),
+      };
+    }).filter((entry) => entry.title && !entry.hidden);
 
-**Type:** Ph.D. Thesis. \
-**Institution:** University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/)).\
-**Title:** Production of Categorical Data Verifying Differential Privacy: Conception and Applications to Machine Learning. \
-**Supervisor:** [Jean-François Couchot](https://members.femto-st.fr/jf-couchot/en). \
-**Co-Supervisors:** [Bechara Al Bouna](https://www.linkedin.com/in/bechara-al-bouna-aa94927/?originalSubdomain=lb) and [Xiaokui Xiao](https://www.comp.nus.edu.sg/~xiaoxk/). \
-**Year.** 2022. \
-**Resources:** [arXiv](https://arxiv.org/abs/2204.00850), [Presentation](http://hharcolezi.github.io/files/2022_HHA_Thesis_UBFC_Presentation.pdf), [Video-Presentation](https://screencast-o-matic.com/watch/c3fnIPVqTTc).
+    return entries.sort((a, b) => {
+      if (a.pubDate && b.pubDate) {
+        return b.pubDate.localeCompare(a.pubDate);
+      }
+      return String(b.year).localeCompare(String(a.year));
+    });
+  };
 
-**Type:** Master Thesis. \
-**Institution:** São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)).\
-**Title:** A Novel Robust and Intelligent Control Based Approach for Human Lower Limb Rehabilitation via Neuromuscular Electrical Stimulation. \
-**Supervisor:** [Aparecido Augusto de Carvalho](http://lattes.cnpq.br/0250066159980825). \
-**Year.** 2019. \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_compressed.pdf), [Presentation](http://hharcolezi.github.io/files/2019_UNESP_Master_thesis_Presentation.pdf).
+  const createLink = (label, href) => {
+    if (!href) return '';
+    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+  };
 
-**Type:** Bachelor Final Report (a.k.a. "Trabalho de Conclusão de Curso"). \
-**Institution:** Mato Grosso State University ([UNEMAT](https://unemat.br/)).\
-**Title:** Um Estudo Complementar ao Projeto de Controle PID no Caso do Pêndulo Invertido (in Portuguese). \
-**Supervisor:** [Rogério B. Quirino](http://lattes.cnpq.br/9429587919161205). \
-**Year.** 2017. \
-**Resources:** [pdf Version](http://hharcolezi.github.io/files/2017_UNEMAT_Final_Work.pdf).
+  const renderCard = (entry) => {
+    const links = [
+      createLink('Venue', entry.urlPub),
+      createLink('Code', entry.code),
+      createLink('PDF', entry.pdf),
+      createLink('Slides', entry.slides),
+      createLink('Poster', entry.poster),
+      createLink('Video', entry.video),
+      createLink('BibTeX', entry.bibtex),
+    ].filter(Boolean).join('');
+
+    return `
+      <article class="pubs-card pub-card">
+        <div class="pub-card-top">
+          <span class="pub-chip pub-chip--type">${entry.type}</span>
+          <span class="pub-chip">${entry.year || 'n/a'}</span>
+        </div>
+        <h3 class="pub-title">${entry.title}</h3>
+        ${entry.authors ? `<div class="pub-authors">${entry.authors}</div>` : ''}
+        ${entry.venue ? `<div class="pub-venue">${entry.venue}</div>` : ''}
+        ${entry.awards ? `<div class="pub-award">🏆 ${entry.awards}</div>` : ''}
+        ${links ? `<div class="pub-links">${links}</div>` : ''}
+      </article>
+    `;
+  };
+
+  const uniqueSorted = (items) => Array.from(new Set(items.filter(Boolean)));
+
+  const setOptions = (node, values) => {
+    const base = node.id === 'pubs-type-filter' ? 'Type' : 'Year';
+    const sorted = base === 'Year'
+      ? values.sort((a, b) => Number(b) - Number(a))
+      : values.sort();
+
+    node.innerHTML = `<option value="all">All ${base}s</option>${sorted
+      .map((value) => `<option value="${value}">${value}</option>`)
+      .join('')}`;
+  };
+
+  const setState = (text) => {
+    stateNode.textContent = text;
+    stateNode.style.display = text ? 'block' : 'none';
+  };
+
+  const run = async () => {
+    try {
+      const response = await fetch(CSV_URL);
+      if (!response.ok) {
+        throw new Error(`Could not load spreadsheet (${response.status})`);
+      }
+
+      const text = await response.text();
+      const entries = toEntries(parseCSV(text));
+
+      if (!entries.length) {
+        setState('No publications found in the spreadsheet.');
+        countNode.textContent = '0/0';
+        return;
+      }
+
+      setOptions(typeFilter, uniqueSorted(entries.map((entry) => entry.type)));
+      setOptions(yearFilter, uniqueSorted(entries.map((entry) => entry.year)));
+
+      const render = () => {
+        const currentType = typeFilter.value;
+        const currentYear = yearFilter.value;
+        const filtered = entries.filter((entry) => {
+          const typeOk = currentType === 'all' || entry.type === currentType;
+          const yearOk = currentYear === 'all' || String(entry.year) === currentYear;
+          return typeOk && yearOk;
+        });
+
+        countNode.textContent = `${filtered.length}/${entries.length}`;
+
+        if (!filtered.length) {
+          listNode.innerHTML = '';
+          setState('No publications match the selected filters.');
+          return;
+        }
+
+        setState('');
+        listNode.innerHTML = filtered.map(renderCard).join('');
+      };
+
+      typeFilter.addEventListener('change', render);
+      yearFilter.addEventListener('change', render);
+      clearButton.addEventListener('click', () => {
+        typeFilter.value = 'all';
+        yearFilter.value = 'all';
+        render();
+      });
+
+      render();
+    } catch (error) {
+      setState(`Unable to load publications from Google Sheets. ${error.message}`);
+      countNode.textContent = '0/0';
+    }
+  };
+
+  run();
+})();
+</script>
