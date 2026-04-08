@@ -11,29 +11,6 @@ The superscript \* indicates equal contributions to the paper.
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
 <div class="pubs-app" id="publications-app">
-  <div class="pubs-card pubs-controls">
-    <div class="pubs-control-grid">
-      <label class="pubs-control">
-        <span>Type</span>
-        <select id="pubs-type-filter" aria-label="Filter publications by type">
-          <option value="all">All</option>
-        </select>
-      </label>
-
-      <label class="pubs-control">
-        <span>Year</span>
-        <select id="pubs-year-filter" aria-label="Filter publications by year">
-          <option value="all">All</option>
-        </select>
-      </label>
-    </div>
-
-    <div class="pubs-controls-footer">
-      <button type="button" id="pubs-clear-filters" class="btn btn--small">Clear</button>
-      <span id="pubs-results-count" class="pubs-count" aria-live="polite">0/0</span>
-    </div>
-  </div>
-
   <div id="pubs-state" class="pubs-state">Loading publications…</div>
   <div id="pubs-list" class="pubs-list"></div>
 </div>
@@ -50,43 +27,6 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
   }
 
-  .pubs-controls {
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .pubs-control-grid {
-    display: grid;
-    gap: 0.8rem;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
-
-  .pubs-control span {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-  }
-
-  .pubs-control select {
-    width: 100%;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    padding: 0.55rem 0.7rem;
-    background: #fff;
-  }
-
-  .pubs-controls-footer {
-    margin-top: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .pubs-count {
-    color: #6b7280;
-    font-size: 0.95rem;
-  }
-
   .pubs-state {
     padding: 0.8rem 0;
     color: #6b7280;
@@ -95,7 +35,27 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 
   .pubs-list {
     display: grid;
-    gap: 1rem;
+    gap: 1.4rem;
+  }
+
+  .pub-year-group {
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  .pub-year-heading {
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #374151;
+    border-left: 4px solid #9ca3af;
+    padding-left: 0.6rem;
+  }
+
+  .pub-year-list {
+    display: grid;
+    gap: 0.9rem;
   }
 
   .pub-card {
@@ -120,11 +80,38 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
   }
 
   .pub-chip--type {
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+
+  .pub-chip--conference {
     border-color: #93c5fd;
     background: #eff6ff;
     color: #1d4ed8;
-    text-transform: lowercase;
-    font-weight: 600;
+  }
+
+  .pub-chip--journal {
+    border-color: #86efac;
+    background: #f0fdf4;
+    color: #166534;
+  }
+
+  .pub-chip--workshop {
+    border-color: #fcd34d;
+    background: #fffbeb;
+    color: #92400e;
+  }
+
+  .pub-chip--preprint {
+    border-color: #c4b5fd;
+    background: #f5f3ff;
+    color: #6d28d9;
+  }
+
+  .pub-chip--publication {
+    border-color: #d1d5db;
+    background: #f9fafb;
+    color: #374151;
   }
 
   .pub-title {
@@ -133,8 +120,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     line-height: 1.35;
   }
 
-  .pub-authors,
-  .pub-venue {
+  .pub-authors {
     margin-top: 0.45rem;
     color: #4b5563;
   }
@@ -158,8 +144,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     background: #fff;
   }
 
-  .pub-links a span,
-  .pub-venue a span {
+  .pub-links a span {
     margin-right: 0.3rem;
   }
 
@@ -181,14 +166,10 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
   const SHEET_GID = '1565301812';
   const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`;
 
-  const typeFilter = document.getElementById('pubs-type-filter');
-  const yearFilter = document.getElementById('pubs-year-filter');
-  const clearButton = document.getElementById('pubs-clear-filters');
-  const countNode = document.getElementById('pubs-results-count');
   const listNode = document.getElementById('pubs-list');
   const stateNode = document.getElementById('pubs-state');
 
-  if (!typeFilter || !yearFilter || !clearButton || !countNode || !listNode || !stateNode) {
+  if (!listNode || !stateNode) {
     return;
   }
 
@@ -252,7 +233,8 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     if (raw === 'journal') return 'journal';
     if (raw === 'conference') return 'conference';
     if (raw === 'workshop') return 'workshop';
-    return raw;
+    if (raw === 'preprint') return 'preprint';
+    return 'publication';
   };
 
   const toEntries = (rows) => {
@@ -302,6 +284,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 
   const renderCard = (entry) => {
     const links = [
+      createLink(entry.venue || 'Venue', entry.urlPub, '🏛️'),
       createLink('Code', entry.code, '💻'),
       createLink('ArXiv', entry.pdf, '📄'),
       createLink('Slides', entry.slides, '🖼️'),
@@ -311,42 +294,33 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
       createLink('BibTeX', entry.bibtex),
     ].filter(Boolean).join('');
 
-    const venueLabel = entry.urlPub
-      ? createLink(entry.venue, entry.urlPub, '🏛️')
-      : (entry.venue || '');
+    const typeClass = `pub-chip--${entry.type.replace(/[^a-z0-9]+/g, '-')}`;
 
     return `
       <article class="pubs-card pub-card">
         <div class="pub-card-top">
-          <span class="pub-chip pub-chip--type">${entry.type}</span>
+          <span class="pub-chip pub-chip--type ${typeClass}">${entry.type}</span>
           <span class="pub-chip">${entry.year || 'n/a'}</span>
         </div>
         <h3 class="pub-title">${entry.title}</h3>
         ${entry.authors ? `<div class="pub-authors">${entry.authors}</div>` : ''}
-        ${entry.venue ? `<div class="pub-venue">${venueLabel}</div>` : ''}
         ${entry.awards ? `<div class="pub-award">🏆 ${entry.awards}</div>` : ''}
         ${links ? `<div class="pub-links">${links}</div>` : ''}
       </article>
     `;
   };
 
-  const uniqueSorted = (items) => Array.from(new Set(items.filter(Boolean)));
-
-  const setOptions = (node, values) => {
-    const base = node.id === 'pubs-type-filter' ? 'Type' : 'Year';
-    const sorted = base === 'Year'
-      ? values.sort((a, b) => Number(b) - Number(a))
-      : values.sort();
-
-    node.innerHTML = `<option value="all">All ${base}s</option>${sorted
-      .map((value) => `<option value="${value}">${value}</option>`)
-      .join('')}`;
-  };
-
   const setState = (text) => {
     stateNode.textContent = text;
     stateNode.style.display = text ? 'block' : 'none';
   };
+
+  const groupByYear = (entries) => entries.reduce((acc, entry) => {
+    const key = entry.year || 'Unknown year';
+    if (!acc[key]) acc[key] = [];
+    acc[key].push(entry);
+    return acc;
+  }, {});
 
   const run = async () => {
     try {
@@ -360,46 +334,23 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 
       if (!entries.length) {
         setState('No publications found in the spreadsheet.');
-        countNode.textContent = '0/0';
         return;
       }
 
-      setOptions(typeFilter, uniqueSorted(entries.map((entry) => entry.type)));
-      setOptions(yearFilter, uniqueSorted(entries.map((entry) => entry.year)));
+      const groups = groupByYear(entries);
+      const years = Object.keys(groups).sort((a, b) => Number(b) - Number(a));
 
-      const render = () => {
-        const currentType = typeFilter.value;
-        const currentYear = yearFilter.value;
-        const filtered = entries.filter((entry) => {
-          const typeOk = currentType === 'all' || entry.type === currentType;
-          const yearOk = currentYear === 'all' || String(entry.year) === currentYear;
-          return typeOk && yearOk;
-        });
-
-        countNode.textContent = `${filtered.length}/${entries.length}`;
-
-        if (!filtered.length) {
-          listNode.innerHTML = '';
-          setState('No publications match the selected filters.');
-          return;
-        }
-
-        setState('');
-        listNode.innerHTML = filtered.map(renderCard).join('');
-      };
-
-      typeFilter.addEventListener('change', render);
-      yearFilter.addEventListener('change', render);
-      clearButton.addEventListener('click', () => {
-        typeFilter.value = 'all';
-        yearFilter.value = 'all';
-        render();
-      });
-
-      render();
+      setState('');
+      listNode.innerHTML = years.map((year) => `
+        <section class="pub-year-group" aria-label="Publications from ${year}">
+          <h2 class="pub-year-heading">${year}</h2>
+          <div class="pub-year-list">
+            ${groups[year].map(renderCard).join('')}
+          </div>
+        </section>
+      `).join('');
     } catch (error) {
       setState(`Unable to load publications from Google Sheets. ${error.message}`);
-      countNode.textContent = '0/0';
     }
   };
 
