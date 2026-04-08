@@ -125,6 +125,10 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     color: #4b5563;
   }
 
+  .pub-venue-line {
+    margin-top: 0.5rem;
+  }
+
   .pub-links {
     margin-top: 0.75rem;
     display: flex;
@@ -169,6 +173,13 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     border-color: #fbbf24;
     background: #fffbeb;
     color: #92400e;
+    font-weight: 600;
+  }
+
+  .pub-links .pub-link-badge--venue {
+    border-color: #93c5fd;
+    background: #eff6ff;
+    color: #1d4ed8;
     font-weight: 600;
   }
 </style>
@@ -302,10 +313,15 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     return `<span class="pub-link-badge${extraClass}">${prefix}${label}</span>`;
   };
 
+  const createVenueElement = (venue, urlPub) => {
+    if (!venue) return '';
+    if (urlPub) return createLink(venue, urlPub, '🏛️');
+    return createBadge(venue, '🏛️', 'pub-link-badge--venue');
+  };
+
   const renderCard = (entry) => {
     const links = [
       createBadge(entry.awards, '🏆', 'pub-link-badge--award'),
-      createLink(entry.venue || 'Venue', entry.urlPub, '🏛️'),
       createLink('ArXiv', entry.pdf, '📄'),
       createLink('Code', entry.code, '💻'),
       createLink('Slides', entry.slides, '🖼️'),
@@ -313,6 +329,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
       createLink('Video', entry.video, '🎥'),
       createLink('BibTeX', entry.bibtex, '📚'),
     ].filter(Boolean).join('');
+    const venueElement = createVenueElement(entry.venue, entry.urlPub);
 
     const typeClass = `pub-chip--${entry.type.replace(/[^a-z0-9]+/g, '-')}`;
 
@@ -323,6 +340,7 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
         </div>
         <h3 class="pub-title">${entry.title}</h3>
         ${entry.authors ? `<div class="pub-authors">${entry.authors}</div>` : ''}
+        ${venueElement ? `<div class="pub-links pub-venue-line">${venueElement}</div>` : ''}
         ${links ? `<div class="pub-links">${links}</div>` : ''}
       </article>
     `;
