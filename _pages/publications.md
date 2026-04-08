@@ -53,6 +53,11 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     padding-left: 0.6rem;
   }
 
+  .pub-year-heading--label {
+    text-transform: none;
+    letter-spacing: normal;
+  }
+
   .pub-year-list {
     display: grid;
     gap: 0.9rem;
@@ -114,6 +119,13 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     color: #374151;
   }
 
+
+  .pub-chip--technical-report {
+    border-color: #fbcfe8;
+    background: #fdf2f8;
+    color: #9d174d;
+  }
+
   .pub-title {
     margin: 0;
     font-size: 1.23rem;
@@ -124,11 +136,6 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     margin-top: 0.45rem;
     color: #4b5563;
   }
-
-  .pub-venue-line {
-    margin-top: 0.5rem;
-  }
-
   .pub-links {
     margin-top: 0.75rem;
     display: flex;
@@ -251,14 +258,32 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     return ['true', 'yes', 'y', '1'].includes(normalized);
   };
 
-  const prettyType = (value) => {
+  const parseType = (value) => {
     const raw = String(value || '').toLowerCase().trim();
-    if (!raw) return 'publication';
-    if (raw === 'journal') return 'journal';
-    if (raw === 'conference') return 'conference';
-    if (raw === 'workshop') return 'workshop';
-    if (raw === 'preprint') return 'preprint';
-    return 'publication';
+
+    if (!raw) {
+      return { kind: 'publication', label: 'publication' };
+    }
+
+    if (raw === 'journal') return { kind: 'journal', label: 'journal' };
+    if (raw === 'conference') return { kind: 'conference', label: 'conference' };
+    if (raw === 'workshop') return { kind: 'workshop', label: 'workshop' };
+    if (raw === 'preprint') return { kind: 'preprint', label: 'preprint' };
+
+    if (raw.includes('phd') || raw.includes('ph.d')) {
+      return { kind: 'technical-report', label: 'ph.d. thesis' };
+    }
+    if (raw.includes('master')) {
+      return { kind: 'technical-report', label: 'master thesis' };
+    }
+    if (raw.includes('bachelor')) {
+      return { kind: 'technical-report', label: 'bachelor thesis' };
+    }
+    if (raw.includes('technical report')) {
+      return { kind: 'technical-report', label: 'technical report' };
+    }
+
+    return { kind: 'publication', label: raw };
   };
 
   const toEntries = (rows) => {
@@ -272,8 +297,10 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
       });
 
       const year = item.year || (item.pub_date || '').slice(0, 4);
+      const parsedType = parseType(item.category || item.type);
       return {
-        type: prettyType(item.category || item.type),
+        type: parsedType.label,
+        typeKind: parsedType.kind,
         pubDate: item.pub_date || '',
         year,
         authors: item.authors || '',
@@ -322,16 +349,17 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
   const renderCard = (entry) => {
     const links = [
       createBadge(entry.awards, '🏆', 'pub-link-badge--award'),
+      createVenueElement(entry.venue, entry.urlPub),
       createLink('ArXiv', entry.pdf, '📄'),
       createLink('Code', entry.code, '💻'),
+      createLink('Dataset', entry.dataset, '🗂️'),
       createLink('Slides', entry.slides, '🖼️'),
       createLink('Poster', entry.poster, '🧾'),
       createLink('Video', entry.video, '🎥'),
       createLink('BibTeX', entry.bibtex, '📚'),
     ].filter(Boolean).join('');
-    const venueElement = createVenueElement(entry.venue, entry.urlPub);
 
-    const typeClass = `pub-chip--${entry.type.replace(/[^a-z0-9]+/g, '-')}`;
+    const typeClass = `pub-chip--${entry.typeKind.replace(/[^a-z0-9]+/g, '-')}`;
 
     return `
       <article class="pubs-card pub-card">
@@ -340,7 +368,6 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
         </div>
         <h3 class="pub-title">${entry.title}</h3>
         ${entry.authors ? `<div class="pub-authors">${entry.authors}</div>` : ''}
-        ${venueElement ? `<div class="pub-links pub-venue-line">${venueElement}</div>` : ''}
         ${links ? `<div class="pub-links">${links}</div>` : ''}
       </article>
     `;
@@ -358,6 +385,18 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     return acc;
   }, {});
 
+  const renderSection = (heading, cards, ariaLabel = heading, headingClass = '') => {
+    if (!cards.length) return '';
+    return `
+      <section class="pub-year-group" aria-label="${ariaLabel}">
+        <h2 class="pub-year-heading ${headingClass}">${heading}</h2>
+        <div class="pub-year-list">
+          ${cards.map(renderCard).join('')}
+        </div>
+      </section>
+    `;
+  };
+
   const run = async () => {
     try {
       const response = await fetch(CSV_URL);
@@ -373,18 +412,26 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
         return;
       }
 
-      const groups = groupByYear(entries);
+      const technicalReports = entries.filter((entry) => entry.typeKind === 'technical-report');
+      const standardPublications = entries.filter((entry) => entry.typeKind !== 'technical-report');
+
+      const groups = groupByYear(standardPublications);
       const years = Object.keys(groups).sort((a, b) => Number(b) - Number(a));
 
+      const yearSections = years.map((year) => renderSection(
+        year,
+        groups[year],
+        `Publications from ${year}`,
+      ));
+      const technicalReportSection = renderSection(
+        'Technical Reports',
+        technicalReports,
+        'Technical reports',
+        'pub-year-heading--label',
+      );
+
       setState('');
-      listNode.innerHTML = years.map((year) => `
-        <section class="pub-year-group" aria-label="Publications from ${year}">
-          <h2 class="pub-year-heading">${year}</h2>
-          <div class="pub-year-list">
-            ${groups[year].map(renderCard).join('')}
-          </div>
-        </section>
-      `).join('');
+      listNode.innerHTML = [...yearSections, technicalReportSection].filter(Boolean).join('');
     } catch (error) {
       setState(`Unable to load publications from Google Sheets. ${error.message}`);
     }
