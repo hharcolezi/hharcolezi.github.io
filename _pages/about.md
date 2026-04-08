@@ -1,507 +1,304 @@
 ---
 permalink: /
 title: "About Me"
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-<section class="about-hero">
-  <div class="about-hero__main">
-    <p class="about-hero__eyebrow">Assistant Professor · ÉTS Montréal</p>
-    <h1 class="about-hero__title">Heber Hwang Arcolezi</h1>
-    <p class="about-hero__lead">Designing trustworthy information systems for Responsible AI.</p>
+<section class="editorial-hero" aria-labelledby="home-title">
+  <div class="editorial-hero__left">
+    <p class="editorial-hero__watermark" aria-hidden="true">Heber Hwang Arcolezi</p>
+    <p class="editorial-hero__eyebrow">Assistant Professor · ÉTS Montréal</p>
+    <h1 id="home-title" class="editorial-hero__title">Heber Hwang Arcolezi</h1>
+    <p class="editorial-hero__lead">Designing trustworthy information systems for Responsible AI.</p>
 
-    <div class="about-hero__chips" aria-label="Topics">
+    <div class="editorial-hero__tags" aria-label="Research topics">
       <span>Fairness</span>
       <span>Privacy-Preserving Techniques</span>
       <span>Explainability</span>
       <span>Responsible AI</span>
     </div>
 
-    <div class="about-hero__links">
+    <nav class="editorial-hero__links" aria-label="Contact links">
       <a href="mailto:heber.hwang-arcolezi@etsmtl.ca">Email</a>
-      <a href="/files/HHA_CV.pdf">CV</a>
       <a href="https://scholar.google.com/citations?user=lt28fGUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
       <a href="https://github.com/hharcolezi" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
-
-    <ul class="about-hero__details" aria-label="Contact and profile details">
-      <li>📍 Montréal, Canada</li>
-      <li><a href="mailto:heber.hwang-arcolezi@etsmtl.ca">✉️ heber.hwang-arcolezi@etsmtl.ca</a></li>
-      <li><a href="https://scholar.google.com/citations?user=lt28fGUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">🎓 Google Scholar</a></li>
-      <li><a href="https://github.com/hharcolezi" target="_blank" rel="noopener noreferrer">💻 GitHub</a></li>
-      <li><a href="https://x.com/hharcolezi" target="_blank" rel="noopener noreferrer">🐦 Twitter/X</a></li>
-    </ul>
+      <a href="https://x.com/hharcolezi" target="_blank" rel="noopener noreferrer">Twitter</a>
+      <a href="/files/HHA_CV.pdf">CV</a>
+    </nav>
   </div>
 
-  <aside class="about-hero__card">
-    <h2>About me</h2>
-    <p>
-      I am an Assistant Professor in the Department of Software and Information Technology Engineering at
-      <a href="https://www.etsmtl.ca/" target="_blank" rel="noopener noreferrer">ÉTS Montréal</a>, where I co-lead the
-      <a href="https://tisl-lab.github.io/" target="_blank" rel="noopener noreferrer">Trustworthy Information Systems Lab (TISL)</a>
-      research group. Previously, I was a Tenured Research Scientist at
-      <a href="https://www.inria.fr/en/inria-centre-university-grenoble-alpes" target="_blank" rel="noopener noreferrer">Inria Grenoble</a>.
-      I received my Ph.D. in Computer Science from the University of Bourgogne Franche-Comté (UBFC) and my M.Sc.
-      in Electrical Engineering from the São Paulo State University (UNESP).
-    </p>
+  <aside class="editorial-hero__right" aria-label="Portrait and affiliation">
+    <img class="editorial-hero__image" src="/images/HHA_profile.png" alt="Portrait of Heber Hwang Arcolezi" />
+    <div class="editorial-hero__institution">
+      <p class="role">Assistant Professor</p>
+      <p class="dept">Department of Software and Information Technology Engineering · ÉTS Montréal</p>
+      <p class="location">Montréal, Canada</p>
+    </div>
   </aside>
 </section>
 
-<section class="about-focus">
-  <h2>Research interests</h2>
-  <p>
-    My research addresses the technical challenges of Responsible AI through the lenses of fairness,
-    privacy-preserving techniques, and explainability. My goal is to design systems that are both
-    mathematically private and socially equitable.
-  </p>
+<section class="editorial-columns" aria-label="About and research overview">
+  <article>
+    <h2>About</h2>
+    <p>
+      I am an Assistant Professor at
+      <a href="https://www.etsmtl.ca/" target="_blank" rel="noopener noreferrer">ÉTS Montréal</a>, where I co-lead the
+      <a href="https://tisl-lab.github.io/" target="_blank" rel="noopener noreferrer">Trustworthy Information Systems Lab (TISL)</a>.
+      Previously, I was a Tenured Research Scientist at
+      <a href="https://www.inria.fr/en/inria-centre-university-grenoble-alpes" target="_blank" rel="noopener noreferrer">Inria Grenoble</a>.
+    </p>
+  </article>
+
+  <article>
+    <h2>Research Interests</h2>
+    <p>
+      My research addresses responsible AI through privacy-preserving learning, fairness-aware methods,
+      and explainability. I build systems that are mathematically private while remaining practically useful.
+    </p>
+  </article>
+
+  <article>
+    <h2>Background</h2>
+    <p>
+      I received my Ph.D. in Computer Science from the University of Bourgogne Franche-Comté (UBFC) and my
+      M.Sc. in Electrical Engineering from São Paulo State University (UNESP). I focus on connecting theory,
+      systems, and real-world deployments.
+    </p>
+  </article>
 </section>
 
 <style>
-  .about-hero {
+  :root {
+    --editorial-bg: #f9f9f9;
+    --editorial-text: #101010;
+    --editorial-muted: #9d9d9d;
+    --editorial-accent: #8c4f2e;
+    --editorial-rule: #e8e4df;
+  }
+
+  body {
+    background: var(--editorial-bg);
+    color: var(--editorial-text);
+  }
+
+  .page {
+    padding-inline: clamp(1.2rem, 3.5vw, 2.4rem);
+  }
+
+  .page__content {
+    max-width: 1240px;
+  }
+
+  .masthead {
+    border-bottom: 1px solid var(--editorial-rule);
+    background: var(--editorial-bg);
+  }
+
+  .greedy-nav .visible-links a {
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    font-size: 0.68rem;
+    color: #2a2a2a;
+  }
+
+  .greedy-nav .visible-links a:hover {
+    color: var(--editorial-accent);
+  }
+
+  .editorial-hero {
+    margin: clamp(1.5rem, 5vw, 3.4rem) 0 clamp(2.3rem, 6vw, 4.2rem);
     display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(260px, 1fr);
-    gap: 1.5rem;
-    align-items: stretch;
-    margin: 0.6rem 0 1.5rem;
+    grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.85fr);
+    gap: clamp(1.6rem, 4vw, 3.2rem);
+    align-items: end;
+    padding-bottom: clamp(1.6rem, 4vw, 2.4rem);
+    border-bottom: 1px solid var(--editorial-rule);
   }
 
-  .about-hero__main,
-  .about-hero__card,
-  .about-focus {
-    border: 1px solid #e5e7eb;
-    border-radius: 18px;
-    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
-    box-shadow: 0 14px 30px rgba(17, 24, 39, 0.06);
+  .editorial-hero__left {
+    position: relative;
   }
 
-  .about-hero__main {
-    padding: 1.5rem;
-  }
-
-  .about-hero__eyebrow {
+  .editorial-hero__watermark {
+    position: absolute;
+    top: clamp(-0.7rem, -1.5vw, -1.3rem);
+    left: 0;
+    width: min(980px, 100%);
     margin: 0;
-    color: #2563eb;
-    font-weight: 700;
+    z-index: 0;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 0.82;
+    font-size: clamp(3.2rem, 12vw, 8.8rem);
+    color: #e8e8e8;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .editorial-hero__eyebrow,
+  .editorial-hero__title,
+  .editorial-hero__lead,
+  .editorial-hero__tags,
+  .editorial-hero__links {
+    position: relative;
+    z-index: 1;
+  }
+
+  .editorial-hero__eyebrow {
+    margin: 0;
+    font-size: 0.82rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .editorial-hero__title {
+    margin: 0.25rem 0 0;
+    font-size: clamp(2.8rem, 8.1vw, 6.6rem);
+    line-height: 0.9;
+    letter-spacing: -0.045em;
+    font-weight: 800;
+    max-width: 8.7ch;
+  }
+
+  .editorial-hero__lead {
+    margin: 1.2rem 0 0;
+    max-width: 35ch;
+    font-size: clamp(1rem, 2.3vw, 1.95rem);
+    line-height: 1.35;
+  }
+
+  .editorial-hero__tags {
+    margin-top: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+
+  .editorial-hero__tags span {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.21em;
+    font-size: 0.92rem;
+    letter-spacing: 0.02em;
+  }
+
+  .editorial-hero__links {
+    margin-top: 1.35rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .editorial-hero__links a {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.74rem;
+    color: var(--editorial-accent);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--editorial-accent) 48%, transparent);
+    padding-bottom: 0.18rem;
+  }
+
+  .editorial-hero__links a:hover {
+    border-bottom-color: var(--editorial-accent);
+  }
+
+  .editorial-hero__right {
+    display: grid;
+    gap: 1.15rem;
+  }
+
+  .editorial-hero__image {
+    width: 100%;
+    max-width: 390px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    justify-self: start;
+  }
+
+  .editorial-hero__institution .role {
+    margin: 0;
+    font-size: 1.95rem;
+    line-height: 1.08;
+  }
+
+  .editorial-hero__institution .dept,
+  .editorial-hero__institution .location {
+    margin: 0.65rem 0 0;
+    font-size: 1.02rem;
+    color: #333;
+    line-height: 1.45;
+    max-width: 28ch;
+  }
+
+  .editorial-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1.1rem, 2.8vw, 2.4rem);
+    margin-bottom: 1.8rem;
+  }
+
+  .editorial-columns article {
+    border-top: 1px solid var(--editorial-rule);
+    padding-top: 1.1rem;
+  }
+
+  .editorial-columns h2 {
+    margin: 0;
+    font-size: 1.05rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    font-size: 0.78rem;
   }
 
-  .about-hero__title {
-    margin: 0.35rem 0 0.45rem;
-    font-size: clamp(2rem, 6vw, 3.25rem);
-    line-height: 1;
-    letter-spacing: -0.03em;
+  .editorial-columns p {
+    margin: 0.75rem 0 0;
+    color: #222;
+    line-height: 1.72;
+    font-size: 1.01rem;
   }
 
-  .about-hero__lead {
-    margin: 0;
-    font-size: 1.15rem;
-    color: #374151;
-    max-width: 36ch;
+  .editorial-columns a {
+    color: inherit;
+    text-underline-offset: 0.17em;
   }
 
-  .about-hero__chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.55rem;
-    margin: 1.05rem 0 1.2rem;
-  }
-
-  .about-hero__chips span {
-    border-radius: 999px;
-    padding: 0.28rem 0.72rem;
-    border: 1px solid #dbeafe;
-    background: #eff6ff;
-    color: #1e40af;
-    font-size: 0.83rem;
-    font-weight: 600;
-  }
-
-  .about-hero__links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-
-  .about-hero__links a {
-    display: inline-block;
-    border-bottom: 2px solid #f59e0b;
-    color: #7c2d12;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    font-size: 0.78rem;
-    text-decoration: none;
-    padding-bottom: 0.1rem;
-  }
-
-  .about-hero__card {
-    padding: 1rem;
-  }
-
-  .about-hero__details {
-    list-style: none;
-    margin: 1.1rem 0 0;
-    padding: 0;
-    display: grid;
-    gap: 0.4rem;
-    font-size: 0.93rem;
-  }
-
-  .about-hero__details li {
-    color: #1f2937;
-  }
-
-  .about-hero__details a {
-    color: #1f2937;
-    text-decoration: none;
-    border-bottom: 1px dashed #93c5fd;
-  }
-
-  .about-hero__details a:hover {
-    color: #1d4ed8;
-    border-bottom-color: #1d4ed8;
-  }
-
-  .about-hero__card h2,
-  .about-focus h2 {
-    margin: 0 0 0.4rem;
-    font-size: 1.2rem;
-  }
-
-  .about-hero__card p,
-  .about-focus p {
-    margin: 0;
-    color: #374151;
-    line-height: 1.6;
-  }
-
-  .about-focus {
-    padding: 1.25rem 1.4rem;
-    margin-bottom: 1.2rem;
-  }
-
-  @media (max-width: 900px) {
-    .about-hero {
+  @media (max-width: 980px) {
+    .editorial-hero {
       grid-template-columns: 1fr;
+      align-items: start;
     }
 
-    .about-hero__main,
-    .about-hero__card {
-      padding: 1.15rem;
+    .editorial-hero__watermark {
+      font-size: clamp(2.8rem, 20vw, 7rem);
+      line-height: 0.9;
+      opacity: 0.82;
+    }
+
+    .editorial-hero__right {
+      margin-top: 0.7rem;
+      max-width: 460px;
+    }
+
+    .editorial-columns {
+      grid-template-columns: 1fr;
+      gap: 1.3rem;
     }
   }
 
   @media (max-width: 640px) {
-    .about-hero__title {
-      font-size: clamp(1.85rem, 11vw, 2.5rem);
+    .editorial-hero__links {
+      gap: 0.95rem;
+      row-gap: 0.5rem;
     }
 
-    .about-hero__lead {
-      font-size: 1.03rem;
-    }
-  }
-
-  .news-app {
-    margin-top: 0.75rem;
-  }
-
-  .news-state {
-    margin: 0.35rem 0 0;
-    color: #6b7280;
-    font-style: italic;
-  }
-
-  .news-list {
-    display: grid;
-    gap: 0.8rem;
-    margin-top: 0.35rem;
-  }
-
-  .news-item {
-    display: grid;
-    grid-template-columns: 7.2rem 1fr;
-    gap: 0.8rem;
-    align-items: start;
-    background: linear-gradient(180deg, #ffffff 0%, #fafcff 100%);
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 0.75rem 0.85rem;
-    box-shadow: 0 6px 16px rgba(17, 24, 39, 0.05);
-  }
-
-  .news-date {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 999px;
-    border: 1px solid #bfdbfe;
-    background: #eff6ff;
-    color: #1d4ed8;
-    font-weight: 600;
-    font-size: 0.82rem;
-    padding: 0.2rem 0.55rem;
-    white-space: nowrap;
-  }
-
-  .news-content {
-    color: #374151;
-    line-height: 1.55;
-  }
-
-  .news-content p {
-    margin: 0;
-  }
-
-  .news-content a {
-    text-underline-offset: 2px;
-  }
-
-  @media (max-width: 640px) {
-    .news-item {
-      grid-template-columns: 1fr;
-      gap: 0.45rem;
-    }
-
-    .news-date {
-      justify-self: start;
+    .editorial-hero__links a,
+    .greedy-nav .visible-links a {
+      letter-spacing: 0.09em;
     }
   }
 </style>
-
-## Recent News
-
-<div class="news-app" id="news-app">
-  <div id="news-state" class="news-state">Loading news…</div>
-  <div id="news-list" class="news-list"></div>
-</div>
-
-
-<script>
-(() => {
-  const SHEET_ID = '12bFYV-4WC1PhxKrnSVh5s3SPfe63fY3qd_qXybD43qw';
-  const SHEET_GID = '1326369063';
-  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`;
-
-  const stateNode = document.getElementById('news-state');
-  const listNode = document.getElementById('news-list');
-
-  if (!stateNode || !listNode) return;
-
-  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
-  const setState = (text) => {
-    stateNode.textContent = text;
-    stateNode.style.display = text ? 'block' : 'none';
-  };
-
-  const parseCSV = (text) => {
-    const rows = [];
-    let row = [];
-    let field = '';
-    let inQuotes = false;
-
-    for (let i = 0; i < text.length; i += 1) {
-      const c = text[i];
-      const next = text[i + 1];
-
-      if (c === '"') {
-        if (inQuotes && next === '"') {
-          field += '"';
-          i += 1;
-        } else {
-          inQuotes = !inQuotes;
-        }
-      } else if (c === ',' && !inQuotes) {
-        row.push(field);
-        field = '';
-      } else if ((c === '\n' || c === '\r') && !inQuotes) {
-        if (c === '\r' && next === '\n') i += 1;
-        row.push(field);
-        if (row.some((value) => value.trim() !== '')) rows.push(row);
-        row = [];
-        field = '';
-      } else {
-        field += c;
-      }
-    }
-
-    if (field.length || row.length) {
-      row.push(field);
-      rows.push(row);
-    }
-
-    return rows;
-  };
-
-  const normalizeKey = (value) => (value || '')
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, '_')
-    .replace(/^_+|_+$/g, '');
-
-  const findKey = (source, candidates) => {
-    const keys = Object.keys(source);
-    for (const candidate of candidates) {
-      const normalized = normalizeKey(candidate);
-      const exact = keys.find((key) => key === normalized);
-      if (exact) return exact;
-      const partial = keys.find((key) => key.includes(normalized) || normalized.includes(key));
-      if (partial) return partial;
-    }
-    return '';
-  };
-
-  const parseDate = (value) => {
-    const raw = String(value || '').trim();
-    if (!raw) return null;
-
-    const isoMatch = raw.match(/^(\d{4})[-/](\d{1,2})(?:[-/](\d{1,2}))?/);
-    if (isoMatch) {
-      const year = Number(isoMatch[1]);
-      const month = Number(isoMatch[2]);
-      if (month >= 1 && month <= 12) return { year, month };
-    }
-
-    const native = new Date(raw);
-    if (!Number.isNaN(native.getTime())) {
-      return { year: native.getUTCFullYear(), month: native.getUTCMonth() + 1 };
-    }
-
-    const compact = raw.match(/^(\w{3,9})[-\s](\d{2,4})$/i);
-    if (compact) {
-      const monthToken = compact[1].slice(0, 3).toLowerCase();
-      const month = monthNames.findIndex((m) => m.toLowerCase() === monthToken) + 1;
-      const yearNum = Number(compact[2].length === 2 ? `20${compact[2]}` : compact[2]);
-      if (month > 0 && yearNum) return { year: yearNum, month };
-    }
-
-    return null;
-  };
-
-  const formatMonthYear = (dateObj) => {
-    if (!dateObj) return 'Date unavailable';
-    return `${monthNames[dateObj.month - 1]} ${dateObj.year}`;
-  };
-
-  const escapeHTML = (value) => String(value || '')
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-
-  const safeUrl = (value) => {
-    const trimmed = String(value || '').trim();
-    if (!trimmed) return '';
-
-    try {
-      const parsed = new URL(trimmed);
-      if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
-        return parsed.toString();
-      }
-    } catch (_error) {
-      return '';
-    }
-
-    return '';
-  };
-
-  const toRichText = (content, isHtml) => {
-    if (!content) return '';
-    if (isHtml) return content;
-
-    let result = escapeHTML(content);
-
-    result = result.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_match, label, url) => {
-      const safe = safeUrl(url);
-      if (!safe) return `${label} (${url})`;
-      return `<a href="${escapeHTML(safe)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
-    });
-
-    result = result.replace(/&lt;(https?:\/\/[^\s<]+)&gt;/g, (_match, url) => {
-      const safe = safeUrl(url);
-      if (!safe) return escapeHTML(url);
-      return `<a href="${escapeHTML(safe)}" target="_blank" rel="noopener noreferrer">${escapeHTML(safe)}</a>`;
-    });
-
-    result = result.replace(/\n/g, '<br>');
-
-    return result;
-  };
-
-  const renderNews = (items) => {
-    listNode.innerHTML = items.map((item) => `
-      <article class="news-item">
-        <div class="news-date">${item.dateLabel}</div>
-        <div class="news-content">${item.content}</div>
-      </article>
-    `).join('');
-  };
-
-  const run = async () => {
-    try {
-      const response = await fetch(CSV_URL);
-      if (!response.ok) throw new Error(`Could not load spreadsheet (${response.status})`);
-
-      const rows = parseCSV(await response.text());
-      if (!rows.length) {
-        setState('No news found in the spreadsheet.');
-        return;
-      }
-
-      const headers = rows[0].map(normalizeKey);
-      const entries = rows.slice(1).map((columns) => {
-        const item = {};
-        headers.forEach((header, index) => {
-          item[header] = String(columns[index] || '').trim();
-        });
-
-        const dateKey = findKey(item, ['date', 'news_date', 'month', 'year_month']);
-        const textKey = findKey(item, ['news', 'content', 'description', 'text', 'item']);
-        const htmlKey = findKey(item, ['news_html', 'html', 'content_html']);
-
-        const parsedDate = parseDate(item[dateKey]);
-        const rawHtml = item[htmlKey] || '';
-        const rawText = item[textKey] || '';
-        const content = toRichText(rawHtml || rawText, Boolean(rawHtml));
-
-        return {
-          content,
-          parsedDate,
-          dateLabel: formatMonthYear(parsedDate),
-          sortKey: parsedDate ? `${parsedDate.year}${String(parsedDate.month).padStart(2, '0')}` : '000000',
-        };
-      }).filter((entry) => entry.content);
-
-      entries.sort((a, b) => b.sortKey.localeCompare(a.sortKey));
-
-      if (!entries.length) {
-        setState('No visible news entries were found in the spreadsheet.');
-        return;
-      }
-
-      setState('');
-      renderNews(entries);
-    } catch (error) {
-      setState(`Unable to load recent news from Google Sheets. ${error.message}`);
-    }
-  };
-
-  run();
-})();
-</script>
-
-## Contact
-
-I am always happy to discuss the possibility of new collaborations.
-
-* Email: heber.hwang-arcolezi@etsmtl.ca
-* Postal Address: 1100, rue Notre-Dame Ouest, Montréal (Qc) H3C 1K3, Canada.
-
-Last update: {{ site.time | date: "%b %-d, %Y" }}.
