@@ -7,46 +7,54 @@ redirect_from:
   - /about.html
 ---
 
-<section class="editorial-hero" aria-labelledby="home-title">
-  <div class="editorial-hero__left">
-    <p class="editorial-hero__watermark" aria-hidden="true">Heber Hwang Arcolezi</p>
-    <p class="editorial-hero__eyebrow">Assistant Professor · ÉTS Montréal</p>
-    <h1 id="home-title" class="editorial-hero__title">Heber Hwang Arcolezi</h1>
-    <p class="editorial-hero__lead">Designing trustworthy information systems for Responsible AI.</p>
+<section class="profile-hero" aria-labelledby="home-title">
+  <div class="profile-hero__content">
+    <p class="profile-hero__eyebrow">Assistant Professor · ÉTS Montréal</p>
+    <h1 id="home-title" class="profile-hero__title">Héber H. Arcolezi</h1>
+    <p class="profile-hero__lead">Building Differential Privacy methods for Responsible and Trustworthy AI.</p>
 
-    <div class="editorial-hero__tags" aria-label="Research topics">
-      <span>Fairness</span>
-      <span>Privacy-Preserving Techniques</span>
-      <span>Explainability</span>
+    <div class="profile-hero__keywords" aria-label="Research keywords">
+      <span>Differential Privacy</span>
       <span>Responsible AI</span>
+      <span>Trustworthy AI</span>
     </div>
 
-    <nav class="editorial-hero__links" aria-label="Contact links">
-      <a href="mailto:heber.hwang-arcolezi@etsmtl.ca">Email</a>
-      <a href="https://scholar.google.com/citations?user=lt28fGUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
-      <a href="https://github.com/hharcolezi" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://x.com/hharcolezi" target="_blank" rel="noopener noreferrer">Twitter</a>
-      <a href="/files/HHA_CV.pdf">CV</a>
+    <nav class="profile-hero__links" aria-label="Contact links">
+      <a href="mailto:heber.hwang-arcolezi@etsmtl.ca" aria-label="Email">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+        <span>Email</span>
+      </a>
+      <a href="https://scholar.google.com/citations?user=lt28fGUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+        <i class="ai ai-google-scholar" aria-hidden="true"></i>
+        <span>Google Scholar</span>
+      </a>
+      <a href="https://x.com/hharcolezi" target="_blank" rel="noopener noreferrer" aria-label="X profile">
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+          <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.637 7.584H.478l8.6-9.83L0 1.153h7.594l5.243 6.932zM17.61 20.645h2.04L6.486 3.24H4.298z"/>
+        </svg>
+        <span>X</span>
+      </a>
+      <a href="/files/HHA_CV.pdf" aria-label="Curriculum Vitae">
+        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+        <span>CV</span>
+      </a>
     </nav>
   </div>
 
-  <aside class="editorial-hero__right" aria-label="Portrait and affiliation">
-    <img class="editorial-hero__image" src="/images/HHA_profile.png" alt="Portrait of Heber Hwang Arcolezi" />
-    <div class="editorial-hero__institution">
-      <p class="role">Assistant Professor</p>
-      <p class="dept">Department of Software and Information Technology Engineering · ÉTS Montréal</p>
-      <p class="location">Montréal, Canada</p>
-    </div>
+  <aside class="profile-hero__aside" aria-label="Portrait and affiliation">
+    <img class="profile-hero__image" src="/images/HHA_profile.png" alt="Portrait of Héber H. Arcolezi" />
+    <p class="profile-hero__location">Montréal, Canada</p>
   </aside>
 </section>
 
-<section class="editorial-columns" aria-label="About and research overview">
+<section class="profile-columns" aria-label="About and research overview">
   <article>
     <h2>About</h2>
     <p>
-      I am an Assistant Professor at
+      I am an Assistant Professor in the Department of Software and Information Technology Engineering at
       <a href="https://www.etsmtl.ca/" target="_blank" rel="noopener noreferrer">ÉTS Montréal</a>, where I co-lead the
-      <a href="https://tisl-lab.github.io/" target="_blank" rel="noopener noreferrer">Trustworthy Information Systems Lab (TISL)</a>.
+      Trustworthy Information Systems Lab
+      <a href="https://tisl-lab.github.io/" target="_blank" rel="noopener noreferrer">(TISL)</a> research group.
       Previously, I was a Tenured Research Scientist at
       <a href="https://www.inria.fr/en/inria-centre-university-grenoble-alpes" target="_blank" rel="noopener noreferrer">Inria Grenoble</a>.
     </p>
@@ -55,8 +63,9 @@ redirect_from:
   <article>
     <h2>Research Interests</h2>
     <p>
-      My research addresses responsible AI through privacy-preserving learning, fairness-aware methods,
-      and explainability. I build systems that are mathematically private while remaining practically useful.
+      My research addresses the technical challenges of Responsible AI through the lenses of fairness,
+      privacy-preserving techniques, and explainability. My goal is to design systems that are both
+      mathematically private and socially equitable.
     </p>
   </article>
 
@@ -64,241 +73,190 @@ redirect_from:
     <h2>Background</h2>
     <p>
       I received my Ph.D. in Computer Science from the University of Bourgogne Franche-Comté (UBFC) and my
-      M.Sc. in Electrical Engineering from São Paulo State University (UNESP). I focus on connecting theory,
-      systems, and real-world deployments.
+      M.Sc. in Electrical Engineering from the São Paulo State University (UNESP).
     </p>
   </article>
 </section>
 
 <style>
   :root {
-    --editorial-bg: #f9f9f9;
-    --editorial-text: #101010;
-    --editorial-muted: #9d9d9d;
-    --editorial-accent: #8c4f2e;
-    --editorial-rule: #e8e4df;
+    --profile-bg: #f7f8fb;
+    --profile-text: #111318;
+    --profile-muted: #50545f;
+    --profile-line: #dfe4ee;
+    --profile-accent: #1f4aa2;
   }
 
-  body {
-    background: var(--editorial-bg);
-    color: var(--editorial-text);
-  }
-
-  .page {
-    padding-inline: clamp(1.2rem, 3.5vw, 2.4rem);
-  }
-
-  .page__content {
-    max-width: 1240px;
+  body,
+  .masthead {
+    background: var(--profile-bg);
+    color: var(--profile-text);
   }
 
   .masthead {
-    border-bottom: 1px solid var(--editorial-rule);
-    background: var(--editorial-bg);
+    border-bottom: 1px solid var(--profile-line);
   }
 
-  .greedy-nav .visible-links a {
-    text-transform: uppercase;
-    letter-spacing: 0.13em;
-    font-size: 0.68rem;
-    color: #2a2a2a;
+  .page {
+    padding-inline: clamp(1.1rem, 3vw, 2.2rem);
   }
 
-  .greedy-nav .visible-links a:hover {
-    color: var(--editorial-accent);
+  .page__content {
+    max-width: 1120px;
   }
 
-  .editorial-hero {
-    margin: clamp(1.5rem, 5vw, 3.4rem) 0 clamp(2.3rem, 6vw, 4.2rem);
+  .profile-hero {
+    margin: clamp(1.8rem, 4vw, 3rem) 0 clamp(2rem, 5vw, 3.4rem);
     display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.85fr);
-    gap: clamp(1.6rem, 4vw, 3.2rem);
-    align-items: end;
-    padding-bottom: clamp(1.6rem, 4vw, 2.4rem);
-    border-bottom: 1px solid var(--editorial-rule);
+    grid-template-columns: minmax(0, 1.5fr) minmax(240px, 0.8fr);
+    gap: clamp(1.2rem, 3.4vw, 2.8rem);
+    align-items: center;
+    padding: clamp(1rem, 2vw, 1.5rem);
+    border: 1px solid var(--profile-line);
+    background: #ffffff;
+    border-radius: 18px;
   }
 
-  .editorial-hero__left {
-    position: relative;
-  }
-
-  .editorial-hero__watermark {
-    position: absolute;
-    top: clamp(-0.7rem, -1.5vw, -1.3rem);
-    left: 0;
-    width: min(980px, 100%);
+  .profile-hero__eyebrow {
     margin: 0;
-    z-index: 0;
-    font-weight: 800;
-    letter-spacing: -0.04em;
-    line-height: 0.82;
-    font-size: clamp(3.2rem, 12vw, 8.8rem);
-    color: #e8e8e8;
-    pointer-events: none;
-    user-select: none;
-  }
-
-  .editorial-hero__eyebrow,
-  .editorial-hero__title,
-  .editorial-hero__lead,
-  .editorial-hero__tags,
-  .editorial-hero__links {
-    position: relative;
-    z-index: 1;
-  }
-
-  .editorial-hero__eyebrow {
-    margin: 0;
-    font-size: 0.82rem;
-    letter-spacing: 0.11em;
     text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-size: 0.76rem;
+    color: var(--profile-muted);
     font-weight: 600;
   }
 
-  .editorial-hero__title {
-    margin: 0.25rem 0 0;
-    font-size: clamp(2.8rem, 8.1vw, 6.6rem);
-    line-height: 0.9;
-    letter-spacing: -0.045em;
-    font-weight: 800;
-    max-width: 8.7ch;
+  .profile-hero__title {
+    margin: 0.35rem 0 0;
+    font-size: clamp(1.8rem, 4.2vw, 3rem);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
   }
 
-  .editorial-hero__lead {
-    margin: 1.2rem 0 0;
-    max-width: 35ch;
-    font-size: clamp(1rem, 2.3vw, 1.95rem);
-    line-height: 1.35;
+  .profile-hero__lead {
+    margin: 0.95rem 0 0;
+    max-width: 38ch;
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    color: #1f2634;
   }
 
-  .editorial-hero__tags {
-    margin-top: 1.3rem;
+  .profile-hero__keywords {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .profile-hero__keywords span {
+    font-size: 0.8rem;
+    border: 1px solid #c9d3e6;
+    border-radius: 999px;
+    padding: 0.3rem 0.7rem;
+    color: #23406f;
+    background: #f5f8ff;
+  }
+
+  .profile-hero__links {
+    margin-top: 1.2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.9rem;
+    gap: 0.65rem;
   }
 
-  .editorial-hero__tags span {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.21em;
-    font-size: 0.92rem;
-    letter-spacing: 0.02em;
-  }
-
-  .editorial-hero__links {
-    margin-top: 1.35rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.25rem;
-  }
-
-  .editorial-hero__links a {
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.74rem;
-    color: var(--editorial-accent);
+  .profile-hero__links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.42rem 0.7rem;
+    border: 1px solid var(--profile-line);
+    border-radius: 999px;
+    color: #1a2233;
     text-decoration: none;
-    border-bottom: 1px solid color-mix(in srgb, var(--editorial-accent) 48%, transparent);
-    padding-bottom: 0.18rem;
+    font-size: 0.77rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
   }
 
-  .editorial-hero__links a:hover {
-    border-bottom-color: var(--editorial-accent);
+  .profile-hero__links a:hover {
+    border-color: var(--profile-accent);
+    background: #f2f6ff;
   }
 
-  .editorial-hero__right {
-    display: grid;
-    gap: 1.15rem;
+  .profile-hero__links i,
+  .profile-hero__links svg {
+    width: 1rem;
+    height: 1rem;
+    font-size: 1rem;
+    flex-shrink: 0;
   }
 
-  .editorial-hero__image {
-    width: 100%;
-    max-width: 390px;
+  .profile-hero__links svg {
+    fill: currentColor;
+  }
+
+  .profile-hero__aside {
+    text-align: center;
+  }
+
+  .profile-hero__image {
+    width: min(100%, 320px);
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    display: block;
-    justify-self: start;
+    border-radius: 14px;
+    border: 1px solid var(--profile-line);
   }
 
-  .editorial-hero__institution .role {
-    margin: 0;
-    font-size: 1.95rem;
-    line-height: 1.08;
-  }
-
-  .editorial-hero__institution .dept,
-  .editorial-hero__institution .location {
+  .profile-hero__location {
     margin: 0.65rem 0 0;
-    font-size: 1.02rem;
-    color: #333;
-    line-height: 1.45;
-    max-width: 28ch;
+    font-size: 0.88rem;
+    color: var(--profile-muted);
   }
 
-  .editorial-columns {
+  .profile-columns {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: clamp(1.1rem, 2.8vw, 2.4rem);
-    margin-bottom: 1.8rem;
+    gap: clamp(1rem, 2.5vw, 2rem);
+    margin-bottom: 2rem;
   }
 
-  .editorial-columns article {
-    border-top: 1px solid var(--editorial-rule);
-    padding-top: 1.1rem;
+  .profile-columns article {
+    background: #ffffff;
+    border: 1px solid var(--profile-line);
+    border-radius: 14px;
+    padding: 1rem 1rem 1.1rem;
   }
 
-  .editorial-columns h2 {
+  .profile-columns h2 {
     margin: 0;
-    font-size: 1.05rem;
-    letter-spacing: 0.04em;
+    font-size: 0.92rem;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
   }
 
-  .editorial-columns p {
-    margin: 0.75rem 0 0;
-    color: #222;
-    line-height: 1.72;
-    font-size: 1.01rem;
+  .profile-columns p {
+    margin: 0.7rem 0 0;
+    color: #1d2130;
+    line-height: 1.64;
+    font-size: 0.97rem;
   }
 
-  .editorial-columns a {
+  .profile-columns a {
     color: inherit;
-    text-underline-offset: 0.17em;
+    text-underline-offset: 0.2em;
   }
 
   @media (max-width: 980px) {
-    .editorial-hero {
+    .profile-hero {
       grid-template-columns: 1fr;
-      align-items: start;
     }
 
-    .editorial-hero__watermark {
-      font-size: clamp(2.8rem, 20vw, 7rem);
-      line-height: 0.9;
-      opacity: 0.82;
+    .profile-hero__aside {
+      text-align: left;
     }
 
-    .editorial-hero__right {
-      margin-top: 0.7rem;
-      max-width: 460px;
-    }
-
-    .editorial-columns {
+    .profile-columns {
       grid-template-columns: 1fr;
-      gap: 1.3rem;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .editorial-hero__links {
-      gap: 0.95rem;
-      row-gap: 0.5rem;
-    }
-
-    .editorial-hero__links a,
-    .greedy-nav .visible-links a {
-      letter-spacing: 0.09em;
     }
   }
 </style>
