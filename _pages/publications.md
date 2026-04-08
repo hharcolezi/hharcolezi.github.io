@@ -144,7 +144,19 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     background: #fff;
   }
 
-  .pub-links a span {
+  .pub-links .pub-link-badge {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 999px;
+    padding: 0.2rem 0.62rem;
+    font-size: 0.82rem;
+    color: #374151;
+    background: #fff;
+  }
+
+  .pub-links a span,
+  .pub-links .pub-link-badge span {
     margin-right: 0.3rem;
   }
 
@@ -153,9 +165,10 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     color: #1d4ed8;
   }
 
-  .pub-award {
-    margin-top: 0.55rem;
-    color: #b45309;
+  .pub-links .pub-link-badge--award {
+    border-color: #fbbf24;
+    background: #fffbeb;
+    color: #92400e;
     font-weight: 600;
   }
 </style>
@@ -282,16 +295,23 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     return `<a href="${href}" target="_blank" rel="noopener noreferrer">${prefix}${label}</a>`;
   };
 
+  const createBadge = (label, icon = '', className = '') => {
+    if (!label) return '';
+    const prefix = icon ? `<span aria-hidden="true">${icon}</span>` : '';
+    const extraClass = className ? ` ${className}` : '';
+    return `<span class="pub-link-badge${extraClass}">${prefix}${label}</span>`;
+  };
+
   const renderCard = (entry) => {
     const links = [
+      createBadge(entry.awards, '🏆', 'pub-link-badge--award'),
       createLink(entry.venue || 'Venue', entry.urlPub, '🏛️'),
-      createLink('Code', entry.code, '💻'),
       createLink('ArXiv', entry.pdf, '📄'),
+      createLink('Code', entry.code, '💻'),
       createLink('Slides', entry.slides, '🖼️'),
       createLink('Poster', entry.poster, '🧾'),
-      createLink('Dataset', entry.dataset, '🗂️'),
-      createLink('Video', entry.video),
-      createLink('BibTeX', entry.bibtex),
+      createLink('Video', entry.video, '🎥'),
+      createLink('BibTeX', entry.bibtex, '📚'),
     ].filter(Boolean).join('');
 
     const typeClass = `pub-chip--${entry.type.replace(/[^a-z0-9]+/g, '-')}`;
@@ -300,11 +320,9 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
       <article class="pubs-card pub-card">
         <div class="pub-card-top">
           <span class="pub-chip pub-chip--type ${typeClass}">${entry.type}</span>
-          <span class="pub-chip">${entry.year || 'n/a'}</span>
         </div>
         <h3 class="pub-title">${entry.title}</h3>
         ${entry.authors ? `<div class="pub-authors">${entry.authors}</div>` : ''}
-        ${entry.awards ? `<div class="pub-award">🏆 ${entry.awards}</div>` : ''}
         ${links ? `<div class="pub-links">${links}</div>` : ''}
       </article>
     `;
