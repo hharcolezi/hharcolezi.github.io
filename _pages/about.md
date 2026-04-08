@@ -24,7 +24,7 @@ redirect_from:
         <i class="fas fa-envelope" aria-hidden="true"></i>
         <span>Email</span>
       </a>
-      <a href="https://scholar.google.com/citations?user=lt28fGUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+      <a href="https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
         <i class="ai ai-google-scholar" aria-hidden="true"></i>
         <span>Google Scholar</span>
       </a>
@@ -125,8 +125,18 @@ redirect_from:
     padding-inline: clamp(1.1rem, 3vw, 2.2rem);
   }
 
+  #main {
+    max-width: 1480px;
+  }
+
+  #main > .page {
+    float: none;
+    width: 100%;
+    margin-inline: auto;
+  }
+
   .page__content {
-    max-width: 1120px;
+    max-width: 1280px;
   }
 
   .profile-hero {
