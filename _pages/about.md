@@ -7,22 +7,182 @@ redirect_from:
   - /about.html
 ---
 
-👋 **Welcome!**   
-I'm a Tenure-Track Assistant Professor in the Software and Information Technology Engineering Department at [ÉTS Montréal](https://www.etsmtl.ca/).    
-Previously, I was a Tenured Research Scientist at [Inria Grenoble](https://www.inria.fr/en/inria-centre-university-grenoble-alpes) working with the [Privatics](https://team.inria.fr/privatics/) team, and a Postdoctoral Researcher in the [Comète](https://team.inria.fr/Comete/) team at [Inria Saclay](https://www.inria.fr/en/inria-saclay-centre).    
-I received my Ph.D. in Computer Science from the University Bourgogne Franche-Comté ([UBFC](https://spim.ubfc.fr/en/)) and my M.Sc. in Electrical Engineering from the São Paulo State University ([UNESP](https://www.feis.unesp.br/#!/ppgee)). 
+<section class="about-hero">
+  <div class="about-hero__main">
+    <p class="about-hero__eyebrow">Assistant Professor · ÉTS Montréal</p>
+    <h1 class="about-hero__title">Heber Hwang Arcolezi</h1>
+    <p class="about-hero__lead">Designing trustworthy information systems for Responsible AI.</p>
 
-🔬 **Research Interests:**  
-Differential Privacy • Responsible AI • Trustworthy AI 🛡️🤖⚖️
+    <div class="about-hero__chips" aria-label="Topics">
+      <span>Fairness</span>
+      <span>Privacy-Preserving Techniques</span>
+      <span>Explainability</span>
+      <span>Responsible AI</span>
+    </div>
 
-## Recent News
+    <div class="about-hero__links">
+      <a href="mailto:heber.hwang-arcolezi@etsmtl.ca">Email</a>
+      <a href="/files/HHA_CV.pdf">CV</a>
+      <a href="https://scholar.google.com/citations?user=lt28fGUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+      <a href="https://github.com/hharcolezi" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </div>
 
-<div class="news-app" id="news-app">
-  <div id="news-state" class="news-state">Loading news…</div>
-  <div id="news-list" class="news-list"></div>
-</div>
+  <aside class="about-hero__card">
+    <img src="/images/HHA_profile.png" alt="Portrait of Heber Hwang Arcolezi" loading="lazy" />
+    <h2>About me</h2>
+    <p>
+      I am an Assistant Professor in the Department of Software and Information Technology Engineering at
+      <a href="https://www.etsmtl.ca/" target="_blank" rel="noopener noreferrer">ÉTS Montréal</a>, where I co-lead the
+      <a href="https://tisl-lab.github.io/" target="_blank" rel="noopener noreferrer">Trustworthy Information Systems Lab (TISL)</a>
+      research group. Previously, I was a Tenured Research Scientist at
+      <a href="https://www.inria.fr/en/inria-centre-university-grenoble-alpes" target="_blank" rel="noopener noreferrer">Inria Grenoble</a>.
+      I received my Ph.D. in Computer Science from the University of Bourgogne Franche-Comté (UBFC) and my M.Sc.
+      in Electrical Engineering from the São Paulo State University (UNESP).
+    </p>
+  </aside>
+</section>
+
+<section class="about-focus">
+  <h2>Research interests</h2>
+  <p>
+    My research addresses the technical challenges of Responsible AI through the lenses of fairness,
+    privacy-preserving techniques, and explainability. My goal is to design systems that are both
+    mathematically private and socially equitable.
+  </p>
+</section>
 
 <style>
+  .about-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(260px, 1fr);
+    gap: 1.5rem;
+    align-items: stretch;
+    margin: 0.6rem 0 1.5rem;
+  }
+
+  .about-hero__main,
+  .about-hero__card,
+  .about-focus {
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+    box-shadow: 0 14px 30px rgba(17, 24, 39, 0.06);
+  }
+
+  .about-hero__main {
+    padding: 1.5rem;
+  }
+
+  .about-hero__eyebrow {
+    margin: 0;
+    color: #2563eb;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+  }
+
+  .about-hero__title {
+    margin: 0.35rem 0 0.45rem;
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .about-hero__lead {
+    margin: 0;
+    font-size: 1.15rem;
+    color: #374151;
+    max-width: 36ch;
+  }
+
+  .about-hero__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin: 1.05rem 0 1.2rem;
+  }
+
+  .about-hero__chips span {
+    border-radius: 999px;
+    padding: 0.28rem 0.72rem;
+    border: 1px solid #dbeafe;
+    background: #eff6ff;
+    color: #1e40af;
+    font-size: 0.83rem;
+    font-weight: 600;
+  }
+
+  .about-hero__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .about-hero__links a {
+    display: inline-block;
+    border-bottom: 2px solid #f59e0b;
+    color: #7c2d12;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    text-decoration: none;
+    padding-bottom: 0.1rem;
+  }
+
+  .about-hero__card {
+    padding: 1rem;
+  }
+
+  .about-hero__card img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 0.9rem;
+  }
+
+  .about-hero__card h2,
+  .about-focus h2 {
+    margin: 0 0 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  .about-hero__card p,
+  .about-focus p {
+    margin: 0;
+    color: #374151;
+    line-height: 1.6;
+  }
+
+  .about-focus {
+    padding: 1.25rem 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  @media (max-width: 900px) {
+    .about-hero {
+      grid-template-columns: 1fr;
+    }
+
+    .about-hero__main,
+    .about-hero__card {
+      padding: 1.15rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .about-hero__title {
+      font-size: clamp(1.85rem, 11vw, 2.5rem);
+    }
+
+    .about-hero__lead {
+      font-size: 1.03rem;
+    }
+  }
+
   .news-app {
     margin-top: 0.75rem;
   }
@@ -90,6 +250,14 @@ Differential Privacy • Responsible AI • Trustworthy AI 🛡️🤖⚖️
     }
   }
 </style>
+
+## Recent News
+
+<div class="news-app" id="news-app">
+  <div id="news-state" class="news-state">Loading news…</div>
+  <div id="news-list" class="news-list"></div>
+</div>
+
 
 <script>
 (() => {
