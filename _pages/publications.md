@@ -195,7 +195,8 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 (() => {
   const SHEET_ID = '12bFYV-4WC1PhxKrnSVh5s3SPfe63fY3qd_qXybD43qw';
   const SHEET_GID = '1565301812';
-  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`;
+  const CACHE_KEY = new Date().toISOString().slice(0, 7); // YYYY-MM
+  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}&cacheBust=${CACHE_KEY}`;
 
   const listNode = document.getElementById('pubs-list');
   const stateNode = document.getElementById('pubs-state');
