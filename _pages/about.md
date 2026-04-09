@@ -9,8 +9,8 @@ redirect_from:
 <section class="profile-hero" aria-labelledby="home-title">
   <div class="profile-hero__content">
     <h1 id="home-title" class="profile-hero__title">Héber H. Arcolezi</h1>
-    <p class="profile-hero__lead">Advancing Responsible and Trustworthy AI.</p>
-    <p class="profile-hero__eyebrow">Assistant Professor · ETS Montreal</p>
+    <p class="profile-hero__lead">Advancing Responsible and Trustworthy AI</p>
+    <p class="profile-hero__eyebrow">Assistant Professor · ÉTS Montréal</p>
 
     <div class="profile-hero__keywords" aria-label="Research keywords">
       <span>Differential Privacy</span>
