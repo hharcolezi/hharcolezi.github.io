@@ -403,8 +403,7 @@ redirect_from:
 (() => {
   const SHEET_ID = '12bFYV-4WC1PhxKrnSVh5s3SPfe63fY3qd_qXybD43qw';
   const SHEET_GID = '1326369063';
-  const CACHE_KEY = new Date().toISOString().slice(0, 7); // YYYY-MM
-  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}&cacheBust=${CACHE_KEY}`;
+  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`;
 
   const stateNode = document.getElementById('news-state');
   const listNode = document.getElementById('news-list');
