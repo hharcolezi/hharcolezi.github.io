@@ -27,6 +27,10 @@ redirect_from:
         <i class="ai ai-google-scholar" aria-hidden="true"></i>
         <span>Google Scholar</span>
       </a>
+      <a href="https://github.com/hharcolezi" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+        <i class="fab fa-github" aria-hidden="true"></i>
+        <span>GitHub</span>
+      </a>
       <a href="https://x.com/hharcolezi" target="_blank" rel="noopener noreferrer" aria-label="X profile">
         <svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
           <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.637 7.584H.478l8.6-9.83L0 1.153h7.594l5.243 6.932zM17.61 20.645h2.04L6.486 3.24H4.298z"/>
@@ -71,8 +75,9 @@ redirect_from:
   <article>
     <h2>Background</h2>
     <p>
-      I received my Ph.D. in Computer Science from the University of Bourgogne Franche-Comté (UBFC) and my
-      M.Sc. in Electrical Engineering from the São Paulo State University (UNESP).
+      I received my Ph.D. in Computer Science from the University of Bourgogne Franche-Comté (UBFC), my
+      M.Sc. in Electrical Engineering from the São Paulo State University (UNESP), and my B.Eng. in Electrical
+      Engineering from the Mato Grosso State University (UNEMAT).
     </p>
   </article>
 </section>
@@ -149,15 +154,23 @@ redirect_from:
     display: grid;
     grid-template-columns: minmax(0, 1.5fr) minmax(240px, 0.8fr);
     gap: clamp(1.2rem, 3.4vw, 2.8rem);
-    align-items: center;
+    align-items: start;
     padding: clamp(1rem, 2vw, 1.5rem);
     border: 1px solid var(--profile-line);
     background: #ffffff;
     border-radius: 18px;
   }
 
+  .profile-hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.65rem;
+    padding-top: clamp(0.15rem, 0.8vw, 0.5rem);
+  }
+
   .profile-hero__eyebrow {
-    margin: 0.95rem 0 0;
+    margin: 0.2rem 0 0;
     text-transform: uppercase;
     letter-spacing: 0.11em;
     font-size: 0.76rem;
@@ -166,21 +179,21 @@ redirect_from:
   }
 
   .profile-hero__title {
-    margin: 0.35rem 0 0;
+    margin: 0;
     font-size: clamp(1.8rem, 4.2vw, 3rem);
     letter-spacing: -0.02em;
     line-height: 1.05;
   }
 
   .profile-hero__lead {
-    margin: 0.95rem 0 0;
+    margin: 0.15rem 0 0;
     max-width: 38ch;
     font-size: clamp(1rem, 1.8vw, 1.25rem);
     color: #1f2634;
   }
 
   .profile-hero__keywords {
-    margin-top: 1rem;
+    margin-top: 0.35rem;
     display: flex;
     gap: 0.6rem;
     flex-wrap: wrap;
@@ -196,7 +209,7 @@ redirect_from:
   }
 
   .profile-hero__links {
-    margin-top: 1.2rem;
+    margin-top: 0.45rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.65rem;
@@ -288,6 +301,11 @@ redirect_from:
   @media (max-width: 980px) {
     .profile-hero {
       grid-template-columns: 1fr;
+      align-items: center;
+    }
+
+    .profile-hero__content {
+      padding-top: 0;
     }
 
     .profile-hero__aside {
