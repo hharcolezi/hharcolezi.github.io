@@ -70,10 +70,12 @@ try:
                         assert page.locator('#pub-count').inner_text().strip() == f'{total} publications'
                         page.locator('#pub-type').select_option('journal')
                         journal_count = page.locator('.pub-card[data-type="journal"]').count()
-                        visible_count = page.locator('.pub-card:visible').count()
-                        assert visible_count == journal_count and journal_count > 0, 'Type filter failed'
+                        visible_count = page.locator('.pub-card:not([hidden])').count()
+                        assert visible_count == journal_count and journal_count > 0, (
+                            f'Type filter failed: expected {journal_count} journal cards, found {visible_count} unhidden cards'
+                        )
                         page.locator('#pub-clear').click()
-                        assert page.locator('.pub-card:visible').count() == total, 'Clear filters failed'
+                        assert page.locator('.pub-card:not([hidden])').count() == total, 'Clear filters failed'
                 if js and path in ('/', '/publications/', '/teaching/', '/software/'):
                     filename = 'homepage' if path == '/' else path.strip('/')
                     page.screenshot(path=str(OUT / f'{filename}-desktop.png'), full_page=True)
