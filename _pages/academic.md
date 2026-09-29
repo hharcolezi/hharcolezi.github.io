@@ -63,6 +63,21 @@ author_profile: true
     { title:'Community Outreach', gid:'259198762', filter:(r)=>S.selected(r), render:(r) => `
       <article class="sheet-card"><div>${r.year ? `<span class="sheet-chip">${S.escapeHTML(r.year)}</span>` : ''}</div>
       <h3>${S.escapeHTML(r.item || r.category || '')}</h3>${r.description ? `<p>${S.escapeHTML(r.description)}</p>` : ''}</article>` },
+    { title:'University Service', gid:'199604431', render:(r) => `
+      <article class="sheet-card">
+        <div>${r.status ? `<span class="sheet-chip">${S.escapeHTML(r.status)}</span>` : ''}</div>
+        <h3>${S.escapeHTML(r.title || r.etudiant || '')}</h3>
+        ${r.type ? `<p>${S.escapeHTML(r.type)}</p>` : ''}
+        ${r.role ? `<p><strong>Role:</strong> ${S.escapeHTML(r.role)}</p>` : ''}
+        ${r.affiliation ? `<p class="sheet-meta">${S.escapeHTML(r.affiliation)}</p>` : ''}
+      </article>` },
+    { title:'Workshops', gid:'535639222', render:(r) => `
+      <article class="sheet-card">
+        <div>${r.date ? `<span class="sheet-chip">${S.escapeHTML(r.date)}</span>` : ''}</div>
+        <h3>${S.escapeHTML(r.titre || r.title || '')}</h3>
+      </article>` },
+    { title:'Committees', gid:'1718588294', render:(r) => `
+      <article class="sheet-card"><h3>${S.escapeHTML(r.title || r.name || r.item || Object.values(r)[0] || '')}</h3></article>` },
     { title:'Skills', gid:'986343425', render:(r) => `
       <article class="sheet-card"><h3>${S.escapeHTML(r.category || '')}</h3><p>${S.escapeHTML(r.item || '')}</p></article>` }
   ];
