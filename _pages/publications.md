@@ -10,21 +10,140 @@ The author order indicates the magnitude of contribution, with the first author 
 The superscript \* indicates equal contributions to the paper.  
 You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP](https://dblp.uni-trier.de/pid/248/5342.html), [Google Scholar](https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate), [Web of Science](https://www.webofscience.com/wos/author/record/2095547) and [Lattes CV](http://lattes.cnpq.br/6492386691695466) pages.
 
+<div class="pub-toolbar" aria-label="Filter publications">
+  <div class="pub-search">
+    <i class="fas fa-search" aria-hidden="true"></i>
+    <input id="pub-search" type="search" autocomplete="off" placeholder="Search title, authors, venue…" aria-label="Search publications">
+  </div>
+
+  <label class="pub-filter">
+    <span>Year</span>
+    <select id="pub-year" aria-label="Filter publications by year">
+      <option value="">All years</option>
+    </select>
+  </label>
+
+  <label class="pub-filter">
+    <span>Type</span>
+    <select id="pub-type" aria-label="Filter publications by type">
+      <option value="">All types</option>
+    </select>
+  </label>
+
+  <button id="pub-clear" class="pub-clear" type="button">
+    <i class="fas fa-times" aria-hidden="true"></i>
+    Clear
+  </button>
+
+  <div id="pub-count" class="pub-count" aria-live="polite"></div>
+</div>
+
 <div class="pubs-app" id="publications-app">
-  <div id="pubs-state" class="pubs-state">Loading publications…</div>
+  <div id="pubs-state" class="pubs-state">Publication content is generated during the website build.</div>
   <div id="pubs-list" class="pubs-list"></div>
 </div>
 
 <style>
   .pubs-app {
-    margin-top: 1.5rem;
+    margin-top: 1.15rem;
   }
 
-  .pubs-card {
-    background: #fff;
-    border: 1px solid #e5e7eb;
+  .pub-toolbar {
+    margin: 1.35rem 0 1.1rem;
+    padding: 0.9rem;
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(125px, 0.28fr) minmax(145px, 0.32fr) auto;
+    gap: 0.65rem;
+    align-items: end;
+    border: 1px solid #dfe4ec;
     border-radius: 14px;
-    box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+    background: linear-gradient(180deg, #ffffff 0%, #fafcff 100%);
+    box-shadow: 0 8px 24px rgba(17, 24, 39, 0.045);
+  }
+
+  .pub-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .pub-search > i {
+    position: absolute;
+    left: 0.78rem;
+    color: #64748b;
+    pointer-events: none;
+  }
+
+  .pub-search input,
+  .pub-filter select {
+    width: 100%;
+    min-height: 2.55rem;
+    border: 1px solid #cfd7e3;
+    border-radius: 10px;
+    background: #fff;
+    color: #263244;
+    font: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color .18s ease, box-shadow .18s ease;
+  }
+
+  .pub-search input {
+    padding: 0.48rem 0.75rem 0.48rem 2.35rem;
+  }
+
+  .pub-filter select {
+    padding: 0.45rem 2rem 0.45rem 0.68rem;
+  }
+
+  .pub-search input:focus,
+  .pub-filter select:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
+  }
+
+  .pub-filter {
+    display: grid;
+    gap: 0.25rem;
+    margin: 0;
+  }
+
+  .pub-filter > span {
+    color: #64748b;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .pub-clear {
+    min-height: 2.55rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.38rem;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid #cfd7e3;
+    border-radius: 10px;
+    background: #fff;
+    color: #475569;
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: color .18s ease, border-color .18s ease, background .18s ease;
+  }
+
+  .pub-clear:hover {
+    color: #1d4ed8;
+    border-color: #93c5fd;
+    background: #f8fbff;
+  }
+
+  .pub-count {
+    grid-column: 1 / -1;
+    min-height: 1.1rem;
+    color: #64748b;
+    font-size: 0.82rem;
   }
 
   .pubs-state {
@@ -35,408 +154,270 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
 
   .pubs-list {
     display: grid;
-    gap: 1.4rem;
+    gap: 1.55rem;
   }
 
   .pub-year-group {
     display: grid;
-    gap: 0.8rem;
+    gap: 0.78rem;
   }
 
   .pub-year-heading {
     margin: 0;
-    font-size: 1.1rem;
-    letter-spacing: 0.03em;
+    padding-left: 0.7rem;
+    border-left: 4px solid #94a3b8;
+    color: #334155;
+    font-size: 1.08rem;
+    font-weight: 750;
+    letter-spacing: 0.025em;
     text-transform: uppercase;
-    color: #374151;
-    border-left: 4px solid #9ca3af;
-    padding-left: 0.6rem;
-  }
-
-  .pub-year-heading--label {
-    text-transform: none;
-    letter-spacing: normal;
   }
 
   .pub-year-list {
     display: grid;
-    gap: 0.9rem;
+    gap: 0.78rem;
   }
 
+  .pubs-card {
+    --pub-accent: #94a3b8;
+    position: relative;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid var(--pub-accent);
+    border-radius: 13px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.045);
+    transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+  }
+
+  .pubs-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 11px 28px rgba(15, 23, 42, 0.075);
+  }
+
+  .pub-card--conference { --pub-accent: #3b82f6; }
+  .pub-card--journal { --pub-accent: #22a06b; }
+  .pub-card--workshop { --pub-accent: #d97706; }
+  .pub-card--preprint { --pub-accent: #7c3aed; }
+  .pub-card--technical-report { --pub-accent: #db2777; }
+
   .pub-card {
-    padding: 0.95rem 1rem;
+    padding: 0.92rem 1rem 0.95rem;
   }
 
   .pub-card-top {
     display: flex;
     gap: 0.4rem;
     flex-wrap: wrap;
-    margin-bottom: 0.55rem;
+    margin-bottom: 0.48rem;
   }
 
   .pub-chip {
     display: inline-flex;
     align-items: center;
     border-radius: 999px;
-    font-size: 0.82rem;
-    padding: 0.12rem 0.55rem;
+    font-size: 0.76rem;
+    line-height: 1;
+    padding: 0.28rem 0.58rem;
     border: 1px solid #d1d5db;
-    background: #f9fafb;
+    background: #f8fafc;
   }
 
   .pub-chip--type {
-    font-weight: 600;
+    font-weight: 700;
     text-transform: lowercase;
   }
 
-  .pub-chip--conference {
-    border-color: #93c5fd;
-    background: #eff6ff;
-    color: #1d4ed8;
-  }
-
-  .pub-chip--journal {
-    border-color: #86efac;
-    background: #f0fdf4;
-    color: #166534;
-  }
-
-  .pub-chip--workshop {
-    border-color: #fcd34d;
-    background: #fffbeb;
-    color: #92400e;
-  }
-
-  .pub-chip--preprint {
-    border-color: #c4b5fd;
-    background: #f5f3ff;
-    color: #6d28d9;
-  }
-
-  .pub-chip--publication {
-    border-color: #d1d5db;
-    background: #f9fafb;
-    color: #374151;
-  }
-
-
-  .pub-chip--technical-report {
-    border-color: #fbcfe8;
-    background: #fdf2f8;
-    color: #9d174d;
-  }
+  .pub-chip--conference { border-color: #93c5fd; background: #eff6ff; color: #1d4ed8; }
+  .pub-chip--journal { border-color: #86efac; background: #f0fdf4; color: #166534; }
+  .pub-chip--workshop { border-color: #fcd34d; background: #fffbeb; color: #92400e; }
+  .pub-chip--preprint { border-color: #c4b5fd; background: #f5f3ff; color: #6d28d9; }
+  .pub-chip--technical-report { border-color: #f9a8d4; background: #fdf2f8; color: #9d174d; }
 
   .pub-title {
     margin: 0;
-    font-size: 1.23rem;
-    line-height: 1.35;
+    color: #263244;
+    font-size: 1.16rem;
+    line-height: 1.34;
+    letter-spacing: -0.01em;
   }
 
   .pub-authors {
-    margin-top: 0.45rem;
-    color: #4b5563;
+    margin-top: 0.38rem;
+    color: #526071;
+    font-size: 0.91rem;
+    line-height: 1.45;
   }
+
   .pub-links {
-    margin-top: 0.75rem;
+    margin-top: 0.7rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.45rem;
+    gap: 0.4rem;
   }
 
-  .pub-links a {
+  .pub-resource,
+  .pub-link-badge {
     display: inline-flex;
     align-items: center;
-    border: 1px solid #d1d5db;
+    gap: 0.36rem;
+    min-height: 1.9rem;
+    border: 1px solid #d6dde7;
     border-radius: 999px;
-    padding: 0.2rem 0.62rem;
-    font-size: 0.82rem;
-    text-decoration: none;
-    color: #374151;
+    padding: 0.22rem 0.62rem;
     background: #fff;
+    color: #475569;
+    font-size: 0.78rem;
+    text-decoration: none !important;
+    transition: transform .15s ease, border-color .15s ease, background .15s ease, color .15s ease;
   }
 
-  .pub-links .pub-link-badge {
-    display: inline-flex;
-    align-items: center;
-    border: 1px solid #d1d5db;
-    border-radius: 999px;
-    padding: 0.2rem 0.62rem;
+  .pub-resource i,
+  .pub-link-badge i {
+    width: 0.9rem;
+    text-align: center;
     font-size: 0.82rem;
-    color: #374151;
-    background: #fff;
   }
 
-  .pub-links a span,
-  .pub-links .pub-link-badge span {
-    margin-right: 0.3rem;
+  .pub-resource:hover {
+    transform: translateY(-1px);
   }
 
-  .pub-links a:hover {
-    border-color: #60a5fa;
-    color: #1d4ed8;
+  .pub-resource--venue { border-color: #bfdbfe; background: #f5f9ff; color: #1e40af; }
+  .pub-resource--pdf { border-color: #fecaca; background: #fff7f7; color: #b91c1c; }
+  .pub-resource--code { border-color: #ddd6fe; background: #faf8ff; color: #6d28d9; }
+  .pub-resource--dataset { border-color: #bbf7d0; background: #f5fff8; color: #166534; }
+  .pub-resource--slides { border-color: #bae6fd; background: #f4fbff; color: #0369a1; }
+  .pub-resource--poster { border-color: #fde68a; background: #fffdf2; color: #92400e; }
+  .pub-resource--video { border-color: #fecdd3; background: #fff6f7; color: #be123c; }
+  .pub-resource--bibtex { border-color: #cbd5e1; background: #f8fafc; color: #334155; }
+
+  .pub-link-badge--award {
+    border-color: #f6cf61;
+    background: #fff8dc;
+    color: #8a5600;
+    font-weight: 700;
   }
 
-  .pub-links .pub-link-badge--award {
-    border-color: #fbbf24;
-    background: #fffbeb;
-    color: #92400e;
-    font-weight: 600;
+  .pub-empty {
+    display: none;
+    padding: 1rem;
+    border: 1px dashed #cbd5e1;
+    border-radius: 12px;
+    color: #64748b;
+    text-align: center;
   }
 
-  .pub-links .pub-link-badge--venue {
-    border-color: #93c5fd;
-    background: #eff6ff;
-    color: #1d4ed8;
-    font-weight: 600;
+  @media (max-width: 800px) {
+    .pub-toolbar {
+      grid-template-columns: 1fr 1fr;
+    }
+    .pub-search {
+      grid-column: 1 / -1;
+    }
+    .pub-clear {
+      align-self: end;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .pub-toolbar {
+      grid-template-columns: 1fr;
+    }
+    .pub-search,
+    .pub-count {
+      grid-column: 1;
+    }
+    .pub-card {
+      padding: 0.85rem 0.85rem 0.9rem;
+    }
+    .pub-title {
+      font-size: 1.06rem;
+    }
   }
 </style>
 
 <script>
 (() => {
-  const SHEET_ID = '12bFYV-4WC1PhxKrnSVh5s3SPfe63fY3qd_qXybD43qw';
-  const SHEET_GID = '1565301812';
-  const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&gid=${SHEET_GID}`;
+  const initFilters = () => {
+    const root = document.getElementById('pubs-list');
+    const search = document.getElementById('pub-search');
+    const yearSelect = document.getElementById('pub-year');
+    const typeSelect = document.getElementById('pub-type');
+    const clear = document.getElementById('pub-clear');
+    const count = document.getElementById('pub-count');
+    if (!root || !search || !yearSelect || !typeSelect || !clear || !count) return;
 
-  const listNode = document.getElementById('pubs-list');
-  const stateNode = document.getElementById('pubs-state');
+    const cards = Array.from(root.querySelectorAll('.pub-card[data-year][data-type]'));
+    if (!cards.length) return;
 
-  if (!listNode || !stateNode) {
-    return;
-  }
+    const years = [...new Set(cards.map((card) => card.dataset.year).filter(Boolean))]
+      .sort((a, b) => Number(b) - Number(a));
 
-  const parseCSV = (text) => {
-    const rows = [];
-    let row = [];
-    let field = '';
-    let inQuotes = false;
+    const typeLabels = {
+      conference: 'Conference',
+      journal: 'Journal',
+      workshop: 'Workshop',
+      preprint: 'Preprint',
+      'technical-report': 'Technical reports',
+      publication: 'Other'
+    };
 
-    for (let i = 0; i < text.length; i += 1) {
-      const c = text[i];
-      const next = text[i + 1];
+    const types = [...new Set(cards.map((card) => card.dataset.type).filter(Boolean))]
+      .sort((a, b) => (typeLabels[a] || a).localeCompare(typeLabels[b] || b));
 
-      if (c === '"') {
-        if (inQuotes && next === '"') {
-          field += '"';
-          i += 1;
-        } else {
-          inQuotes = !inQuotes;
-        }
-      } else if (c === ',' && !inQuotes) {
-        row.push(field);
-        field = '';
-      } else if ((c === '\n' || c === '\r') && !inQuotes) {
-        if (c === '\r' && next === '\n') {
-          i += 1;
-        }
-        row.push(field);
-        if (row.some((value) => value.trim() !== '')) {
-          rows.push(row);
-        }
-        row = [];
-        field = '';
-      } else {
-        field += c;
-      }
-    }
+    years.forEach((year) => {
+      yearSelect.insertAdjacentHTML('beforeend', `<option value="${year}">${year}</option>`);
+    });
 
-    if (field.length > 0 || row.length > 0) {
-      row.push(field);
-      rows.push(row);
-    }
+    types.forEach((type) => {
+      const label = typeLabels[type] || type.replace(/-/g, ' ').replace(/\b\w/g, (m) => m.toUpperCase());
+      typeSelect.insertAdjacentHTML('beforeend', `<option value="${type}">${label}</option>`);
+    });
 
-    return rows;
-  };
+    const apply = () => {
+      const query = search.value.trim().toLocaleLowerCase();
+      const year = yearSelect.value;
+      const type = typeSelect.value;
+      let visible = 0;
 
-  const normalizeKey = (value) => (value || '')
-    .toLowerCase()
-    .trim()
-    .replace(/[^a-z0-9]+/g, '_')
-    .replace(/^_+|_+$/g, '');
-
-  const truthy = (value) => {
-    const normalized = String(value || '').toLowerCase().trim();
-    return ['true', 'yes', 'y', '1'].includes(normalized);
-  };
-
-  const parseType = (value) => {
-    const raw = String(value || '').toLowerCase().trim();
-
-    if (!raw) {
-      return { kind: 'publication', label: 'publication' };
-    }
-
-    if (raw === 'journal') return { kind: 'journal', label: 'journal' };
-    if (raw === 'conference') return { kind: 'conference', label: 'conference' };
-    if (raw === 'workshop') return { kind: 'workshop', label: 'workshop' };
-    if (raw === 'preprint') return { kind: 'preprint', label: 'preprint' };
-
-    if (raw.includes('phd') || raw.includes('ph.d')) {
-      return { kind: 'technical-report', label: 'ph.d. thesis' };
-    }
-    if (raw.includes('master')) {
-      return { kind: 'technical-report', label: 'master thesis' };
-    }
-    if (raw.includes('bachelor')) {
-      return { kind: 'technical-report', label: 'bachelor thesis' };
-    }
-    if (raw.includes('technical report')) {
-      return { kind: 'technical-report', label: 'technical report' };
-    }
-
-    return { kind: 'publication', label: raw };
-  };
-
-  const toEntries = (rows) => {
-    if (!rows.length) return [];
-
-    const headers = rows[0].map(normalizeKey);
-    const entries = rows.slice(1).map((columns) => {
-      const item = {};
-      headers.forEach((header, index) => {
-        item[header] = (columns[index] || '').trim();
+      cards.forEach((card) => {
+        const matchesSearch = !query || card.textContent.toLocaleLowerCase().includes(query);
+        const matchesYear = !year || card.dataset.year === year;
+        const matchesType = !type || card.dataset.type === type;
+        const show = matchesSearch && matchesYear && matchesType;
+        card.hidden = !show;
+        if (show) visible += 1;
       });
 
-      const year = item.year || (item.pub_date || '').slice(0, 4);
-      const parsedType = parseType(item.category || item.type);
-      return {
-        type: parsedType.label,
-        typeKind: parsedType.kind,
-        pubDate: item.pub_date || '',
-        year,
-        authors: item.authors || '',
-        title: item.title || '',
-        venue: item.venue || '',
-        urlPub: item.url_pub || item.url || '',
-        code: item.code || '',
-        pdf: item.pdf || '',
-        slides: item.slides || '',
-        poster: item.poster || '',
-        dataset: item.dataset || '',
-        video: item.video || '',
-        awards: item.awards || '',
-        bibtex: item.bibtex || '',
-        hidden: truthy(item.not_on_website),
-      };
-    }).filter((entry) => entry.title && !entry.hidden);
+      root.querySelectorAll('.pub-year-group').forEach((section) => {
+        const hasVisible = Array.from(section.querySelectorAll('.pub-card')).some((card) => !card.hidden);
+        section.hidden = !hasVisible;
+      });
 
-    return entries.sort((a, b) => {
-      if (a.pubDate && b.pubDate) {
-        return b.pubDate.localeCompare(a.pubDate);
-      }
-      return String(b.year).localeCompare(String(a.year));
+      count.textContent = visible === cards.length
+        ? `${cards.length} publications`
+        : `${visible} of ${cards.length} publications`;
+    };
+
+    [search, yearSelect, typeSelect].forEach((control) => {
+      control.addEventListener(control === search ? 'input' : 'change', apply);
     });
+
+    clear.addEventListener('click', () => {
+      search.value = '';
+      yearSelect.value = '';
+      typeSelect.value = '';
+      apply();
+      search.focus();
+    });
+
+    apply();
   };
 
-  const createLink = (label, href, icon = '') => {
-    if (!href) return '';
-    const prefix = icon ? `<span aria-hidden="true">${icon}</span>` : '';
-    return `<a href="${href}" target="_blank" rel="noopener noreferrer">${prefix}${label}</a>`;
-  };
-
-  const createBadge = (label, icon = '', className = '') => {
-    if (!label) return '';
-    const prefix = icon ? `<span aria-hidden="true">${icon}</span>` : '';
-    const extraClass = className ? ` ${className}` : '';
-    return `<span class="pub-link-badge${extraClass}">${prefix}${label}</span>`;
-  };
-
-  const createVenueElement = (venue, urlPub) => {
-    if (!venue) return '';
-    if (urlPub) return createLink(venue, urlPub, '🏛️');
-    return createBadge(venue, '🏛️', 'pub-link-badge--venue');
-  };
-
-  const renderCard = (entry) => {
-    const links = [
-      createBadge(entry.awards, '🏆', 'pub-link-badge--award'),
-      createVenueElement(entry.venue, entry.urlPub),
-      createLink('ArXiv', entry.pdf, '📄'),
-      createLink('Code', entry.code, '💻'),
-      createLink('Dataset', entry.dataset, '🗂️'),
-      createLink('Slides', entry.slides, '🖼️'),
-      createLink('Poster', entry.poster, '🧾'),
-      createLink('Video', entry.video, '🎥'),
-      createLink('BibTeX', entry.bibtex, '📚'),
-    ].filter(Boolean).join('');
-
-    const typeClass = `pub-chip--${entry.typeKind.replace(/[^a-z0-9]+/g, '-')}`;
-
-    return `
-      <article class="pubs-card pub-card">
-        <div class="pub-card-top">
-          <span class="pub-chip pub-chip--type ${typeClass}">${entry.type}</span>
-        </div>
-        <h3 class="pub-title">${entry.title}</h3>
-        ${entry.authors ? `<div class="pub-authors">${entry.authors}</div>` : ''}
-        ${links ? `<div class="pub-links">${links}</div>` : ''}
-      </article>
-    `;
-  };
-
-  const setState = (text) => {
-    stateNode.textContent = text;
-    stateNode.style.display = text ? 'block' : 'none';
-  };
-
-  const groupByYear = (entries) => entries.reduce((acc, entry) => {
-    const key = entry.year || 'Unknown year';
-    if (!acc[key]) acc[key] = [];
-    acc[key].push(entry);
-    return acc;
-  }, {});
-
-  const renderSection = (heading, cards, ariaLabel = heading, headingClass = '') => {
-    if (!cards.length) return '';
-    return `
-      <section class="pub-year-group" aria-label="${ariaLabel}">
-        <h2 class="pub-year-heading ${headingClass}">${heading}</h2>
-        <div class="pub-year-list">
-          ${cards.map(renderCard).join('')}
-        </div>
-      </section>
-    `;
-  };
-
-  const run = async () => {
-    try {
-      const response = await fetch(CSV_URL);
-      if (!response.ok) {
-        throw new Error(`Could not load spreadsheet (${response.status})`);
-      }
-
-      const text = await response.text();
-      const entries = toEntries(parseCSV(text));
-
-      if (!entries.length) {
-        setState('No publications found in the spreadsheet.');
-        return;
-      }
-
-      const technicalReports = entries.filter((entry) => entry.typeKind === 'technical-report');
-      const standardPublications = entries.filter((entry) => entry.typeKind !== 'technical-report');
-
-      const groups = groupByYear(standardPublications);
-      const years = Object.keys(groups).sort((a, b) => Number(b) - Number(a));
-
-      const yearSections = years.map((year) => renderSection(
-        year,
-        groups[year],
-        `Publications from ${year}`,
-      ));
-      const technicalReportSection = renderSection(
-        'Technical Reports',
-        technicalReports,
-        'Technical reports',
-        'pub-year-heading--label',
-      );
-
-      setState('');
-      listNode.innerHTML = [...yearSections, technicalReportSection].filter(Boolean).join('');
-    } catch (error) {
-      setState(`Unable to load publications from Google Sheets. ${error.message}`);
-    }
-  };
-
-  run();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFilters);
+  } else {
+    initFilters();
+  }
 })();
 </script>
