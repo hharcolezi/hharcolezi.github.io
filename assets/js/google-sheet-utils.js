@@ -22,7 +22,8 @@ window.HHASheets = (() => {
     return rows;
   };
 
-  const key = (value) => String(value || '').toLowerCase().trim()
+  const key = (value) => String(value || '').normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '').toLowerCase().trim()
     .replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
 
   const truthy = (value) => ['1','true','yes','y','x'].includes(String(value || '').trim().toLowerCase());
@@ -53,10 +54,10 @@ window.HHASheets = (() => {
     if (!response.ok) throw new Error(`Could not load spreadsheet (${response.status})`);
     const rows = parseCSV(await response.text());
     if (!rows.length) return [];
-    const headers = rows[0].map(key);
+    const headers = rows[0].map((h, i) => key(h) || `_col${i + 1}`);
     return rows.slice(1).map((cols) => {
       const item = {};
-      headers.forEach((h, i) => { if (h) item[h] = String(cols[i] || '').trim(); });
+      headers.forEach((h, i) => { item[h] = String(cols[i] || '').trim(); });
       return item;
     }).filter((item) => Object.values(item).some((v) => String(v).trim()));
   };
