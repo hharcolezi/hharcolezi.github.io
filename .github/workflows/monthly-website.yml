@@ -54,6 +54,10 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: Restore runner ownership of build output
+        # The official Jekyll container creates root-owned output.
+        run: sudo chown -R "$(id -u):$(id -g)" _site
+
       - name: Check generated content, hyperlinks, navigation and assets
         run: python _automation/site.py verify
 
