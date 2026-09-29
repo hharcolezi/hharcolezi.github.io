@@ -23,7 +23,11 @@ redirect_from:
   const setState = (t) => { state.textContent = t; state.style.display = t ? 'block' : 'none'; };
 
   try {
-    const rows = (await S.load('1323298866'))
+    const [projectRows, totalsRows] = await Promise.all([
+      S.load('1323298866'),
+      S.load('1466320367')
+    ]);
+    const rows = projectRows
       .filter((r) => r.title && (!r.awarded || S.truthy(r.awarded)))
       .sort((a,b) => String(b.date || '').localeCompare(String(a.date || '')));
 
@@ -65,8 +69,19 @@ redirect_from:
         <div class="sheet-grid">${data.map(card).join('')}</div>
       </section>` : '';
 
+    const awarded = totalsRows.find((r) => String(Object.values(r)[0] || '').toLowerCase() === 'awarded');
+    let overview = '';
+    if (awarded) {
+      const vals = Object.values(awarded);
+      const labels = ['Sole-PI','PI','Co-PI','Affiliated','Total'];
+      const metrics = vals.slice(1, 6).map((value, i) =>
+        value ? `<article class="sheet-card"><span class="sheet-chip">${labels[i]}</span><h3>${S.escapeHTML(value)}</h3></article>` : ''
+      ).join('');
+      if (metrics) overview = `<section class="sheet-section"><h2>Funding Overview</h2><div class="sheet-grid">${metrics}</div></section>`;
+    }
+
     setState('');
-    root.innerHTML = section('Current Projects', current) + section('Past Projects', past);
+    root.innerHTML = overview + section('Current Projects', current) + section('Past Projects', past);
   } catch (e) {
     setState('Unable to load projects from Google Sheets. ' + e.message);
   }
