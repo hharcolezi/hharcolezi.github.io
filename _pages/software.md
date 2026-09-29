@@ -23,8 +23,9 @@ author_profile: true
   const setState = (t) => { state.textContent = t; state.style.display = t ? 'block' : 'none'; };
 
   try {
+    const allowed = new Set(['Libraries & Tools','Datasets']);
     const rows = (await S.load('1684913614'))
-      .filter((r) => r.name && S.truthy(r.in_website))
+      .filter((r) => r.name && S.truthy(r.in_website) && allowed.has(r.category))
       .sort((a,b) => Number(a.sort_order || 999) - Number(b.sort_order || 999));
 
     if (!rows.length) { setState('No software or datasets found.'); return; }
@@ -48,7 +49,7 @@ author_profile: true
         '</article>';
     };
 
-    const order = ['Libraries & Tools','Datasets','Research Code'];
+    const order = ['Libraries & Tools','Datasets'];
     const keys = Object.keys(groups).sort((a,b) => {
       const ai = order.indexOf(a), bi = order.indexOf(b);
       return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi) || a.localeCompare(b);
