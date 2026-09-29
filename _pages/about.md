@@ -12,7 +12,7 @@ redirect_from:
   <div class="profile-hero__content">
     <h1 id="home-title" class="profile-hero__title">Héber H. Arcolezi</h1>
     <p class="profile-hero__lead">Advancing Responsible and Trustworthy AI</p>
-    <p class="profile-hero__eyebrow" id="profile-position">Assistant Professor · <a href="https://www.etsmtl.ca/" target="_blank" rel="noopener noreferrer">ÉTS Montréal</a></p>
+    <p class="profile-hero__eyebrow" id="profile-position">Assistant Professor · ÉTS Montréal</p>
 
     <div class="profile-hero__keywords" id="profile-keywords" aria-label="Research keywords">
       <span>Differential Privacy</span>
