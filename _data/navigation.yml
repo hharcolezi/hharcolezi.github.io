@@ -11,7 +11,13 @@ main:
     url: /students/
   
   - title: "Teaching"
-    url: /teaching/    
+    url: /teaching/
+
+  - title: "Talks"
+    url: /talks/
+
+  - title: "Academic"
+    url: /academic/
     
   - title: "Software & Datasets"
     url: /software/
