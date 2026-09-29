@@ -6,13 +6,15 @@ redirect_from:
   - /about.html
 ---
 
+<script src="/assets/js/google-sheet-utils.js"></script>
+
 <section class="profile-hero" aria-labelledby="home-title">
   <div class="profile-hero__content">
     <h1 id="home-title" class="profile-hero__title">Héber H. Arcolezi</h1>
     <p class="profile-hero__lead">Advancing Responsible and Trustworthy AI</p>
-    <p class="profile-hero__eyebrow">Assistant Professor · ÉTS Montréal</p>
+    <p class="profile-hero__eyebrow" id="profile-position">Assistant Professor · ÉTS Montréal</p>
 
-    <div class="profile-hero__keywords" aria-label="Research keywords">
+    <div class="profile-hero__keywords" id="profile-keywords" aria-label="Research keywords">
       <span>Differential Privacy</span>
       <span>Responsible AI</span>
       <span>Trustworthy AI</span>
@@ -53,34 +55,109 @@ redirect_from:
 <section class="profile-columns" aria-label="About and research overview">
   <article>
     <h2>About</h2>
-    <p>
-      I am an Assistant Professor in the Department of Software and Information Technology Engineering at
-      <a href="https://www.etsmtl.ca/" target="_blank" rel="noopener noreferrer">ÉTS Montréal</a>, where I co-lead the
-      Trustworthy Information Systems Lab
-      <a href="https://tisl-lab.github.io/" target="_blank" rel="noopener noreferrer">(TISL)</a> research group.
-      Previously, I was a Tenured Research Scientist at
-      <a href="https://www.inria.fr/en/inria-centre-university-grenoble-alpes" target="_blank" rel="noopener noreferrer">Inria Grenoble</a>.
+    <p id="profile-about">
+      I am an Assistant Professor at ÉTS Montréal and co-lead the Trustworthy Information Systems Lab (TISL).
     </p>
   </article>
 
   <article>
     <h2>Research Interests</h2>
-    <p>
-      My research addresses the technical challenges of Responsible AI through the lenses of fairness,
-      privacy-preserving techniques, and explainability. My goal is to design systems that are both
-      mathematically private and socially equitable.
+    <p id="profile-research">
+      My research addresses Responsible and Trustworthy AI through privacy-preserving techniques, fairness, and explainability.
     </p>
   </article>
 
   <article>
     <h2>Background</h2>
-    <p>
-      I received my Ph.D. in Computer Science from the University of Bourgogne Franche-Comté (UBFC), my
-      M.Sc. in Electrical Engineering from the São Paulo State University (UNESP), and my B.Eng. in Electrical
-      Engineering from the Mato Grosso State University (UNEMAT).
+    <p id="profile-background">
+      I received my Ph.D. in Computer Science from UBFC, my M.Sc. in Electrical Engineering from UNESP, and my B.Eng. in Electrical Engineering from UNEMAT.
     </p>
   </article>
 </section>
+
+<script>
+(async () => {
+  const S = window.HHASheets;
+  if (!S) return;
+
+  try {
+    const [positions, interests, education, affiliations] = await Promise.all([
+      S.load('637699561'),
+      S.load('1563030652'),
+      S.load('591062090'),
+      S.load('1505546709')
+    ]);
+
+    const positionNode = document.getElementById('profile-position');
+    const keywordNode = document.getElementById('profile-keywords');
+    const aboutNode = document.getElementById('profile-about');
+    const researchNode = document.getElementById('profile-research');
+    const backgroundNode = document.getElementById('profile-background');
+
+    const sortedPositions = positions
+      .filter((r) => r.role && r.institution)
+      .sort((a,b) => Number(b.year || 0) - Number(a.year || 0));
+
+    if (sortedPositions.length && positionNode) {
+      const current = sortedPositions[0];
+      positionNode.innerHTML = S.escapeHTML(current.role) + ' · ' +
+        (current.institution_url ? S.link(current.institution, current.institution_url) : S.escapeHTML(current.institution));
+    }
+
+    if (keywordNode) {
+      const keywords = interests
+        .filter((r) => String(r.item || '').toLowerCase() === 'keyword' && r.value)
+        .map((r) => r.value);
+      if (keywords.length) {
+        keywordNode.innerHTML = keywords.map((x) => '<span>' + S.escapeHTML(x) + '</span>').join('');
+      }
+    }
+
+    if (researchNode) {
+      const summary = interests.find((r) => String(r.item || '').toLowerCase() === 'summary' && r.value);
+      if (summary) researchNode.textContent = summary.value;
+    }
+
+    if (aboutNode && sortedPositions.length) {
+      const current = sortedPositions[0];
+      const previous = sortedPositions[1];
+      const currentText = 'I am a ' + S.escapeHTML(current.role) + ' at ' +
+        (current.institution_url ? S.link(current.institution, current.institution_url) : S.escapeHTML(current.institution)) + '.';
+
+      const tisl = affiliations.find((r) => String(r.institution || '').includes('TISL') || String(r.institution || '').includes('Trustworthy Information Systems Lab'));
+      const affiliationText = tisl
+        ? ' I ' + S.escapeHTML(String(tisl.role || 'am affiliated with').toLowerCase()) + ' ' +
+          (tisl.url ? S.link(tisl.institution, tisl.url) : S.escapeHTML(tisl.institution)) + '.'
+        : '';
+
+      const previousText = previous
+        ? ' Previously, I was a ' + S.escapeHTML(previous.role) + ' at ' +
+          (previous.institution_url ? S.link(previous.institution, previous.institution_url) : S.escapeHTML(previous.institution)) + '.'
+        : '';
+
+      aboutNode.innerHTML = currentText + affiliationText + previousText;
+    }
+
+    if (backgroundNode) {
+      const degrees = education
+        .filter((r) => r.degree && r.institution)
+        .sort((a,b) => Number(b.year || 0) - Number(a.year || 0));
+
+      if (degrees.length) {
+        const degreeText = degrees.map((r) => {
+          const institution = r.institution_url ? S.link(r.institution, r.institution_url) : S.escapeHTML(r.institution);
+          return S.escapeHTML(r.degree) + ' from ' + institution;
+        });
+        const last = degreeText.pop();
+        backgroundNode.innerHTML = 'I received my ' +
+          (degreeText.length ? degreeText.join(', my ') + ', and my ' : '') + last + '.';
+      }
+    }
+  } catch (_error) {
+    // Keep the static fallback text already rendered in the page.
+  }
+})();
+</script>
 
 <section aria-labelledby="recent-news-title">
   <h2 id="recent-news-title">Recent News</h2>
