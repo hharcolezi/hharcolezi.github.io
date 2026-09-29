@@ -157,6 +157,13 @@ You can also check out my [ORCID](https://orcid.org/0000-0001-8059-7094), [DBLP]
     gap: 1.55rem;
   }
 
+  /* The theme can override the browser's default [hidden] styling.
+     Force filtered cards and empty year groups out of the layout. */
+  .pub-card[hidden],
+  .pub-year-group[hidden] {
+    display: none !important;
+  }
+
   .pub-year-group {
     display: grid;
     gap: 0.78rem;
