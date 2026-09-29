@@ -23,12 +23,8 @@ redirect_from:
   const setState = (t) => { state.textContent = t; state.style.display = t ? 'block' : 'none'; };
 
   try {
-    const [projectRows, totalsRows] = await Promise.all([
-      S.load('1323298866'),
-      S.load('1466320367')
-    ]);
-    const rows = projectRows
-      .filter((r) => r.title && (!r.awarded || S.truthy(r.awarded)))
+    const rows = (await S.load('1323298866'))
+      .filter((r) => r.title && S.truthy(r.in_website))
       .sort((a,b) => String(b.date || '').localeCompare(String(a.date || '')));
 
     if (!rows.length) { setState('No projects found.'); return; }
@@ -43,45 +39,32 @@ redirect_from:
 
     const card = (r) => {
       const title = r.project_url ? S.link(r.title, r.project_url) : S.escapeHTML(r.title);
-      const funding = [r.amount, r.program].filter(Boolean).join(' — ');
       const meta = [
-        r.period ? `<span class="sheet-chip">${S.escapeHTML(r.period)}</span>` : '',
-        r.organization ? `<span class="sheet-chip">${S.escapeHTML(r.organization)}</span>` : ''
+        r.period ? '<span class="sheet-chip">' + S.escapeHTML(r.period) + '</span>' : '',
+        r.organization ? '<span class="sheet-chip">' + S.escapeHTML(r.organization) + '</span>' : ''
       ].join('');
       const links = [
         r.program_url ? S.link('Program', r.program_url) : '',
         r.project_url ? S.link('Project', r.project_url) : ''
-      ].filter(Boolean).map(x => `<span>${x}</span>`).join('');
-      return `<article class="sheet-card">
-        <div>${meta}</div>
-        <h3>${title}</h3>
-        ${funding ? `<p class="sheet-meta"><strong>Funding:</strong> ${S.escapeHTML(funding)}</p>` : ''}
-        ${r.role ? `<p><strong>Role:</strong> ${S.escapeHTML(r.role)}</p>` : ''}
-        ${r.institutions ? `<p><strong>Partners:</strong> ${S.escapeHTML(r.institutions)}</p>` : ''}
-        ${r.scope ? `<p><strong>Scope:</strong> ${S.escapeHTML(r.scope)}</p>` : ''}
-        ${links ? `<div class="sheet-links">${links}</div>` : ''}
-      </article>`;
+      ].filter(Boolean).map((x) => '<span>' + x + '</span>').join('');
+
+      return '<article class="sheet-card">' +
+        '<div>' + meta + '</div>' +
+        '<h3>' + title + '</h3>' +
+        (r.program ? '<p class="sheet-meta"><strong>Program:</strong> ' + S.escapeHTML(r.program) + '</p>' : '') +
+        (r.role ? '<p><strong>Role:</strong> ' + S.escapeHTML(r.role) + '</p>' : '') +
+        (r.institutions ? '<p><strong>Partners:</strong> ' + S.escapeHTML(r.institutions) + '</p>' : '') +
+        (r.scope ? '<p><strong>Scope:</strong> ' + S.escapeHTML(r.scope) + '</p>' : '') +
+        (links ? '<div class="sheet-links">' + links + '</div>' : '') +
+        '</article>';
     };
 
-    const section = (title, data) => data.length ? `
-      <section class="sheet-section">
-        <h2>${title}</h2>
-        <div class="sheet-grid">${data.map(card).join('')}</div>
-      </section>` : '';
-
-    const awarded = totalsRows.find((r) => String(Object.values(r)[0] || '').toLowerCase() === 'awarded');
-    let overview = '';
-    if (awarded) {
-      const vals = Object.values(awarded);
-      const labels = ['Sole-PI','PI','Co-PI','Affiliated','Total'];
-      const metrics = vals.slice(1, 6).map((value, i) =>
-        value ? `<article class="sheet-card"><span class="sheet-chip">${labels[i]}</span><h3>${S.escapeHTML(value)}</h3></article>` : ''
-      ).join('');
-      if (metrics) overview = `<section class="sheet-section"><h2>Funding Overview</h2><div class="sheet-grid">${metrics}</div></section>`;
-    }
+    const section = (title, data) => data.length
+      ? '<section class="sheet-section"><h2>' + title + '</h2><div class="sheet-grid">' + data.map(card).join('') + '</div></section>'
+      : '';
 
     setState('');
-    root.innerHTML = overview + section('Current Projects', current) + section('Past Projects', past);
+    root.innerHTML = section('Current Projects', current) + section('Past Projects', past);
   } catch (e) {
     setState('Unable to load projects from Google Sheets. ' + e.message);
   }
