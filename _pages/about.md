@@ -39,7 +39,7 @@ redirect_from:
         </svg>
         <span>X</span>
       </a>
-      <a href="/files/HHA_CV.pdf" aria-label="Curriculum Vitae">
+      <a href="https://raw.githubusercontent.com/hharcolezi/hharcolezi.github.io/master/files/HHA_CV.pdf" aria-label="Curriculum Vitae">
         <i class="fas fa-file-pdf" aria-hidden="true"></i>
         <span>CV</span>
       </a>
