@@ -70,12 +70,25 @@ try:
                         assert page.locator('#pub-count').inner_text().strip() == f'{total} publications'
                         page.locator('#pub-type').select_option('journal')
                         journal_count = page.locator('.pub-card[data-type="journal"]').count()
-                        visible_count = page.locator('.pub-card:not([hidden])').count()
+                        visible_count = page.locator('.pub-card:visible').count()
                         assert visible_count == journal_count and journal_count > 0, (
-                            f'Type filter failed: expected {journal_count} journal cards, found {visible_count} unhidden cards'
+                            f'Type filter failed: expected {journal_count} journal cards, found {visible_count} visible cards'
                         )
+
                         page.locator('#pub-clear').click()
-                        assert page.locator('.pub-card:not([hidden])').count() == total, 'Clear filters failed'
+                        assert page.locator('.pub-card:visible').count() == total, 'Clear filters failed'
+
+                        page.locator('#pub-year').select_option('2017')
+                        year_count = page.locator('.pub-card[data-year="2017"]').count()
+                        visible_year_count = page.locator('.pub-card:visible').count()
+                        assert visible_year_count == year_count and year_count > 0, (
+                            f'Year filter failed: expected {year_count} cards for 2017, found {visible_year_count} visible cards'
+                        )
+                        visible_year_groups = page.locator('.pub-year-group:visible').count()
+                        assert visible_year_groups == 1, f'Year headings were not filtered: {visible_year_groups} groups remain visible'
+
+                        page.locator('#pub-clear').click()
+                        assert page.locator('.pub-card:visible').count() == total, 'Second clear filters failed'
                 if js and path in ('/', '/publications/', '/teaching/', '/software/'):
                     filename = 'homepage' if path == '/' else path.strip('/')
                     page.screenshot(path=str(OUT / f'{filename}-desktop.png'), full_page=True)
