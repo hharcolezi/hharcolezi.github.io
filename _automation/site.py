@@ -255,27 +255,89 @@ def render_news(rows: list[dict]) -> str:
 
 def render_publications(rows: list[dict]) -> str:
     groups = defaultdict(list)
+
+    resource_icons = {
+        "venue": "fas fa-building",
+        "pdf": "fas fa-file-pdf",
+        "code": "fas fa-code",
+        "dataset": "fas fa-database",
+        "slides": "fas fa-images",
+        "poster": "fas fa-image",
+        "video": "fas fa-video",
+        "bibtex": "fas fa-book",
+        "award": "fas fa-trophy",
+    }
+
+    def resource(label: str, url: str, kind: str) -> str:
+        if not url:
+            return ""
+        icon = resource_icons[kind]
+        return (
+            f'<a class="pub-resource pub-resource--{h(kind)}" href="{h(safe_url(url))}" '
+            f'target="_blank" rel="noopener noreferrer">'
+            f'<i class="{h(icon)}" aria-hidden="true"></i><span>{h(label)}</span></a>'
+        )
+
     for row in sorted(rows, key=lambda r: get(r, "pub_date", "year"), reverse=True):
         category = get(row, "category")
         technical = any(s in category.lower() for s in ("thesis", "technical report"))
         group = "Technical Reports" if technical else get(row, "year")
         if not group:
             raise InvalidData("publications: a visible publication is missing its year.")
-        kind = "technical-report" if technical else key(category).replace("_", "-")
+
+        kind = "technical-report" if technical else key(category).replace("_", "-") or "publication"
+        year = get(row, "year") or ("technical-report" if technical else group)
+
         links = []
-        if get(row, "awards"):
-            links.append(f'<span class="pub-link-badge pub-link-badge--award">{h(get(row, "awards"))}</span>')
-        if get(row, "venue"):
-            links.append(link(get(row, "venue"), get(row, "url_pub", "url")))
-        for field, label in (("pdf", "PDF / preprint"), ("code", "Code"), ("dataset", "Dataset"), ("slides", "Slides"), ("poster", "Poster"), ("video", "Video"), ("bibtex", "BibTeX")):
+        award = get(row, "awards")
+        if award:
+            links.append(
+                f'<span class="pub-link-badge pub-link-badge--award">'
+                f'<i class="{resource_icons["award"]}" aria-hidden="true"></i><span>{h(award)}</span></span>'
+            )
+
+        venue = get(row, "venue")
+        venue_url = get(row, "url_pub", "url")
+        if venue:
+            if venue_url:
+                links.append(resource(venue, venue_url, "venue"))
+            else:
+                links.append(
+                    f'<span class="pub-link-badge pub-resource--venue">'
+                    f'<i class="{resource_icons["venue"]}" aria-hidden="true"></i><span>{h(venue)}</span></span>'
+                )
+
+        for field, label, resource_kind in (
+            ("pdf", "PDF / preprint", "pdf"),
+            ("code", "Code", "code"),
+            ("dataset", "Dataset", "dataset"),
+            ("slides", "Slides", "slides"),
+            ("poster", "Poster", "poster"),
+            ("video", "Video", "video"),
+            ("bibtex", "BibTeX", "bibtex"),
+        ):
             url = get(row, field)
             if url and not (field == "bibtex" and url.startswith("@")):
-                links.append(link(label, url))
-        groups[group].append(f'<article class="pubs-card pub-card"><div class="pub-card-top"><span class="pub-chip pub-chip--type pub-chip--{h(kind)}">{h(category)}</span></div><h3 class="pub-title">{rich(get(row, "title"))}</h3><div class="pub-authors">{rich(get(row, "authors"))}</div><div class="pub-links">{"".join(links)}</div></article>')
+                links.append(resource(label, url, resource_kind))
+
+        groups[group].append(
+            f'<article class="pubs-card pub-card pub-card--{h(kind)}" '
+            f'data-year="{h(year)}" data-type="{h(kind)}">'
+            f'<div class="pub-card-top"><span class="pub-chip pub-chip--type pub-chip--{h(kind)}">{h(category)}</span></div>'
+            f'<h3 class="pub-title">{rich(get(row, "title"))}</h3>'
+            f'<div class="pub-authors">{rich(get(row, "authors"))}</div>'
+            f'<div class="pub-links">{"".join(links)}</div></article>'
+        )
+
     ordered = sorted((x for x in groups if x != "Technical Reports"), reverse=True)
     if "Technical Reports" in groups:
         ordered.append("Technical Reports")
-    return "".join(f'<section class="pub-year-group"><h2 class="pub-year-heading">{h(year)}</h2><div class="pub-year-list">{"".join(groups[year])}</div></section>' for year in ordered)
+
+    return "".join(
+        f'<section class="pub-year-group"><h2 class="pub-year-heading">{h(year)}</h2>'
+        f'<div class="pub-year-list">{"".join(groups[year])}</div></section>'
+        for year in ordered
+    )
 
 
 def render_projects(rows: list[dict]) -> str:
