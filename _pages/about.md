@@ -78,7 +78,7 @@ redirect_from:
     <h2>Background</h2>
     <p id="profile-background">
       I received my Ph.D. in Computer Science from the
-      <a href="https://www.ubfc.fr/" target="_blank" rel="noopener noreferrer">University Bourgogne Franche-Comté (UBFC)</a>, my
+      <a href="https://www.ubfc.fr/" target="_blank" rel="noopener noreferrer">University of Bourgogne Franche-Comté (UBFC)</a>, my
       M.Sc. in Electrical Engineering from the
       <a href="https://www2.unesp.br/" target="_blank" rel="noopener noreferrer">São Paulo State University (UNESP)</a>, and my B.Eng. in Electrical
       Engineering from the
