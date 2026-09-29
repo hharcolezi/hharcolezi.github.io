@@ -12,7 +12,7 @@ redirect_from:
   <div class="profile-hero__content">
     <h1 id="home-title" class="profile-hero__title">Héber H. Arcolezi</h1>
     <p class="profile-hero__lead">Advancing Responsible and Trustworthy AI</p>
-    <p class="profile-hero__eyebrow" id="profile-position">Assistant Professor · ÉTS Montréal</p>
+    <p class="profile-hero__eyebrow" id="profile-position">Assistant Professor · <a href="https://www.etsmtl.ca/" target="_blank" rel="noopener noreferrer">ÉTS Montréal</a></p>
 
     <div class="profile-hero__keywords" id="profile-keywords" aria-label="Research keywords">
       <span>Differential Privacy</span>
@@ -56,21 +56,33 @@ redirect_from:
   <article>
     <h2>About</h2>
     <p id="profile-about">
-      I am an Assistant Professor at ÉTS Montréal and co-lead the Trustworthy Information Systems Lab (TISL).
+      I am an Assistant Professor in the Department of Software and Information Technology Engineering at
+      <a href="https://www.etsmtl.ca/" target="_blank" rel="noopener noreferrer">ÉTS Montréal</a>, where I co-lead the
+      Trustworthy Information Systems Lab
+      <a href="https://tisl-lab.github.io/" target="_blank" rel="noopener noreferrer">(TISL)</a> research group.
+      Previously, I was a Tenured Research Scientist at
+      <a href="https://www.inria.fr/en/inria-centre-university-grenoble-alpes" target="_blank" rel="noopener noreferrer">Inria Grenoble</a>.
     </p>
   </article>
 
   <article>
     <h2>Research Interests</h2>
     <p id="profile-research">
-      My research addresses Responsible and Trustworthy AI through privacy-preserving techniques, fairness, and explainability.
+      My research addresses the technical challenges of Responsible AI through the lenses of fairness,
+      privacy-preserving techniques, and explainability. My goal is to design systems that are both
+      mathematically private and socially equitable.
     </p>
   </article>
 
   <article>
     <h2>Background</h2>
     <p id="profile-background">
-      I received my Ph.D. in Computer Science from UBFC, my M.Sc. in Electrical Engineering from UNESP, and my B.Eng. in Electrical Engineering from UNEMAT.
+      I received my Ph.D. in Computer Science from the
+      <a href="https://www.ubfc.fr/" target="_blank" rel="noopener noreferrer">University Bourgogne Franche-Comté (UBFC)</a>, my
+      M.Sc. in Electrical Engineering from the
+      <a href="https://www2.unesp.br/" target="_blank" rel="noopener noreferrer">São Paulo State University (UNESP)</a>, and my B.Eng. in Electrical
+      Engineering from the
+      <a href="https://www.unemat.br/" target="_blank" rel="noopener noreferrer">Mato Grosso State University (UNEMAT)</a>.
     </p>
   </article>
 </section>
@@ -81,12 +93,20 @@ redirect_from:
   if (!S) return;
 
   try {
-    const [positions, interests, education, affiliations] = await Promise.all([
-      S.load('637699561'),
-      S.load('1563030652'),
-      S.load('591062090'),
-      S.load('1505546709')
-    ]);
+    const rows = await S.load('1002262062');
+
+    const bySection = (name) => rows
+      .filter((r) => String(r.section || '').toLowerCase() === name)
+      .sort((a,b) => Number(a.sort_order || 0) - Number(b.sort_order || 0));
+
+    const renderFragments = (name) => bySection(name).map((r) => {
+      const before = S.escapeHTML(r.text_before || '');
+      const linked = r.link_label
+        ? (r.link_url ? S.link(r.link_label, r.link_url) : S.escapeHTML(r.link_label))
+        : '';
+      const after = S.escapeHTML(r.text_after || '');
+      return before + linked + after;
+    }).join('');
 
     const positionNode = document.getElementById('profile-position');
     const keywordNode = document.getElementById('profile-keywords');
@@ -94,67 +114,26 @@ redirect_from:
     const researchNode = document.getElementById('profile-research');
     const backgroundNode = document.getElementById('profile-background');
 
-    const sortedPositions = positions
-      .filter((r) => r.role && r.institution)
-      .sort((a,b) => Number(b.year || 0) - Number(a.year || 0));
+    const position = renderFragments('position');
+    if (positionNode && position) positionNode.innerHTML = position;
 
-    if (sortedPositions.length && positionNode) {
-      const current = sortedPositions[0];
-      positionNode.innerHTML = S.escapeHTML(current.role) + ' · ' +
-        (current.institution_url ? S.link(current.institution, current.institution_url) : S.escapeHTML(current.institution));
+    const keywords = bySection('keyword')
+      .map((r) => r.text_before || r.link_label || '')
+      .filter(Boolean);
+    if (keywordNode && keywords.length) {
+      keywordNode.innerHTML = keywords.map((x) => '<span>' + S.escapeHTML(x) + '</span>').join('');
     }
 
-    if (keywordNode) {
-      const keywords = interests
-        .filter((r) => String(r.item || '').toLowerCase() === 'keyword' && r.value)
-        .map((r) => r.value);
-      if (keywords.length) {
-        keywordNode.innerHTML = keywords.map((x) => '<span>' + S.escapeHTML(x) + '</span>').join('');
-      }
-    }
+    const about = renderFragments('about');
+    if (aboutNode && about) aboutNode.innerHTML = about;
 
-    if (researchNode) {
-      const summary = interests.find((r) => String(r.item || '').toLowerCase() === 'summary' && r.value);
-      if (summary) researchNode.textContent = summary.value;
-    }
+    const research = renderFragments('research');
+    if (researchNode && research) researchNode.innerHTML = research;
 
-    if (aboutNode && sortedPositions.length) {
-      const current = sortedPositions[0];
-      const previous = sortedPositions[1];
-      const currentText = 'I am a ' + S.escapeHTML(current.role) + ' at ' +
-        (current.institution_url ? S.link(current.institution, current.institution_url) : S.escapeHTML(current.institution)) + '.';
-
-      const tisl = affiliations.find((r) => String(r.institution || '').includes('TISL') || String(r.institution || '').includes('Trustworthy Information Systems Lab'));
-      const affiliationText = tisl
-        ? ' I ' + S.escapeHTML(String(tisl.role || 'am affiliated with').toLowerCase()) + ' ' +
-          (tisl.url ? S.link(tisl.institution, tisl.url) : S.escapeHTML(tisl.institution)) + '.'
-        : '';
-
-      const previousText = previous
-        ? ' Previously, I was a ' + S.escapeHTML(previous.role) + ' at ' +
-          (previous.institution_url ? S.link(previous.institution, previous.institution_url) : S.escapeHTML(previous.institution)) + '.'
-        : '';
-
-      aboutNode.innerHTML = currentText + affiliationText + previousText;
-    }
-
-    if (backgroundNode) {
-      const degrees = education
-        .filter((r) => r.degree && r.institution)
-        .sort((a,b) => Number(b.year || 0) - Number(a.year || 0));
-
-      if (degrees.length) {
-        const degreeText = degrees.map((r) => {
-          const institution = r.institution_url ? S.link(r.institution, r.institution_url) : S.escapeHTML(r.institution);
-          return S.escapeHTML(r.degree) + ' from ' + institution;
-        });
-        const last = degreeText.pop();
-        backgroundNode.innerHTML = 'I received my ' +
-          (degreeText.length ? degreeText.join(', my ') + ', and my ' : '') + last + '.';
-      }
-    }
+    const background = renderFragments('background');
+    if (backgroundNode && background) backgroundNode.innerHTML = background;
   } catch (_error) {
-    // Keep the static fallback text already rendered in the page.
+    // Keep the full static fallback content above if the Sheet is unavailable.
   }
 })();
 </script>
