@@ -36,6 +36,7 @@ redirect_from:
       const x = String(level || '').toLowerCase();
       if (x.includes('phd')) return 'PhD Students';
       if (x.includes('meng') || x.includes('master')) return "Master's Students";
+      if (x.includes('bachelor')) return 'Bachelor Students';
       return level || 'Students';
     };
 
@@ -63,8 +64,14 @@ redirect_from:
         const k = typeLabel(r.level);
         (groups[k] ||= []).push(r);
       });
+      const order = ['PhD Students', "Master's Students", 'Bachelor Students', 'Students'];
+      const keys = Object.keys(groups).sort((a,b) => {
+        const ai = order.indexOf(a);
+        const bi = order.indexOf(b);
+        return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi) || a.localeCompare(b);
+      });
       return `<section class="sheet-section"><h2>${title}</h2>` +
-        Object.entries(groups).map(([k,v]) => `<h3>${S.escapeHTML(k)}</h3><div class="sheet-grid">${v.map(card).join('')}</div>`).join('') +
+        keys.map((k) => `<h3>${S.escapeHTML(k)}</h3><div class="sheet-grid">${groups[k].map(card).join('')}</div>`).join('') +
         `</section>`;
     };
 
