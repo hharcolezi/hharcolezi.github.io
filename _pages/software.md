@@ -8,7 +8,7 @@ author_profile: true
 <link rel="stylesheet" href="/assets/css/sheet-cards.css">
 <script src="/assets/js/google-sheet-utils.js"></script>
 
-<p>Selected open-source software, datasets, and research code associated with my work on privacy-preserving and responsible machine learning.</p>
+<p>Selected open-source libraries and datasets associated with my work on privacy-preserving and responsible machine learning.</p>
 
 <div class="sheet-app">
   <div class="sheet-state" id="software-state">Loading software and datasets…</div>
