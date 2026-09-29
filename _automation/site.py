@@ -500,6 +500,16 @@ def verify(site: Path, report_path: Path) -> None:
     for resource in ("files/HHA_CV.pdf", "images/HHA_profile.png", "assets/css/sheet-cards.css", "assets/js/main.min.js"):
         if not (site / resource).is_file():
             raise InvalidData(f"Missing existing site resource: {resource}.")
+    cv_page = site / "cv/index.html"
+    if not cv_page.is_file():
+        raise InvalidData("Jekyll did not produce the CV redirect page.")
+    cv_html = cv_page.read_text(encoding="utf-8")
+    if "<!doctype html>" not in cv_html.lower():
+        raise InvalidData("CV route is not a standalone HTML redirect page.")
+    if "https://hharcolezi.github.io/files/HHA_CV.pdf" not in cv_html:
+        raise InvalidData("CV route no longer points to the compiled PDF.")
+    if "<main" in cv_html.lower() or 'class="archive"' in cv_html.lower():
+        raise InvalidData("CV redirect was wrapped in the site layout instead of staying standalone.")
     if (site / "talks/index.html").exists() or (site / "academic/index.html").exists():
         raise InvalidData("A removed Talks/Academic route has reappeared.")
     if (site / "_automation").exists() or (site / "_automation-output").exists():
