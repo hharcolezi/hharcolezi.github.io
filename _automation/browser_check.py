@@ -60,7 +60,23 @@ try:
                 if path == '/':
                     assert page.locator('#profile-background a').count() == 3
                     assert page.locator('#profile-position a').count() == 0
-                if js and path in ('/', '/teaching/', '/software/'):
+                if path == '/publications/':
+                    assert page.locator('.pub-resource i').count() > 0, 'Publication resource icons are missing'
+                    assert page.locator('#pub-search').count() == 1
+                    assert page.locator('#pub-year').count() == 1
+                    assert page.locator('#pub-type').count() == 1
+                    if js:
+                        total = REPORT['counts']['publications']
+                        assert page.locator('#pub-count').inner_text().strip() == f'{total} publications'
+                        page.locator('#pub-type').select_option('journal')
+                        journal_count = page.locator('.pub-card[data-type="journal"]').count()
+                        visible_count = page.locator('.pub-card:not([hidden])').count()
+                        assert visible_count == journal_count and journal_count > 0, (
+                            f'Type filter failed: expected {journal_count} journal cards, found {visible_count} unhidden cards'
+                        )
+                        page.locator('#pub-clear').click()
+                        assert page.locator('.pub-card:not([hidden])').count() == total, 'Clear filters failed'
+                if js and path in ('/', '/publications/', '/teaching/', '/software/'):
                     filename = 'homepage' if path == '/' else path.strip('/')
                     page.screenshot(path=str(OUT / f'{filename}-desktop.png'), full_page=True)
                     page.set_viewport_size({'width':390, 'height':844})

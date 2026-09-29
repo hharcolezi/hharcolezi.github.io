@@ -78,6 +78,36 @@ class BuildTests(unittest.TestCase):
         rows = [dict(title='Visible', selected='FALSE', not_on_website='FALSE'), dict(title='Hidden', not_on_website='TRUE')]
         self.assertEqual([r['title'] for r in s.visible_rows('publications', rows)], ['Visible'])
 
+
+    def test_publication_icons_filter_metadata_and_award(self):
+        rows = [
+            dict(
+                category='conference', year='2026', pub_date='2026-07-01',
+                authors='A. Author, H. Arcolezi', title='Paper One',
+                venue='PETS 2026', url_pub='https://example.org/paper',
+                pdf='https://example.org/preprint.pdf', code='https://example.org/code',
+                slides='https://example.org/slides.pdf', video='https://example.org/video',
+                awards='Best Paper Award', not_on_website='FALSE'
+            ),
+            dict(
+                category='journal', year='2025', pub_date='2025-01-01',
+                authors='H. Arcolezi', title='Paper Two',
+                venue='Journal X', not_on_website='FALSE'
+            ),
+        ]
+        markup = s.render_publications(rows)
+        soup = BeautifulSoup(markup, 'html.parser')
+        cards = soup.select('.pub-card[data-year][data-type]')
+        self.assertEqual(len(cards), 2)
+        self.assertEqual(cards[0]['data-year'], '2026')
+        self.assertEqual(cards[0]['data-type'], 'conference')
+        self.assertIsNotNone(soup.select_one('.pub-resource--pdf .fa-file-pdf'))
+        self.assertIsNotNone(soup.select_one('.pub-resource--code .fa-code'))
+        self.assertIsNotNone(soup.select_one('.pub-resource--slides .fa-images'))
+        self.assertIsNotNone(soup.select_one('.pub-resource--video .fa-video'))
+        self.assertIsNotNone(soup.select_one('.pub-link-badge--award .fa-trophy'))
+        self.assertIn('Best Paper Award', soup.select_one('.pub-link-badge--award').get_text())
+
     def test_news_links_and_dates(self):
         rendered = s.render_news([dict(date='2026-09-01',description='News [link](https://example.org) and <https://example.com>.')])
         self.assertEqual(len(BeautifulSoup(rendered,'html.parser').select('a')), 2)
