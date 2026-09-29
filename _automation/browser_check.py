@@ -29,12 +29,24 @@ try:
         for js in (False, True):
             context = browser.new_context(java_script_enabled=js, viewport={'width': 1440, 'height': 1050})
             sheet_requests = []
+            asset_failures = []
             def guard(route):
                 url = route.request.url
+                parsed = urlsplit(url)
                 if 'docs.google.com/spreadsheets' in url or '/gviz/tq' in url:
                     sheet_requests.append(url)
-                if urlsplit(url).hostname == '127.0.0.1':
+                if parsed.hostname == '127.0.0.1':
                     route.continue_()
+                elif parsed.hostname == 'hharcolezi.github.io':
+                    # Jekyll emits absolute asset URLs using site.url. Serve them
+                    # from this candidate build, never from the previous live site.
+                    local = base + parsed.path + ('?' + parsed.query if parsed.query else '')
+                    response = route.fetch(url=local)
+                    if response.status >= 400:
+                        asset_failures.append({'url': url, 'status': response.status})
+                    headers = dict(response.headers)
+                    headers['access-control-allow-origin'] = '*'
+                    route.fulfill(response=response, headers=headers)
                 else:
                     route.abort()
             context.route('**/*', guard)
@@ -44,6 +56,7 @@ try:
                 assert response.status == 200, f'{path}: HTTP failure'
                 assert page.locator(selector).count() == REPORT['counts'][name], f'{path}: record-count mismatch'
                 assert page.locator('#site-nav a[href$="/talks/"], #site-nav a[href$="/academic/"]').count() == 0, f'{path}: removed navigation appeared'
+                assert page.evaluate("!!Array.from(document.styleSheets).find(s => s.href && s.href.includes('/assets/css/main.css'))"), f'{path}: main theme stylesheet did not load'
                 if path == '/':
                     assert page.locator('#profile-background a').count() == 3
                     assert page.locator('#profile-position a').count() == 0
@@ -56,9 +69,10 @@ try:
                 checks.append({'path': path, 'javascript': js, 'records': REPORT['counts'][name]})
                 page.close()
             assert not sheet_requests, 'Finished site attempted a Google Sheets request.'
+            assert not asset_failures, f'Same-site assets failed: {asset_failures}'
             context.close()
         browser.close()
 finally:
     server.shutdown()
 (OUT / 'browser-checks.json').write_text(json.dumps(checks, indent=2) + '\n', encoding='utf-8')
-print(f'Passed {len(checks)} finished-page checks, including JavaScript-disabled content.')
+print(f'Passed {len(checks)} finished-page checks, including JavaScript-disabled content and local theme assets.')
