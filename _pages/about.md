@@ -9,7 +9,6 @@ author_profile: false
   <div class="profile-hero__content">
     <p class="profile-hero__eyebrow" id="profile-position">Assistant Professor · ÉTS Montréal</p>
     <h1 id="home-title" class="profile-hero__title">Héber H. Arcolezi</h1>
-    <p class="profile-hero__lead" id="profile-hero-lead">Privacy, auditing, and fairness for responsible AI.</p>
     <p class="profile-hero__summary" id="profile-hero-summary">I design, analyze, and audit privacy-preserving machine learning systems, with a focus on differential privacy, inference risks, and fairness.</p>
 
     <div class="profile-hero__keywords" id="profile-keywords" aria-label="Research keywords">

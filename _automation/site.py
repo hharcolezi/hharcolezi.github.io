@@ -223,7 +223,7 @@ def section(title: str, content: str) -> str:
 
 
 def render_home(rows: list[dict]) -> dict[str, str]:
-    allowed = {"about", "research", "background", "keyword", "position", "hero_lead", "hero_summary", "focus"}
+    allowed = {"about", "research", "background", "keyword", "position", "hero_summary", "focus"}
     groups = defaultdict(list)
     seen = set()
     for row in rows:
@@ -300,7 +300,19 @@ def render_news(rows: list[dict]) -> str:
         label = f"{['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][int(match[2])-1]} {match[1]}"
         contents = rich(get(row, "news_html")) if get(row, "news_html") else news_text(get(row, "description", "news", "content"))
         out.append(f'<article class="news-item"><div class="news-date">{h(label)}</div><div class="news-content">{contents}</div></article>')
-    return "".join(out)
+
+    visible = "".join(out[:5])
+    extra = out[5:]
+    if not extra:
+        return visible
+    return (
+        visible
+        + '<details class="news-more"><summary>Show all news '
+        + f'<span>({len(extra)} more)</span></summary>'
+        + '<div class="news-more__items">'
+        + "".join(extra)
+        + '</div></details>'
+    )
 
 
 def render_publications(rows: list[dict]) -> str:
@@ -544,7 +556,6 @@ def prepare(root: Path, fixtures: Path | None = None) -> None:
                 "profile-research": home["research"],
                 "profile-background": home["background"],
                 "profile-position": home["position"],
-                "profile-hero-lead": home["hero_lead"],
                 "profile-hero-summary": home["hero_summary"],
                 "profile-keywords": home["keyword"],
                 "research-focus-list": home["focus"],
@@ -592,7 +603,6 @@ def verify(site: Path, report_path: Path) -> None:
         "research": "profile-research",
         "background": "profile-background",
         "position": "profile-position",
-        "hero_lead": "profile-hero-lead",
         "hero_summary": "profile-hero-summary",
         "focus": "research-focus-list",
     }

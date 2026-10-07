@@ -66,11 +66,14 @@ try:
                 if path == '/':
                     assert page.locator('#profile-background a').count() == 3
                     assert page.locator('#profile-position a').count() == 0
-                    assert page.locator('#profile-hero-lead').inner_text().strip(), 'Homepage hero lead is empty'
                     assert page.locator('#profile-keywords span').count() > 0, 'Homepage keywords are missing'
                     assert page.locator('#research-focus-list .research-focus-item').count() > 0, 'Research focus items are missing'
                     assert page.locator('#featured-publications-list .featured-pub-card').count() == REPORT['featured_publications']
                     assert page.locator('.home-metrics, .profile-metrics').count() == 0
+                    assert page.locator('#profile-hero-lead').count() == 0, 'Removed hero tagline reappeared'
+                    if REPORT['counts']['news'] > 5:
+                        assert page.locator('details.news-more').count() == 1, 'Expandable news control is missing'
+                        assert page.locator('details.news-more .news-more__items .news-item').count() == REPORT['counts']['news'] - 5
                 if path == '/publications/':
                     assert page.locator('.pub-resource i').count() > 0, 'Publication resource icons are missing'
                     assert page.locator('#pub-search').count() == 1
