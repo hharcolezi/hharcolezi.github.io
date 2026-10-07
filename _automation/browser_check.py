@@ -57,6 +57,12 @@ try:
                 assert page.locator(selector).count() == REPORT['counts'][name], f'{path}: record-count mismatch'
                 assert page.locator('#site-nav a[href$="/talks/"], #site-nav a[href$="/academic/"]').count() == 0, f'{path}: removed navigation appeared'
                 assert page.evaluate("!!Array.from(document.styleSheets).find(s => s.href && s.href.includes('/assets/css/main.css'))"), f'{path}: main theme stylesheet did not load'
+                canonical = page.locator('link[rel="canonical"]').get_attribute('href')
+                expected_canonical = 'https://hharcolezi.github.io' + path
+                assert canonical == expected_canonical, f'{path}: canonical mismatch: {canonical!r} != {expected_canonical!r}'
+                robots = page.locator('meta[name="robots"]')
+                if robots.count():
+                    assert 'noindex' not in (robots.get_attribute('content') or '').lower(), f'{path}: unexpectedly marked noindex'
                 if path == '/':
                     assert page.locator('#profile-background a').count() == 3
                     assert page.locator('#profile-position a').count() == 0
