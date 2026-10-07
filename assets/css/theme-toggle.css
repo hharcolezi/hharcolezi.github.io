@@ -551,6 +551,67 @@ html[data-theme="dark"] .featured-pub-links a {
   color: #afc9ea;
 }
 
+/* Legacy author/sidebar, forms, and tables. */
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .author__content,
+html[data-theme="dark"] .author__name,
+html[data-theme="dark"] .author__bio,
+html[data-theme="dark"] .author__urls {
+  color: var(--theme-text-soft);
+}
+
+html[data-theme="dark"] .author__avatar img {
+  border-color: var(--theme-line);
+}
+
+html[data-theme="dark"] .author__urls {
+  background: var(--theme-surface);
+  border-color: var(--theme-line);
+  box-shadow: 0 10px 24px rgba(0,0,0,.32);
+}
+
+html[data-theme="dark"] .author__urls::before {
+  border-color: var(--theme-line) transparent;
+}
+
+html[data-theme="dark"] .author__urls::after {
+  border-color: var(--theme-surface) transparent;
+}
+
+html[data-theme="dark"] .author__urls a {
+  color: #b9c7d9;
+}
+
+html[data-theme="dark"] label,
+html[data-theme="dark"] legend {
+  color: var(--theme-text-soft);
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  background-color: #101a2a;
+  border-color: #35475f;
+  color: #dce6f3;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder {
+  color: #8290a3;
+}
+
+html[data-theme="dark"] thead {
+  background: #182337;
+  border-color: var(--theme-line);
+}
+
+html[data-theme="dark"] .archive__subtitle,
+html[data-theme="dark"] .page__meta {
+  color: var(--theme-muted);
+  border-color: var(--theme-line);
+}
+
 /* Miscellaneous theme surfaces from the legacy template. */
 html[data-theme="dark"] .notice,
 html[data-theme="dark"] .archive__item,
