@@ -56,5 +56,21 @@ author_profile: false
   <div id="featured-publications-list" class="featured-publications-grid"></div>
 </section>
 
-<section class="home-contact"><div><h2>Interested in collaborating?</h2><p>I am always happy to discuss research collaborations, student supervision, and responsible AI projects.</p></div><a href="mailto:heber.hwang-arcolezi@etsmtl.ca"><i class="fas fa-envelope"></i> Get in touch</a></section>
+<section class="home-contact-card" aria-labelledby="contact-title">
+  <div class="home-contact-card__header">
+    <span class="home-contact-card__icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+    <h2 id="contact-title">Contact</h2>
+  </div>
+  <p>I am always happy to discuss the possibility of new collaborations.</p>
+  <dl class="home-contact-card__details">
+    <div>
+      <dt>Email</dt>
+      <dd><a href="mailto:heber.hwang-arcolezi@etsmtl.ca">heber.hwang-arcolezi@etsmtl.ca</a></dd>
+    </div>
+    <div>
+      <dt>Postal Address</dt>
+      <dd>1100, rue Notre-Dame Ouest, Montréal (Qc) H3C 1K3, Canada.</dd>
+    </div>
+  </dl>
+</section>
 <p class="home-updated">Last update: {{ site.time | date: "%b %-d, %Y" }}.</p>
