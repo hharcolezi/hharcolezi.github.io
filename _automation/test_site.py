@@ -44,11 +44,18 @@ class BuildTests(unittest.TestCase):
         rows = []
         for section in ('about','research','background','position'):
             rows.append(dict(section=section, sort_order='1', text_before='Before ', link_label='ÉTS', link_url='https://www.etsmtl.ca/', text_after=' after.'))
-        rows.append(dict(section='keyword', sort_order='1', text_before='Differential Privacy'))
+        rows.extend([
+            dict(section='keyword', sort_order='1', text_before='Differential Privacy'),
+            dict(section='hero_lead', sort_order='1', text_before='Privacy, auditing, and fairness for responsible AI.'),
+            dict(section='hero_summary', sort_order='1', text_before='Audit privacy-preserving machine learning systems.'),
+            dict(section='focus', sort_order='1', text_before='Privacy auditing', text_after='Inference attacks and empirical audits.'),
+        ])
         out = s.render_home(rows)
         self.assertEqual(BeautifulSoup(out['about'], 'html.parser').get_text(), 'Before ÉTS after.')
         self.assertIn('href="https://www.etsmtl.ca/"', out['about'])
         self.assertNotIn('<a', out['position'])
+        self.assertIn('Privacy auditing', out['focus'])
+        self.assertIn('Inference attacks', out['focus'])
         with self.assertRaises(s.InvalidData):
             s.render_home(rows + [rows[0]])
 
@@ -107,6 +114,19 @@ class BuildTests(unittest.TestCase):
         self.assertIsNotNone(soup.select_one('.pub-resource--video .fa-video'))
         self.assertIsNotNone(soup.select_one('.pub-link-badge--award .fa-trophy'))
         self.assertIn('Best Paper Award', soup.select_one('.pub-link-badge--award').get_text())
+
+    def test_featured_publications_are_sheet_selected(self):
+        rows = [
+            dict(title='Featured A', authors='A', venue='VLDB 2026', year='2026', pub_date='2026-08-01', featured_home='TRUE', pdf='https://example.org/a.pdf'),
+            dict(title='Featured B', authors='B', venue='PETS 2026', year='2026', pub_date='2026-07-01', featured_home='TRUE'),
+            dict(title='Not featured', authors='C', venue='X', year='2026', pub_date='2026-06-01', featured_home='FALSE'),
+        ]
+        markup = s.render_featured_publications(rows)
+        soup = BeautifulSoup(markup, 'html.parser')
+        self.assertEqual(len(soup.select('.featured-pub-card')), 2)
+        self.assertIn('Featured A', markup)
+        self.assertNotIn('Not featured', markup)
+        self.assertIsNotNone(soup.select_one('.featured-pub-links .fa-file-pdf'))
 
     def test_news_links_and_dates(self):
         rendered = s.render_news([dict(date='2026-09-01',description='News [link](https://example.org) and <https://example.com>.')])
