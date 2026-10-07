@@ -28,7 +28,7 @@ SHEET_ID = "12bFYV-4WC1PhxKrnSVh5s3SPfe63fY3qd_qXybD43qw"
 SPECS = {
     "homepage": ("1002262062", {"section", "sort_order", "text_before", "link_label", "link_url", "text_after"}),
     "news": ("1326369063", {"date", "description"}),
-    "publications": ("1565301812", {"category", "year", "authors", "title", "not_on_website"}),
+    "publications": ("1565301812", {"category", "year", "authors", "title", "not_on_website", "featured_home"}),
     "projects": ("1323298866", {"title", "period", "in_website"}),
     "students": ("1794000060", {"level", "name", "completed", "project_title"}),
     "teaching": ("1100989932", {"course", "year", "institution"}),
