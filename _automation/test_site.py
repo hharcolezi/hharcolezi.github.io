@@ -46,7 +46,6 @@ class BuildTests(unittest.TestCase):
             rows.append(dict(section=section, sort_order='1', text_before='Before ', link_label='ÉTS', link_url='https://www.etsmtl.ca/', text_after=' after.'))
         rows.extend([
             dict(section='keyword', sort_order='1', text_before='Differential Privacy'),
-            dict(section='hero_lead', sort_order='1', text_before='Privacy, auditing, and fairness for responsible AI.'),
             dict(section='hero_summary', sort_order='1', text_before='Audit privacy-preserving machine learning systems.'),
             dict(section='focus', sort_order='1', text_before='Privacy auditing', text_after='Inference attacks and empirical audits.'),
         ])
@@ -127,6 +126,14 @@ class BuildTests(unittest.TestCase):
         self.assertIn('Featured A', markup)
         self.assertNotIn('Not featured', markup)
         self.assertIsNotNone(soup.select_one('.featured-pub-links .fa-file-pdf'))
+
+    def test_news_collapses_after_five_without_javascript(self):
+        rows = [dict(date=f'2026-{month:02d}-01', description=f'News {month}') for month in range(1, 8)]
+        markup = s.render_news(rows)
+        soup = BeautifulSoup(markup, 'html.parser')
+        self.assertEqual(len(soup.select('.news-item')), 7)
+        self.assertEqual(len(soup.select('details.news-more > .news-more__items .news-item')), 2)
+        self.assertIn('Show all news', soup.select_one('details.news-more summary').get_text())
 
     def test_news_links_and_dates(self):
         rendered = s.render_news([dict(date='2026-09-01',description='News [link](https://example.org) and <https://example.com>.')])
