@@ -28,7 +28,7 @@ SHEET_ID = "12bFYV-4WC1PhxKrnSVh5s3SPfe63fY3qd_qXybD43qw"
 SPECS = {
     "homepage": ("1002262062", {"section", "sort_order", "text_before", "link_label", "link_url", "text_after"}),
     "news": ("1326369063", {"date", "description"}),
-    "publications": ("1565301812", {"category", "year", "authors", "title", "not_on_website"}),
+    "publications": ("1565301812", {"category", "year", "authors", "title", "not_on_website", "featured_home"}),
     "projects": ("1323298866", {"title", "period", "in_website"}),
     "students": ("1794000060", {"level", "name", "completed", "project_title"}),
     "teaching": ("1100989932", {"course", "year", "institution"}),
@@ -223,7 +223,7 @@ def section(title: str, content: str) -> str:
 
 
 def render_home(rows: list[dict]) -> dict[str, str]:
-    allowed = {"about", "research", "background", "keyword", "position"}
+    allowed = {"about", "research", "background", "keyword", "position", "hero_lead", "hero_summary", "focus"}
     groups = defaultdict(list)
     seen = set()
     for row in rows:
@@ -238,12 +238,29 @@ def render_home(rows: list[dict]) -> dict[str, str]:
         seen.add(identity)
         groups[label].append(row)
     result = {}
+    focus_icons = [
+        ("fas fa-lock", "focus-blue"),
+        ("fas fa-search", "focus-cyan"),
+        ("fas fa-balance-scale", "focus-amber"),
+        ("fas fa-globe", "focus-green"),
+    ]
     for label in allowed:
         if not groups[label]:
             raise InvalidData(f"homepage: required section {label!r} is empty.")
         ordered = sorted(groups[label], key=lambda r: number(get(r, "sort_order")))
         if label == "keyword":
             result[label] = "".join(f'<span>{h(r.get("text_before", ""))}</span>' for r in ordered)
+        elif label == "focus":
+            items = []
+            for idx, row in enumerate(ordered):
+                icon, color = focus_icons[min(idx, len(focus_icons) - 1)]
+                items.append(
+                    f'<div class="research-focus-item">'
+                    f'<span class="research-focus-item__icon {color}"><i class="{icon}" aria-hidden="true"></i></span>'
+                    f'<div><strong>{h(row.get("text_before", ""))}</strong>'
+                    f'<span>{h(row.get("text_after", ""))}</span></div></div>'
+                )
+            result[label] = "".join(items)
         else:
             fragments = []
             for row in ordered:
@@ -373,6 +390,44 @@ def render_publications(rows: list[dict]) -> str:
     )
 
 
+def render_featured_publications(rows: list[dict]) -> str:
+    selected = [r for r in rows if boolean(r.get("featured_home", ""))]
+    if not selected:
+        raise InvalidData("publications: no rows are selected for the homepage; check featured_home.")
+    if len(selected) > 4:
+        raise InvalidData("publications: keep featured_home to at most four papers.")
+
+    def small_link(label: str, url: str, icon: str) -> str:
+        if not url:
+            return ""
+        return (
+            f'<a href="{h(safe_url(url))}" target="_blank" rel="noopener noreferrer">'
+            f'<i class="{icon}" aria-hidden="true"></i>{h(label)}</a>'
+        )
+
+    cards = []
+    for row in sorted(selected, key=lambda r: get(r, "pub_date", "year"), reverse=True):
+        venue = get(row, "venue")
+        title = get(row, "title")
+        title_html = link(title, get(row, "url_pub")) if get(row, "url_pub") else h(title)
+        links = "".join(filter(None, [
+            small_link("PDF", get(row, "pdf"), "fas fa-file-pdf"),
+            small_link("Code", get(row, "code"), "fas fa-code"),
+            small_link("Slides", get(row, "slides"), "fas fa-images"),
+            small_link("Poster", get(row, "poster"), "fas fa-image"),
+            small_link("Video", get(row, "video"), "fas fa-video"),
+        ]))
+        cards.append(
+            f'<article class="featured-pub-card">'
+            f'<span class="featured-pub-badge">{h(venue or get(row, "year"))}</span>'
+            f'<h3>{title_html}</h3>'
+            f'<p class="featured-pub-authors">{rich(get(row, "authors"))}</p>'
+            f'<div class="featured-pub-links">{links}</div>'
+            f'</article>'
+        )
+    return "".join(cards)
+
+
 def render_projects(rows: list[dict]) -> str:
     groups = {"Current Projects": [], "Past Projects": []}
     this_year = datetime.now(timezone.utc).year
@@ -484,8 +539,19 @@ def prepare(root: Path, fixtures: Path | None = None) -> None:
         report["labels"][name] = [get(r, label_key) for r in rows]
         updates = {target: RENDERERS[name](rows)}
         if name == "news":
-            updates.update({f"profile-{k}": v for k, v in home.items() if k != "keyword"})
-            updates["profile-keywords"] = home["keyword"]
+            updates.update({
+                "profile-about": home["about"],
+                "profile-research": home["research"],
+                "profile-background": home["background"],
+                "profile-position": home["position"],
+                "profile-hero-lead": home["hero_lead"],
+                "profile-hero-summary": home["hero_summary"],
+                "profile-keywords": home["keyword"],
+                "research-focus-list": home["focus"],
+            })
+            featured = render_featured_publications(visible_rows("publications", data["publications"]))
+            updates["featured-publications-list"] = featured
+            report["featured_publications"] = len(BeautifulSoup(featured, "html.parser").select(".featured-pub-card"))
         pending[root / path] = replace_sections((root / path).read_text(encoding="utf-8"), updates, [state])
     for path, content in pending.items():
         path.write_text(content, encoding="utf-8")
@@ -521,13 +587,25 @@ def verify(site: Path, report_path: Path) -> None:
         for anchor in root.select("a[href]"):
             safe_url(anchor["href"])
     home = BeautifulSoup((site / "index.html").read_text(encoding="utf-8"), "html.parser")
-    for name in ("about", "research", "background", "position"):
-        node = home.find(id=f"profile-{name}")
+    home_bindings = {
+        "about": "profile-about",
+        "research": "profile-research",
+        "background": "profile-background",
+        "position": "profile-position",
+        "hero_lead": "profile-hero-lead",
+        "hero_summary": "profile-hero-summary",
+        "focus": "research-focus-list",
+    }
+    for name, node_id in home_bindings.items():
+        node = home.find(id=node_id)
         expected = BeautifulSoup(report["homepage"][name], "html.parser")
         if node is None or text_normalized(str(node)) != text_normalized(str(expected)):
             raise InvalidData(f"Homepage {name} wording differs from its Sheet text.")
         if [a.get("href") for a in node.select("a")] != [a.get("href") for a in expected.select("a")]:
             raise InvalidData(f"Homepage {name} hyperlinks differ from the Sheet.")
+    featured = home.select("#featured-publications-list .featured-pub-card")
+    if len(featured) != report.get("featured_publications"):
+        raise InvalidData("Homepage featured-publication count differs from the Sheet selection.")
     if home.select_one("#profile-position a"):
         raise InvalidData("The non-clickable position headline was changed into a link.")
     for resource in ("files/HHA_CV.pdf", "images/HHA_profile.png", "assets/css/sheet-cards.css", "assets/js/main.min.js"):
