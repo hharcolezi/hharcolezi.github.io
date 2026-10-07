@@ -19,7 +19,9 @@ permissions:
 
 concurrency:
   group: monthly-website-${{ github.event_name == 'pull_request' && github.event.pull_request.number || 'production' }}
-  cancel-in-progress: false
+  # New commits should cancel stale PR validation, but production deployments
+  # must never cancel one another.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
@@ -62,7 +64,21 @@ jobs:
         run: python _automation/site.py verify
 
       - name: Install browser for finished-page tests
-        run: python -m playwright install --with-deps chromium
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in 1 2; do
+            echo "Playwright browser install attempt ${attempt}/2"
+            if timeout -k 10s 300s python -m playwright install --with-deps chromium; then
+              exit 0
+            fi
+            if [ "${attempt}" -lt 2 ]; then
+              echo "::warning::Browser installation timed out or failed; retrying once."
+              sleep 10
+            fi
+          done
+          echo "::error::Could not install the browser after two bounded attempts."
+          exit 1
 
       - name: Test the finished pages with and without JavaScript
         run: python _automation/browser_check.py

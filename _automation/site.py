@@ -618,7 +618,7 @@ def verify(site: Path, report_path: Path) -> None:
         raise InvalidData("Homepage featured-publication count differs from the Sheet selection.")
     if home.select_one("#profile-position a"):
         raise InvalidData("The non-clickable position headline was changed into a link.")
-    for resource in ("files/HHA_CV.pdf", "images/HHA_profile.png", "assets/css/sheet-cards.css", "assets/js/main.min.js"):
+    for resource in ("files/HHA_CV.pdf", "images/HHA_profile.png", "assets/css/sheet-cards.css", "assets/css/theme-toggle.css", "assets/js/main.min.js", "assets/js/theme-toggle.js"):
         if not (site / resource).is_file():
             raise InvalidData(f"Missing existing site resource: {resource}.")
     cv_page = site / "cv/index.html"

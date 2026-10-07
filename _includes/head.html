@@ -13,9 +13,22 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function () {
+    var theme = null;
+    try {
+      var saved = window.localStorage.getItem('hha-theme');
+      if (saved === 'light' || saved === 'dark') theme = saved;
+    } catch (_error) {}
+    if (!theme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      theme = 'dark';
+    }
+    document.documentElement.setAttribute('data-theme', theme || 'light');
+    document.documentElement.style.colorScheme = theme || 'light';
+  }());
 </script>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/theme-toggle.css">
 
 <meta http-equiv="cleartype" content="on">
