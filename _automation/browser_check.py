@@ -66,6 +66,11 @@ try:
                 if path == '/':
                     assert page.locator('#profile-background a').count() == 3
                     assert page.locator('#profile-position a').count() == 0
+                    assert page.locator('#profile-hero-lead').inner_text().strip() == 'Privacy, auditing, and fairness for responsible AI.'
+                    assert page.locator('#profile-keywords span').count() == 5
+                    assert page.locator('#research-focus-list .research-focus-item').count() == 4
+                    assert page.locator('#featured-publications-list .featured-pub-card').count() == REPORT['featured_publications']
+                    assert page.locator('.home-metrics, .profile-metrics').count() == 0
                 if path == '/publications/':
                     assert page.locator('.pub-resource i').count() > 0, 'Publication resource icons are missing'
                     assert page.locator('#pub-search').count() == 1
