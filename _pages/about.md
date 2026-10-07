@@ -1,9 +1,6 @@
 ---
 permalink: /
 author_profile: false
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 <script src="/assets/js/google-sheet-utils.js"></script>

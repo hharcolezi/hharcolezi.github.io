@@ -3,8 +3,6 @@ permalink: /students/
 title: "Students"
 excerpt: "Students"
 author_profile: true
-redirect_from:
-  - /students.html
 ---
 
 <link rel="stylesheet" href="/assets/css/sheet-cards.css">

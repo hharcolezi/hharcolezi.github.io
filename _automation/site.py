@@ -16,6 +16,7 @@ import re
 import sys
 import time
 import unicodedata
+import xml.etree.ElementTree as ET
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -42,6 +43,38 @@ PAGES = {
     "software": ("_pages/software.md", "software-list", "software-state", ".sheet-card", "software/index.html"),
 }
 NAV_PATHS = ["/", "/publications/", "/projects/", "/students/", "/teaching/", "/software/", "/cv/"]
+INDEXABLE_URLS = {
+    "https://hharcolezi.github.io/",
+    "https://hharcolezi.github.io/publications/",
+    "https://hharcolezi.github.io/projects/",
+    "https://hharcolezi.github.io/students/",
+    "https://hharcolezi.github.io/teaching/",
+    "https://hharcolezi.github.io/software/",
+}
+OBSOLETE_OUTPUTS = [
+    "markdown/index.html",
+    "non-menu-page/index.html",
+    "misc/index.html",
+    "portfolio/index.html",
+    "talkmap.html",
+    "page-archive/index.html",
+    "collection-archive/index.html",
+    "year-archive/index.html",
+    "categories/index.html",
+    "tags/index.html",
+    "terms/index.html",
+    "publication/geoind-predicting-art/index.html",
+    "teaching/2014-spring-teaching-1/index.html",
+    "teaching/2015-spring-teaching-1/index.html",
+    "talks/2012-03-01-talk-1/index.html",
+    "talks/2013-03-01-tutorial-1/index.html",
+    "talks/2014-02-01-talk-2/index.html",
+    "talks/2014-03-01-talk-3/index.html",
+    "posts/2012/08/blog-post-1/index.html",
+    "posts/2013/08/blog-post-2/index.html",
+    "posts/2014/08/blog-post-3/index.html",
+    "posts/2012/08/blog-post-4/index.html",
+]
 SOFTWARE_CATEGORIES = ["Libraries & Tools", "Datasets"]
 FORMULA_ERRORS = {"#REF!", "#VALUE!", "#DIV/0!", "#N/A", "#NAME?", "#NUM!", "#ERROR!"}
 
@@ -512,6 +545,37 @@ def verify(site: Path, report_path: Path) -> None:
         raise InvalidData("CV redirect was wrapped in the site layout instead of staying standalone.")
     if (site / "talks/index.html").exists() or (site / "academic/index.html").exists():
         raise InvalidData("A removed Talks/Academic route has reappeared.")
+
+    sitemap_path = site / "sitemap.xml"
+    if not sitemap_path.is_file():
+        raise InvalidData("Missing sitemap.xml.")
+    try:
+        sitemap_root = ET.fromstring(sitemap_path.read_text(encoding="utf-8"))
+    except ET.ParseError as exc:
+        raise InvalidData(f"sitemap.xml is not valid XML: {exc}") from exc
+    ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    sitemap_urls = {node.text.strip() for node in sitemap_root.findall(".//sm:loc", ns) if node.text}
+    if sitemap_urls != INDEXABLE_URLS:
+        raise InvalidData(
+            "sitemap.xml differs from the intended canonical public pages: "
+            f"expected {sorted(INDEXABLE_URLS)}, found {sorted(sitemap_urls)}"
+        )
+
+    robots_path = site / "robots.txt"
+    if not robots_path.is_file():
+        raise InvalidData("Missing robots.txt.")
+    robots = robots_path.read_text(encoding="utf-8")
+    if "User-agent: *" not in robots or "Sitemap: https://hharcolezi.github.io/sitemap.xml" not in robots:
+        raise InvalidData("robots.txt does not advertise the canonical sitemap.")
+
+    for obsolete in OBSOLETE_OUTPUTS:
+        if (site / obsolete).exists():
+            raise InvalidData(f"Obsolete AcademicPages/demo URL is still being published: {obsolete}")
+
+    for alias in ("about/index.html", "about.html", "projects.html", "students.html", "resume/index.html"):
+        if (site / alias).exists():
+            raise InvalidData(f"Obsolete redirect alias is still being published: {alias}")
+
     if (site / "_automation").exists() or (site / "_automation-output").exists():
         raise InvalidData("Build internals were copied into the public site.")
     manifest = {k: report[k] for k in ("schema", "generated_at", "source_commit", "counts")}
