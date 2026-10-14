@@ -68,12 +68,26 @@ try:
                 robots = page.locator('meta[name="robots"]')
                 if robots.count():
                     assert 'noindex' not in (robots.get_attribute('content') or '').lower(), f'{path}: unexpectedly marked noindex'
+                if path != '/':
+                    assert page.locator('.sidebar .author__avatar img').count() == 1, f'{path}: author photo sidebar is missing'
+                    assert page.locator('.sidebar .author__urls a[href^="mailto:"]').count() == 1, f'{path}: sidebar email link is missing'
+                    assert page.locator('.sidebar .author__urls a[href*="scholar.google.com"]').count() == 1, f'{path}: sidebar Scholar link is missing'
+                    assert page.locator('.sidebar .author__urls a[href*="github.com/hharcolezi"]').count() == 1, f'{path}: sidebar GitHub link is missing'
+                    assert page.locator('.sidebar .author__urls a[href*="orcid.org"]').count() == 1, f'{path}: sidebar ORCID link is missing'
+                    assert page.locator('.sidebar .author__urls a[href$="/files/HHA_CV.pdf"]').count() == 1, f'{path}: sidebar CV link is missing'
                 if path == '/':
                     assert page.locator('#profile-background a').count() == 3
                     assert page.locator('#profile-position a').count() == 0
                     assert page.locator('#profile-keywords span').count() > 0, 'Homepage keywords are missing'
                     assert page.locator('.profile-hero, .featured-publications, .home-panel').count() == 0, 'Old dashboard homepage components reappeared'
                     assert page.locator('.soft-home-hero').count() == 1
+                    home_width = page.locator('.soft-home').bounding_box()['width']
+                    assert home_width > 1000, f'Homepage stayed too narrow on desktop: {home_width}px'
+                    topic_boxes = [page.locator('#profile-keywords span').nth(i).bounding_box() for i in range(page.locator('#profile-keywords span').count())]
+                    assert len({round(box['y']) for box in topic_boxes}) == 1, 'Desktop research keywords wrapped to multiple lines'
+                    assert 'Privacy–Fairness Trade-offs' in page.locator('#profile-keywords').inner_text()
+                    assert page.locator('.soft-home-location').inner_text().strip() == 'Montréal, Canada'
+                    assert page.locator('.soft-home-portrait p').count() == 0, 'Location still appears below portrait'
                     assert page.locator('#profile-hero-lead').count() == 0, 'Removed hero tagline reappeared'
                     if REPORT['counts']['news'] > 5:
                         assert page.locator('details.news-more').count() == 1, 'Expandable news control is missing'
@@ -90,6 +104,8 @@ try:
                     assert page.locator('#pub-year-index').count() == 1
                     assert page.locator('.pub-year-count').count() > 0
                     assert page.locator('.pub-bibtex').count() > 0, 'BibTeX controls are missing'
+                    assert page.locator('.pub-resource .fa-file-pdf').count() > 0, 'PDF icons are missing'
+                    assert page.locator('.pub-resource .fa-code').count() > 0, 'Code icons are missing'
                     if js:
                         total = REPORT['counts']['publications']
                         assert page.locator('#pub-count').inner_text().strip() == f'{total} publications'
