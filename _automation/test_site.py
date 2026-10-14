@@ -78,6 +78,22 @@ class BuildTests(unittest.TestCase):
         self.assertNotIn('Topic:', markup)
         self.assertNotIn('Co-supervised', markup)
 
+    def test_teaching_only_principal_instructors_and_simple_level(self):
+        rows = [
+            dict(course='Graduate Privacy', year='2027', role='Principal Instructor', program='M.Sc. Computer Science', institution='ÉTS', period='Winter 2027'),
+            dict(course='Undergrad Security', year='2027', role='Principal Instructor', program='Engineer Degree', institution='ÉTS', period='Fall 2027'),
+            dict(course='Lab Session', year='2027', role='Lab Instructor', program='Engineer Degree', institution='ÉTS', period='Fall 2027'),
+        ]
+        visible = s.visible_rows('teaching', rows)
+        self.assertEqual([r['course'] for r in visible], ['Graduate Privacy', 'Undergrad Security'])
+        markup = s.render_teaching(visible)
+        self.assertIn('Graduate', markup)
+        self.assertIn('Undergraduate', markup)
+        self.assertNotIn('Engineer Degree', markup)
+        self.assertNotIn('Lab Session', markup)
+        self.assertNotIn('Principal Instructor', markup)
+        self.assertNotIn('hours', markup.lower())
+
     def test_software_allowlist_and_user_deletions(self):
         rows = [dict(name='Library', category='Libraries & Tools', in_website='TRUE'), dict(name='Data', category='Datasets', in_website='TRUE'), dict(name='Old code', category='Research Code', in_website='TRUE'), dict(name='Hidden', category='Datasets', in_website='FALSE')]
         self.assertEqual([r['name'] for r in s.visible_rows('software', rows)], ['Library', 'Data'])
