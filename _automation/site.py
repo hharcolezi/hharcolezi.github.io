@@ -528,6 +528,8 @@ def render_software(rows: list[dict]) -> str:
         for name in SOFTWARE_CATEGORIES if groups[name]
     )
 
+RENDERERS = {"news": render_news, "publications": render_publications, "projects": render_projects, "students": render_students, "teaching": render_teaching, "software": render_software}
+
 def replace_sections(source: str, updates: dict[str, str], states: list[str]) -> str:
     parts = source.split("---", 2)
     if len(parts) != 3 or parts[0].strip():
