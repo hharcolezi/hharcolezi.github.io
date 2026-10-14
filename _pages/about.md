@@ -13,11 +13,11 @@ author_profile: false
       <p class="soft-home-hero__summary" id="profile-hero-summary">I design, analyze, and audit privacy-preserving machine learning systems, with a focus on differential privacy, inference risks, and fairness.</p>
       <div class="soft-home-hero__topics" id="profile-keywords"><span>Differential Privacy</span><span>Privacy Auditing</span><span>Fairness in ML</span></div>
       <nav class="soft-home-links" aria-label="Profile links">
-        <a href="mailto:heber.hwang-arcolezi@etsmtl.ca">Email</a>
-        <a href="https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-        <a href="https://github.com/hharcolezi" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://orcid.org/0000-0001-8059-7094" target="_blank" rel="noopener noreferrer">ORCID</a>
-        <a href="https://hharcolezi.github.io/files/HHA_CV.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
+        <a href="mailto:heber.hwang-arcolezi@etsmtl.ca"><i class="fas fa-envelope" aria-hidden="true"></i><span>Email</span></a>
+        <a href="https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a>
+        <a href="https://github.com/hharcolezi" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+        <a href="https://orcid.org/0000-0001-8059-7094" target="_blank" rel="noopener noreferrer"><i class="ai ai-orcid" aria-hidden="true"></i><span>ORCID</span></a>
+        <a href="https://hharcolezi.github.io/files/HHA_CV.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>CV</span></a>
       </nav>
     </div>
     <aside class="soft-home-portrait">
