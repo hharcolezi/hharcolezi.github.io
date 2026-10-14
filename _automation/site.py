@@ -507,10 +507,11 @@ def render_students(rows: list[dict]) -> str:
 
 def teaching_level(program: str) -> str:
     value = key(program)
+    # Check undergraduate first because "undergraduate" contains "graduate".
+    if any(token in value for token in ("undergraduate", "engineer", "bachelor", "beng", "bsc")):
+        return "Undergraduate"
     if any(token in value for token in ("master", "msc", "meng", "phd", "doctor", "graduate")):
         return "Graduate"
-    if any(token in value for token in ("engineer", "bachelor", "beng", "bsc", "undergraduate")):
-        return "Undergraduate"
     return ""
 
 
