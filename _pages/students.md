@@ -2,7 +2,7 @@
 layout: archive
 title: "Students"
 permalink: /students/
-author_profile: false
+author_profile: true
 ---
 
 <link rel="stylesheet" href="/assets/css/soft-academic.css">

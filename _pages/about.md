@@ -18,11 +18,11 @@ author_profile: false
         <a href="https://github.com/hharcolezi" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
         <a href="https://orcid.org/0000-0001-8059-7094" target="_blank" rel="noopener noreferrer"><i class="ai ai-orcid" aria-hidden="true"></i><span>ORCID</span></a>
         <a href="https://hharcolezi.github.io/files/HHA_CV.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf" aria-hidden="true"></i><span>CV</span></a>
+        <span class="soft-home-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Montréal, Canada</span></span>
       </nav>
     </div>
     <aside class="soft-home-portrait">
       <img src="/images/HHA_profile.png" alt="Portrait of Héber H. Arcolezi">
-      <p>Montréal, Canada</p>
     </aside>
   </section>
 

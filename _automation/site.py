@@ -322,10 +322,24 @@ def render_news(rows: list[dict]) -> str:
 def render_publications(rows: list[dict]) -> str:
     groups = defaultdict(list)
 
+    resource_icons = {
+        "PDF": "fas fa-file-pdf",
+        "Code": "fas fa-code",
+        "Dataset": "fas fa-database",
+        "Slides": "fas fa-images",
+        "Poster": "fas fa-image",
+        "Video": "fas fa-video",
+    }
+
     def resource(label: str, url: str) -> str:
         if not url:
             return ""
-        return f'<a class="pub-resource" href="{h(safe_url(url))}" target="_blank" rel="noopener noreferrer">{h(label)}</a>'
+        icon = resource_icons.get(label, "fas fa-link")
+        return (
+            f'<a class="pub-resource pub-resource--{h(key(label))}" href="{h(safe_url(url))}" '
+            f'target="_blank" rel="noopener noreferrer">'
+            f'<i class="{h(icon)}" aria-hidden="true"></i><span>{h(label)}</span></a>'
+        )
 
     for row in sorted(rows, key=lambda r: get(r, "pub_date", "year"), reverse=True):
         category = get(row, "category")
@@ -493,10 +507,11 @@ def render_students(rows: list[dict]) -> str:
 
 def teaching_level(program: str) -> str:
     value = key(program)
+    # Check undergraduate first because "undergraduate" contains "graduate".
+    if any(token in value for token in ("undergraduate", "engineer", "bachelor", "beng", "bsc")):
+        return "Undergraduate"
     if any(token in value for token in ("master", "msc", "meng", "phd", "doctor", "graduate")):
         return "Graduate"
-    if any(token in value for token in ("engineer", "bachelor", "beng", "bsc", "undergraduate")):
-        return "Undergraduate"
     return ""
 
 

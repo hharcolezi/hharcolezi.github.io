@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Héber H. Arcolezi"
   avatar           : "HHA_profile.png"
-  bio              : "Assistant Professor @ ÉTS Montréal -- Research focus: Differential Privacy & Responsible AI."
+  bio              : "Assistant Professor at ÉTS Montréal."
   location         : "Montréal, Canada"
   employer         :
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -90,7 +90,7 @@ author:
   twitter          : "@hharcolezi"
   github           : "hharcolezi"
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=VJgSocwAAAAJ&view_op=list_works&sortby=pubdate"
-  orcid            : 
+  orcid            : "https://orcid.org/0000-0001-8059-7094"
   researchgate     :  
   uri              :
   bitbucket        :
