@@ -284,7 +284,11 @@ def visible_rows(name: str, rows: list[dict]) -> list[dict]:
     if name == "students":
         return [r for r in rows if get(r, "name")]
     if name == "teaching":
-        return [r for r in rows if get(r, "course", "description")]
+        return [
+            r for r in rows
+            if get(r, "course", "description")
+            and key(get(r, "role")) == "principal_instructor"
+        ]
     if name == "software":
         return [r for r in rows if get(r, "name") and get(r, "category") in SOFTWARE_CATEGORIES and boolean(r.get("in_website", ""))]
     return rows
@@ -318,27 +322,10 @@ def render_news(rows: list[dict]) -> str:
 def render_publications(rows: list[dict]) -> str:
     groups = defaultdict(list)
 
-    resource_icons = {
-        "venue": "fas fa-building",
-        "pdf": "fas fa-file-pdf",
-        "code": "fas fa-code",
-        "dataset": "fas fa-database",
-        "slides": "fas fa-images",
-        "poster": "fas fa-image",
-        "video": "fas fa-video",
-        "bibtex": "fas fa-book",
-        "award": "fas fa-trophy",
-    }
-
-    def resource(label: str, url: str, kind: str) -> str:
+    def resource(label: str, url: str) -> str:
         if not url:
             return ""
-        icon = resource_icons[kind]
-        return (
-            f'<a class="pub-resource pub-resource--{h(kind)}" href="{h(safe_url(url))}" '
-            f'target="_blank" rel="noopener noreferrer">'
-            f'<i class="{h(icon)}" aria-hidden="true"></i><span>{h(label)}</span></a>'
-        )
+        return f'<a class="pub-resource" href="{h(safe_url(url))}" target="_blank" rel="noopener noreferrer">{h(label)}</a>'
 
     for row in sorted(rows, key=lambda r: get(r, "pub_date", "year"), reverse=True):
         category = get(row, "category")
@@ -347,60 +334,57 @@ def render_publications(rows: list[dict]) -> str:
         if not group:
             raise InvalidData("publications: a visible publication is missing its year.")
 
-        kind = "technical-report" if technical else key(category).replace("_", "-") or "publication"
-        year = get(row, "year") or ("technical-report" if technical else group)
-
-        links = []
-        award = get(row, "awards")
-        if award:
-            links.append(
-                f'<span class="pub-link-badge pub-link-badge--award">'
-                f'<i class="{resource_icons["award"]}" aria-hidden="true"></i><span>{h(award)}</span></span>'
-            )
-
+        year = get(row, "year") or "technical-report"
+        title = rich(get(row, "title"))
+        authors = rich(get(row, "authors"))
         venue = get(row, "venue")
         venue_url = get(row, "url_pub", "url")
-        if venue:
-            if venue_url:
-                links.append(resource(venue, venue_url, "venue"))
-            else:
-                links.append(
-                    f'<span class="pub-link-badge pub-resource--venue">'
-                    f'<i class="{resource_icons["venue"]}" aria-hidden="true"></i><span>{h(venue)}</span></span>'
-                )
+        venue_html = link(venue, venue_url) if venue and venue_url else h(venue)
 
-        for field, label, resource_kind in (
-            ("pdf", "PDF / preprint", "pdf"),
-            ("code", "Code", "code"),
-            ("dataset", "Dataset", "dataset"),
-            ("slides", "Slides", "slides"),
-            ("poster", "Poster", "poster"),
-            ("video", "Video", "video"),
-            ("bibtex", "BibTeX", "bibtex"),
+        links = []
+        for field, label in (
+            ("pdf", "PDF"),
+            ("code", "Code"),
+            ("dataset", "Dataset"),
+            ("slides", "Slides"),
+            ("poster", "Poster"),
+            ("video", "Video"),
         ):
-            url = get(row, field)
-            if url and not (field == "bibtex" and url.startswith("@")):
-                links.append(resource(label, url, resource_kind))
+            if get(row, field):
+                links.append(resource(label, get(row, field)))
+
+        award = get(row, "awards")
+        award_html = f'<span class="pub-award-inline">★ {h(award)}</span>' if award else ""
+
+        bib = get(row, "bib_entry")
+        bib_html = (
+            f'<details class="pub-bibtex"><summary>BibTeX</summary><pre>{h(bib)}</pre></details>'
+            if bib else ""
+        )
 
         groups[group].append(
-            f'<article class="pubs-card pub-card pub-card--{h(kind)}" '
-            f'data-year="{h(year)}" data-type="{h(kind)}">'
-            f'<div class="pub-card-top"><span class="pub-chip pub-chip--type pub-chip--{h(kind)}">{h(category)}</span></div>'
-            f'<h3 class="pub-title">{rich(get(row, "title"))}</h3>'
-            f'<div class="pub-authors">{rich(get(row, "authors"))}</div>'
-            f'<div class="pub-links">{"".join(links)}</div></article>'
+            f'<article class="pub-card" data-year="{h(year)}" data-type="{h(key(category).replace("_", "-") or "publication")}">'
+            f'<h3 class="pub-title">{title}</h3>'
+            f'<div class="pub-authors">{authors}</div>'
+            f'<div class="pub-venue-line">{venue_html}{award_html}</div>'
+            f'<div class="pub-links">{"".join(links)}</div>'
+            f'{bib_html}</article>'
         )
 
     ordered = sorted((x for x in groups if x != "Technical Reports"), reverse=True)
     if "Technical Reports" in groups:
         ordered.append("Technical Reports")
 
-    return "".join(
-        f'<section class="pub-year-group"><h2 class="pub-year-heading">{h(year)}</h2>'
-        f'<div class="pub-year-list">{"".join(groups[year])}</div></section>'
-        for year in ordered
-    )
-
+    sections = []
+    for group in ordered:
+        count = len(groups[group])
+        anchor = f' id="pub-{h(group)}"' if re.fullmatch(r"\d{4}", str(group)) else ""
+        sections.append(
+            f'<section class="pub-year-group"{anchor}>'
+            f'<h2 class="pub-year-heading">{h(group)} <span class="pub-year-count">({count})</span></h2>'
+            f'<div class="pub-year-list">{"".join(groups[group])}</div></section>'
+        )
+    return "".join(sections)
 
 def render_featured_publications(rows: list[dict]) -> str:
     selected = [r for r in rows if boolean(r.get("featured_home", ""))]
@@ -447,12 +431,27 @@ def render_projects(rows: list[dict]) -> str:
         years = re.findall(r"\d{4}", get(row, "period"))
         current = not years or int(years[-1]) >= this_year or "present" in get(row, "period").lower()
         title = link(get(row, "title"), get(row, "project_url"))
-        body = paragraph("Program", get(row, "program"), muted=True) + paragraph("Role", get(row, "role")) + paragraph("Partners", get(row, "institutions")) + paragraph("Scope", get(row, "scope"))
-        links = "".join(link(label, get(row, f)) for f, label in (("program_url", "Program"), ("project_url", "Project")) if get(row, f))
-        body += f'<div class="sheet-links">{links}</div>' if links else ""
-        groups["Current Projects" if current else "Past Projects"].append(card(title, body, chip(get(row, "period")) + chip(get(row, "organization"))))
-    return "".join(section(title, "".join(cards)) for title, cards in groups.items())
+        meta_parts = [x for x in (get(row, "period"), get(row, "organization"), get(row, "role")) if x]
+        meta = " · ".join(meta_parts)
+        scope = get(row, "scope")
+        links = []
+        if get(row, "program_url"):
+            links.append(link("Program", get(row, "program_url")))
+        if get(row, "project_url"):
+            links.append(link("Project", get(row, "project_url")))
+        card_html = (
+            f'<article class="sheet-card"><h3>{title}</h3>'
+            f'{f"<div class=\"soft-row-meta\">{h(meta)}</div>" if meta else ""}'
+            f'{f"<p class=\"soft-row-desc\">{h(scope)}</p>" if scope else ""}'
+            f'{f"<div class=\"soft-inline-links\">{"".join(links)}</div>" if links else ""}'
+            f'</article>'
+        )
+        groups["Current Projects" if current else "Past Projects"].append(card_html)
 
+    return "".join(
+        f'<section class="soft-section"><h2>{h(title)}</h2><div class="soft-list">{"".join(cards)}</div></section>'
+        for title, cards in groups.items() if cards
+    )
 
 def student_group(level: str) -> tuple[int, str]:
     v = level.lower().replace(".", "")
@@ -470,42 +469,77 @@ def render_students(rows: list[dict]) -> str:
     for row in sorted(rows, key=lambda r: (-number(get(r, "year")), get(r, "name"))):
         alumni = boolean(row.get("completed", ""))
         degree = student_group(get(row, "level"))
-        project = get(row, "project_title")
-        body = paragraph("", get(row, "organization"), muted=True)
-        body += paragraph("Thesis" if alumni and degree[0] == 0 else "Topic", link(project, get(row, "project_url")) if project else "", markup=True)
-        body += paragraph("Co-supervised with", get(row, "co_supervisor"))
-        body += paragraph("Current Position", get(row, "position_after")) if alumni else ""
-        body += paragraph("Prize", link(get(row, "award"), get(row, "award_url")) if get(row, "award") else "", markup=True)
-        groups[alumni][degree].append(card(link(get(row, "name"), get(row, "profile_url")), body, chip(get(row, "level")) + chip(get(row, "period"))))
+        name = link(get(row, "name"), get(row, "profile_url"))
+        award = get(row, "award")
+        award_html = ""
+        if award:
+            award_text = link(award, get(row, "award_url")) if get(row, "award_url") else h(award)
+            award_html = f'<span class="person-award">★ {award_text}</span>'
+        groups[alumni][degree].append(
+            f'<article class="sheet-card"><div class="person-name">{name}</div>{award_html}</article>'
+        )
+
     output = []
     for alumni, title in ((False, "Current Students"), (True, "Alumni")):
-        if groups[alumni]:
-            content = "".join(f'<h3>{h(group[1])}</h3><div class="sheet-grid">{"".join(groups[alumni][group])}</div>' for group in sorted(groups[alumni]))
-            output.append(f'<section class="sheet-section"><h2>{title}</h2>{content}</section>')
+        if not groups[alumni]:
+            continue
+        subgroups = []
+        for group in sorted(groups[alumni]):
+            subgroups.append(
+                f'<h3>{h(group[1])}</h3><div class="soft-list people-list">{"".join(groups[alumni][group])}</div>'
+            )
+        output.append(f'<section class="soft-section"><h2>{title}</h2>{"".join(subgroups)}</section>')
     return "".join(output)
+
+def teaching_level(program: str) -> str:
+    value = key(program)
+    if any(token in value for token in ("master", "msc", "meng", "phd", "doctor", "graduate")):
+        return "Graduate"
+    if any(token in value for token in ("engineer", "bachelor", "beng", "bsc", "undergraduate")):
+        return "Undergraduate"
+    return ""
 
 
 def render_teaching(rows: list[dict]) -> str:
     groups = defaultdict(list)
     for row in rows:
-        inst = link(get(row, "institution", "organization"), get(row, "institution_url"))
-        program = h(get(row, "program"))
-        body = paragraph("", program + (", " if program and inst else "") + inst, markup=True) + paragraph("", get(row, "topics"), muted=True)
-        hours = get(row, "hours")
-        groups[get(row, "year")].append(card(h(get(row, "course", "description")), body, chip(get(row, "period")) + chip(hours + "h" if hours and not hours.endswith("h") else hours) + chip(get(row, "role"))))
-    return "".join(section(year, "".join(groups[year])) for year in sorted(groups, reverse=True))
+        course = h(get(row, "course", "description"))
+        institution = link(get(row, "institution", "organization"), get(row, "institution_url"))
+        session = get(row, "period")
+        level = teaching_level(get(row, "program"))
 
+        meta_parts = [part for part in (institution, h(session), h(level)) if part]
+        groups[get(row, "year")].append(
+            f'<article class="sheet-card"><h3>{course}</h3>'
+            f'<div class="soft-row-meta">{" · ".join(meta_parts)}</div>'
+            f'</article>'
+        )
+
+    return "".join(
+        f'<section class="soft-section"><h2>{h(year)}</h2><div class="soft-list">{"".join(groups[year])}</div></section>'
+        for year in sorted(groups, reverse=True)
+    )
 
 def render_software(rows: list[dict]) -> str:
     groups = defaultdict(list)
     for row in sorted(rows, key=lambda r: number(get(r, "sort_order"), 999)):
-        links = "".join(link(label, get(row, field)) for field, label in (("github", "GitHub"), ("pypi", "PyPI"), ("paper", "Paper"), ("arxiv", "arXiv"), ("data_url", "Data")) if get(row, field))
-        groups[get(row, "category")].append(card(h(get(row, "name")), paragraph("", get(row, "description")) + f'<div class="sheet-links">{links}</div>'))
-    return "".join(section(name, "".join(groups[name])) for name in SOFTWARE_CATEGORIES if groups[name])
+        links = []
+        for field, label in (("github", "GitHub"), ("pypi", "PyPI"), ("paper", "Paper"), ("arxiv", "arXiv"), ("data_url", "Data")):
+            if get(row, field):
+                links.append(link(label, get(row, field)))
+        groups[get(row, "category")].append(
+            f'<article class="sheet-card"><h3>{h(get(row, "name"))}</h3>'
+            f'{f"<p class=\"soft-row-desc\">{h(get(row, "description"))}</p>" if get(row, "description") else ""}'
+            f'{f"<div class=\"soft-inline-links\">{"".join(links)}</div>" if links else ""}'
+            f'</article>'
+        )
 
+    return "".join(
+        f'<section class="soft-section"><h2>{h(name)}</h2><div class="soft-list">{"".join(groups[name])}</div></section>'
+        for name in SOFTWARE_CATEGORIES if groups[name]
+    )
 
 RENDERERS = {"news": render_news, "publications": render_publications, "projects": render_projects, "students": render_students, "teaching": render_teaching, "software": render_software}
-
 
 def replace_sections(source: str, updates: dict[str, str], states: list[str]) -> str:
     parts = source.split("---", 2)
@@ -560,9 +594,6 @@ def prepare(root: Path, fixtures: Path | None = None) -> None:
                 "profile-keywords": home["keyword"],
                 "research-focus-list": home["focus"],
             })
-            featured = render_featured_publications(visible_rows("publications", data["publications"]))
-            updates["featured-publications-list"] = featured
-            report["featured_publications"] = len(BeautifulSoup(featured, "html.parser").select(".featured-pub-card"))
         pending[root / path] = replace_sections((root / path).read_text(encoding="utf-8"), updates, [state])
     for path, content in pending.items():
         path.write_text(content, encoding="utf-8")
@@ -613,9 +644,6 @@ def verify(site: Path, report_path: Path) -> None:
             raise InvalidData(f"Homepage {name} wording differs from its Sheet text.")
         if [a.get("href") for a in node.select("a")] != [a.get("href") for a in expected.select("a")]:
             raise InvalidData(f"Homepage {name} hyperlinks differ from the Sheet.")
-    featured = home.select("#featured-publications-list .featured-pub-card")
-    if len(featured) != report.get("featured_publications"):
-        raise InvalidData("Homepage featured-publication count differs from the Sheet selection.")
     if home.select_one("#profile-position a"):
         raise InvalidData("The non-clickable position headline was changed into a link.")
     for resource in ("files/HHA_CV.pdf", "images/HHA_profile.png", "assets/css/sheet-cards.css", "assets/css/theme-toggle.css", "assets/js/main.min.js", "assets/js/theme-toggle.js"):

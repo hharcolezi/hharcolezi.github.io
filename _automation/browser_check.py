@@ -72,43 +72,33 @@ try:
                     assert page.locator('#profile-background a').count() == 3
                     assert page.locator('#profile-position a').count() == 0
                     assert page.locator('#profile-keywords span').count() > 0, 'Homepage keywords are missing'
-                    assert page.locator('#research-focus-list .research-focus-item').count() > 0, 'Research focus items are missing'
-                    assert page.locator('#featured-publications-list .featured-pub-card').count() == REPORT['featured_publications']
-                    assert page.locator('.home-metrics, .profile-metrics').count() == 0
+                    assert page.locator('.profile-hero, .featured-publications, .home-panel').count() == 0, 'Old dashboard homepage components reappeared'
+                    assert page.locator('.soft-home-hero').count() == 1
                     assert page.locator('#profile-hero-lead').count() == 0, 'Removed hero tagline reappeared'
                     if REPORT['counts']['news'] > 5:
                         assert page.locator('details.news-more').count() == 1, 'Expandable news control is missing'
                         assert page.locator('details.news-more .news-more__items .news-item').count() == REPORT['counts']['news'] - 5
+                if path == '/teaching/':
+                    teaching_text = page.locator('#teaching-list').inner_text()
+                    assert 'Systems Security' in teaching_text, 'Winter 2027 Systems Security is missing from Teaching'
+                    assert 'Winter 2027' in teaching_text
+                    assert 'Undergraduate' in teaching_text
+                    assert 'Lab sessions' not in teaching_text, 'Non-principal teaching leaked into the website'
+                    assert 'Database Management Systems' not in teaching_text, 'Lab-session courses should not appear'
                 if path == '/publications/':
-                    assert page.locator('.pub-resource i').count() > 0, 'Publication resource icons are missing'
                     assert page.locator('#pub-search').count() == 1
-                    assert page.locator('#pub-year').count() == 1
-                    assert page.locator('#pub-type').count() == 1
+                    assert page.locator('#pub-year-index').count() == 1
+                    assert page.locator('.pub-year-count').count() > 0
+                    assert page.locator('.pub-bibtex').count() > 0, 'BibTeX controls are missing'
                     if js:
                         total = REPORT['counts']['publications']
                         assert page.locator('#pub-count').inner_text().strip() == f'{total} publications'
-                        page.locator('#pub-type').select_option('journal')
-                        journal_count = page.locator('.pub-card[data-type="journal"]').count()
+                        page.locator('#pub-search').fill('Differential Privacy')
                         visible_count = page.locator('.pub-card:visible').count()
-                        assert visible_count == journal_count and journal_count > 0, (
-                            f'Type filter failed: expected {journal_count} journal cards, found {visible_count} visible cards'
-                        )
-
-                        page.locator('#pub-clear').click()
-                        assert page.locator('.pub-card:visible').count() == total, 'Clear filters failed'
-
-                        page.locator('#pub-year').select_option('2017')
-                        year_count = page.locator('.pub-card[data-year="2017"]').count()
-                        visible_year_count = page.locator('.pub-card:visible').count()
-                        assert visible_year_count == year_count and year_count > 0, (
-                            f'Year filter failed: expected {year_count} cards for 2017, found {visible_year_count} visible cards'
-                        )
-                        visible_year_groups = page.locator('.pub-year-group:visible').count()
-                        assert visible_year_groups == 1, f'Year headings were not filtered: {visible_year_groups} groups remain visible'
-
-                        page.locator('#pub-clear').click()
-                        assert page.locator('.pub-card:visible').count() == total, 'Second clear filters failed'
-                if js and path in ('/', '/publications/', '/teaching/', '/software/'):
+                        assert 0 < visible_count < total, 'Publication search did not filter'
+                        page.locator('#pub-search').fill('')
+                        assert page.locator('.pub-card:visible').count() == total, 'Clearing search did not restore publications'
+                if js and path in ('/', '/publications/', '/projects/', '/students/', '/teaching/', '/software/'):
                     filename = 'homepage' if path == '/' else path.strip('/')
                     page.screenshot(path=str(OUT / f'{filename}-desktop.png'), full_page=True)
                     page.set_viewport_size({'width':390, 'height':844})
@@ -157,7 +147,7 @@ try:
         assert page.locator('#theme-toggle:visible').count() == 1
         assert page.locator('#theme-toggle').get_attribute('aria-pressed') == 'true'
         dark_body = page.evaluate("getComputedStyle(document.body).backgroundColor")
-        dark_panel = page.evaluate("getComputedStyle(document.querySelector('.home-panel')).backgroundColor")
+        dark_panel = page.evaluate("getComputedStyle(document.querySelector('.soft-home-section')).color")
 
         page.screenshot(path=str(OUT / 'homepage-dark-desktop.png'), full_page=True)
 
@@ -166,9 +156,9 @@ try:
         assert page.locator('#theme-toggle').get_attribute('aria-pressed') == 'false'
         assert page.evaluate("localStorage.getItem('hha-theme')") == 'light'
         light_body = page.evaluate("getComputedStyle(document.body).backgroundColor")
-        light_panel = page.evaluate("getComputedStyle(document.querySelector('.home-panel')).backgroundColor")
+        light_panel = page.evaluate("getComputedStyle(document.querySelector('.soft-home-section')).color")
         assert dark_body != light_body, 'Body appearance did not visibly change'
-        assert dark_panel != light_panel, 'Card appearance did not visibly change'
+        assert dark_panel != light_panel, 'Homepage text appearance did not visibly change'
 
         response = page.goto(base + '/publications/', wait_until='networkidle')
         assert response.status == 200
@@ -177,10 +167,10 @@ try:
         page.locator('#theme-toggle').click()
         assert page.locator('html').get_attribute('data-theme') == 'dark'
         assert page.evaluate("localStorage.getItem('hha-theme')") == 'dark'
-        pub_card_bg = page.evaluate("getComputedStyle(document.querySelector('.pubs-card')).backgroundColor")
         pub_input_bg = page.evaluate("getComputedStyle(document.querySelector('#pub-search')).backgroundColor")
-        assert pub_card_bg != 'rgb(255, 255, 255)', 'Publication cards stayed light in dark mode'
-        assert pub_input_bg != 'rgb(255, 255, 255)', 'Publication filters stayed light in dark mode'
+        pub_title_color = page.evaluate("getComputedStyle(document.querySelector('.pub-title')).color")
+        assert pub_input_bg != 'rgb(255, 255, 255)', 'Publication search stayed light in dark mode'
+        assert pub_title_color != 'rgb(31, 41, 55)', 'Publication titles did not adapt to dark mode'
         page.screenshot(path=str(OUT / 'publications-dark-desktop.png'), full_page=True)
 
         response = page.goto(base + '/projects/', wait_until='networkidle')
