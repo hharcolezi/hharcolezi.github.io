@@ -284,7 +284,11 @@ def visible_rows(name: str, rows: list[dict]) -> list[dict]:
     if name == "students":
         return [r for r in rows if get(r, "name")]
     if name == "teaching":
-        return [r for r in rows if get(r, "course", "description")]
+        return [
+            r for r in rows
+            if get(r, "course", "description")
+            and key(get(r, "role")) == "principal_instructor"
+        ]
     if name == "software":
         return [r for r in rows if get(r, "name") and get(r, "category") in SOFTWARE_CATEGORIES and boolean(r.get("in_website", ""))]
     return rows
@@ -487,22 +491,29 @@ def render_students(rows: list[dict]) -> str:
         output.append(f'<section class="soft-section"><h2>{title}</h2>{"".join(subgroups)}</section>')
     return "".join(output)
 
+def teaching_level(program: str) -> str:
+    value = key(program)
+    if any(token in value for token in ("master", "msc", "meng", "phd", "doctor", "graduate")):
+        return "Graduate"
+    if any(token in value for token in ("engineer", "bachelor", "beng", "bsc", "undergraduate")):
+        return "Undergraduate"
+    return ""
+
+
 def render_teaching(rows: list[dict]) -> str:
     groups = defaultdict(list)
     for row in rows:
-        inst = link(get(row, "institution", "organization"), get(row, "institution_url"))
         course = h(get(row, "course", "description"))
-        details = [get(row, "period"), get(row, "role"), get(row, "hours")]
-        details = [x + ("h" if i == 2 and x and not x.endswith("h") else "") for i, x in enumerate(details) if x]
-        program = h(get(row, "program"))
-        context = (program + (", " if program and inst else "") + inst) if (program or inst) else ""
-        body = (
+        institution = link(get(row, "institution", "organization"), get(row, "institution_url"))
+        session = get(row, "period")
+        level = teaching_level(get(row, "program"))
+
+        meta_parts = [part for part in (institution, h(session), h(level)) if part]
+        groups[get(row, "year")].append(
             f'<article class="sheet-card"><h3>{course}</h3>'
-            f'{f"<div class=\"soft-row-meta\">{context}</div>" if context else ""}'
-            f'{f"<div class=\"soft-row-meta\">{" · ".join(h(x) for x in details)}</div>" if details else ""}'
+            f'<div class="soft-row-meta">{" · ".join(meta_parts)}</div>'
             f'</article>'
         )
-        groups[get(row, "year")].append(body)
 
     return "".join(
         f'<section class="soft-section"><h2>{h(year)}</h2><div class="soft-list">{"".join(groups[year])}</div></section>'
