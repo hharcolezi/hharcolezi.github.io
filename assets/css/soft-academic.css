@@ -28,15 +28,28 @@
 }
 
 /* Home */
+.page:has(.soft-home) {
+  float: none;
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 3vw, 2.25rem);
+}
+
+.page:has(.soft-home) .page__inner-wrap,
+.page:has(.soft-home) .page__content {
+  width: 100%;
+}
+
 .soft-home {
-  max-width: 980px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
 .soft-home-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 190px;
-  gap: 2.7rem;
+  gap: 3.4rem;
   align-items: start;
   margin: 2rem 0 2.6rem;
 }
@@ -60,7 +73,7 @@
 }
 
 .soft-home-hero__summary {
-  max-width: 670px;
+  max-width: 790px;
   margin: 1.15rem 0 0;
   color: var(--soft-text);
   font-size: 1.03rem;
@@ -69,7 +82,7 @@
 
 .soft-home-hero__topics {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: .3rem .75rem;
   margin-top: .95rem;
   color: var(--soft-muted);
@@ -109,6 +122,19 @@
   text-underline-offset: .18em;
 }
 
+.soft-home-location {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: var(--soft-muted);
+}
+
+.soft-home-location i {
+  width: .9rem;
+  text-align: center;
+  font-size: .86rem;
+}
+
 .soft-home-portrait {
   width: 175px;
   justify-self: end;
@@ -121,13 +147,6 @@
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid var(--soft-line);
-}
-
-.soft-home-portrait p {
-  margin: .5rem 0 0;
-  color: var(--soft-muted);
-  font-size: .76rem;
-  text-align: center;
 }
 
 .soft-home-section {
@@ -493,6 +512,9 @@ html[data-theme="dark"] .pub-award-inline {
 .pub-resource,
 .pub-link-badge {
   min-height: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: .28rem;
   padding: 0;
   background: transparent !important;
   border: 0 !important;
@@ -509,7 +531,11 @@ html[data-theme="dark"] .pub-award-inline {
 
 .pub-resource i,
 .pub-link-badge i {
-  display: none;
+  display: inline-block;
+  width: .82rem;
+  text-align: center;
+  font-size: .72rem;
+  opacity: .88;
 }
 
 .pub-bibtex {
@@ -571,6 +597,10 @@ html[data-theme="dark"] .pub-search-line input {
     gap: 1.35rem;
   }
 
+  .soft-home-hero__topics {
+    flex-wrap: wrap;
+  }
+
   .soft-home-portrait {
     width: 140px;
     justify-self: start;
@@ -600,4 +630,48 @@ html[data-theme="dark"] .pub-search-line input {
   .person-award {
     text-align: left;
   }
+}
+
+/* Compact author profile on interior pages. */
+@media (min-width: 925px) {
+  .sidebar {
+    padding-right: 1.25rem;
+  }
+
+  .sidebar .author__avatar img {
+    max-width: 145px;
+    padding: 3px;
+  }
+
+  .sidebar .author__name {
+    margin-top: .7rem;
+    margin-bottom: .28rem;
+    font-size: .9rem;
+  }
+
+  .sidebar .author__bio {
+    margin: 0 0 .65rem;
+    color: var(--soft-muted);
+    font-size: .72rem;
+    line-height: 1.45;
+  }
+
+  .sidebar .author__urls {
+    font-size: .76rem;
+  }
+
+  .sidebar .author__urls li {
+    margin-bottom: .2rem;
+  }
+
+  .sidebar .author__urls a {
+    margin-bottom: 0;
+    padding: .12rem 0;
+    font-size: .76rem;
+  }
+}
+
+html[data-theme="dark"] .sidebar .author__bio,
+html[data-theme="dark"] .sidebar .author__urls {
+  color: var(--theme-muted);
 }
