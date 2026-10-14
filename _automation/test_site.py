@@ -129,6 +129,8 @@ class BuildTests(unittest.TestCase):
         self.assertIn('Best Paper Award', markup)
         self.assertIn('PDF', markup)
         self.assertIn('Code', markup)
+        self.assertIsNotNone(soup.select_one('.pub-resource--pdf .fa-file-pdf'))
+        self.assertIsNotNone(soup.select_one('.pub-resource--code .fa-code'))
 
 
     def test_featured_publications_are_sheet_selected(self):
