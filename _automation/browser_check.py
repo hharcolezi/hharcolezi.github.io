@@ -91,7 +91,7 @@ try:
                         assert 0 < visible_count < total, 'Publication search did not filter'
                         page.locator('#pub-search').fill('')
                         assert page.locator('.pub-card:visible').count() == total, 'Clearing search did not restore publications'
-                if js and path in ('/', '/publications/', '/teaching/', '/software/'):
+                if js and path in ('/', '/publications/', '/projects/', '/students/', '/teaching/', '/software/'):
                     filename = 'homepage' if path == '/' else path.strip('/')
                     page.screenshot(path=str(OUT / f'{filename}-desktop.png'), full_page=True)
                     page.set_viewport_size({'width':390, 'height':844})
