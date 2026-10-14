@@ -75,6 +75,8 @@ class BuildTests(unittest.TestCase):
         markup = s.render_students(rows)
         self.assertLess(markup.index('PhD Alumni'), markup.index('Master Alumni'))
         self.assertLess(markup.index('Master Alumni'), markup.index('Bachelor Alumni'))
+        self.assertNotIn('Topic:', markup)
+        self.assertNotIn('Co-supervised', markup)
 
     def test_software_allowlist_and_user_deletions(self):
         rows = [dict(name='Library', category='Libraries & Tools', in_website='TRUE'), dict(name='Data', category='Datasets', in_website='TRUE'), dict(name='Old code', category='Research Code', in_website='TRUE'), dict(name='Hidden', category='Datasets', in_website='FALSE')]
@@ -85,34 +87,33 @@ class BuildTests(unittest.TestCase):
         self.assertEqual([r['title'] for r in s.visible_rows('publications', rows)], ['Visible'])
 
 
-    def test_publication_icons_filter_metadata_and_award(self):
+    def test_publication_year_counts_bibtex_and_award(self):
         rows = [
             dict(
                 category='conference', year='2026', pub_date='2026-07-01',
                 authors='A. Author, H. Arcolezi', title='Paper One',
                 venue='PETS 2026', url_pub='https://example.org/paper',
                 pdf='https://example.org/preprint.pdf', code='https://example.org/code',
-                slides='https://example.org/slides.pdf', video='https://example.org/video',
-                awards='Best Paper Award', not_on_website='FALSE'
+                awards='Best Paper Award',
+                bib_entry='@inproceedings{paperone, title={Paper One}}',
+                not_on_website='FALSE'
             ),
             dict(
-                category='journal', year='2025', pub_date='2025-01-01',
+                category='journal', year='2026', pub_date='2026-01-01',
                 authors='H. Arcolezi', title='Paper Two',
                 venue='Journal X', not_on_website='FALSE'
             ),
         ]
         markup = s.render_publications(rows)
         soup = BeautifulSoup(markup, 'html.parser')
-        cards = soup.select('.pub-card[data-year][data-type]')
+        cards = soup.select('.pub-card[data-year]')
         self.assertEqual(len(cards), 2)
-        self.assertEqual(cards[0]['data-year'], '2026')
-        self.assertEqual(cards[0]['data-type'], 'conference')
-        self.assertIsNotNone(soup.select_one('.pub-resource--pdf .fa-file-pdf'))
-        self.assertIsNotNone(soup.select_one('.pub-resource--code .fa-code'))
-        self.assertIsNotNone(soup.select_one('.pub-resource--slides .fa-images'))
-        self.assertIsNotNone(soup.select_one('.pub-resource--video .fa-video'))
-        self.assertIsNotNone(soup.select_one('.pub-link-badge--award .fa-trophy'))
-        self.assertIn('Best Paper Award', soup.select_one('.pub-link-badge--award').get_text())
+        self.assertIn('(2)', soup.select_one('.pub-year-count').get_text())
+        self.assertIsNotNone(soup.select_one('.pub-bibtex pre'))
+        self.assertIn('Best Paper Award', markup)
+        self.assertIn('PDF', markup)
+        self.assertIn('Code', markup)
+
 
     def test_featured_publications_are_sheet_selected(self):
         rows = [
