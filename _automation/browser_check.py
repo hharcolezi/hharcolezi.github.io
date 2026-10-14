@@ -78,6 +78,13 @@ try:
                     if REPORT['counts']['news'] > 5:
                         assert page.locator('details.news-more').count() == 1, 'Expandable news control is missing'
                         assert page.locator('details.news-more .news-more__items .news-item').count() == REPORT['counts']['news'] - 5
+                if path == '/teaching/':
+                    teaching_text = page.locator('#teaching-list').inner_text()
+                    assert 'Systems Security' in teaching_text, 'Winter 2027 Systems Security is missing from Teaching'
+                    assert 'Winter 2027' in teaching_text
+                    assert 'Undergraduate' in teaching_text
+                    assert 'Lab sessions' not in teaching_text, 'Non-principal teaching leaked into the website'
+                    assert 'Database Management Systems' not in teaching_text, 'Lab-session courses should not appear'
                 if path == '/publications/':
                     assert page.locator('#pub-search').count() == 1
                     assert page.locator('#pub-year-index').count() == 1
