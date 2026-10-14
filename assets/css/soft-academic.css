@@ -91,8 +91,17 @@
 }
 
 .soft-home-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
   color: var(--soft-link);
   text-decoration: none;
+}
+
+.soft-home-links i {
+  width: .9rem;
+  text-align: center;
+  font-size: .86rem;
 }
 
 .soft-home-links a:hover {
