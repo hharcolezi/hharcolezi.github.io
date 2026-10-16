@@ -6,6 +6,7 @@ import json
 import threading
 from pathlib import Path
 from urllib.parse import urlsplit
+from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright, expect
 
 ROOT = Path('_site').resolve()
@@ -85,7 +86,8 @@ try:
                     assert home_width > 1000, f'Homepage stayed too narrow on desktop: {home_width}px'
                     topic_boxes = [page.locator('#profile-keywords span').nth(i).bounding_box() for i in range(page.locator('#profile-keywords span').count())]
                     assert len({round(box['y']) for box in topic_boxes}) == 1, 'Desktop research keywords wrapped to multiple lines'
-                    assert 'Privacy–Fairness Trade-offs' in page.locator('#profile-keywords').inner_text()
+                    expected_topics = BeautifulSoup(REPORT['homepage']['keyword'], 'html.parser').select('span')
+                    assert page.locator('#profile-keywords span').all_text_contents() == [topic.get_text() for topic in expected_topics], 'Homepage keywords differ from the current Sheet'
                     assert page.locator('.soft-home-location').inner_text().strip() == 'Montréal, Canada'
                     assert page.locator('.soft-home-portrait p').count() == 0, 'Location still appears below portrait'
                     assert page.locator('#profile-hero-lead').count() == 0, 'Removed hero tagline reappeared'
