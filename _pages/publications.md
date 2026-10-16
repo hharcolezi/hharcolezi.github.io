@@ -20,7 +20,7 @@ You can also find me on
     <i class="fas fa-search" aria-hidden="true"></i>
     <input id="pub-search" type="search" autocomplete="off" placeholder="Search publications…" aria-label="Search publications">
   </div>
-  <div id="pub-year-index" class="pub-year-index"></div>
+  <nav id="pub-year-index" class="pub-year-index" aria-label="Publication sections"></nav>
   <div id="pub-count" class="pub-count" aria-live="polite"></div>
 </div>
 
@@ -39,27 +39,37 @@ You can also find me on
 
   const cards = Array.from(root.querySelectorAll('.pub-card[data-year]'));
   const groups = Array.from(root.querySelectorAll('.pub-year-group'));
-  const yearCounts = {};
-  cards.forEach((card) => { yearCounts[card.dataset.year] = (yearCounts[card.dataset.year] || 0) + 1; });
-
-  yearIndex.innerHTML = Object.keys(yearCounts)
-    .filter((year) => /^\d{4}$/.test(year))
-    .sort((a,b) => Number(b) - Number(a))
-    .map((year) => `<a href="#pub-${year}">${year} <span>(${yearCounts[year]})</span></a>`)
-    .join('');
+  /* Use the rendered sections so report dates never create extra year links
+     or inflate a year's publication count. */
+  const reportCards = Array.from(root.querySelectorAll('#pub-technical-reports .pub-card'));
+  const publicationCards = cards.filter((card) => !reportCards.includes(card));
+  groups.forEach((group) => {
+    const reports = group.id === 'pub-technical-reports';
+    const label = reports ? 'Technical reports' : group.id.replace(/^pub-/, '');
+    const anchor = document.createElement('a');
+    anchor.href = `#${group.id}`;
+    anchor.textContent = `${label} (${group.querySelectorAll('.pub-card').length})`;
+    if (reports) anchor.className = 'pub-year-index__reports';
+    yearIndex.appendChild(anchor);
+  });
 
   const apply = () => {
     const q = search.value.trim().toLocaleLowerCase();
-    let visible = 0;
     cards.forEach((card) => {
       const show = !q || card.textContent.toLocaleLowerCase().includes(q);
       card.hidden = !show;
-      if (show) visible += 1;
     });
     groups.forEach((group) => {
       group.hidden = !Array.from(group.querySelectorAll('.pub-card')).some((card) => !card.hidden);
     });
-    count.textContent = q ? `${visible} of ${cards.length} publications` : `${cards.length} publications`;
+    const describe = (items, label) => {
+      const matches = items.filter((card) => !card.hidden).length;
+      return `${q ? `${matches} of ` : ''}${items.length} ${label}${items.length === 1 ? '' : 's'}`;
+    };
+    count.textContent = [
+      describe(publicationCards, 'publication'),
+      ...(reportCards.length ? [describe(reportCards, 'technical report')] : []),
+    ].join(' · ');
   };
 
   search.addEventListener('input', apply);

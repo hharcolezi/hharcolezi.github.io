@@ -392,9 +392,9 @@ def render_publications(rows: list[dict]) -> str:
     sections = []
     for group in ordered:
         count = len(groups[group])
-        anchor = f' id="pub-{h(group)}"' if re.fullmatch(r"\d{4}", str(group)) else ""
+        anchor = 'pub-technical-reports' if group == 'Technical Reports' else f'pub-{group}'
         sections.append(
-            f'<section class="pub-year-group"{anchor}>'
+            f'<section class="pub-year-group" id="{h(anchor)}">'
             f'<h2 class="pub-year-heading">{h(group)} <span class="pub-year-count">({count})</span></h2>'
             f'<div class="pub-year-list">{"".join(groups[group])}</div></section>'
         )

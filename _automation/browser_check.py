@@ -6,7 +6,8 @@ import json
 import threading
 from pathlib import Path
 from urllib.parse import urlsplit
-from playwright.sync_api import sync_playwright
+from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright, expect
 
 ROOT = Path('_site').resolve()
 OUT = Path('_automation-output')
@@ -52,6 +53,8 @@ try:
             context.route('**/*', guard)
             for path, (selector, name) in ROUTES.items():
                 page = context.new_page()
+                page_errors = []
+                page.on('pageerror', lambda error: page_errors.append(str(error)))
                 response = page.goto(base + path, wait_until='networkidle')
                 assert response.status == 200, f'{path}: HTTP failure'
                 assert page.locator(selector).count() == REPORT['counts'][name], f'{path}: record-count mismatch'
@@ -85,7 +88,8 @@ try:
                     assert home_width > 1000, f'Homepage stayed too narrow on desktop: {home_width}px'
                     topic_boxes = [page.locator('#profile-keywords span').nth(i).bounding_box() for i in range(page.locator('#profile-keywords span').count())]
                     assert len({round(box['y']) for box in topic_boxes}) == 1, 'Desktop research keywords wrapped to multiple lines'
-                    assert 'Privacy–Fairness Trade-offs' in page.locator('#profile-keywords').inner_text()
+                    expected_topics = BeautifulSoup(REPORT['homepage']['keyword'], 'html.parser').select('span')
+                    assert page.locator('#profile-keywords span').all_text_contents() == [topic.get_text() for topic in expected_topics], 'Homepage keywords differ from the current Sheet'
                     assert page.locator('.soft-home-location').inner_text().strip() == 'Montréal, Canada'
                     assert page.locator('.soft-home-portrait p').count() == 0, 'Location still appears below portrait'
                     assert page.locator('#profile-hero-lead').count() == 0, 'Removed hero tagline reappeared'
@@ -100,6 +104,8 @@ try:
                     assert 'Lab sessions' not in teaching_text, 'Non-principal teaching leaked into the website'
                     assert 'Database Management Systems' not in teaching_text, 'Lab-session courses should not appear'
                 if path == '/publications/':
+                    if js:
+                        assert not page_errors, f'Publication JavaScript errors: {page_errors}'
                     assert page.locator('#pub-search').count() == 1
                     assert page.locator('#pub-year-index').count() == 1
                     assert page.locator('.pub-year-count').count() > 0
@@ -108,12 +114,49 @@ try:
                     assert page.locator('.pub-resource .fa-code').count() > 0, 'Code icons are missing'
                     if js:
                         total = REPORT['counts']['publications']
-                        assert page.locator('#pub-count').inner_text().strip() == f'{total} publications'
+                        report_total = page.locator('#pub-technical-reports .pub-card').count()
+                        publication_total = total - report_total
+                        def expected_count(filtered=False):
+                            parts = []
+                            for selector, size, label in (
+                                ('.pub-year-group:not(#pub-technical-reports) .pub-card', publication_total, 'publication'),
+                                ('#pub-technical-reports .pub-card', report_total, 'technical report'),
+                            ):
+                                if label == 'technical report' and not size:
+                                    continue
+                                visible = page.locator(selector + ':visible').count()
+                                prefix = f'{visible} of ' if filtered else ''
+                                parts.append(f'{prefix}{size} {label}{"" if size == 1 else "s"}')
+                            return ' · '.join(parts)
+                        expect(page.locator('#pub-count')).to_have_text(expected_count())
+                        groups = page.locator('.pub-year-group')
+                        index_links = page.locator('#pub-year-index a')
+                        assert index_links.count() == groups.count(), 'Publication index does not match the rendered sections'
+                        for i in range(groups.count()):
+                            group = groups.nth(i)
+                            anchor = index_links.nth(i)
+                            group_id = group.get_attribute('id')
+                            label = 'Technical reports' if group_id == 'pub-technical-reports' else group_id.removeprefix('pub-')
+                            size = group.locator('.pub-card').count()
+                            assert anchor.get_attribute('href') == f'#{group_id}', 'Publication index contains a broken or out-of-order link'
+                            assert anchor.inner_text() == f'{label} ({size})', 'Publication index count includes records from another section'
+                        if report_total:
+                            page.locator('#pub-year-index a[href="#pub-technical-reports"]').click()
+                            expect(page.locator('#pub-technical-reports .pub-year-heading')).to_be_in_viewport()
+                            # A report-only query must remain searchable without being
+                            # counted as a peer-reviewed publication.
+                            report_title = page.locator('#pub-technical-reports .pub-title').first.inner_text()
+                            page.locator('#pub-search').fill(report_title)
+                            assert page.locator('#pub-technical-reports .pub-card:visible').count() >= 1
+                            assert page.locator('#pub-count').inner_text().strip() == expected_count(filtered=True)
                         page.locator('#pub-search').fill('Differential Privacy')
                         visible_count = page.locator('.pub-card:visible').count()
                         assert 0 < visible_count < total, 'Publication search did not filter'
+                        assert page.locator('#pub-count').inner_text().strip() == expected_count(filtered=True)
                         page.locator('#pub-search').fill('')
                         assert page.locator('.pub-card:visible').count() == total, 'Clearing search did not restore publications'
+                        assert page.locator('#pub-count').inner_text().strip() == expected_count()
+                        page.evaluate('window.scrollTo(0, 0)')
                 if js and path in ('/', '/publications/', '/projects/', '/students/', '/teaching/', '/software/'):
                     filename = 'homepage' if path == '/' else path.strip('/')
                     page.screenshot(path=str(OUT / f'{filename}-desktop.png'), full_page=True)
