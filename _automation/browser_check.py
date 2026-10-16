@@ -53,6 +53,8 @@ try:
             context.route('**/*', guard)
             for path, (selector, name) in ROUTES.items():
                 page = context.new_page()
+                page_errors = []
+                page.on('pageerror', lambda error: page_errors.append(str(error)))
                 response = page.goto(base + path, wait_until='networkidle')
                 assert response.status == 200, f'{path}: HTTP failure'
                 assert page.locator(selector).count() == REPORT['counts'][name], f'{path}: record-count mismatch'
@@ -102,6 +104,8 @@ try:
                     assert 'Lab sessions' not in teaching_text, 'Non-principal teaching leaked into the website'
                     assert 'Database Management Systems' not in teaching_text, 'Lab-session courses should not appear'
                 if path == '/publications/':
+                    if js:
+                        assert not page_errors, f'Publication JavaScript errors: {page_errors}'
                     assert page.locator('#pub-search').count() == 1
                     assert page.locator('#pub-year-index').count() == 1
                     assert page.locator('.pub-year-count').count() > 0
@@ -124,7 +128,7 @@ try:
                                 prefix = f'{visible} of ' if filtered else ''
                                 parts.append(f'{prefix}{size} {label}{"" if size == 1 else "s"}')
                             return ' · '.join(parts)
-                        assert page.locator('#pub-count').inner_text().strip() == expected_count()
+                        expect(page.locator('#pub-count')).to_have_text(expected_count())
                         groups = page.locator('.pub-year-group')
                         index_links = page.locator('#pub-year-index a')
                         assert index_links.count() == groups.count(), 'Publication index does not match the rendered sections'
