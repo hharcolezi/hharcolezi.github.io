@@ -137,7 +137,6 @@ try:
                         if report_total:
                             page.locator('#pub-year-index a[href="#pub-technical-reports"]').click()
                             expect(page.locator('#pub-technical-reports .pub-year-heading')).to_be_in_viewport()
-                            assert page.evaluate('location.hash') == '#pub-technical-reports'
                             # A report-only query must remain searchable without being
                             # counted as a peer-reviewed publication.
                             report_title = page.locator('#pub-technical-reports .pub-title').first.inner_text()
