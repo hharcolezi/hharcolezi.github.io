@@ -6,7 +6,7 @@ import json
 import threading
 from pathlib import Path
 from urllib.parse import urlsplit
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, expect
 
 ROOT = Path('_site').resolve()
 OUT = Path('_automation-output')
@@ -108,12 +108,50 @@ try:
                     assert page.locator('.pub-resource .fa-code').count() > 0, 'Code icons are missing'
                     if js:
                         total = REPORT['counts']['publications']
-                        assert page.locator('#pub-count').inner_text().strip() == f'{total} publications'
+                        report_total = page.locator('#pub-technical-reports .pub-card').count()
+                        publication_total = total - report_total
+                        def expected_count(filtered=False):
+                            parts = []
+                            for selector, size, label in (
+                                ('.pub-year-group:not(#pub-technical-reports) .pub-card', publication_total, 'publication'),
+                                ('#pub-technical-reports .pub-card', report_total, 'technical report'),
+                            ):
+                                if label == 'technical report' and not size:
+                                    continue
+                                visible = page.locator(selector + ':visible').count()
+                                prefix = f'{visible} of ' if filtered else ''
+                                parts.append(f'{prefix}{size} {label}{"" if size == 1 else "s"}')
+                            return ' · '.join(parts)
+                        assert page.locator('#pub-count').inner_text().strip() == expected_count()
+                        groups = page.locator('.pub-year-group')
+                        index_links = page.locator('#pub-year-index a')
+                        assert index_links.count() == groups.count(), 'Publication index does not match the rendered sections'
+                        for i in range(groups.count()):
+                            group = groups.nth(i)
+                            anchor = index_links.nth(i)
+                            group_id = group.get_attribute('id')
+                            label = 'Technical reports' if group_id == 'pub-technical-reports' else group_id.removeprefix('pub-')
+                            size = group.locator('.pub-card').count()
+                            assert anchor.get_attribute('href') == f'#{group_id}', 'Publication index contains a broken or out-of-order link'
+                            assert anchor.inner_text() == f'{label} ({size})', 'Publication index count includes records from another section'
+                        if report_total:
+                            page.locator('#pub-year-index a[href="#pub-technical-reports"]').click()
+                            expect(page.locator('#pub-technical-reports .pub-year-heading')).to_be_in_viewport()
+                            assert page.evaluate('location.hash') == '#pub-technical-reports'
+                            # A report-only query must remain searchable without being
+                            # counted as a peer-reviewed publication.
+                            report_title = page.locator('#pub-technical-reports .pub-title').first.inner_text()
+                            page.locator('#pub-search').fill(report_title)
+                            assert page.locator('#pub-technical-reports .pub-card:visible').count() >= 1
+                            assert page.locator('#pub-count').inner_text().strip() == expected_count(filtered=True)
                         page.locator('#pub-search').fill('Differential Privacy')
                         visible_count = page.locator('.pub-card:visible').count()
                         assert 0 < visible_count < total, 'Publication search did not filter'
+                        assert page.locator('#pub-count').inner_text().strip() == expected_count(filtered=True)
                         page.locator('#pub-search').fill('')
                         assert page.locator('.pub-card:visible').count() == total, 'Clearing search did not restore publications'
+                        assert page.locator('#pub-count').inner_text().strip() == expected_count()
+                        page.evaluate('window.scrollTo(0, 0)')
                 if js and path in ('/', '/publications/', '/projects/', '/students/', '/teaching/', '/software/'):
                     filename = 'homepage' if path == '/' else path.strip('/')
                     page.screenshot(path=str(OUT / f'{filename}-desktop.png'), full_page=True)

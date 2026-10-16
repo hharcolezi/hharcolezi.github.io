@@ -133,6 +133,24 @@ class BuildTests(unittest.TestCase):
         self.assertIsNotNone(soup.select_one('.pub-resource--code .fa-code'))
 
 
+    def test_reports_have_their_own_anchor_and_do_not_inflate_years(self):
+        rows = [
+            dict(category='conference', year='2019', title='Conference paper'),
+            dict(category='journal', year='2019', title='Journal paper'),
+            dict(category='Master thesis', year='2019', title='Master thesis'),
+            dict(category='Technical report', year='2022', title='Technical report'),
+            dict(category='Bachelor thesis', year='2017', title='Bachelor thesis'),
+        ]
+        soup = BeautifulSoup(s.render_publications(rows), 'html.parser')
+        groups = soup.select('.pub-year-group')
+        self.assertEqual([group['id'] for group in groups], ['pub-2019', 'pub-technical-reports'])
+        self.assertEqual([group.select_one('.pub-year-count').get_text() for group in groups], ['(2)', '(3)'])
+        self.assertEqual(len(soup.select('#pub-2019 .pub-card')), 2)
+        self.assertEqual(len(soup.select('#pub-technical-reports .pub-card')), 3)
+        self.assertEqual(len(soup.select('#pub-technical-reports .pub-card[data-year="2019"]')), 1)
+        self.assertIsNone(soup.select_one('#pub-2017'))
+        self.assertIsNone(soup.select_one('#pub-2022'))
+
     def test_featured_publications_are_sheet_selected(self):
         rows = [
             dict(title='Featured A', authors='A', venue='VLDB 2026', year='2026', pub_date='2026-08-01', featured_home='TRUE', pdf='https://example.org/a.pdf'),
