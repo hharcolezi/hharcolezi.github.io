@@ -39,8 +39,8 @@ You can also find me on
 
   const cards = Array.from(root.querySelectorAll('.pub-card[data-year]'));
   const groups = Array.from(root.querySelectorAll('.pub-year-group'));
-  // Use the rendered sections so report dates never create extra year links
-  // or inflate a year's publication count.
+  /* Use the rendered sections so report dates never create extra year links
+     or inflate a year's publication count. */
   const reportCards = Array.from(root.querySelectorAll('#pub-technical-reports .pub-card'));
   const publicationCards = cards.filter((card) => !reportCards.includes(card));
   groups.forEach((group) => {
